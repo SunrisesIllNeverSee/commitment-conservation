@@ -46,4 +46,4 @@ def plot_results(thresholds, fidelity):
     plt.xlabel('Compression Threshold')
     plt.ylabel('Jaccard Fidelity')
     plt.grid()
-    plt.show()
+    plt.close()  # Use close() instead of show() to avoid blocking in tests

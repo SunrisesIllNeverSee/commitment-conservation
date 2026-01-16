@@ -114,7 +114,7 @@ def compression_sweep(signal: str):
     plt.ylim(-0.05, 1.05)
     plt.tight_layout()
     plt.savefig(f"fid_plot_{hash(signal)}.png", dpi=150)
-    plt.show()
+    plt.close()  # Use close() instead of show() to avoid blocking in tests
     
     return SIGMA_GRID, fid_vals
 
@@ -142,7 +142,7 @@ def recursion_test(signal: str, depth: int = RECURSION_DEPTH):
     plt.ylim(-0.05, 1.05)
     plt.tight_layout()
     plt.savefig(f"delta_plot_{hash(signal)}.png", dpi=150)
-    plt.show()
+    plt.close()  # Use close() instead of show() to avoid blocking in tests
     
     return deltas
 
