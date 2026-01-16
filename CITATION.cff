@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software or research, please cite it as below."
+type: software
+title: "A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application"
+version: "v0.2"
+doi: 10.5281/zenodo.18271102
+date-released: 2026-01-16
+url: "https://doi.org/10.5281/zenodo.18271102"
+repository-code: "https://github.com/SunrisesIllNeverSee/commitment-conservation"
+authors:
+  - family-names: "McHenry"
+    given-names: "Deric J."
+keywords:
+  - information-theory
+  - llm
+  - compression
+  - recursion
+  - computational-linguistics
+  - commitment-conservation
+  - language-models
+license: CC-BY-4.0
+abstract: "This work proposes a conservation law for commitment in language under transformative compression and recursive application. We define commitment as the minimal, identity-preserving content that remains invariant under loss-inducing transformations, and demonstrate that commitment content must be conserved or the signal collapses."
