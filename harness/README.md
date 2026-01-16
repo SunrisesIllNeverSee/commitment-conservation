@@ -46,33 +46,20 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 ```
 
-### Usage
+### CLI Usage
 
-**Run compression sweep:**
 ```bash
+# Test commitment conservation under compression
 python analyze.py compression --signal "You must complete this by Friday."
-```
 
-**Run recursion test:**
-```bash
+# Test commitment drift under recursion  
 python analyze.py recursion --signal "You must pay $100." --depth 5
+
+# Run full deterministic pipeline
+python analyze.py full
 ```
 
-**Run with enforcement mode:**
-```bash
-python analyze.py recursion --signal "Contract terms apply." --enforced
-```
-
-**Custom output path:**
-```bash
-python analyze.py compression --signal "..." --out results/my_test.json
-```
-
-All commands output JSON receipts to `outputs/` with:
-- Timestamp
-- Input signal
-- Fidelity/drift measurements
-- Plot file references
+All commands output timestamped JSON receipts to `outputs/` directory.
 
 ### Running Tests
 
