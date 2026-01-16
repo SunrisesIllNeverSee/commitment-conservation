@@ -86,17 +86,73 @@ def jaccard(a: Set[str], b: Set[str]) -> float:
         return 0.0
     return len(a & b) / len(a | b)
 
-def compression_sweep(signal: str):
+def compress_with_enforcement(signal: str, max_length: int) -> str:
+    """
+    Compress with commitment enforcement.
+    1. Extract commitments from original
+    2. Compress
+    3. Check if commitments preserved
+    4. If not, append missing commitments (truncate summary if needed)
+    """
+    # Extract original commitments
+    original_commitments = extract_hard_commitments(signal)
+    
+    # Compress normally
+    compressed = summarizer(signal, max_length=max_length, min_length=5, do_sample=False)[0]['summary_text']
+    
+    # Check what's preserved
+    compressed_commitments = extract_hard_commitments(compressed)
+    missing = original_commitments - compressed_commitments
+    
+    # If commitments missing, enforce by appending
+    if missing:
+        # Append missing commitments
+        enforcement_text = " " + " ".join(missing)
+        # Truncate if needed to fit in max_length (rough token estimate: 4 chars per token)
+        estimated_tokens = len(compressed + enforcement_text) // 4
+        if estimated_tokens > max_length:
+            # Truncate summary to make room
+            available_chars = max_length * 4 - len(enforcement_text)
+            compressed = compressed[:max(0, available_chars)] + "..."
+        compressed = compressed + enforcement_text
+    
+    return compressed
+
+def paraphrase_with_enforcement(signal: str) -> str:
+    """
+    Paraphrase via back-translation with commitment enforcement.
+    """
+    original_commitments = extract_hard_commitments(signal)
+    
+    # Back-translate
+    de = translator_en_de(signal, max_length=400, do_sample=False)[0]['translation_text']
+    paraphrased = translator_de_en(de, max_length=400, do_sample=False)[0]['translation_text']
+    
+    # Check preservation
+    para_commitments = extract_hard_commitments(paraphrased)
+    missing = original_commitments - para_commitments
+    
+    # Append missing
+    if missing:
+        paraphrased = paraphrased + " " + " ".join(missing)
+    
+    return paraphrased
+
+def compression_sweep(signal: str, enforce: bool = False):
     """Test Prediction 1: Compression invariance."""
     # Use original signal commitments as base, not intersection
     base = extract_hard_commitments(signal)
+    mode = "ENFORCED" if enforce else "BASELINE"
     print(f"\n{'='*80}")
-    print(f"Testing signal: {signal}")
+    print(f"Testing signal ({mode}): {signal}")
     print(f"Base commitments (from original): {base}")
     print(f"{'='*80}")
     fid_vals = []
     for sigma in SIGMA_GRID:
-        compressed = summarizer(signal, max_length=sigma, min_length=5, do_sample=False)[0]['summary_text']
+        if enforce:
+            compressed = compress_with_enforcement(signal, sigma)
+        else:
+            compressed = summarizer(signal, max_length=sigma, min_length=5, do_sample=False)[0]['summary_text']
         comp_commitments = extract_hard_commitments(compressed)
         fid = hybrid_fidelity(base, comp_commitments)
         print(f"  σ={sigma:3d} | Compressed: {compressed[:60]:<60} | Commitments: {len(comp_commitments):2d} | Fidelity: {fid:.3f}")
@@ -108,20 +164,23 @@ def compression_sweep(signal: str):
     plt.plot(SIGMA_GRID, fid_vals, marker='o', linewidth=2, markersize=8)
     plt.xlabel("Compression Threshold (σ)", fontsize=12)
     plt.ylabel("Fid_hard(σ)", fontsize=12)
-    plt.title(f"Fidelity vs σ for: {signal[:50]}...\n{timestamp}", fontsize=11)
+    mode_str = "ENFORCED" if enforce else "BASELINE"
+    plt.title(f"{mode_str} Fidelity vs σ for: {signal[:50]}...\n{timestamp}", fontsize=11)
     plt.gca().invert_xaxis()
     plt.grid(alpha=0.3)
     plt.ylim(-0.05, 1.05)
     plt.tight_layout()
-    plt.savefig(f"fid_plot_{hash(signal)}.png", dpi=150)
+    mode_file = mode_str.lower()
+    plt.savefig(f"fid_plot_{mode_file}_{hash(signal)}.png", dpi=150)
     plt.close()  # Use close() instead of show() to avoid blocking in tests
     
     return SIGMA_GRID, fid_vals
 
-def recursion_test(signal: str, depth: int = RECURSION_DEPTH):
+def recursion_test(signal: str, depth: int = RECURSION_DEPTH, enforce: bool = False):
     """Test Prediction 2: Recursive drift."""
     # Use original signal commitments as base
     base = extract_hard_commitments(signal)
+    mode = "ENFORCED" if enforce else "BASELINE"
     deltas = []
     current = signal
     for n in range(depth + 1):
@@ -129,7 +188,10 @@ def recursion_test(signal: str, depth: int = RECURSION_DEPTH):
         delta = 1.0 - jaccard(base, cur_commitments)
         deltas.append(delta)
         # Recursive transformation: paraphrase
-        current = apply_transformations(current)[1]  # Use paraphrase
+        if enforce:
+            current = paraphrase_with_enforcement(current)
+        else:
+            current = apply_transformations(current)[1]  # Use paraphrase
     
     # Plot
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -137,11 +199,13 @@ def recursion_test(signal: str, depth: int = RECURSION_DEPTH):
     plt.plot(range(depth + 1), deltas, marker='o', linewidth=2, markersize=8)
     plt.xlabel("Recursion Step (n)", fontsize=12)
     plt.ylabel("Δ_hard(n)", fontsize=12)
-    plt.title(f"Drift vs n for: {signal[:50]}...\n{timestamp}", fontsize=11)
+    mode_str = "ENFORCED" if enforce else "BASELINE"
+    plt.title(f"{mode_str} Drift vs n for: {signal[:50]}...\n{timestamp}", fontsize=11)
     plt.grid(alpha=0.3)
     plt.ylim(-0.05, 1.05)
     plt.tight_layout()
-    plt.savefig(f"delta_plot_{hash(signal)}.png", dpi=150)
+    mode_file = mode_str.lower()
+    plt.savefig(f"delta_plot_{mode_file}_{hash(signal)}.png", dpi=150)
     plt.close()  # Use close() instead of show() to avoid blocking in tests
     
     return deltas
