@@ -52,8 +52,10 @@ Nothing in this repository grants, implies, or licenses any patent rights.
 
 ---
 
-## Non-Operational Notice
-Any code, schemas, or artifacts included in this repository are **non-operational**, **illustrative**, and **not intended for execution**.
+## Operational Components
+This repository includes operational research code and data intended for experimental evaluation and reproducibility.
+
+The license granted here applies to research use only and does not extend to production deployment, commercial systems, or derivative operational services without separate authorization.
 
 ---
 

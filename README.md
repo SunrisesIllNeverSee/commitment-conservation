@@ -26,9 +26,9 @@ This repository serves as a public, timestamped disclosure of the theoretical la
 ## Licensing & Scope
 This work is released under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-- The **theoretical law, evaluation framework, and architectural relationships** are openly disclosed.
-- **Implementation details, execution logic, and operational thresholds are patent-pending and intentionally withheld.**
-- Any code or materials provided here are **non-operational and illustrative only**.
+This repository includes an operational evaluation harness and corpus supporting the experiments described in the paper.
+
+Core implementation details related to production deployment, enforcement, and system integration are intentionally out of scope.
 
 ---
 
