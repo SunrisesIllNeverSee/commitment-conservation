@@ -49,6 +49,7 @@ pytest tests/
 ## Purpose
 
 This harness is designed to test whether commitment content is conserved under:
+
 1. **Compression** - Reduction to essential structure
 2. **Recursion** - Repeated self-application with lineage tracking
 
@@ -63,7 +64,8 @@ Environment-related failures should be distinguished from invariant violations.
 ## Citation
 
 If you use this harness, please cite the original paper:
-```
+
+```text
 McHenry, D. J. (2026). A Conservation Law for Commitment in Language Under 
 Transformative Compression and Recursive Application. Zenodo. 
 DOI: 10.5281/zenodo.18267279

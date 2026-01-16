@@ -66,7 +66,7 @@ def test_transformation_applies():
 # Additional tests from viii. pytest.py
 S = "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly."
 
-def test_extract_nonempty():
+def test_extract_complex_signal():
     k = extract_hard_commitments(S, nlp)
     assert isinstance(k, set)
 
@@ -75,5 +75,5 @@ def test_compression_runs():
     assert len(sigs) == len(fids)
 
 def test_recursion_runs():
-    deltas = recursion_test(S, depth=3, enforced=False)
+    deltas = recursion_test(S, depth=3)
     assert len(deltas) == 4
