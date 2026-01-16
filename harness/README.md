@@ -54,6 +54,12 @@ This harness is designed to test whether commitment content is conserved under:
 
 The framework is model-agnostic and can be applied to both human and machine-generated language.
 
+### Environment Notes
+
+This harness specifies the structure and invariants of the evaluation. 
+Exact dependency resolution may vary across systems (OS, Python, backend). 
+Environment-related failures should be distinguished from invariant violations.
+
 ## Citation
 
 If you use this harness, please cite the original paper:
