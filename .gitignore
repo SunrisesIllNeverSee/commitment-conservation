@@ -37,3 +37,4 @@ harness/fid_plot_*.png
 harness/delta_plot_*.png
 harness/outputs/*.json
 !harness/outputs/.gitkeep
+.aider*
