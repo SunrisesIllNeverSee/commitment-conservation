@@ -5,6 +5,7 @@ This directory contains the test harness for validating the commitment conservat
 ## Overview
 
 The harness implements a falsification framework that operationalizes commitment invariance using:
+
 - Compression-based stress tests
 - Lineage-aware evaluation
 - Model-agnostic testing infrastructure
@@ -57,8 +58,8 @@ The framework is model-agnostic and can be applied to both human and machine-gen
 
 ### Environment Notes
 
-This harness specifies the structure and invariants of the evaluation. 
-Exact dependency resolution may vary across systems (OS, Python, backend). 
+This harness specifies the structure and invariants of the evaluation.
+Exact dependency resolution may vary across systems (OS, Python, backend).
 Environment-related failures should be distinguished from invariant violations.
 
 ## Citation
