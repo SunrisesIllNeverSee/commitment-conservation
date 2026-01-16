@@ -1,25 +1,64 @@
-# License
+# Licensing & Use
 
-## Theoretical Framework
+## Overview
+This repository discloses a theoretical conservation law, evaluation framework, and architectural relationships related to commitment preservation in language under compression and recursive application.
 
-The theoretical framework, falsification protocol, and empirical analysis presented in this repository are licensed under the **Creative Commons Attribution 4.0 International License (CC BY 4.0)**.
-
-You are free to:
-- **Share** — copy and redistribute the material in any medium or format
-- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially
-
-Under the following terms:
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-
-Full license text: https://creativecommons.org/licenses/by/4.0/
-
-## Implementation (MO§ES™)
-
-The architectural enforcement mechanisms and implementation designs (including but not limited to MO§ES™) are **patent-pending** and subject to proprietary protection.
-
-For commercial use or implementation of enforcement architectures, contact the author.
+The purpose of this repository is **public disclosure, citation, and scholarly inspection**. It is **not** a software release.
 
 ---
 
-**Citation:**  
-McHenry, D. J. (2026). A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application. Zenodo. https://doi.org/10.5281/zenodo.18271102
+## License for This Repository
+Unless otherwise noted, the contents of this repository are licensed under:
+
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**  
+https://creativecommons.org/licenses/by/4.0/
+
+You may:
+- Share and redistribute the material
+- Cite, reference, and build upon the ideas
+- Use the work for academic and research purposes
+
+Provided that:
+- Proper attribution is given to the author and source
+
+---
+
+## Scope Limitation
+This license applies **only** to the following:
+- Theoretical formulations
+- Conceptual frameworks
+- Evaluation criteria
+- Architectural relationships
+- Non-operational illustrative materials
+
+---
+
+## Excluded From License
+The following are **explicitly excluded** from this license:
+
+- Executable implementations
+- Operational systems or pipelines
+- Model integrations
+- Thresholds, parameters, or tuning values
+- Enforcement mechanisms
+- Any production or deployment logic
+
+Such elements are **patent-pending** and **not disclosed** in this repository.
+
+---
+
+## No Patent Grant
+Nothing in this repository grants, implies, or licenses any patent rights.
+
+---
+
+## Non-Operational Notice
+Any code, schemas, or artifacts included in this repository are **non-operational**, **illustrative**, and **not intended for execution**.
+
+---
+
+## Attribution
+**Author:** Deric J. McHenry  
+**Copyright:** © 2026 Ello Cello LLC. All rights reserved.
+
+For citation, please reference the Zenodo DOI associated with this work.
