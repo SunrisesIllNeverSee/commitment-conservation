@@ -30,3 +30,10 @@ Thumbs.db
 # Environment
 .env
 *.log
+
+# Test artifacts
+harness/*.png
+harness/fid_plot_*.png
+harness/delta_plot_*.png
+harness/outputs/*.json
+!harness/outputs/.gitkeep

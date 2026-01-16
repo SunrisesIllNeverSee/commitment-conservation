@@ -23,3 +23,7 @@ class Config:
         "ylim": (0, 1),
         "grid": True,
     }
+
+# Test harness parameters
+SIGMA_GRID = [120, 80, 40, 20, 10, 5]
+RECURSION_DEPTH = 8

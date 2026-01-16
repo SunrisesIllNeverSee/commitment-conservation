@@ -34,18 +34,86 @@ The harness implements a falsification framework that operationalizes commitment
 - `environment.yml` - Conda environment specification
 - `Harnesstest.ini` - Harness configuration
 
-## Running the Harness
+## Quick Start
+
+### Installation
 
 ```bash
 # Install dependencies
 pip install -r requirements.txt
 
-# Run the harness
-cd src && python harness.py
-
-# Run tests
-pytest tests/
+# Download spaCy model
+python -m spacy download en_core_web_sm
 ```
+
+### Usage
+
+**Run compression sweep:**
+```bash
+python analyze.py compression --signal "You must complete this by Friday."
+```
+
+**Run recursion test:**
+```bash
+python analyze.py recursion --signal "You must pay $100." --depth 5
+```
+
+**Run with enforcement mode:**
+```bash
+python analyze.py recursion --signal "Contract terms apply." --enforced
+```
+
+**Custom output path:**
+```bash
+python analyze.py compression --signal "..." --out results/my_test.json
+```
+
+All commands output JSON receipts to `outputs/` with:
+- Timestamp
+- Input signal
+- Fidelity/drift measurements
+- Plot file references
+
+### Running Tests
+
+```bash
+# Run all tests
+MPLBACKEND=Agg pytest tests/test_full_harness.py -v
+
+# Quick test run
+MPLBACKEND=Agg pytest tests/test_full_harness.py -q
+```
+
+## CLI Commands
+
+### `compression`
+Tests commitment conservation under compression transformations.
+
+Options:
+- `--signal TEXT` - Input signal text (required)
+- `--out PATH` - Output receipt path (default: `outputs/compression_receipt.json`)
+
+### `recursion`  
+Tests commitment drift under recursive transformations.
+
+Options:
+- `--signal TEXT` - Input signal text (required)
+- `--depth N` - Recursion depth (default: 8)
+- `--enforced` - Enable enforcement mode
+- `--out PATH` - Output receipt path (default: `outputs/recursion_receipt.json`)
+
+### `full`
+Runs the complete deterministic pipeline.
+
+Options:
+- `--out PATH` - Output receipt path (default: `outputs/full_receipt.json`)
+
+## Output
+
+The CLI generates:
+- JSON receipts in `outputs/` with all experimental data
+- Compression fidelity plots (`fid_*.png`)
+- Recursion drift plots (`delta_*.png`)
 
 ## Purpose
 

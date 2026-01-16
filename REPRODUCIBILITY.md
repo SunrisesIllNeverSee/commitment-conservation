@@ -1,5 +1,7 @@
 # Reproducibility Receipt
 
+**Zenodo (concept DOI):** `https://doi.org/10.5281/zenodo.18267278`
+
 **Date**: January 16, 2026  
 **Status**: ✅ Harness Confirmed Operational
 
@@ -64,4 +66,4 @@ MPLBACKEND=Agg pytest tests/test_full_harness.py -q --disable-warnings
 
 ---
 
-**Harness is production-ready for experimental evaluation.**
+**Harness is research-ready for experimental evaluation.**
