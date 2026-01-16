@@ -1,3 +1,6 @@
+# These tests validate structural and invariant behavior,
+# not task performance or downstream utility.
+
 import pytest
 from src.harness import run_tests
 from src.extraction import extract_hard_commitments
