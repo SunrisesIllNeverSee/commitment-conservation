@@ -4,7 +4,7 @@ spacy>=3.0.0
 matplotlib
 sentencepiece
 dateparser
-numpy==1.21.5
+numpy>=1.24.0,<2.0.0
 pandas==1.3.5
 scikit-learn==1.0.2
 pytest==7.1.2
