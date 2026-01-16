@@ -9,9 +9,11 @@ import os
 # Set non-GUI backend
 os.environ['MPLBACKEND'] = 'Agg'
 
-sys.path.insert(0, 'harness/src')
+# Change to harness directory to make imports work
+os.chdir(os.path.dirname(__file__))
 
-from test_harness import recursion_test, compression_sweep
+# Now we can import using the analyze.py pattern
+from src.test_harness import recursion_test, compression_sweep
 
 # Test signals from corpus
 signals = [
@@ -63,8 +65,8 @@ print(f"  Average compression fidelity: {avg_compression_fidelity*100:.1f}%")
 print(f"{'='*60}\n")
 
 # Save detailed results
-os.makedirs('harness/outputs', exist_ok=True)
-with open('harness/outputs/experiment_results.json', 'w') as f:
+os.makedirs('outputs', exist_ok=True)
+with open('outputs/experiment_results.json', 'w') as f:
     json.dump({
         "summary": {
             "n_signals": len(signals),
@@ -75,4 +77,4 @@ with open('harness/outputs/experiment_results.json', 'w') as f:
         "detailed_results": results
     }, f, indent=2)
     
-print("✓ Detailed results saved to: harness/outputs/experiment_results.json")
+print("✓ Detailed results saved to: outputs/experiment_results.json")
