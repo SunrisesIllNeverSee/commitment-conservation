@@ -36,6 +36,19 @@ The harness implements a falsification framework that operationalizes commitment
 
 ## Quick Start
 
+```bash
+# Install dependencies
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+
+# Extract commitments from text
+python analyze.py "You must complete this by Friday."
+
+# Run experiments (compression/recursion tests)
+python analyze.py run compression --signal "You must complete this by Friday."
+python analyze.py run recursion --signal "Contract terms apply." --depth 5
+```
+
 ### Installation
 
 ```bash
@@ -48,18 +61,21 @@ python -m spacy download en_core_web_sm
 
 ### CLI Usage
 
+**Quick test** — Extract commitments from text:
 ```bash
-# Test commitment conservation under compression
-python analyze.py compression --signal "You must complete this by Friday."
-
-# Test commitment drift under recursion  
-python analyze.py recursion --signal "You must pay $100." --depth 5
-
-# Run full deterministic pipeline
-python analyze.py full
+python analyze.py "You must complete this by Friday."
+python analyze.py "Contract terms apply." --quiet
+python analyze.py "You shall deliver by Monday." --json
 ```
 
-All commands output timestamped JSON receipts to `outputs/` directory.
+**Experiments** — Run compression/recursion tests and generate receipts:
+```bash
+python analyze.py run compression --signal "You must complete this by Friday."
+python analyze.py run recursion --signal "You must pay $100." --depth 5
+python analyze.py run full
+```
+
+Experimental runs output timestamped JSON receipts to `outputs/` directory.
 
 ### Running Tests
 
