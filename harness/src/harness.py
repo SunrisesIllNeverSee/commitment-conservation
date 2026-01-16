@@ -1,3 +1,12 @@
+"""
+Research Evaluation Harness
+
+This code is provided for academic and research evaluation purposes only.
+It implements the experimental harness described in the accompanying paper.
+
+This code is not intended for production deployment.
+"""
+
 from transformers import pipeline
 import spacy
 from metrics import jaccard_index
