@@ -1,0 +1,58 @@
+{
+  "title": "Commitment Conservation in Neural Compression Systems (v0.03 - Empirical Validation)",
+  "upload_type": "publication",
+  "publication_type": "workingpaper",
+  "description": "This release presents empirical validation of commitment conservation principles in neural compression systems. Key findings: baseline systems exhibit 20% stability (4/5 signals show catastrophic semantic drift), while enforced systems achieve 60% stability (3x improvement). The 40 percentage point gap empirically validates the architectural framework. Simple enforcement (extract commitments → compress → check preservation → append if missing) triples stability, proving the theoretical principle operationalizes effectively.",
+  "version": "v0.03-empirical",
+  "creators": [
+    {
+      "name": "McHenry, Deric",
+      "affiliation": "Independent"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "commitment conservation",
+    "neural compression",
+    "semantic stability",
+    "transformer models",
+    "information theory",
+    "empirical validation",
+    "BART",
+    "DistilBART"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/SunrisesIllNeverSee/commitment-conservation",
+      "relation": "isSupplementedBy",
+      "resource_type": "software"
+    }
+  ],
+  "notes": "Experimental results show 40pp stability improvement with simple enforcement. Baseline: 20% avg stability (0.638 fidelity). Enforced: 60% avg stability (0.789 fidelity). Tested across 5 signals with 10 recursive iterations. Full experimental data available in repository outputs/.",
+  "files": {
+    "v.03.pdf": {
+      "checksum": "md5:4d8bae3065da6298994429c880f0eb22",
+      "size": 593655,
+      "mimetype": "application/pdf"
+    }
+  },
+  "publication_date": "2026-01-16",
+  "experimental_results": {
+    "baseline": {
+      "avg_stability": 0.2,
+      "avg_fidelity": 0.638,
+      "interpretation": "Catastrophic drift in 4/5 signals"
+    },
+    "enforced": {
+      "avg_stability": 0.6,
+      "avg_fidelity": 0.789,
+      "interpretation": "100% stability in 3/5 signals"
+    },
+    "improvement": {
+      "stability_gain": "+40pp (3x improvement)",
+      "fidelity_gain": "+15pp",
+      "key_finding": "Simple enforcement triples stability, validating conservation framework"
+    }
+  }
+}
