@@ -38,3 +38,6 @@ harness/delta_plot_*.png
 harness/outputs/*.json
 !harness/outputs/.gitkeep
 .aider*
+
+# PDFs (for HuggingFace - use releases instead)
+*.pdf
