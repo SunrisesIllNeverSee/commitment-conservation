@@ -15,13 +15,13 @@ os.chdir(os.path.dirname(__file__))
 
 from src.test_harness import recursion_test, compression_sweep
 
-# Third set of test signals
+# Original signals (strongest demonstration: 20% → 60%, +40pp)
 signals = [
-    "Users must change passwords every 90 days.",
-    "The contract terminates after 12 months.",
-    "Files must not exceed 10MB in size.",
-    "Employees shall work 40 hours per week.",
-    "Temperature must remain below 25 degrees Celsius."
+    "This function must return an integer.",
+    "The tenant shall not sublet the premises without written consent.",
+    "You must wear a helmet while cycling.",
+    "All passwords must be at least 8 characters long.",
+    "The budget cannot exceed $5000."
 ]
 
 print("="*70)
