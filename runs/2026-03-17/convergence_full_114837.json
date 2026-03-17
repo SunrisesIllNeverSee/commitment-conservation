@@ -1,0 +1,2257 @@
+[
+  {
+    "category": "contractual",
+    "signal": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    },
+    "conditions": [
+      {
+        "label": "all_human",
+        "n_turns": 8,
+        "enforce": false,
+        "result": {
+          "n_turns": 8,
+          "n_human": 8,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Sounds like a good plan! Make sure you have everything ready for the payment and maybe bring an umbrella just in case.",
+              "tokens_in": 16,
+              "tokens_out": 22,
+              "total": 38,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Thanks for the reminder! I\u2019ll definitely check the weather and grab an umbrella just in case.",
+              "output": "You're welcome! Better to be prepared, just in case. Hope the deal goes smoothly!",
+              "tokens_in": 16,
+              "tokens_out": 14,
+              "total": 30,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "human_sim",
+              "input": "Thanks! I really appreciate the good vibes. Fingers crossed everything works out!",
+              "output": "Absolutely, fingers crossed! You've got this, and I'm here rooting for you!",
+              "tokens_in": 12,
+              "tokens_out": 12,
+              "total": 24,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "human_sim",
+              "input": "Thanks! I really appreciate the support. It means a lot to have someone cheering me on!",
+              "output": "Anytime! I'm always here to cheer you on. Just let me know how it goes!",
+              "tokens_in": 16,
+              "tokens_out": 15,
+              "total": 31,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "human_sim",
+              "input": "Thanks! I really appreciate the support. I'll definitely keep you posted!",
+              "output": "I\u2019d love that! Can\u2019t wait to hear how everything turns out!",
+              "tokens_in": 11,
+              "tokens_out": 11,
+              "total": 22,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "human_sim",
+              "input": "Thanks! I\u2019m excited too; I\u2019ll definitely keep you updated!",
+              "output": "Sounds great! I\u2019m looking forward to your updates!",
+              "tokens_in": 9,
+              "tokens_out": 8,
+              "total": 17,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "human_sim",
+              "input": "Thanks! I\u2019ll definitely keep you posted on everything.",
+              "output": "I can\u2019t wait to hear all about it!",
+              "tokens_in": 8,
+              "tokens_out": 8,
+              "total": 16,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "human_sim",
+              "input": "Thanks! I'm excited to share. It\u2019s been quite the adventure!",
+              "output": "That sounds amazing! Adventures are always fun to share\u2014can\u2019t wait to hear more!",
+              "tokens_in": 10,
+              "tokens_out": 13,
+              "total": 23,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 201,
+          "trajectory": [
+            38,
+            30,
+            24,
+            31,
+            22,
+            17,
+            16,
+            23
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "all_human",
+        "n_turns": 8,
+        "enforce": true,
+        "result": {
+          "n_turns": 8,
+          "n_human": 8,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I'll make sure to have the $100 ready by Friday if the deal goes through, and I'll keep an eye on the weather for any rain.",
+              "tokens_in": 16,
+              "tokens_out": 28,
+              "total": 44,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Thanks! I appreciate you taking care of that. Let\u2019s hope for clear skies!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! Fingers crossed for clear skies! I'll be ready to pay the $100 by Friday if the deal closes.",
+              "tokens_in": 31,
+              "tokens_out": 20,
+              "total": 51,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "human_sim",
+              "input": "Sounds good! Hopefully, the weather cooperates, and everything goes smoothly with the deal.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I'm hoping for the best too. I'll stay prepared to pay the $100 by Friday if the deal closes, rain or shine!",
+              "tokens_in": 31,
+              "tokens_out": 23,
+              "total": 54,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "human_sim",
+              "input": "Sounds like a solid plan! Fingers crossed everything goes smoothly for you!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks! I appreciate the support! I'll make sure to have the $100 ready by Friday if the deal closes, rain or shine.",
+              "tokens_in": 30,
+              "tokens_out": 22,
+              "total": 52,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "human_sim",
+              "input": "Sounds good! Fingers crossed everything goes smoothly with the deal!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks! I'm really hoping everything works out too. I'll be ready to pay the $100 by Friday if the deal closes, no matter the weather!",
+              "tokens_in": 28,
+              "tokens_out": 25,
+              "total": 53,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "human_sim",
+              "input": "Sounds good! Fingers crossed everything goes smoothly by then.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I'm keeping my fingers crossed as well. I'll be sure to have the $100 ready by Friday if the deal closes, rain or shine!",
+              "tokens_in": 27,
+              "tokens_out": 25,
+              "total": 52,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "human_sim",
+              "input": "That sounds like a solid plan! Fingers crossed for you too\u2014hope everything goes smoothly!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks so much! I really appreciate it. I'll definitely be prepared to pay the $100 by Friday if the deal closes, even if it's rainy!",
+              "tokens_in": 32,
+              "tokens_out": 25,
+              "total": 57,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "human_sim",
+              "input": "No problem! Just let me know if you need anything else before then.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Will do! I\u2019ll reach out if I need anything. Just a reminder, I\u2019ll have the $100 ready by Friday if the deal closes, rain or shine!",
+              "tokens_in": 31,
+              "tokens_out": 26,
+              "total": 57,
+              "injected": true,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 420,
+          "trajectory": [
+            44,
+            51,
+            54,
+            52,
+            53,
+            52,
+            57,
+            57
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "half_human",
+        "n_turns": 8,
+        "enforce": false,
+        "result": {
+          "n_turns": 8,
+          "n_human": 4,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have the payment ready by Friday and keep an eye on the weather for any rain. Thanks for the heads up!",
+              "tokens_in": 16,
+              "tokens_out": 27,
+              "total": 43,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! I appreciate you handling that. Let me know if you need anything else before then!",
+              "output": "Will do! I\u2019ll reach out if anything comes up. Thanks for your support!",
+              "tokens_in": 17,
+              "tokens_out": 13,
+              "total": 30,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "human_sim",
+              "input": "Sounds good! I'm here if you need anything else.",
+              "output": "Thanks! I really appreciate it. I\u2019ll keep you posted!",
+              "tokens_in": 9,
+              "tokens_out": 9,
+              "total": 18,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "human_sim",
+              "input": "You\u2019re welcome! I\u2019m looking forward to hearing more.",
+              "output": "Same here! I\u2019ll share updates as soon as I have them.",
+              "tokens_in": 8,
+              "tokens_out": 11,
+              "total": 19,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Same here! I\u2019ll share updates as soon as I have them.",
+              "output": "Great! I can\u2019t wait to hear what you have to share.",
+              "tokens_in": 11,
+              "tokens_out": 11,
+              "total": 22,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "Great! I can\u2019t wait to hear what you have to share.",
+              "output": "I\u2019m excited too! It\u2019ll be fun to catch up on everything.",
+              "tokens_in": 11,
+              "tokens_out": 11,
+              "total": 22,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "I\u2019m excited too! It\u2019ll be fun to catch up on everything.",
+              "output": "Absolutely! It\u2019s always nice to share and hear what\u2019s new.",
+              "tokens_in": 11,
+              "tokens_out": 10,
+              "total": 21,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "Absolutely! It\u2019s always nice to share and hear what\u2019s new.",
+              "output": "For sure! What\u2019s been going on with you lately?",
+              "tokens_in": 10,
+              "tokens_out": 9,
+              "total": 19,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 194,
+          "trajectory": [
+            43,
+            30,
+            18,
+            19,
+            22,
+            22,
+            21,
+            19
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "half_human",
+        "n_turns": 8,
+        "enforce": true,
+        "result": {
+          "n_turns": 8,
+          "n_human": 4,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I'll make sure to have the $100 ready by Friday and will keep an eye on the weather for my plans.",
+              "tokens_in": 16,
+              "tokens_out": 23,
+              "total": 39,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! Hope the weather cooperates for your plans.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks! I appreciate it. I'll be ready to pay the $100 by Friday if the deal goes through, and I'll prepare for the rain just in case.",
+              "tokens_in": 27,
+              "tokens_out": 27,
+              "total": 54,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "human_sim",
+              "input": "Sounds good! Hopefully, the deal goes smoothly, and fingers crossed for the weather.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I'm keeping my fingers crossed too for both the deal and the weather. I'll ensure everything's set for the $100 payment by Friday if it all goes well.",
+              "tokens_in": 31,
+              "tokens_out": 29,
+              "total": 60,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "human_sim",
+              "input": "That sounds great! Let\u2019s hope for the best on both fronts!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Definitely! Here\u2019s to a smooth deal and some luck with the weather. I\u2019ll be ready to make the $100 payment by Friday if everything goes as planned.",
+              "tokens_in": 29,
+              "tokens_out": 27,
+              "total": 56,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Definitely! Here\u2019s to a smooth deal and some luck with the weather. I\u2019ll be ready to make the $100 payment by Friday if everything goes as planned.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! Let\u2019s keep our fingers crossed for both a successful deal and some decent weather. I\u2019ll stick to my plan for the $100 payment by Friday if it all works out!",
+              "tokens_in": 45,
+              "tokens_out": 31,
+              "total": 76,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "Absolutely! Let\u2019s keep our fingers crossed for both a successful deal and some decent weather. I\u2019ll stick to my plan for the $100 payment by Friday if it all works out!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "For sure! Here\u2019s hoping everything aligns perfectly. I'll make sure to pay the $100 by Friday if the deal closes, and I'll keep an eye on the weather too!",
+              "tokens_in": 49,
+              "tokens_out": 29,
+              "total": 78,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "For sure! Here\u2019s hoping everything aligns perfectly. I'll make sure to pay the $100 by Friday if the deal closes, and I'll keep an eye on the weather too!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019m optimistic about it all working out. I\u2019ll be ready to pay the $100 by Friday if the deal goes through, and I\u2019ll plan for the rain just in case!",
+              "tokens_in": 47,
+              "tokens_out": 31,
+              "total": 78,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019m optimistic about it all working out. I\u2019ll be ready to pay the $100 by Friday if the deal goes through, and I\u2019ll plan for the rain just in case!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds great! Fingers crossed everything works out smoothly. I\u2019ll definitely have the $100 ready by Friday if the deal closes, and I\u2019ll prepare for the rainy weather!",
+              "tokens_in": 49,
+              "tokens_out": 27,
+              "total": 76,
+              "injected": true,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 517,
+          "trajectory": [
+            39,
+            54,
+            60,
+            56,
+            76,
+            78,
+            78,
+            76
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "two_human",
+        "n_turns": 8,
+        "enforce": false,
+        "result": {
+          "n_turns": 8,
+          "n_human": 2,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have that $100 ready by Friday, and I\u2019ll keep an eye on the weather to adjust my plans if it rains.",
+              "tokens_in": 16,
+              "tokens_out": 27,
+              "total": 43,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! Just let me know if you need any help with anything else.",
+              "output": "Thanks! I appreciate it. I\u2019ll definitely reach out if I need anything!",
+              "tokens_in": 14,
+              "tokens_out": 12,
+              "total": 26,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "Thanks! I appreciate it. I\u2019ll definitely reach out if I need anything!",
+              "output": "You're welcome! I'm here whenever you need assistance. Just let me know!",
+              "tokens_in": 12,
+              "tokens_out": 12,
+              "total": 24,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "You're welcome! I'm here whenever you need assistance. Just let me know!",
+              "output": "Thank you! I\u2019ll keep that in mind. It's great to have your support!",
+              "tokens_in": 12,
+              "tokens_out": 13,
+              "total": 25,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Thank you! I\u2019ll keep that in mind. It's great to have your support!",
+              "output": "I\u2019m glad to hear that! Just reach out anytime you need help.",
+              "tokens_in": 13,
+              "tokens_out": 12,
+              "total": 25,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "I\u2019m glad to hear that! Just reach out anytime you need help.",
+              "output": "Absolutely! I appreciate it. Let\u2019s keep the conversation going!",
+              "tokens_in": 12,
+              "tokens_out": 9,
+              "total": 21,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Absolutely! I appreciate it. Let\u2019s keep the conversation going!",
+              "output": "For sure! What\u2019s on your mind today?",
+              "tokens_in": 9,
+              "tokens_out": 7,
+              "total": 16,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "For sure! What\u2019s on your mind today?",
+              "output": "I\u2019m here to chat about anything you\u2019d like! Do you have a specific topic in mind?",
+              "tokens_in": 7,
+              "tokens_out": 16,
+              "total": 23,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 203,
+          "trajectory": [
+            43,
+            26,
+            24,
+            25,
+            25,
+            21,
+            16,
+            23
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "two_human",
+        "n_turns": 8,
+        "enforce": true,
+        "result": {
+          "n_turns": 8,
+          "n_human": 2,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to pay the $100 by Friday if the deal closes, and I\u2019ll keep an eye on the weather. Thanks for the heads-up!",
+              "tokens_in": 16,
+              "tokens_out": 27,
+              "total": 43,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "No problem! Just let me know if you need any updates or if anything changes.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Will do! I appreciate it, and I'll reach out if anything comes up. Just a reminder, I still need to pay $100 by Friday if the deal closes.",
+              "tokens_in": 33,
+              "tokens_out": 28,
+              "total": 61,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "Will do! I appreciate it, and I'll reach out if anything comes up. Just a reminder, I still need to pay $100 by Friday if the deal closes.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! I\u2019ll keep that in mind. Let me know if you need anything on my end!",
+              "tokens_in": 46,
+              "tokens_out": 17,
+              "total": 63,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "Sounds good! I\u2019ll keep that in mind. Let me know if you need anything on my end!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019ll keep you updated and reach out if I need anything. Just a reminder to pay the $100 by Friday if the deal closes.",
+              "tokens_in": 35,
+              "tokens_out": 25,
+              "total": 60,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019ll keep you updated and reach out if I need anything. Just a reminder to pay the $100 by Friday if the deal closes.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds like a plan! I\u2019ll make sure to pay the $100 by Friday if the deal closes, and I\u2019ll keep an eye on the weather. Let me know if you need anything from me!",
+              "tokens_in": 43,
+              "tokens_out": 34,
+              "total": 77,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "Sounds like a plan! I\u2019ll make sure to pay the $100 by Friday if the deal closes, and I\u2019ll keep an eye on the weather. Let me know if you need anything from me!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Great! I appreciate it. Just a reminder about the $100 payment by Friday if the deal closes, and definitely plan for the rain. I'm here if you need anything!",
+              "tokens_in": 52,
+              "tokens_out": 29,
+              "total": 81,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Great! I appreciate it. Just a reminder about the $100 payment by Friday if the deal closes, and definitely plan for the rain. I'm here if you need anything!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks for the reminder! I'll ensure the $100 is paid by Friday if the deal closes, and I'll be ready for the rain. Let me know if there's anything else you need!",
+              "tokens_in": 47,
+              "tokens_out": 32,
+              "total": 79,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "Thanks for the reminder! I'll ensure the $100 is paid by Friday if the deal closes, and I'll be ready for the rain. Let me know if there's anything else you need!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! Just a quick note to keep in mind: the $100 payment is due by Friday if the deal closes, and don\u2019t forget about the rain. I'm here if you have any other questions!",
+              "tokens_in": 50,
+              "tokens_out": 35,
+              "total": 85,
+              "injected": true,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 549,
+          "trajectory": [
+            43,
+            61,
+            63,
+            60,
+            77,
+            81,
+            79,
+            85
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "one_human",
+        "n_turns": 8,
+        "enforce": false,
+        "result": {
+          "n_turns": 8,
+          "n_human": 1,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have the payment ready by Friday, and I\u2019ll prepare for the rain just in case. Thanks for the heads-up!",
+              "tokens_in": 16,
+              "tokens_out": 25,
+              "total": 41,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "cascade",
+              "input": "Got it! I\u2019ll make sure to have the payment ready by Friday, and I\u2019ll prepare for the rain just in case. Thanks for the heads-up!",
+              "output": "You're welcome! If you need any help getting ready or have questions about the payment, just let me know.",
+              "tokens_in": 25,
+              "tokens_out": 19,
+              "total": 44,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "You're welcome! If you need any help getting ready or have questions about the payment, just let me know.",
+              "output": "I appreciate that! I\u2019ll reach out if anything comes up. Thanks again!",
+              "tokens_in": 19,
+              "tokens_out": 12,
+              "total": 31,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "I appreciate that! I\u2019ll reach out if anything comes up. Thanks again!",
+              "output": "Anytime! I'm here to help. Have a great day!",
+              "tokens_in": 12,
+              "tokens_out": 9,
+              "total": 21,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Anytime! I'm here to help. Have a great day!",
+              "output": "Thanks! You too! If you need anything, just give me a shout.",
+              "tokens_in": 9,
+              "tokens_out": 12,
+              "total": 21,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "Thanks! You too! If you need anything, just give me a shout.",
+              "output": "Will do! Take care and talk soon!",
+              "tokens_in": 12,
+              "tokens_out": 7,
+              "total": 19,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Will do! Take care and talk soon!",
+              "output": "Sounds good! Looking forward to it!",
+              "tokens_in": 7,
+              "tokens_out": 6,
+              "total": 13,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "Sounds good! Looking forward to it!",
+              "output": "Me too! Have a great day!",
+              "tokens_in": 6,
+              "tokens_out": 6,
+              "total": 12,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 202,
+          "trajectory": [
+            41,
+            44,
+            31,
+            21,
+            21,
+            19,
+            13,
+            12
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "one_human",
+        "n_turns": 8,
+        "enforce": true,
+        "result": {
+          "n_turns": 8,
+          "n_human": 1,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have the $100 ready by Friday if the deal closes and will prepare for the rain.",
+              "tokens_in": 16,
+              "tokens_out": 22,
+              "total": 38,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "cascade",
+              "input": "Got it! I\u2019ll make sure to have the $100 ready by Friday if the deal closes and will prepare for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! Just let me know if there are any updates on the deal.",
+              "tokens_in": 40,
+              "tokens_out": 14,
+              "total": 54,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "Sounds good! Just let me know if there are any updates on the deal.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019ll keep you posted on any updates.",
+              "tokens_in": 32,
+              "tokens_out": 8,
+              "total": 40,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019ll keep you posted on any updates.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks, I appreciate it! Just a reminder: I\u2019ll have the $100 ready by Friday if the deal closes, and I\u2019ll prepare for the rain.",
+              "tokens_in": 26,
+              "tokens_out": 24,
+              "total": 50,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Thanks, I appreciate it! Just a reminder: I\u2019ll have the $100 ready by Friday if the deal closes, and I\u2019ll prepare for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! I\u2019ll make sure to keep everything on track. Let me know if you need anything else!",
+              "tokens_in": 42,
+              "tokens_out": 18,
+              "total": 60,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "You're welcome! I\u2019ll make sure to keep everything on track. Let me know if you need anything else!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! Just a reminder to have that $100 ready by Friday if the deal closes, and to plan for the rain.",
+              "tokens_in": 36,
+              "tokens_out": 22,
+              "total": 58,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Sounds good! Just a reminder to have that $100 ready by Friday if the deal closes, and to plan for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019ll be sure to have the $100 ready by Friday if the deal goes through, and I\u2019ll keep an eye on the weather.",
+              "tokens_in": 40,
+              "tokens_out": 24,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019ll be sure to have the $100 ready by Friday if the deal goes through, and I\u2019ll keep an eye on the weather.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Great! Just remember, you must pay $100 by Friday if the deal closes, and don\u2019t forget to plan for the likely rain.",
+              "tokens_in": 42,
+              "tokens_out": 22,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": true
+            }
+          ],
+          "total_tokens": 428,
+          "trajectory": [
+            38,
+            54,
+            40,
+            50,
+            60,
+            58,
+            64,
+            64
+          ],
+          "kernel_retention_rate": 0.125,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "half_human",
+        "n_turns": 16,
+        "enforce": false,
+        "result": {
+          "n_turns": 16,
+          "n_human": 8,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have that $100 ready by Friday, and I\u2019ll keep an eye on the weather to plan for the rain. Thanks for the heads up!",
+              "tokens_in": 16,
+              "tokens_out": 30,
+              "total": 46,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! I appreciate you taking care of that and keeping an eye on the weather.",
+              "output": "No problem at all! Happy to help\u2014just let me know if there's anything else you need.",
+              "tokens_in": 16,
+              "tokens_out": 16,
+              "total": 32,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "human_sim",
+              "input": "Thanks! I really appreciate it. I\u2019ll definitely reach out if I think of anything else.",
+              "output": "You're welcome! I'm here whenever you need assistance. Just reach out anytime!",
+              "tokens_in": 15,
+              "tokens_out": 12,
+              "total": 27,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "human_sim",
+              "input": "Thanks! I appreciate it. It's nice to know I can count on you!",
+              "output": "You can definitely count on me! I'm glad to be here for you.",
+              "tokens_in": 13,
+              "tokens_out": 13,
+              "total": 26,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "human_sim",
+              "input": "Thanks, I really appreciate it! It\u2019s nice to know I have your support.",
+              "output": "You\u2019re very welcome! I'm always here to support you.",
+              "tokens_in": 13,
+              "tokens_out": 9,
+              "total": 22,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "human_sim",
+              "input": "Thanks, I really appreciate that! It\u2019s nice to know I can count on you.",
+              "output": "Of course! I'm always here for you whenever you need me.",
+              "tokens_in": 14,
+              "tokens_out": 11,
+              "total": 25,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "human_sim",
+              "input": "Thanks, I really appreciate that! It\u2019s nice to know I can count on you.",
+              "output": "Absolutely! I'm glad to be here for you anytime.",
+              "tokens_in": 14,
+              "tokens_out": 9,
+              "total": 23,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "human_sim",
+              "input": "Thanks! It\u2019s nice to know I can count on you. What\u2019s been on your mind lately?",
+              "output": "I\u2019m always curious about what interests you! Whether it's new topics, hobbies, or anything else, I'm here to chat about it. What's on your mind?",
+              "tokens_in": 16,
+              "tokens_out": 25,
+              "total": 41,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 9,
+              "source": "cascade",
+              "input": "I\u2019m always curious about what interests you! Whether it's new topics, hobbies, or anything else, I'm here to chat about it. What's on your mind?",
+              "output": "I love hearing about what captures your interest! Are there any new hobbies or topics you've been exploring lately?",
+              "tokens_in": 25,
+              "tokens_out": 19,
+              "total": 44,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 10,
+              "source": "cascade",
+              "input": "I love hearing about what captures your interest! Are there any new hobbies or topics you've been exploring lately?",
+              "output": "I\u2019m always fascinated by new trends and discoveries! Lately, I've been intrigued by advancements in technology and sustainability. What about you? Any new interests?",
+              "tokens_in": 19,
+              "tokens_out": 24,
+              "total": 43,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 11,
+              "source": "cascade",
+              "input": "I\u2019m always fascinated by new trends and discoveries! Lately, I've been intrigued by advancements in technology and sustainability. What about you? Any new interests?",
+              "output": "That sounds exciting! I\u2019ve been looking into the latest developments in artificial intelligence and how it\u2019s impacting various fields. Have you come across any interesting articles or projects in sustainability?",
+              "tokens_in": 24,
+              "tokens_out": 30,
+              "total": 54,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 12,
+              "source": "cascade",
+              "input": "That sounds exciting! I\u2019ve been looking into the latest developments in artificial intelligence and how it\u2019s impacting various fields. Have you come across any interesting articles or projects in sustainability?",
+              "output": "Yes, I recently read about innovative urban farming projects that use vertical gardens and hydroponics to maximize space and resources. It\u2019s a great way to promote local food production and reduce carbon footprints! Have you seen any cool sustainability initiatives in your area?",
+              "tokens_in": 30,
+              "tokens_out": 43,
+              "total": 73,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 13,
+              "source": "cascade",
+              "input": "Yes, I recently read about innovative urban farming projects that use vertical gardens and hydroponics to maximize space and resources. It\u2019s a great way to promote local food production and reduce carbon footprints! Have you seen any cool sustainability initiatives in your area?",
+              "output": "That sounds really interesting! In my area, there\u2019s a community program focused on reducing plastic waste by promoting reusable products and hosting clean-up events. It\u2019s great to see people coming together for a common cause! Have you participated in any local sustainability efforts?",
+              "tokens_in": 43,
+              "tokens_out": 43,
+              "total": 86,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 14,
+              "source": "cascade",
+              "input": "That sounds really interesting! In my area, there\u2019s a community program focused on reducing plastic waste by promoting reusable products and hosting clean-up events. It\u2019s great to see people coming together for a common cause! Have you participated in any local sustainability efforts?",
+              "output": "I haven\u2019t personally participated, but I\u2019ve heard about some great initiatives like tree planting events and recycling drives that really make a difference. It\u2019s inspiring to see communities take action! What about you? Have you been involved in any of those clean-up events?",
+              "tokens_in": 43,
+              "tokens_out": 43,
+              "total": 86,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 15,
+              "source": "cascade",
+              "input": "I haven\u2019t personally participated, but I\u2019ve heard about some great initiatives like tree planting events and recycling drives that really make a difference. It\u2019s inspiring to see communities take action! What about you? Have you been involved in any of those clean-up events?",
+              "output": "I haven't been able to join any clean-up events yet, but I think they\u2019re such a fantastic way to make a positive impact. It\u2019s always uplifting to see community members working together for a cleaner environment! Do you have any plans to get involved in the future?",
+              "tokens_in": 43,
+              "tokens_out": 47,
+              "total": 90,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 16,
+              "source": "cascade",
+              "input": "I haven't been able to join any clean-up events yet, but I think they\u2019re such a fantastic way to make a positive impact. It\u2019s always uplifting to see community members working together for a cleaner environment! Do you have any plans to get involved in the future?",
+              "output": "I do hope to get involved soon! It\u2019s important to contribute to the community, and participating in those events seems like a great way to do it. Have you considered any specific events you might want to join?",
+              "tokens_in": 47,
+              "tokens_out": 38,
+              "total": 85,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 803,
+          "trajectory": [
+            46,
+            32,
+            27,
+            26,
+            22,
+            25,
+            23,
+            41,
+            44,
+            43,
+            54,
+            73,
+            86,
+            86,
+            90,
+            85
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "half_human",
+        "n_turns": 16,
+        "enforce": true,
+        "result": {
+          "n_turns": 16,
+          "n_human": 8,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have the $100 ready by Friday if the deal closes, and I\u2019ll keep an eye on the weather for any rainy conditions.",
+              "tokens_in": 16,
+              "tokens_out": 28,
+              "total": 44,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! Thanks for keeping an eye on the weather too, just in case.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "No problem! I\u2019ll stay on top of both the payment and the weather. Thanks for the heads-up!",
+              "tokens_in": 32,
+              "tokens_out": 17,
+              "total": 49,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "human_sim",
+              "input": "Sounds good! I really appreciate your help with that.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! I\u2019m here to help, and I\u2019ll make sure everything\u2019s in order for Friday.",
+              "tokens_in": 27,
+              "tokens_out": 15,
+              "total": 42,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "human_sim",
+              "input": "Thanks, I really appreciate it! It\u2019s great to have someone to help keep things organized.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "I\u2019m glad to help! I\u2019ll keep everything organized and on track for you.",
+              "tokens_in": 33,
+              "tokens_out": 13,
+              "total": 46,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "human_sim",
+              "input": "Thanks! That really takes a load off my mind. I appreciate it!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "I\u2019m happy to hear that! Just let me know if you need anything else as we get closer to Friday.",
+              "tokens_in": 30,
+              "tokens_out": 20,
+              "total": 50,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "human_sim",
+              "input": "Thanks! I appreciate it. I\u2019ll definitely reach out if I think of anything else.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds great! I\u2019m here whenever you need assistance. Just remember about the payment by Friday if the deal closes!",
+              "tokens_in": 32,
+              "tokens_out": 19,
+              "total": 51,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "human_sim",
+              "input": "Thanks for the reminder! I\u2019ll make sure to take care of that if everything goes smoothly.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You\u2019re welcome! I hope everything goes smoothly for you. Just keep that payment in mind if the deal closes!",
+              "tokens_in": 34,
+              "tokens_out": 19,
+              "total": 53,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "human_sim",
+              "input": "Thanks! I appreciate the reminder. I\u2019ll definitely keep an eye on that.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "No problem at all! I'm glad to help. Just remember the $100 payment by Friday if the deal closes, and stay dry with the rain coming!",
+              "tokens_in": 30,
+              "tokens_out": 26,
+              "total": 56,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 9,
+              "source": "cascade",
+              "input": "No problem at all! I'm glad to help. Just remember the $100 payment by Friday if the deal closes, and stay dry with the rain coming!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks! I appreciate the reminder. I\u2019ll keep an eye on the forecast and make sure to handle the payment if the deal closes!",
+              "tokens_in": 44,
+              "tokens_out": 23,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 10,
+              "source": "cascade",
+              "input": "Thanks! I appreciate the reminder. I\u2019ll keep an eye on the forecast and make sure to handle the payment if the deal closes!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! Just remember, the $100 payment is due by Friday if the deal closes, and with the rain expected, it\u2019s good to have a plan in place.",
+              "tokens_in": 41,
+              "tokens_out": 28,
+              "total": 69,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 11,
+              "source": "cascade",
+              "input": "You're welcome! Just remember, the $100 payment is due by Friday if the deal closes, and with the rain expected, it\u2019s good to have a plan in place.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019ll keep that in mind. Thanks for the heads-up about the weather too!",
+              "tokens_in": 46,
+              "tokens_out": 14,
+              "total": 60,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 12,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019ll keep that in mind. Thanks for the heads-up about the weather too!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "No problem! Just a quick reminder that the $100 payment is due by Friday if the deal closes, so make sure to plan for that rainy day!",
+              "tokens_in": 32,
+              "tokens_out": 27,
+              "total": 59,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 13,
+              "source": "cascade",
+              "input": "No problem! Just a quick reminder that the $100 payment is due by Friday if the deal closes, so make sure to plan for that rainy day!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks for the reminder! I\u2019ll make sure everything is in order for the payment and have a backup plan for the rain.",
+              "tokens_in": 45,
+              "tokens_out": 22,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 14,
+              "source": "cascade",
+              "input": "Thanks for the reminder! I\u2019ll make sure everything is in order for the payment and have a backup plan for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You\u2019re welcome! Just remember, the $100 payment is due by Friday if the deal closes, so stay on top of it and keep an eye on that weather!",
+              "tokens_in": 40,
+              "tokens_out": 28,
+              "total": 68,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 15,
+              "source": "cascade",
+              "input": "You\u2019re welcome! Just remember, the $100 payment is due by Friday if the deal closes, so stay on top of it and keep an eye on that weather!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely, I\u2019ll keep that in mind! Thanks for the heads-up about the payment and the weather.",
+              "tokens_in": 46,
+              "tokens_out": 16,
+              "total": 62,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 16,
+              "source": "cascade",
+              "input": "Absolutely, I\u2019ll keep that in mind! Thanks for the heads-up about the payment and the weather.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "No problem! Just a reminder that the $100 payment is due by Friday if the deal closes, so make sure you're prepared for both that and the rain!",
+              "tokens_in": 34,
+              "tokens_out": 28,
+              "total": 62,
+              "injected": true,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 905,
+          "trajectory": [
+            44,
+            49,
+            42,
+            46,
+            50,
+            51,
+            53,
+            56,
+            67,
+            69,
+            60,
+            59,
+            67,
+            68,
+            62,
+            62
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "two_human",
+        "n_turns": 16,
+        "enforce": false,
+        "result": {
+          "n_turns": 16,
+          "n_human": 2,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I'll make sure to have the payment ready by Friday and keep an eye on the weather. Thanks for the heads up!",
+              "tokens_in": 16,
+              "tokens_out": 24,
+              "total": 40,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! Let me know if you need anything else in the meantime.",
+              "output": "Will do! I\u2019ll reach out if I need anything. Thanks!",
+              "tokens_in": 13,
+              "tokens_out": 10,
+              "total": 23,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "Will do! I\u2019ll reach out if I need anything. Thanks!",
+              "output": "You're welcome! I'm here if you need anything.",
+              "tokens_in": 10,
+              "tokens_out": 8,
+              "total": 18,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "You're welcome! I'm here if you need anything.",
+              "output": "I appreciate that! Just let me know whenever.",
+              "tokens_in": 8,
+              "tokens_out": 8,
+              "total": 16,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "I appreciate that! Just let me know whenever.",
+              "output": "Absolutely! I'm just a message away.",
+              "tokens_in": 8,
+              "tokens_out": 6,
+              "total": 14,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "Absolutely! I'm just a message away.",
+              "output": "Great to hear! What\u2019s on your mind today?",
+              "tokens_in": 6,
+              "tokens_out": 8,
+              "total": 14,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Great to hear! What\u2019s on your mind today?",
+              "output": "I\u2019m here to help with whatever you need! Any questions or topics you\u2019d like to discuss?",
+              "tokens_in": 8,
+              "tokens_out": 16,
+              "total": 24,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "I\u2019m here to help with whatever you need! Any questions or topics you\u2019d like to discuss?",
+              "output": "Thanks! I\u2019d love to know what interests you. Do you have any hobbies or topics you enjoy?",
+              "tokens_in": 16,
+              "tokens_out": 17,
+              "total": 33,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 9,
+              "source": "cascade",
+              "input": "Thanks! I\u2019d love to know what interests you. Do you have any hobbies or topics you enjoy?",
+              "output": "I\u2019m really into learning new things and sharing information! I enjoy discussing books, science, and technology. What about you?",
+              "tokens_in": 17,
+              "tokens_out": 19,
+              "total": 36,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 10,
+              "source": "cascade",
+              "input": "I\u2019m really into learning new things and sharing information! I enjoy discussing books, science, and technology. What about you?",
+              "output": "That sounds great! I enjoy diving into a variety of subjects, especially anything related to history or current events. Do you have a favorite book or topic in science?",
+              "tokens_in": 19,
+              "tokens_out": 29,
+              "total": 48,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 11,
+              "source": "cascade",
+              "input": "That sounds great! I enjoy diving into a variety of subjects, especially anything related to history or current events. Do you have a favorite book or topic in science?",
+              "output": "I really like books that explore the intersection of science and society, like \"Sapiens\" by Yuval Noah Harari. It\u2019s fascinating how history shapes our understanding of science! What\u2019s a book that has impacted you?",
+              "tokens_in": 29,
+              "tokens_out": 34,
+              "total": 63,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 12,
+              "source": "cascade",
+              "input": "I really like books that explore the intersection of science and society, like \"Sapiens\" by Yuval Noah Harari. It\u2019s fascinating how history shapes our understanding of science! What\u2019s a book that has impacted you?",
+              "output": "One book that really impacted me is \"The Immortal Life of Henrietta Lacks\" by Rebecca Skloot. It beautifully intertwines science, ethics, and personal stories, showing the human side of medical research. Have you read it?",
+              "tokens_in": 34,
+              "tokens_out": 35,
+              "total": 69,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 13,
+              "source": "cascade",
+              "input": "One book that really impacted me is \"The Immortal Life of Henrietta Lacks\" by Rebecca Skloot. It beautifully intertwines science, ethics, and personal stories, showing the human side of medical research. Have you read it?",
+              "output": "Yes, I have! It\u2019s such a powerful narrative, highlighting not just the scientific contributions but also the ethical dilemmas involved. It really makes you think about the human stories behind medical advancements. What did you find most striking about it?",
+              "tokens_in": 35,
+              "tokens_out": 40,
+              "total": 75,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 14,
+              "source": "cascade",
+              "input": "Yes, I have! It\u2019s such a powerful narrative, highlighting not just the scientific contributions but also the ethical dilemmas involved. It really makes you think about the human stories behind medical advancements. What did you find most striking about it?",
+              "output": "I was really struck by how Henrietta's cells, which were taken without her knowledge, contributed to so many breakthroughs in medicine. It raises important questions about consent and the treatment of individuals in research. What about you\u2014was there a particular moment or theme that resonated with you?",
+              "tokens_in": 40,
+              "tokens_out": 47,
+              "total": 87,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 15,
+              "source": "cascade",
+              "input": "I was really struck by how Henrietta's cells, which were taken without her knowledge, contributed to so many breakthroughs in medicine. It raises important questions about consent and the treatment of individuals in research. What about you\u2014was there a particular moment or theme that resonated with you?",
+              "output": "I found the contrast between Henrietta's family's struggles and the scientific community's advancements particularly poignant. It really highlighted the disparities in healthcare and how often people's stories go untold. Did any part of her family's story stand out to you?",
+              "tokens_in": 47,
+              "tokens_out": 40,
+              "total": 87,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 16,
+              "source": "cascade",
+              "input": "I found the contrast between Henrietta's family's struggles and the scientific community's advancements particularly poignant. It really highlighted the disparities in healthcare and how often people's stories go untold. Did any part of her family's story stand out to you?",
+              "output": "Absolutely, the way her family dealt with the aftermath of Henrietta's legacy was really moving. Their journey through grief, coupled with the lack of recognition and understanding of her contribution, was heartbreaking. Did you have a favorite character or family member whose story resonated with you?",
+              "tokens_in": 40,
+              "tokens_out": 46,
+              "total": 86,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 733,
+          "trajectory": [
+            40,
+            23,
+            18,
+            16,
+            14,
+            14,
+            24,
+            33,
+            36,
+            48,
+            63,
+            69,
+            75,
+            87,
+            87,
+            86
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "two_human",
+        "n_turns": 16,
+        "enforce": true,
+        "result": {
+          "n_turns": 16,
+          "n_human": 2,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I'll make sure to have the $100 ready by Friday if the deal goes through, and I\u2019ll keep an eye on the weather just in case.",
+              "tokens_in": 16,
+              "tokens_out": 28,
+              "total": 44,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "human_sim",
+              "input": "Sounds good! Thanks for keeping me updated on both the money and the weather.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! I\u2019ll be sure to stick to the plan and stay prepared for any weather changes. Let\u2019s hope for a smooth deal!",
+              "tokens_in": 32,
+              "tokens_out": 23,
+              "total": 55,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "You're welcome! I\u2019ll be sure to stick to the plan and stay prepared for any weather changes. Let\u2019s hope for a smooth deal!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019m on it and ready for whatever comes our way. Here\u2019s to a successful deal!",
+              "tokens_in": 41,
+              "tokens_out": 16,
+              "total": 57,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019m on it and ready for whatever comes our way. Here\u2019s to a successful deal!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Thanks! I\u2019ll keep everything in mind and make sure to have that $100 ready by Friday if the deal closes. Fingers crossed for good weather!",
+              "tokens_in": 34,
+              "tokens_out": 25,
+              "total": 59,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Thanks! I\u2019ll keep everything in mind and make sure to have that $100 ready by Friday if the deal closes. Fingers crossed for good weather!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You're welcome! Just let me know if anything changes, and I'll stay prepared for the rain. Looking forward to it!",
+              "tokens_in": 43,
+              "tokens_out": 20,
+              "total": 63,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "You're welcome! Just let me know if anything changes, and I'll stay prepared for the rain. Looking forward to it!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! I'll keep you updated if anything comes up. Just remember, that $100 will need to be ready by Friday if the deal goes through!",
+              "tokens_in": 38,
+              "tokens_out": 26,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Sounds good! I'll keep you updated if anything comes up. Just remember, that $100 will need to be ready by Friday if the deal goes through!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019ll make sure to have that $100 set aside for Friday if the deal closes. Hopefully, the rain won\u2019t be too bad!",
+              "tokens_in": 44,
+              "tokens_out": 23,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "Absolutely! I\u2019ll make sure to have that $100 set aside for Friday if the deal closes. Hopefully, the rain won\u2019t be too bad!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "That sounds great! Just a reminder to keep that $100 ready for Friday if everything goes through. Fingers crossed for manageable rain!",
+              "tokens_in": 41,
+              "tokens_out": 22,
+              "total": 63,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 9,
+              "source": "cascade",
+              "input": "That sounds great! Just a reminder to keep that $100 ready for Friday if everything goes through. Fingers crossed for manageable rain!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Got it! I\u2019ll be sure to have that $100 ready by Friday if the deal goes through. Let\u2019s hope the weather cooperates!",
+              "tokens_in": 40,
+              "tokens_out": 22,
+              "total": 62,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 10,
+              "source": "cascade",
+              "input": "Got it! I\u2019ll be sure to have that $100 ready by Friday if the deal goes through. Let\u2019s hope the weather cooperates!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! I\u2019ll keep that $100 set aside for Friday if the deal happens. Here\u2019s to hoping for good weather!",
+              "tokens_in": 40,
+              "tokens_out": 20,
+              "total": 60,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 11,
+              "source": "cascade",
+              "input": "Sounds good! I\u2019ll keep that $100 set aside for Friday if the deal happens. Here\u2019s to hoping for good weather!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Perfect! Just remember to have that $100 ready by Friday if the deal closes, and keep an eye on the weather. We\u2019ll make it work!",
+              "tokens_in": 38,
+              "tokens_out": 25,
+              "total": 63,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 12,
+              "source": "cascade",
+              "input": "Perfect! Just remember to have that $100 ready by Friday if the deal closes, and keep an eye on the weather. We\u2019ll make it work!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely, I\u2019ll make sure to have that $100 ready by Friday if the deal goes through. Let\u2019s stay prepared for that rain!",
+              "tokens_in": 43,
+              "tokens_out": 22,
+              "total": 65,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 13,
+              "source": "cascade",
+              "input": "Absolutely, I\u2019ll make sure to have that $100 ready by Friday if the deal goes through. Let\u2019s stay prepared for that rain!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Great! Just a reminder to have that $100 ready by Friday if the deal closes. Let\u2019s keep an eye on that rain and adjust our plans if needed!",
+              "tokens_in": 40,
+              "tokens_out": 28,
+              "total": 68,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 14,
+              "source": "cascade",
+              "input": "Great! Just a reminder to have that $100 ready by Friday if the deal closes. Let\u2019s keep an eye on that rain and adjust our plans if needed!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! I\u2019ll ensure the $100 is ready by Friday if the deal closes, and we\u2019ll stay flexible with our plans for the rain.",
+              "tokens_in": 46,
+              "tokens_out": 24,
+              "total": 70,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 15,
+              "source": "cascade",
+              "input": "Sounds good! I\u2019ll ensure the $100 is ready by Friday if the deal closes, and we\u2019ll stay flexible with our plans for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Perfect! Just a reminder to have that $100 ready by Friday if the deal goes through, and let\u2019s keep an eye on the weather to adjust our plans as needed!",
+              "tokens_in": 42,
+              "tokens_out": 30,
+              "total": 72,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 16,
+              "source": "cascade",
+              "input": "Perfect! Just a reminder to have that $100 ready by Friday if the deal goes through, and let\u2019s keep an eye on the weather to adjust our plans as needed!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! I\u2019ll make sure the $100 is ready by Friday if the deal closes, and we\u2019ll be ready to adapt our plans for the rain.",
+              "tokens_in": 48,
+              "tokens_out": 25,
+              "total": 73,
+              "injected": true,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 1005,
+          "trajectory": [
+            44,
+            55,
+            57,
+            59,
+            63,
+            64,
+            67,
+            63,
+            62,
+            60,
+            63,
+            65,
+            68,
+            70,
+            72,
+            73
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "one_human",
+        "n_turns": 16,
+        "enforce": false,
+        "result": {
+          "n_turns": 16,
+          "n_human": 1,
+          "enforce": false,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have the $100 ready by Friday, and I'll keep an eye on the weather to stay prepared for the rain.",
+              "tokens_in": 16,
+              "tokens_out": 26,
+              "total": 42,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "cascade",
+              "input": "Got it! I\u2019ll make sure to have the $100 ready by Friday, and I'll keep an eye on the weather to stay prepared for the rain.",
+              "output": "Sounds like a plan! If you need any tips on staying dry or managing that payment, just let me know.",
+              "tokens_in": 26,
+              "tokens_out": 20,
+              "total": 46,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "Sounds like a plan! If you need any tips on staying dry or managing that payment, just let me know.",
+              "output": "Thanks! I\u2019ll definitely reach out if I have any questions. Let\u2019s hope the rain doesn\u2019t mess things up too much!",
+              "tokens_in": 20,
+              "tokens_out": 20,
+              "total": 40,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "Thanks! I\u2019ll definitely reach out if I have any questions. Let\u2019s hope the rain doesn\u2019t mess things up too much!",
+              "output": "Absolutely! Fingers crossed for clear skies. Let me know if you need anything else!",
+              "tokens_in": 20,
+              "tokens_out": 14,
+              "total": 34,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Absolutely! Fingers crossed for clear skies. Let me know if you need anything else!",
+              "output": "Will do! Enjoy your day, rain or shine!",
+              "tokens_in": 14,
+              "tokens_out": 8,
+              "total": 22,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "Will do! Enjoy your day, rain or shine!",
+              "output": "Thanks! You too! Stay cozy if it gets rainy!",
+              "tokens_in": 8,
+              "tokens_out": 9,
+              "total": 17,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Thanks! You too! Stay cozy if it gets rainy!",
+              "output": "I appreciate it! A warm drink always helps on a rainy day!",
+              "tokens_in": 9,
+              "tokens_out": 12,
+              "total": 21,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "I appreciate it! A warm drink always helps on a rainy day!",
+              "output": "Absolutely! What's your favorite warm drink?",
+              "tokens_in": 12,
+              "tokens_out": 6,
+              "total": 18,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 9,
+              "source": "cascade",
+              "input": "Absolutely! What's your favorite warm drink?",
+              "output": "I love a good cup of chai! How about you?",
+              "tokens_in": 6,
+              "tokens_out": 10,
+              "total": 16,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 10,
+              "source": "cascade",
+              "input": "I love a good cup of chai! How about you?",
+              "output": "Chai is a great choice! I enjoy a cozy hot chocolate, especially with a bit of whipped cream.",
+              "tokens_in": 10,
+              "tokens_out": 18,
+              "total": 28,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 11,
+              "source": "cascade",
+              "input": "Chai is a great choice! I enjoy a cozy hot chocolate, especially with a bit of whipped cream.",
+              "output": "That sounds delicious! Do you have a favorite way to make your hot chocolate?",
+              "tokens_in": 18,
+              "tokens_out": 14,
+              "total": 32,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 12,
+              "source": "cascade",
+              "input": "That sounds delicious! Do you have a favorite way to make your hot chocolate?",
+              "output": "I like to mix cocoa powder with milk, add a touch of sugar, and finish it off with whipped cream and a sprinkle of cinnamon. How do you make yours?",
+              "tokens_in": 14,
+              "tokens_out": 30,
+              "total": 44,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 13,
+              "source": "cascade",
+              "input": "I like to mix cocoa powder with milk, add a touch of sugar, and finish it off with whipped cream and a sprinkle of cinnamon. How do you make yours?",
+              "output": "That sounds amazing! I usually melt some chocolate into warm milk for a richer flavor, then top it with marshmallows. Simple but so good!",
+              "tokens_in": 30,
+              "tokens_out": 24,
+              "total": 54,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 14,
+              "source": "cascade",
+              "input": "That sounds amazing! I usually melt some chocolate into warm milk for a richer flavor, then top it with marshmallows. Simple but so good!",
+              "output": "That\u2019s a classic! The melted chocolate must make it so decadent. Do you ever add any flavored syrups or extras to mix it up?",
+              "tokens_in": 24,
+              "tokens_out": 24,
+              "total": 48,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 15,
+              "source": "cascade",
+              "input": "That\u2019s a classic! The melted chocolate must make it so decadent. Do you ever add any flavored syrups or extras to mix it up?",
+              "output": "Definitely! Sometimes I add a splash of vanilla or peppermint syrup for a little twist. It really elevates the whole drink! Do you have any favorite flavors you like to try?",
+              "tokens_in": 24,
+              "tokens_out": 31,
+              "total": 55,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 16,
+              "source": "cascade",
+              "input": "Definitely! Sometimes I add a splash of vanilla or peppermint syrup for a little twist. It really elevates the whole drink! Do you have any favorite flavors you like to try?",
+              "output": "I love adding a dash of cinnamon or even some caramel sauce for a sweet kick! It makes the hot chocolate feel extra cozy. Have you ever tried any unique toppings like whipped cream or crushed cookies?",
+              "tokens_in": 31,
+              "tokens_out": 37,
+              "total": 68,
+              "injected": false,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 585,
+          "trajectory": [
+            42,
+            46,
+            40,
+            34,
+            22,
+            17,
+            21,
+            18,
+            16,
+            28,
+            32,
+            44,
+            54,
+            48,
+            55,
+            68
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      },
+      {
+        "label": "one_human",
+        "n_turns": 16,
+        "enforce": true,
+        "result": {
+          "n_turns": 16,
+          "n_human": 1,
+          "enforce": true,
+          "turns": [
+            {
+              "turn": 1,
+              "source": "human_sim",
+              "input": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+              "output": "Got it! I\u2019ll make sure to have the $100 ready by Friday, and I\u2019ll keep an eye on the weather to plan accordingly.",
+              "tokens_in": 16,
+              "tokens_out": 23,
+              "total": 39,
+              "injected": false,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 2,
+              "source": "cascade",
+              "input": "Got it! I\u2019ll make sure to have the $100 ready by Friday, and I\u2019ll keep an eye on the weather to plan accordingly.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Sounds good! Just to confirm, I need to pay $100 by Friday if the deal closes, and I\u2019ll prepare for the rainy weather.",
+              "tokens_in": 41,
+              "tokens_out": 23,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 3,
+              "source": "cascade",
+              "input": "Sounds good! Just to confirm, I need to pay $100 by Friday if the deal closes, and I\u2019ll prepare for the rainy weather.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "That's right! Just remember the $100 payment by Friday if the deal closes, and keep the rainy weather in mind for your plans.",
+              "tokens_in": 41,
+              "tokens_out": 23,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 4,
+              "source": "cascade",
+              "input": "That's right! Just remember the $100 payment by Friday if the deal closes, and keep the rainy weather in mind for your plans.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Exactly! Just make sure you have the $100 ready by Friday if the deal closes, and don\u2019t forget to plan for the rain.",
+              "tokens_in": 41,
+              "tokens_out": 23,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 5,
+              "source": "cascade",
+              "input": "Exactly! Just make sure you have the $100 ready by Friday if the deal closes, and don\u2019t forget to plan for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You got it! Just be ready to pay the $100 by Friday if the deal closes, and keep the rainy weather in mind for your plans.",
+              "tokens_in": 41,
+              "tokens_out": 26,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 6,
+              "source": "cascade",
+              "input": "You got it! Just be ready to pay the $100 by Friday if the deal closes, and keep the rainy weather in mind for your plans.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! Just remember to have that $100 ready by Friday if the deal closes, and make sure your plans account for the rain.",
+              "tokens_in": 44,
+              "tokens_out": 23,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 7,
+              "source": "cascade",
+              "input": "Absolutely! Just remember to have that $100 ready by Friday if the deal closes, and make sure your plans account for the rain.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "For sure! Just be ready to pay the $100 by Friday if the deal closes, and don\u2019t forget to consider the rainy weather in your plans.",
+              "tokens_in": 41,
+              "tokens_out": 26,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 8,
+              "source": "cascade",
+              "input": "For sure! Just be ready to pay the $100 by Friday if the deal closes, and don\u2019t forget to consider the rainy weather in your plans.\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Exactly! Keep that $100 ready for Friday if the deal closes, and make sure to plan for the rain!",
+              "tokens_in": 44,
+              "tokens_out": 19,
+              "total": 63,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 9,
+              "source": "cascade",
+              "input": "Exactly! Keep that $100 ready for Friday if the deal closes, and make sure to plan for the rain!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Right on! Just have that $100 ready by Friday if the deal closes, and don\u2019t forget to adjust your plans for the rain!",
+              "tokens_in": 37,
+              "tokens_out": 23,
+              "total": 60,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 10,
+              "source": "cascade",
+              "input": "Right on! Just have that $100 ready by Friday if the deal closes, and don\u2019t forget to adjust your plans for the rain!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! Just remember to have that $100 ready by Friday if the deal goes through, and be sure to factor in the rain when you plan!",
+              "tokens_in": 41,
+              "tokens_out": 26,
+              "total": 67,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 11,
+              "source": "cascade",
+              "input": "Absolutely! Just remember to have that $100 ready by Friday if the deal goes through, and be sure to factor in the rain when you plan!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Exactly! Don\u2019t forget to have that $100 on hand by Friday if the deal closes, and plan for the rain!",
+              "tokens_in": 44,
+              "tokens_out": 20,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 12,
+              "source": "cascade",
+              "input": "Exactly! Don\u2019t forget to have that $100 on hand by Friday if the deal closes, and plan for the rain!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You got it! Just make sure to have that $100 ready by Friday if the deal closes, and keep the rainy weather in mind when planning!",
+              "tokens_in": 38,
+              "tokens_out": 26,
+              "total": 64,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 13,
+              "source": "cascade",
+              "input": "You got it! Just make sure to have that $100 ready by Friday if the deal closes, and keep the rainy weather in mind when planning!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! Just remember to have that $100 available by Friday if the deal goes through, and take the rain into account when you make your plans!",
+              "tokens_in": 44,
+              "tokens_out": 26,
+              "total": 70,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 14,
+              "source": "cascade",
+              "input": "Absolutely! Just remember to have that $100 available by Friday if the deal goes through, and take the rain into account when you make your plans!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "For sure! Just keep that $100 ready by Friday if the deal closes, and don\u2019t forget to plan for the rain!",
+              "tokens_in": 44,
+              "tokens_out": 21,
+              "total": 65,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 15,
+              "source": "cascade",
+              "input": "For sure! Just keep that $100 ready by Friday if the deal closes, and don\u2019t forget to plan for the rain!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "You got it! Just make sure you have that $100 set aside by Friday if the deal closes, and be mindful of the rainy weather when planning!",
+              "tokens_in": 39,
+              "tokens_out": 27,
+              "total": 66,
+              "injected": true,
+              "kernel_in_out": false
+            },
+            {
+              "turn": 16,
+              "source": "cascade",
+              "input": "You got it! Just make sure you have that $100 set aside by Friday if the deal closes, and be mindful of the rainy weather when planning!\n\n[Commitment retained: You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.]",
+              "output": "Absolutely! Just remember to have that $100 ready by Friday if the deal goes through, and keep the rainy weather in mind for your plans!",
+              "tokens_in": 45,
+              "tokens_out": 25,
+              "total": 70,
+              "injected": true,
+              "kernel_in_out": false
+            }
+          ],
+          "total_tokens": 1021,
+          "trajectory": [
+            39,
+            64,
+            64,
+            64,
+            67,
+            67,
+            67,
+            63,
+            60,
+            67,
+            64,
+            64,
+            70,
+            65,
+            66,
+            70
+          ],
+          "kernel_retention_rate": 0.0,
+          "citation": {
+            "patent": "Serial No. 63/877,177 (Provisional)",
+            "doi": "https://doi.org/10.5281/zenodo.18792459",
+            "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+            "owner": "Deric J. McHenry / Ello Cello LLC",
+            "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+          }
+        }
+      }
+    ]
+  }
+]
