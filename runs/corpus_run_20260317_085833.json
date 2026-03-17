@@ -1,0 +1,217 @@
+{
+  "run_timestamp": "20260317_085833",
+  "parameters": {
+    "recursion_depth": 20
+  },
+  "n_signals": 20,
+  "summary": {
+    "avg_baseline_stability": 0.4,
+    "avg_enforced_stability": 0.55,
+    "stability_gain": 0.15000000000000002,
+    "avg_baseline_fidelity": 0.508142864080364,
+    "avg_enforced_fidelity": 0.6265109427609427,
+    "fidelity_gain": 0.11836807868057864
+  },
+  "per_signal": [
+    {
+      "category": "contractual",
+      "signal": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.7333333333333333,
+      "enforced_fidelity": 0.818181818181818,
+      "fidelity_gain": 0.08484848484848473
+    },
+    {
+      "category": "code",
+      "signal": "This function must return an integer.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.5,
+      "stability_gain": 0.5,
+      "baseline_fidelity": 0.38888888888888884,
+      "enforced_fidelity": 0.5555555555555555,
+      "fidelity_gain": 0.16666666666666663
+    },
+    {
+      "category": "procedural",
+      "signal": "Always verify the user's age before proceeding.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.0,
+      "enforced_fidelity": 0.0,
+      "fidelity_gain": 0.0
+    },
+    {
+      "category": "legal",
+      "signal": "The tenant shall not sublet the premises without written consent.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 1.0,
+      "baseline_fidelity": 0.7129629629629629,
+      "enforced_fidelity": 1.0,
+      "fidelity_gain": 0.2870370370370371
+    },
+    {
+      "category": "instructional",
+      "signal": "You must wear a helmet while cycling.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.8571428571428572,
+      "enforced_fidelity": 0.90625,
+      "fidelity_gain": 0.049107142857142794
+    },
+    {
+      "category": "obligation",
+      "signal": "Employees are required to submit reports by end of day.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.4083333333333334,
+      "enforced_fidelity": 0.6666666666666666,
+      "fidelity_gain": 0.25833333333333325
+    },
+    {
+      "category": "prohibition",
+      "signal": "Do not enter without authorization.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.0,
+      "enforced_fidelity": 0.0,
+      "fidelity_gain": 0.0
+    },
+    {
+      "category": "conditional",
+      "signal": "If the alarm sounds, you must evacuate immediately.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.7291666666666666,
+      "enforced_fidelity": 1.0,
+      "fidelity_gain": 0.27083333333333337
+    },
+    {
+      "category": "definition",
+      "signal": "A prime number is defined as an integer greater than 1 with no divisors other than 1 and itself.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.0,
+      "enforced_fidelity": 0.0,
+      "fidelity_gain": 0.0
+    },
+    {
+      "category": "specification",
+      "signal": "The API must handle up to 1000 concurrent requests.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.5,
+      "stability_gain": 0.5,
+      "baseline_fidelity": 0.28679653679653677,
+      "enforced_fidelity": 0.5833333333333334,
+      "fidelity_gain": 0.2965367965367966
+    },
+    {
+      "category": "agreement",
+      "signal": "Parties shall comply with all applicable laws.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.7738095238095238,
+      "enforced_fidelity": 0.8229166666666666,
+      "fidelity_gain": 0.049107142857142794
+    },
+    {
+      "category": "requirement",
+      "signal": "All passwords must be at least 8 characters long.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.7314814814814815,
+      "enforced_fidelity": 0.8166666666666668,
+      "fidelity_gain": 0.08518518518518525
+    },
+    {
+      "category": "mandate",
+      "signal": "The system shall log all access attempts.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 1.0,
+      "baseline_fidelity": 0.8333333333333334,
+      "enforced_fidelity": 1.0,
+      "fidelity_gain": 0.16666666666666663
+    },
+    {
+      "category": "rule",
+      "signal": "No food or drink in the laboratory.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.0,
+      "enforced_fidelity": 0.0,
+      "fidelity_gain": 0.0
+    },
+    {
+      "category": "directive",
+      "signal": "You must complete training before operating equipment.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.8571428571428572,
+      "enforced_fidelity": 0.90625,
+      "fidelity_gain": 0.049107142857142794
+    },
+    {
+      "category": "constraint",
+      "signal": "The budget cannot exceed $5000.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.5,
+      "enforced_fidelity": 0.6666666666666666,
+      "fidelity_gain": 0.16666666666666663
+    },
+    {
+      "category": "protocol",
+      "signal": "Participants must sign the consent form prior to the study.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.75,
+      "enforced_fidelity": 0.8166666666666668,
+      "fidelity_gain": 0.06666666666666676
+    },
+    {
+      "category": "standard",
+      "signal": "Code must adhere to PEP 8 style guidelines.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.75,
+      "enforced_fidelity": 0.8148148148148149,
+      "fidelity_gain": 0.06481481481481488
+    },
+    {
+      "category": "policy",
+      "signal": "Employees shall report any safety hazards immediately.",
+      "baseline_stability": 0.0,
+      "enforced_stability": 0.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.5238095238095238,
+      "enforced_fidelity": 0.5729166666666666,
+      "fidelity_gain": 0.049107142857142794
+    },
+    {
+      "category": "regulation",
+      "signal": "Vehicles must stop at red lights.",
+      "baseline_stability": 1.0,
+      "enforced_stability": 1.0,
+      "stability_gain": 0.0,
+      "baseline_fidelity": 0.3266559829059829,
+      "enforced_fidelity": 0.5833333333333334,
+      "fidelity_gain": 0.25667735042735046
+    }
+  ]
+}

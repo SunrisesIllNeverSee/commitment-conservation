@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "n_signals": 5,
+    "recursion_depth": 10,
+    "avg_recursion_stability": 0.2,
+    "avg_compression_fidelity": 0.638095238095238
+  },
+  "detailed_results": {
+    "recursion": [
+      {
+        "signal": "This function must return an integer.",
+        "deltas": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_stability": 0.0
+      },
+      {
+        "signal": "The tenant shall not sublet the premises without written consent.",
+        "deltas": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_stability": 0.0
+      },
+      {
+        "signal": "You must wear a helmet while cycling.",
+        "deltas": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_stability": 0.0
+      },
+      {
+        "signal": "All passwords must be at least 8 characters long.",
+        "deltas": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_stability": 1.0
+      },
+      {
+        "signal": "The budget cannot exceed $5000.",
+        "deltas": [
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "final_stability": 0.0
+      }
+    ],
+    "compression": [
+      {
+        "signal": "This function must return an integer.",
+        "avg_fidelity": 0.38888888888888884,
+        "fidelities": [
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          0.3333333333333333,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "signal": "The tenant shall not sublet the premises without written consent.",
+        "avg_fidelity": 0.7129629629629629,
+        "fidelities": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.2777777777777778,
+          0.0
+        ]
+      },
+      {
+        "signal": "You must wear a helmet while cycling.",
+        "avg_fidelity": 0.8571428571428572,
+        "fidelities": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.14285714285714285
+        ]
+      },
+      {
+        "signal": "All passwords must be at least 8 characters long.",
+        "avg_fidelity": 0.7314814814814815,
+        "fidelities": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          0.3888888888888889,
+          0.0
+        ]
+      },
+      {
+        "signal": "The budget cannot exceed $5000.",
+        "avg_fidelity": 0.5,
+        "fidelities": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.0
+        ]
+      }
+    ]
+  }
+}
