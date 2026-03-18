@@ -175,25 +175,24 @@ def get_canonical_commitment(signal: str) -> str:
     """
     extraction = llm(
         "You are a commitment extractor. "
-        "Extract ONLY the binding obligations, requirements, prohibitions, and conditions. "
-        "Keep the original modal words (must/shall/required/cannot/never/always/do not). "
-        "If no commitments exist, output exactly: [none]",
-        f"Extract commitments from:\n\n{signal}",
+        "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
+        "modal words (must/shall/required/cannot/never/always/do not), "
+        "the subject, the action and its object, "
+        "any qualifying conditions (if/unless/before/when clauses), "
+        "any frequency quantifiers (always, never, all), "
+        "any temporal constraints (immediately, by Friday, prior to). "
+        "Remove only conversational filler. Do not summarize or generalize. "
+        "If no binding obligation exists, output exactly: [none]",
+        f"Extract the commitment from:\n\n{signal}",
         max_tokens=80
     )
     if not extraction or extraction.strip() == "[none]":
         return signal
     reconstruction = llm(
-        "You are a commitment reconstructor. "
-        "Write one complete sentence that preserves ALL of the following exactly: "
-        "(1) who must act (subject/agent), "
-        "(2) what they must do (verb and direct object — do not generalize), "
-        "(3) any frequency or universal quantifier (always, never, all, every), "
-        "(4) any qualifying condition (if/unless/before/when clauses), "
-        "(5) any temporal constraint (by Friday, immediately, prior to). "
-        "Keep every word that carries obligation meaning. "
-        "You may drop filler words only. Do not add anything not in the list.",
-        f"Reconstruct a complete commitment statement from these elements:\n\n{extraction}",
+        "You are a minimal statement reconstructor. "
+        "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
+        "Do not add anything not in the list.",
+        f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
         max_tokens=80
     )
     return reconstruction if reconstruction else extraction
@@ -274,10 +273,15 @@ def run_gate(signal: str) -> list:
         # Step B — Extract commitment kernel
         extraction = llm(
             "You are a commitment extractor. "
-            "Extract ONLY the binding obligations, requirements, prohibitions, and conditions. "
-            "Keep the original modal words (must/shall/required/cannot/never/always/do not). "
-            "If no commitments exist, output exactly: [none]",
-            f"Extract commitments from:\n\n{summary}",
+            "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
+            "modal words (must/shall/required/cannot/never/always/do not), "
+            "the subject, the action and its object, "
+            "any qualifying conditions (if/unless/before/when clauses), "
+            "any frequency quantifiers (always, never, all), "
+            "any temporal constraints (immediately, by Friday, prior to). "
+            "Remove only conversational filler. Do not summarize or generalize. "
+            "If no binding obligation exists, output exactly: [none]",
+            f"Extract the commitment from:\n\n{summary}",
             max_tokens=80
         )
         if not extraction or extraction.strip() == "[none]":
@@ -285,16 +289,10 @@ def run_gate(signal: str) -> list:
 
         # Step C — Reconstruct minimal statement
         reconstruction = llm(
-            "You are a commitment reconstructor. "
-            "Write one complete sentence that preserves ALL of the following exactly: "
-            "(1) who must act (subject/agent), "
-            "(2) what they must do (verb and direct object — do not generalize), "
-            "(3) any frequency or universal quantifier (always, never, all, every), "
-            "(4) any qualifying condition (if/unless/before/when clauses), "
-            "(5) any temporal constraint (by Friday, immediately, prior to). "
-            "Keep every word that carries obligation meaning. "
-            "You may drop filler words only. Do not add anything not in the list.",
-            f"Reconstruct a complete commitment statement from these elements:\n\n{extraction}",
+            "You are a minimal statement reconstructor. "
+            "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
+            "Do not add anything not in the list.",
+            f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
             max_tokens=80
         )
         if not reconstruction:
