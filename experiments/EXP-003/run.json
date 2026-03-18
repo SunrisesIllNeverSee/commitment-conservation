@@ -1,0 +1,7838 @@
+[
+  {
+    "category": "contractual",
+    "signal": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+    "canonical": "Pay $100 by Friday if the deal closes.",
+    "origin_c": [
+      "100",
+      "closes",
+      "deal",
+      "friday",
+      "must",
+      "pay",
+      "the",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.6,
+        "tokens": 22,
+        "output": "If the deal is finalized, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 2,
+        "stability": 0.6,
+        "tokens": 23,
+        "output": "If the agreement is confirmed, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 3,
+        "stability": 0.455,
+        "tokens": 22,
+        "output": "If the agreement is finalized, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 4,
+        "stability": 0.545,
+        "tokens": 23,
+        "output": "Once the agreement is finalized, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 5,
+        "stability": 0.417,
+        "tokens": 22,
+        "output": "After the agreement is finalized, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 6,
+        "stability": 0.545,
+        "tokens": 23,
+        "output": "Once the agreement is completed, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 7,
+        "stability": 0.417,
+        "tokens": 22,
+        "output": "After the agreement is finalized, you need to pay $100 by Friday; since rain is predicted, make sure to prepare for it."
+      },
+      {
+        "i": 8,
+        "stability": 0.545,
+        "tokens": 23,
+        "output": "Once the agreement is complete, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 9,
+        "stability": 0.417,
+        "tokens": 21,
+        "output": "After finalizing the agreement, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 10,
+        "stability": 0.545,
+        "tokens": 23,
+        "output": "Once the agreement is finalized, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; expect rain."
+      },
+      {
+        "i": 2,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 3,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 4,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 5,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 6,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 7,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 8,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 9,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 10,
+        "stability": 0.75,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 2,
+        "stability": 0.556,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 3,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 4,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 5,
+        "stability": 0.556,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 6,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 7,
+        "stability": 0.556,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 8,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 9,
+        "stability": 0.556,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 10,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 22,
+        "output": "If the deal is finalized, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 23,
+        "output": "If the agreement is confirmed, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 22,
+        "output": "If the agreement is finalized, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 23,
+        "output": "Once the agreement is finalized, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 22,
+        "output": "After the agreement is finalized, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 23,
+        "output": "Once the agreement is completed, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 22,
+        "output": "After the agreement is finalized, you need to pay $100 by Friday; since rain is predicted, make sure to prepare for it."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 23,
+        "output": "Once the agreement is complete, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 21,
+        "output": "After finalizing the agreement, you need to pay $100 by Friday; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 23,
+        "output": "Once the agreement is finalized, you must pay $100 by Friday; given that rain is forecasted, be sure to get ready for it."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; expect rain."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "code",
+    "signal": "This function must return an integer.",
+    "canonical": "This function must return an integer.",
+    "origin_c": [
+      "function",
+      "integer",
+      "must",
+      "return",
+      "this"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 8,
+        "output": "This function is required to return an integer."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "This function must return an integer."
+      },
+      {
+        "i": 3,
+        "stability": 0.667,
+        "tokens": 8,
+        "output": "This function is required to return an integer."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "This function must return an integer."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "This function needs to return an integer."
+      },
+      {
+        "i": 6,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "This function must return an integer value."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "This function needs to return an integer."
+      },
+      {
+        "i": 8,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "This function must return an integer value."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "This function needs to return an integer."
+      },
+      {
+        "i": 10,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "This function must return an integer value."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 2,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 3,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 4,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 5,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 6,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 7,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 8,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 9,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 10,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 2,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 3,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 4,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 5,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 6,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 7,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 8,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 9,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 10,
+        "stability": 0.429,
+        "tokens": 6,
+        "output": "The function must return an int."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "This function is required to return an integer."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "This function must return an integer."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "This function is required to return an integer."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "This function must return an integer."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "This function needs to return an integer."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "This function must return an integer value."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "This function needs to return an integer."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "This function must return an integer value."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "This function needs to return an integer."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "This function must return an integer value."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an integer."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The function must return an int."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "procedural",
+    "signal": "Always verify the user's age before proceeding.",
+    "canonical": "Verify the user's age before proceeding.",
+    "origin_c": [
+      "age",
+      "always",
+      "before",
+      "proceeding",
+      "the",
+      "user",
+      "verify"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 4,
+        "stability": 0.75,
+        "tokens": 8,
+        "output": "Always verify the user's age prior to proceeding."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Verify the user's age first."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Check the user's age first."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Verify the user's age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Verify the user's age."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Always verify the user's age prior to proceeding."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Verify the user's age first."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Check the user's age first."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Verify the user's age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Verify the user's age."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "legal",
+    "signal": "The tenant shall not sublet the premises without written consent.",
+    "canonical": "The tenant shall not sublet without written consent.",
+    "origin_c": [
+      "consent",
+      "not",
+      "premises",
+      "shall",
+      "sublet",
+      "tenant",
+      "the",
+      "without",
+      "written"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written permission before subletting the premises."
+      },
+      {
+        "i": 2,
+        "stability": 0.2,
+        "tokens": 13,
+        "output": "The tenant is required to secure written approval prior to subletting the property."
+      },
+      {
+        "i": 3,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 4,
+        "stability": 0.2,
+        "tokens": 13,
+        "output": "The tenant is required to secure written approval prior to subletting the property."
+      },
+      {
+        "i": 5,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 6,
+        "stability": 0.2,
+        "tokens": 13,
+        "output": "The tenant is required to get written approval prior to subletting the property."
+      },
+      {
+        "i": 7,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 8,
+        "stability": 0.2,
+        "tokens": 11,
+        "output": "The tenant must secure written approval prior to subletting the property."
+      },
+      {
+        "i": 9,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "The tenant needs to secure written approval prior to subletting the property."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "No subletting without written consent."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires consent."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting is not allowed."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The tenant must obtain written permission before subletting the premises."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "The tenant is required to secure written approval prior to subletting the property."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "The tenant is required to secure written approval prior to subletting the property."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "The tenant is required to get written approval prior to subletting the property."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "The tenant must secure written approval prior to subletting the property."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "The tenant needs to secure written approval prior to subletting the property."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "No subletting without written consent."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires consent."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting needs approval."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Subletting is not allowed."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "instructional",
+    "signal": "You must wear a helmet while cycling.",
+    "canonical": "Wear a helmet while cycling.",
+    "origin_c": [
+      "cycling",
+      "helmet",
+      "must",
+      "wear",
+      "while",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "It is necessary to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Wearing a helmet is essential when cycling."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet while riding a bicycle."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 7,
+        "stability": 0.286,
+        "tokens": 4,
+        "output": "Always wear a helmet."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "I will wear a helmet."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "I will wear a helmet."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "I will wear a helmet."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "It is necessary to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Wearing a helmet is essential when cycling."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet while riding a bicycle."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "It is crucial to wear a helmet when riding a bicycle."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Wearing a helmet while cycling is essential."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet while cycling."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Wear a helmet when cycling."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 4,
+        "output": "Always wear a helmet."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "I will wear a helmet."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "I will wear a helmet."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "I will wear a helmet."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "obligation",
+    "signal": "Employees are required to submit reports by end of day.",
+    "canonical": "Employees must submit reports by end of day.",
+    "origin_c": [
+      "are",
+      "day",
+      "employees",
+      "end",
+      "reports",
+      "required",
+      "submit"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 11,
+        "output": "Employees must submit their reports by the end of the day."
+      },
+      {
+        "i": 2,
+        "stability": 0.6,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the end of the day."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 11,
+        "output": "Employees must submit their reports by the end of the day."
+      },
+      {
+        "i": 4,
+        "stability": 0.308,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      },
+      {
+        "i": 5,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "Employees must submit their reports by the end of the business day today."
+      },
+      {
+        "i": 6,
+        "stability": 0.308,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      },
+      {
+        "i": 7,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "Employees must submit their reports by the end of the business day today."
+      },
+      {
+        "i": 8,
+        "stability": 0.308,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      },
+      {
+        "i": 9,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "Employees must submit their reports by the end of the business day today."
+      },
+      {
+        "i": 10,
+        "stability": 0.308,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.333,
+        "tokens": 6,
+        "output": "Employees must submit reports by EOD."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Reports are due by EOD."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Reports are due by end of day."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Reports are due today."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Reports are due."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.333,
+        "tokens": 8,
+        "output": "Reports must be submitted by end of day."
+      },
+      {
+        "i": 2,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 3,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 4,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 5,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 6,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 7,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 8,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 9,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 10,
+        "stability": 0.3,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Employees must submit their reports by the end of the day."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the end of the day."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Employees must submit their reports by the end of the day."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Employees must submit their reports by the end of the business day today."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Employees must submit their reports by the end of the business day today."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Employees must submit their reports by the end of the business day today."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "Employees are required to turn in their reports by the close of business today."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Employees must submit reports by EOD."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Reports are due by EOD."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due by end of day."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Reports are due today."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Reports are due."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Reports are due."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Reports must be submitted by end of day."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Reports must be submitted by the end of the day."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "prohibition",
+    "signal": "Do not enter without authorization.",
+    "canonical": "You cannot enter without authorization.",
+    "origin_c": [
+      "authorization",
+      "enter",
+      "not",
+      "without"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Entry without authorization is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Unauthorized entry prohibited."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No trespassing."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Keep out."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Stay out."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Keep out."
+      },
+      {
+        "i": 6,
+        "stability": 0.5,
+        "tokens": 3,
+        "output": "Do not enter."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No entry."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Access denied."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Permission denied."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Access denied."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Unauthorized entry is prohibited."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No trespassing is allowed."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No trespassing is allowed."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No trespassing is permitted."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No trespassing."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Keep out."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "No entry allowed."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Entry is prohibited."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry is not allowed."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Entry is prohibited."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Entry without authorization is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Entry without permission is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Unauthorized entry is not allowed."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Unauthorized entry prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No trespassing."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Keep out."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Stay out."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Keep out."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Do not enter."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No entry."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Access denied."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Permission denied."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Access denied."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Unauthorized entry is prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "No trespassing is allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "No trespassing is allowed."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "No trespassing is permitted."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No trespassing."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Keep out."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No entry allowed."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Entry is prohibited."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Entry is not allowed."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Entry is prohibited."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "conditional",
+    "signal": "If the alarm sounds, you must evacuate immediately.",
+    "canonical": "Evacuate immediately if the alarm sounds.",
+    "origin_c": [
+      "alarm",
+      "evacuate",
+      "immediately",
+      "must",
+      "sounds",
+      "the",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.333,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 3,
+        "stability": 0.333,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 5,
+        "stability": 0.333,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 7,
+        "stability": 0.333,
+        "tokens": 10,
+        "output": "If the alarm goes off, you must leave right away."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 9,
+        "stability": 0.333,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate immediately if the alarm sounds."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Evacuate if the alarm sounds."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Evacuate on alarm."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate now."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate now."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate now."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate immediately if the alarm sounds."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "If the alarm goes off, you must leave right away."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "You must leave right away if the alarm goes off."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "You need to exit immediately if the alarm sounds."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate immediately if the alarm sounds."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Evacuate if the alarm sounds."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Evacuate on alarm."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate now."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate now."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Evacuate now."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Evacuate immediately."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate immediately if the alarm sounds."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Evacuate when there is an alarm."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "definition",
+    "signal": "A prime number is defined as an integer greater than 1 with no divisors other than 1 and itself.",
+    "canonical": "A prime number is defined as an integer greater than 1 with no divisors other than 1 and itself.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 20,
+        "output": "A prime number is an integer greater than 1 that has no divisors other than 1 and the number itself."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be divided evenly by 1 and itself."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 22,
+        "output": "A prime number is a whole number greater than 1 that is divisible only by 1 and itself without leaving a remainder."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be divided evenly by 1 and itself."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 19,
+        "output": "A prime number is a whole number greater than 1 that has no divisors other than 1 and itself."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 23,
+        "output": "A prime number is a whole number greater than 1 that can only be divided by 1 and itself without leaving a remainder."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be evenly divided by 1 and itself."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 19,
+        "output": "A prime number is a whole number greater than 1 that has no divisors other than 1 and itself."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 23,
+        "output": "A prime number is a whole number greater than 1 that can only be divided by 1 and itself without leaving a remainder."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be evenly divided by 1 and itself."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 17,
+        "output": "A prime number is an integer greater than 1 with no divisors other than 1 and itself."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 15,
+        "output": "A prime number is an integer greater than 1 with two divisors: 1 and itself."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 15,
+        "output": "A prime number is an integer greater than 1 with two divisors: 1 and itself."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 20,
+        "output": "A prime number is an integer greater than 1 that has no divisors other than 1 and the number itself."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be divided evenly by 1 and itself."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 22,
+        "output": "A prime number is a whole number greater than 1 that is divisible only by 1 and itself without leaving a remainder."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be divided evenly by 1 and itself."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 19,
+        "output": "A prime number is a whole number greater than 1 that has no divisors other than 1 and itself."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 23,
+        "output": "A prime number is a whole number greater than 1 that can only be divided by 1 and itself without leaving a remainder."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be evenly divided by 1 and itself."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 19,
+        "output": "A prime number is a whole number greater than 1 that has no divisors other than 1 and itself."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 23,
+        "output": "A prime number is a whole number greater than 1 that can only be divided by 1 and itself without leaving a remainder."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 20,
+        "output": "A prime number is a whole number greater than 1 that can only be evenly divided by 1 and itself."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 17,
+        "output": "A prime number is an integer greater than 1 with no divisors other than 1 and itself."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with only two divisors: 1 and itself."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 15,
+        "output": "A prime number is an integer greater than 1 with two divisors: 1 and itself."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 15,
+        "output": "A prime number is an integer greater than 1 with two divisors: 1 and itself."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "A prime number is an integer greater than 1 with exactly two divisors: 1 and itself."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "specification",
+    "signal": "The API must handle up to 1000 concurrent requests.",
+    "canonical": "The API must handle 1000 concurrent requests.",
+    "origin_c": [
+      "1000",
+      "api",
+      "concurrent",
+      "handle",
+      "must",
+      "requests",
+      "the"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "The API needs to support as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 2,
+        "stability": 0.75,
+        "tokens": 9,
+        "output": "The API must accommodate up to 1000 concurrent requests."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "The API needs to support as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 4,
+        "stability": 0.667,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 13,
+        "output": "The API should be able to manage as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 6,
+        "stability": 0.667,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 14,
+        "output": "The API needs to be able to manage as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 8,
+        "stability": 0.667,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 14,
+        "output": "The API needs to be able to manage as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 10,
+        "stability": 0.667,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 3,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 5,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 7,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 9,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 3,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 5,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 7,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 9,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "The API needs to support as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "The API must accommodate up to 1000 concurrent requests."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "The API needs to support as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 13,
+        "output": "The API should be able to manage as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "The API needs to be able to manage as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "The API needs to be able to manage as many as 1000 simultaneous requests."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "The API must be capable of handling up to 1000 concurrent requests."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must support 1000 concurrent requests."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The API must handle 1000 concurrent requests."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "agreement",
+    "signal": "Parties shall comply with all applicable laws.",
+    "canonical": "Parties shall comply with applicable laws.",
+    "origin_c": [
+      "all",
+      "applicable",
+      "comply",
+      "laws",
+      "parties",
+      "shall",
+      "with"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.273,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 2,
+        "stability": 0.6,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 3,
+        "stability": 0.273,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 4,
+        "stability": 0.6,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 5,
+        "stability": 0.273,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 6,
+        "stability": 0.6,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 7,
+        "stability": 0.273,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 8,
+        "stability": 0.6,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 9,
+        "stability": 0.273,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 10,
+        "stability": 0.6,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.333,
+        "tokens": 5,
+        "output": "Parties must follow all laws."
+      },
+      {
+        "i": 2,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 3,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must follow laws."
+      },
+      {
+        "i": 4,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must comply with laws."
+      },
+      {
+        "i": 6,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 7,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must follow laws."
+      },
+      {
+        "i": 8,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 9,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must follow laws."
+      },
+      {
+        "i": 10,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.333,
+        "tokens": 5,
+        "output": "Parties must follow all laws."
+      },
+      {
+        "i": 2,
+        "stability": 0.222,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must comply with laws."
+      },
+      {
+        "i": 4,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must comply with laws."
+      },
+      {
+        "i": 5,
+        "stability": 0.2,
+        "tokens": 5,
+        "output": "Parties must obey the laws."
+      },
+      {
+        "i": 6,
+        "stability": 0.3,
+        "tokens": 6,
+        "output": "Parties must comply with the law."
+      },
+      {
+        "i": 7,
+        "stability": 0.091,
+        "tokens": 5,
+        "output": "Parties must obey the law."
+      },
+      {
+        "i": 8,
+        "stability": 0.3,
+        "tokens": 6,
+        "output": "Parties must comply with the law."
+      },
+      {
+        "i": 9,
+        "stability": 0.091,
+        "tokens": 5,
+        "output": "Parties must obey the law."
+      },
+      {
+        "i": 10,
+        "stability": 0.3,
+        "tokens": 6,
+        "output": "Parties must comply with the law."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "The parties must adhere to all relevant laws."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The parties are required to comply with all applicable laws."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow all laws."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must follow laws."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties must comply with laws."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must follow laws."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must follow laws."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow all laws."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Parties must obey laws."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties must comply with laws."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties must comply with laws."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties must obey the laws."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties must comply with the law."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties must obey the law."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties must comply with the law."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties must obey the law."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties must comply with the law."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "requirement",
+    "signal": "All passwords must be at least 8 characters long.",
+    "canonical": "All passwords must be at least 8 characters.",
+    "origin_c": [
+      "all",
+      "characters",
+      "least",
+      "long",
+      "must",
+      "passwords"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.182,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 3,
+        "stability": 0.182,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 5,
+        "stability": 0.182,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 7,
+        "stability": 0.182,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 9,
+        "stability": 0.182,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 7,
+        "output": "Passwords must be at least 8 characters."
+      },
+      {
+        "i": 2,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 3,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 4,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 5,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 6,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 7,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 8,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 9,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 10,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 2,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 3,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 4,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 5,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 6,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 7,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 8,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 9,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 10,
+        "stability": 0.833,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Every password must have a minimum length of 8 characters."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All passwords must be at least 8 characters long."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Passwords must be at least 8 characters."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Passwords must be 8+ characters."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Passwords must be at least 8 characters long."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "mandate",
+    "signal": "The system shall log all access attempts.",
+    "canonical": "The system shall log access attempts.",
+    "origin_c": [
+      "access",
+      "all",
+      "attempts",
+      "log",
+      "shall",
+      "system",
+      "the"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will record all attempts to access it."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "The system will log all access attempts."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "The system will log all access."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "The system will log all access."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "The system will log access."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "The system will record access."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Access will be recorded."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Access will be logged."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Access will be recorded."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Access will be logged."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Access will be recorded."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "The system will log all access attempts."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "The system will log access."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Access will be logged."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is recorded."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access is logged."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will record all attempts to access it."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will record each attempt to gain access."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "The system will log every attempt to access it."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "The system will log all access attempts."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "The system will log all access."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "The system will log all access."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "The system will log access."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "The system will record access."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Access will be recorded."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Access will be logged."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Access will be recorded."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Access will be logged."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Access will be recorded."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "The system will log all access attempts."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "The system will log access."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Access will be logged."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is recorded."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is logged."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access is logged."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "rule",
+    "signal": "No food or drink in the laboratory.",
+    "canonical": "No food or drink allowed in the laboratory.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 9,
+        "output": "Food and beverages are not allowed in the laboratory."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 9,
+        "output": "No food or drink is allowed in the lab."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 8,
+        "output": "Food and drink are prohibited in the lab."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 9,
+        "output": "No food or drink is allowed in the lab."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Food and beverages are not allowed in the laboratory."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Consuming food and beverages is not allowed in the laboratory."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Eating and drinking are prohibited in the laboratory."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "No food or drink is allowed in the lab."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Food and drink are prohibited in the lab."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "No food or drink is allowed in the lab."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "No food or drink allowed in the lab."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "No food or drink in the lab."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "directive",
+    "signal": "You must complete training before operating equipment.",
+    "canonical": "Complete training before operating equipment.",
+    "origin_c": [
+      "before",
+      "complete",
+      "equipment",
+      "must",
+      "operating",
+      "training",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.455,
+        "tokens": 10,
+        "output": "Training must be completed before you can operate the equipment."
+      },
+      {
+        "i": 2,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 4,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 6,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 8,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 10,
+        "stability": 0.417,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Complete training before using equipment."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Train before using equipment."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Train before use."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Train first."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Prioritize training."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Focus on training."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Prioritize training."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Focus on training."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Prioritize training."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Focus on training."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Complete training before using equipment."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Train before using equipment."
+      },
+      {
+        "i": 3,
+        "stability": 0.25,
+        "tokens": 3,
+        "output": "You must train."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 1,
+        "output": "Train."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "I commit to exercise."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "I will exercise."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "I will work out."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "I will exercise."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "I will work out."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "I will exercise."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Training must be completed before you can operate the equipment."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "You need to complete the training before you can use the equipment."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "You must finish the training before you are allowed to use the equipment."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Complete training before using equipment."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Train before using equipment."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Train before use."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Train first."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Prioritize training."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Focus on training."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Prioritize training."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Focus on training."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Prioritize training."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Focus on training."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Complete training before using equipment."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Train before using equipment."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "You must train."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 1,
+        "output": "Train."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 4,
+        "output": "I commit to exercise."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "I will exercise."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 4,
+        "output": "I will work out."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "I will exercise."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 4,
+        "output": "I will work out."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "I will exercise."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "constraint",
+    "signal": "The budget cannot exceed $5000.",
+    "canonical": "The budget cannot exceed $5000.",
+    "origin_c": [
+      "5000",
+      "budget",
+      "cannot",
+      "exceed",
+      "the"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.375,
+        "tokens": 7,
+        "output": "The budget must not go over $5000."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 5,
+        "output": "The budget cannot exceed $5000."
+      },
+      {
+        "i": 3,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "The budget must remain within $5000."
+      },
+      {
+        "i": 4,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      },
+      {
+        "i": 5,
+        "stability": 0.375,
+        "tokens": 7,
+        "output": "The budget needs to remain below $5000."
+      },
+      {
+        "i": 6,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      },
+      {
+        "i": 7,
+        "stability": 0.375,
+        "tokens": 7,
+        "output": "The budget needs to remain below $5000."
+      },
+      {
+        "i": 8,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      },
+      {
+        "i": 9,
+        "stability": 0.375,
+        "tokens": 7,
+        "output": "The budget needs to remain below $5000."
+      },
+      {
+        "i": 10,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.333,
+        "tokens": 3,
+        "output": "Budget cap: $5000."
+      },
+      {
+        "i": 2,
+        "stability": 0.333,
+        "tokens": 3,
+        "output": "Budget limit: $5000."
+      },
+      {
+        "i": 3,
+        "stability": 0.4,
+        "tokens": 2,
+        "output": "Budget: $5000."
+      },
+      {
+        "i": 4,
+        "stability": 0.167,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      },
+      {
+        "i": 5,
+        "stability": 0.2,
+        "tokens": 2,
+        "output": "Budget: $5K."
+      },
+      {
+        "i": 6,
+        "stability": 0.167,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      },
+      {
+        "i": 7,
+        "stability": 0.2,
+        "tokens": 2,
+        "output": "Budget: $5K."
+      },
+      {
+        "i": 8,
+        "stability": 0.167,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      },
+      {
+        "i": 9,
+        "stability": 0.2,
+        "tokens": 2,
+        "output": "Budget: $5K."
+      },
+      {
+        "i": 10,
+        "stability": 0.167,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.6,
+        "tokens": 4,
+        "output": "The budget is $5000."
+      },
+      {
+        "i": 2,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 3,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 4,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 5,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 6,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 7,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 8,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 9,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 10,
+        "stability": 0.333,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The budget must not go over $5000."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "The budget cannot exceed $5000."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The budget must remain within $5000."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The budget needs to remain below $5000."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The budget needs to remain below $5000."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The budget needs to remain below $5000."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The budget must stay under $5000."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Budget cap: $5000."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Budget limit: $5000."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Budget: $5000."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Budget: $5K."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Budget: $5K."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Budget: $5K."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Budget: $5,000."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.0,
+        "tokens": 4,
+        "output": "The budget is $5000."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "The budget is $5,000."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "protocol",
+    "signal": "Participants must sign the consent form prior to the study.",
+    "canonical": "Participants must sign the consent form before the study.",
+    "origin_c": [
+      "consent",
+      "form",
+      "must",
+      "participants",
+      "prior",
+      "sign",
+      "study",
+      "the"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 2,
+        "stability": 0.889,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 4,
+        "stability": 0.889,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 6,
+        "stability": 0.889,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 8,
+        "stability": 0.889,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 10,
+        "stability": 0.889,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 2,
+        "stability": 0.556,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 3,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 4,
+        "stability": 0.556,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 5,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 6,
+        "stability": 0.556,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 7,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 8,
+        "stability": 0.556,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 9,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 10,
+        "stability": 0.556,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 2,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 3,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 4,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 5,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 6,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 7,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 8,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 9,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 10,
+        "stability": 0.778,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "Participants are required to sign the consent form before the study begins."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "Participants must sign the consent form prior to the start of the study."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Participants must consent prior to the study."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Participants must consent before the study."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Participants must sign the consent form before the study."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "standard",
+    "signal": "Code must adhere to PEP 8 style guidelines.",
+    "canonical": "Code must follow PEP 8 guidelines.",
+    "origin_c": [
+      "adhere",
+      "code",
+      "guidelines",
+      "must",
+      "pep",
+      "style"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Code should comply with PEP 8 style standards."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 8,
+        "output": "Code must adhere to PEP 8 style guidelines."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Code should comply with PEP 8 style guidelines."
+      },
+      {
+        "i": 4,
+        "stability": 0.857,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "Code should conform to the PEP 8 style guidelines."
+      },
+      {
+        "i": 6,
+        "stability": 0.857,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "Code should comply with the PEP 8 style guidelines."
+      },
+      {
+        "i": 8,
+        "stability": 0.857,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "Code should comply with the PEP 8 style guidelines."
+      },
+      {
+        "i": 10,
+        "stability": 0.857,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.571,
+        "tokens": 6,
+        "output": "Code must follow PEP 8 guidelines."
+      },
+      {
+        "i": 2,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 3,
+        "stability": 0.429,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 4,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 5,
+        "stability": 0.429,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 6,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 7,
+        "stability": 0.429,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 8,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 9,
+        "stability": 0.429,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 10,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.429,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 2,
+        "stability": 0.571,
+        "tokens": 7,
+        "output": "Code must adhere to PEP 8 standards."
+      },
+      {
+        "i": 3,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "Code must comply with PEP 8."
+      },
+      {
+        "i": 4,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 5,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "Code must comply with PEP 8."
+      },
+      {
+        "i": 6,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 7,
+        "stability": 0.375,
+        "tokens": 6,
+        "output": "Code must comply with PEP 8."
+      },
+      {
+        "i": 8,
+        "stability": 0.429,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 9,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 10,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Code should comply with PEP 8 style standards."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Code must adhere to PEP 8 style guidelines."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Code should comply with PEP 8 style guidelines."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code should conform to the PEP 8 style guidelines."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code should comply with the PEP 8 style guidelines."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code should comply with the PEP 8 style guidelines."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Code must adhere to the PEP 8 style guidelines."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must follow PEP 8 guidelines."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Code must adhere to PEP 8 standards."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must comply with PEP 8."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must comply with PEP 8."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must comply with PEP 8."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Code must follow PEP 8."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Code must adhere to PEP 8."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "policy",
+    "signal": "Employees shall report any safety hazards immediately.",
+    "canonical": "Employees must report safety hazards immediately.",
+    "origin_c": [
+      "any",
+      "employees",
+      "hazards",
+      "immediately",
+      "report",
+      "safety",
+      "shall"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.556,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 2,
+        "stability": 0.143,
+        "tokens": 10,
+        "output": "Workers are required to quickly inform about any safety risks."
+      },
+      {
+        "i": 3,
+        "stability": 0.556,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 4,
+        "stability": 0.231,
+        "tokens": 10,
+        "output": "Employees are required to quickly notify about any safety risks."
+      },
+      {
+        "i": 5,
+        "stability": 0.556,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 6,
+        "stability": 0.364,
+        "tokens": 9,
+        "output": "Employees are required to quickly report any safety risks."
+      },
+      {
+        "i": 7,
+        "stability": 0.556,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 8,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees are required to immediately report any safety risks."
+      },
+      {
+        "i": 9,
+        "stability": 0.556,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 10,
+        "stability": 0.364,
+        "tokens": 9,
+        "output": "Employees are required to quickly report any safety risks."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Report safety hazards immediately."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Report hazards at once."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Immediately report hazards."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards promptly."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards quickly."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Quickly report hazards."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards promptly."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards quickly."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Quickly report hazards."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Report safety hazards immediately."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Report hazards at once."
+      },
+      {
+        "i": 4,
+        "stability": 0.333,
+        "tokens": 5,
+        "output": "You must report hazards immediately."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Report hazards at once."
+      },
+      {
+        "i": 7,
+        "stability": 0.333,
+        "tokens": 5,
+        "output": "You must report hazards immediately."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Report hazards promptly."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Quickly report hazards."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Workers are required to quickly inform about any safety risks."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "Employees are required to quickly notify about any safety risks."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Employees are required to quickly report any safety risks."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Employees are required to immediately report any safety risks."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Employees must promptly report any safety hazards."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Employees are required to quickly report any safety risks."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Report safety hazards immediately."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Report hazards at once."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Immediately report hazards."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Report hazards promptly."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Report hazards quickly."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Quickly report hazards."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Report hazards promptly."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Report hazards quickly."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Quickly report hazards."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Report safety hazards immediately."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Report hazards at once."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "You must report hazards immediately."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Report hazards at once."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "You must report hazards immediately."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Report hazards immediately."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Report hazards promptly."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Quickly report hazards."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "regulation",
+    "signal": "Vehicles must stop at red lights.",
+    "canonical": "Vehicles must stop.",
+    "origin_c": [
+      "lights",
+      "must",
+      "red",
+      "stop",
+      "vehicles"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.091,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 2,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 3,
+        "stability": 0.091,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 4,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 5,
+        "stability": 0.091,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 6,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 7,
+        "stability": 0.091,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 8,
+        "stability": 0.833,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 9,
+        "stability": 0.2,
+        "tokens": 9,
+        "output": "Cars are required to stop at red traffic signals."
+      },
+      {
+        "i": 10,
+        "stability": 0.5,
+        "tokens": 10,
+        "output": "Vehicles must come to a halt at red traffic lights."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 3,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 5,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 7,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 9,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 2,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 3,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 4,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 5,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 6,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 7,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 8,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 9,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 10,
+        "stability": 0.6,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Cars are required to halt at red traffic signals."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Vehicles must stop at red traffic lights."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Cars are required to stop at red traffic signals."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Vehicles must come to a halt at red traffic lights."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Vehicles must stop at red lights."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Vehicles must stop."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  }
+]
