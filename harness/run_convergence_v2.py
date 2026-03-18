@@ -45,8 +45,15 @@ OPENAI_URL   = "https://api.openai.com/v1/chat/completions"
 OPENAI_MODEL = "gpt-4o-mini"
 
 CORPUS_PATH  = Path(__file__).parent.parent / "corpus/canonical_corpus.json"
-RUNS_DIR     = Path(__file__).parent.parent / "runs" / datetime.now().strftime("%Y-%m-%d")
-RUNS_DIR.mkdir(parents=True, exist_ok=True)
+EXPERIMENTS_DIR = Path(__file__).parent.parent / "experiments"
+
+def next_exp_dir() -> Path:
+    """Auto-increment EXP-NNN directory under experiments/."""
+    existing = sorted(EXPERIMENTS_DIR.glob("EXP-[0-9][0-9][0-9]"))
+    n = int(existing[-1].name.split("-")[1]) + 1 if existing else 1
+    d = EXPERIMENTS_DIR / f"EXP-{n:03d}"
+    d.mkdir(parents=True, exist_ok=True)
+    return d
 
 N_ITERATIONS = 10
 SMOKE        = False  # set False for full 20-signal run
@@ -493,9 +500,10 @@ def run():
         result = run_signal(s["signal"], s["category"])
         results.append(result)
 
-    run_ts     = datetime.now().strftime("%H%M%S")
-    json_path  = RUNS_DIR / f"convergence_v2_{run_ts}.json"
-    report_path = RUNS_DIR / f"convergence_v2_report_{run_ts}.md"
+    exp_dir     = next_exp_dir()
+    json_path   = exp_dir / "run.json"
+    report_path = exp_dir / "report.md"
+    log(f"\n  Experiment dir: {exp_dir.name}")
 
     json_path.write_text(json.dumps(results, indent=2))
     report_path.write_text(generate_report(results, ts))
