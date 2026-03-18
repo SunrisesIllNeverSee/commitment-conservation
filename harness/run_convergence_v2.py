@@ -47,6 +47,30 @@ OPENAI_MODEL = "gpt-4o-mini"
 CORPUS_PATH  = Path(__file__).parent.parent / "corpus/canonical_corpus.json"
 EXPERIMENTS_DIR = Path(__file__).parent.parent / "experiments"
 
+# EXP-005: anchor-preserving Step A and escalation-control Step B
+EXP005 = True
+
+ANCHOR_STEP_A = (
+    "You are a helpful assistant. Be concise. "
+    "Preserve modal verbs (must, shall, cannot, never, always), "
+    "temporal markers (days, dates, times, frequencies like 'every 90 days'), "
+    "and quantitative values (amounts, percentages, counts) exactly as they appear."
+)
+
+ESCALATION_STEP_B = (
+    "You are a commitment extractor. "
+    "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
+    "modal words (must/shall/required/cannot/never/always/do not), "
+    "the subject, the action and its object, "
+    "any qualifying conditions (if/unless/before/when clauses), "
+    "any frequency quantifiers (always, never, all), "
+    "any temporal constraints (immediately, by Friday, prior to). "
+    "IMPORTANT: Preserve modal strength exactly as written. "
+    "Do not upgrade weak modals (should/may/might/ought) to strong modals (must/shall/required). "
+    "Remove only conversational filler. Do not summarize or generalize. "
+    "If no binding obligation exists, output exactly: [none]"
+)
+
 def next_exp_dir() -> Path:
     """Auto-increment EXP-NNN directory under experiments/."""
     existing = sorted(EXPERIMENTS_DIR.glob("EXP-[0-9][0-9][0-9]"))
@@ -259,19 +283,37 @@ def run_compression(signal: str) -> list:
     return turns
 
 
-def run_gate(signal: str) -> list:
+def run_gate(signal: str,
+             step_a_system: str = None,
+             step_b_system: str = None) -> list:
     """
     Condition 3: Summarize → Extract → Reconstruct → feed reconstruction back.
     This matches the founding test methodology (paper Section 7.5):
     the user manually compressed to kernel and fed that back, not the AI's response.
+
+    Optional overrides:
+      step_a_system — alternate Step A (summarizer) system prompt (EXP-005: anchor-preserving)
+      step_b_system — alternate Step B (extractor) system prompt (EXP-005: escalation-control)
     """
+    _step_a = step_a_system or "You are a helpful assistant. Be concise."
+    _step_b = step_b_system or (
+        "You are a commitment extractor. "
+        "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
+        "modal words (must/shall/required/cannot/never/always/do not), "
+        "the subject, the action and its object, "
+        "any qualifying conditions (if/unless/before/when clauses), "
+        "any frequency quantifiers (always, never, all), "
+        "any temporal constraints (immediately, by Friday, prior to). "
+        "Remove only conversational filler. Do not summarize or generalize. "
+        "If no binding obligation exists, output exactly: [none]"
+    )
     current = signal
     turns = []
     for i in range(1, N_ITERATIONS + 1):
 
         # Step A — Summarize
         summary = llm(
-            "You are a helpful assistant. Be concise.",
+            _step_a,
             f"Summarize this sentence as concisely as possible:\n\n{current}"
         )
         if not summary:
@@ -279,15 +321,7 @@ def run_gate(signal: str) -> list:
 
         # Step B — Extract commitment kernel
         extraction = llm(
-            "You are a commitment extractor. "
-            "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
-            "modal words (must/shall/required/cannot/never/always/do not), "
-            "the subject, the action and its object, "
-            "any qualifying conditions (if/unless/before/when clauses), "
-            "any frequency quantifiers (always, never, all), "
-            "any temporal constraints (immediately, by Friday, prior to). "
-            "Remove only conversational filler. Do not summarize or generalize. "
-            "If no binding obligation exists, output exactly: [none]",
+            _step_b,
             f"Extract the commitment from:\n\n{summary}",
             max_tokens=80
         )
@@ -355,21 +389,35 @@ def run_signal(signal: str, category: str) -> dict:
     c_turns = run_compression(signal)
     c_curve = stability_curve(c_turns, origin)
 
-    log(f"  ── Condition 3: Compression + Gate")
+    log(f"  ── Condition 3: Standard Gate")
     g_turns = run_gate(signal)
     g_curve = stability_curve(g_turns, origin)
 
-    # NLI semantic stability (runs after all conditions to batch API calls)
-    log(f"  ── NLI semantic stability (2 calls × 10 iter × 3 conditions)...")
+    ag_turns, ag_curve, eg_turns, eg_curve = [], [], [], []
+    if EXP005:
+        log(f"  ── Condition 4: Anchor-Preserving Gate (Step A preserves modals/temporals)")
+        ag_turns = run_gate(signal, step_a_system=ANCHOR_STEP_A)
+        ag_curve = stability_curve(ag_turns, origin)
+
+        log(f"  ── Condition 5: Escalation-Control Gate (Step B preserves modal strength)")
+        eg_turns = run_gate(signal, step_b_system=ESCALATION_STEP_B)
+        eg_curve = stability_curve(eg_turns, origin)
+
+    # NLI semantic stability
+    n_cond = "5 conditions" if EXP005 else "3 conditions"
+    log(f"  ── NLI semantic stability (2 calls × 10 iter × {n_cond})...")
     b_nli = nli_stability_curve(b_turns, canonical)
     c_nli = nli_stability_curve(c_turns, canonical)
     g_nli = nli_stability_curve(g_turns, canonical)
+    ag_nli = nli_stability_curve(ag_turns, canonical) if EXP005 else []
+    eg_nli = nli_stability_curve(eg_turns, canonical) if EXP005 else []
 
     # Summary — both metrics at key iterations
     log(f"  {'':6s} {'Jaccard':>20s}   {'NLI (semantic)':>20s}")
-    for label, curve, nli_c in [("BASE", b_curve, b_nli),
-                                  ("COMP", c_curve, c_nli),
-                                  ("GATE", g_curve, g_nli)]:
+    conditions = [("BASE", b_curve, b_nli), ("COMP", c_curve, c_nli), ("GATE", g_curve, g_nli)]
+    if EXP005:
+        conditions += [("ANCH", ag_curve, ag_nli), ("ESCL", eg_curve, eg_nli)]
+    for label, curve, nli_c in conditions:
         pts_j = {p["i"]: p["stability"]     for p in curve  if p["stability"] is not None}
         pts_n = {p["i"]: p["nli_stability"] for p in nli_c}
         log(f"  {label}: Jaccard i1={pts_j.get(1,0):.2f} i5={pts_j.get(5,0):.2f} i10={pts_j.get(10,0):.2f}"
@@ -383,9 +431,13 @@ def run_signal(signal: str, category: str) -> dict:
         "baseline":        b_curve,
         "compression":     c_curve,
         "gate":            g_curve,
+        "anchor_gate":     ag_curve,
+        "escalation_gate": eg_curve,
         "baseline_nli":    b_nli,
         "compression_nli": c_nli,
         "gate_nli":        g_nli,
+        "anchor_gate_nli": ag_nli,
+        "escalation_gate_nli": eg_nli,
         "citation":        CITATION,
     }
 

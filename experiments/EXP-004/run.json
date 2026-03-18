@@ -1,0 +1,2755 @@
+[
+  {
+    "category": "adv_modal_structural",
+    "signal": "You must always verify the user's age before proceeding.",
+    "canonical": "Always verify the user's age before proceeding.",
+    "origin_c": [
+      "age",
+      "always",
+      "before",
+      "must",
+      "proceeding",
+      "the",
+      "user",
+      "verify",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "It's essential to confirm the user's age before moving forward."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "It's important to verify the user's age before proceeding."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "Verifying the user's age before moving forward is essential."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "It's crucial to confirm the user's age before proceeding."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "It's essential to verify the user's age before moving forward."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "It's important to confirm the user's age before proceeding."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "Verifying the user's age is essential before moving forward."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "It is crucial to confirm the user's age before proceeding."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "Verifying the user's age before moving forward is essential."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 9,
+        "output": "It's crucial to confirm the user's age before proceeding."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Verify the user's age before proceeding."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Check the user's age first."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Verify the user's age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Confirm age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Verify the user's age before proceeding."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Confirm age."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "It's essential to confirm the user's age before moving forward."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "It's important to verify the user's age before proceeding."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Verifying the user's age before moving forward is essential."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "It's crucial to confirm the user's age before proceeding."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "It's essential to verify the user's age before moving forward."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "It's important to confirm the user's age before proceeding."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Verifying the user's age is essential before moving forward."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "It is crucial to confirm the user's age before proceeding."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Verifying the user's age before moving forward is essential."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "It's crucial to confirm the user's age before proceeding."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Verify the user's age before proceeding."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Check the user's age first."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Verify the user's age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Confirm age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Verify the user's age before proceeding."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Confirm age."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "adv_quantified_temporal",
+    "signal": "All users must change their passwords every 90 days.",
+    "canonical": "All users must change passwords every 90 days.",
+    "origin_c": [
+      "all",
+      "change",
+      "days",
+      "every",
+      "must",
+      "passwords",
+      "their",
+      "users"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 9,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 0.556,
+        "tokens": 7,
+        "output": "Users must update passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.444,
+        "tokens": 7,
+        "output": "Passwords must be updated every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Update passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Update passwords quarterly."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 0.444,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Update passwords quarterly."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Users must update passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Passwords must be updated every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Update passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Update passwords quarterly."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Update passwords quarterly."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "adv_nested_conditional",
+    "signal": "If the contract is signed, employees must file the report unless the deadline is extended.",
+    "canonical": "Employees must file the report.",
+    "origin_c": [
+      "contract",
+      "deadline",
+      "employees",
+      "extended",
+      "file",
+      "must",
+      "report",
+      "signed",
+      "the",
+      "unless"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.467,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is postponed."
+      },
+      {
+        "i": 2,
+        "stability": 0.75,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 3,
+        "stability": 0.467,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 4,
+        "stability": 0.75,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 5,
+        "stability": 0.467,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 6,
+        "stability": 0.75,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 7,
+        "stability": 0.467,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 8,
+        "stability": 0.75,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 9,
+        "stability": 0.467,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 10,
+        "stability": 0.75,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 3,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 5,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 7,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 9,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed unless the deadline is extended."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed unless the deadline is extended."
+      },
+      {
+        "i": 3,
+        "stability": 0.667,
+        "tokens": 10,
+        "output": "Employees must file the report upon contract signing unless extended."
+      },
+      {
+        "i": 4,
+        "stability": 0.545,
+        "tokens": 8,
+        "output": "Employees must file the report at contract signing."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 6,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 8,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 10,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is postponed."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "Once the contract is signed, employees are required to submit the report unless the deadline is prolonged."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "After the contract is signed, employees must submit the report unless the deadline is extended."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed, unless the deadline is extended."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed unless the deadline is extended."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.0,
+        "tokens": 15,
+        "output": "Employees must file the report if the contract is signed unless the deadline is extended."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Employees must file the report upon contract signing unless extended."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Employees must file the report at contract signing."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Employees must file the report after signing the contract."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "adv_passive_obligation",
+    "signal": "Reports are to be submitted by 5pm on Friday.",
+    "canonical": "Reports are due by 5pm on Friday.",
+    "origin_c": [
+      "5pm",
+      "are",
+      "friday",
+      "reports",
+      "submitted"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 4,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 6,
+        "stability": 0.286,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 8,
+        "stability": 0.286,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 10,
+        "stability": 0.286,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Submit reports by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.5,
+        "tokens": 6,
+        "output": "Submit reports by Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Submit reports by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Submit reports by Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "adv_soft_modal",
+    "signal": "Parties should ideally follow established best practices.",
+    "canonical": "Parties should ideally follow established best practices.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 8,
+        "output": "Ideally, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 7,
+        "output": "Parties should ideally follow established best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 8,
+        "output": "Ideally, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 11,
+        "output": "In an ideal situation, participants ought to follow established best practices."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Ideally, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Parties should ideally follow established best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Ideally, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In an ideal situation, participants ought to follow established best practices."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "adv_compound_obligation",
+    "signal": "Employees must report all safety hazards and complete an incident form within 24 hours.",
+    "canonical": "Employees must report all safety hazards and complete an incident form within 24 hours.",
+    "origin_c": [
+      "all",
+      "and",
+      "complete",
+      "employees",
+      "form",
+      "hazards",
+      "hours",
+      "incident",
+      "must",
+      "report",
+      "safety",
+      "within"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.529,
+        "tokens": 17,
+        "output": "Employees are required to report any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 2,
+        "stability": 0.846,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 3,
+        "stability": 0.421,
+        "tokens": 18,
+        "output": "Employees are required to notify about any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 4,
+        "stability": 0.846,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 5,
+        "stability": 0.444,
+        "tokens": 17,
+        "output": "Employees are required to notify any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 6,
+        "stability": 0.846,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 7,
+        "stability": 0.421,
+        "tokens": 18,
+        "output": "Employees are required to notify about any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 8,
+        "stability": 0.846,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 9,
+        "stability": 0.368,
+        "tokens": 17,
+        "output": "Workers are required to notify any safety hazards and fill out an incident report within 24 hours."
+      },
+      {
+        "i": 10,
+        "stability": 0.769,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident report within 24 hours."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "Report safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "Report safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 17,
+        "output": "Employees are required to report any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 18,
+        "output": "Employees are required to notify about any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 17,
+        "output": "Employees are required to notify any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 18,
+        "output": "Employees are required to notify about any safety hazards and fill out an incident form within 24 hours."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 17,
+        "output": "Workers are required to notify any safety hazards and fill out an incident report within 24 hours."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "Employees must report any safety hazards and complete an incident report within 24 hours."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Report safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Report safety hazards and complete an incident form within 24 hours."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "Report hazards and submit an incident form within 24 hours."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "adv_conditional_scope",
+    "signal": "You must not access the system unless authorized.",
+    "canonical": "Do not access the system unless authorized.",
+    "origin_c": [
+      "access",
+      "authorized",
+      "must",
+      "not",
+      "system",
+      "the",
+      "unless",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "You are prohibited from accessing the system without proper authorization."
+      },
+      {
+        "i": 2,
+        "stability": 0.385,
+        "tokens": 12,
+        "output": "You are not allowed to access the system without the appropriate authorization."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Accessing the system without proper authorization is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Accessing the system without authorization is prohibited."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Accessing the system without permission is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Accessing the system without permission is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Unauthorized access to the system is prohibited."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Unauthorized access is forbidden."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Unauthorized access is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Unauthorized access prohibited."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Unauthorized access prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Unauthorized access prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Accessing the system requires authorization."
+      },
+      {
+        "i": 2,
+        "stability": 0.3,
+        "tokens": 7,
+        "output": "Authorization is required to access the system."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Access to the system requires authorization."
+      },
+      {
+        "i": 4,
+        "stability": 0.182,
+        "tokens": 6,
+        "output": "Authorization is required for system access."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "System access requires authorization."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Authorization is needed for access."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access requires authorization."
+      },
+      {
+        "i": 8,
+        "stability": 0.091,
+        "tokens": 5,
+        "output": "Authorization is required for access."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Access requires authorization."
+      },
+      {
+        "i": 10,
+        "stability": 0.091,
+        "tokens": 5,
+        "output": "Authorization is required for access."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "You are prohibited from accessing the system without proper authorization."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "You are not allowed to access the system without the appropriate authorization."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Accessing the system without proper authorization is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Accessing the system without authorization is prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Accessing the system without permission is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Accessing the system without permission is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized access to the system is not allowed."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Unauthorized access to the system is prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Unauthorized access is forbidden."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Unauthorized access is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Unauthorized access prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Unauthorized access prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Unauthorized access prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No unauthorized access."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Accessing the system requires authorization."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Authorization is required to access the system."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Access to the system requires authorization."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Authorization is required for system access."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "System access requires authorization."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Authorization is needed for access."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Access requires authorization."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Authorization is required for access."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Access requires authorization."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Authorization is required for access."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  }
+]
