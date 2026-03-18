@@ -1,0 +1,213 @@
+[
+  {
+    "category": "contractual",
+    "signal": "You must pay $100 by Friday if the deal closes; it's likely rainy, so plan accordingly.",
+    "origin_c": [
+      "100",
+      "accordingly",
+      "closes",
+      "deal",
+      "friday",
+      "likely",
+      "must",
+      "pay",
+      "plan",
+      "rainy",
+      "the",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 22,
+        "output": "You need to pay $100 by Friday if the deal goes through; since rain is expected, make sure to prepare for it."
+      },
+      {
+        "i": 2,
+        "stability": 0.368,
+        "tokens": 20,
+        "output": "If the deal is finalized, you must pay $100 by Friday; be sure to get ready for the anticipated rain."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 21,
+        "output": "Once the deal is confirmed, you need to pay $100 by Friday, and make sure to prepare for the expected rain."
+      },
+      {
+        "i": 4,
+        "stability": 0.368,
+        "tokens": 18,
+        "output": "After the deal is finalized, you must pay $100 by Friday and be ready for the anticipated rain."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 18,
+        "output": "Once the agreement is completed, you need to pay $100 by Friday and prepare for the expected rain."
+      },
+      {
+        "i": 6,
+        "stability": 0.286,
+        "tokens": 17,
+        "output": "After finalizing the agreement, you must pay $100 by Friday and get ready for the anticipated rain."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 18,
+        "output": "Once the agreement is completed, you need to pay $100 by Friday and prepare for the expected rain."
+      },
+      {
+        "i": 8,
+        "stability": 0.286,
+        "tokens": 17,
+        "output": "After finalizing the agreement, you must pay $100 by Friday and get ready for the anticipated rain."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 18,
+        "output": "Once the agreement is finalized, you need to pay $100 by Friday and prepare for the expected rain."
+      },
+      {
+        "i": 10,
+        "stability": 0.286,
+        "tokens": 18,
+        "output": "After the agreement is finalized, you must pay $100 by Friday and get ready for the anticipated rain."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; expect rain."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain forecasted."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Pay $100 by Friday if the deal closes; rain expected."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal closes."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Pay $100 by Friday if the deal finalizes."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  }
+]
