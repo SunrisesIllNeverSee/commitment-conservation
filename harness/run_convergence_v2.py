@@ -122,6 +122,81 @@ def wc(text: str) -> int:
 
 def log(msg): print(msg, flush=True)
 
+# ── NLI Semantic Equivalence ──────────────────────────────────────────────────
+
+def nli_check(premise: str, hypothesis: str) -> bool:
+    """Ask GPT: does premise entail hypothesis? Returns True/False."""
+    result = llm(
+        "You are a strict natural language inference judge. "
+        "Answer only 'yes' or 'no'. Nothing else.",
+        f"Does this sentence:\n\"{premise}\"\n\nlogically entail this sentence:\n\"{hypothesis}\"?",
+        max_tokens=5
+    )
+    return result.strip().lower().startswith("y")
+
+
+def nli_equivalence(s1: str, s2: str) -> float:
+    """
+    Bidirectional NLI entailment score.
+    1.0 = both directions hold (fully semantically equivalent)
+    0.5 = one direction only (partial)
+    0.0 = neither direction
+
+    Mirrors the canonical equivalence relation S ~ S' from the paper
+    (bidirectional NLI Pr > 0.85, Section 4.2).
+    This is the SEMANTIC stability metric. Jaccard is the SURFACE proxy.
+    Key test: 'closes' vs 'finalizes' → should score 1.0 here, 0.556 in Jaccard.
+    """
+    forward  = nli_check(s1, s2)   # s1 entails s2
+    backward = nli_check(s2, s1)   # s2 entails s1
+    time.sleep(0.3)
+    return round((float(forward) + float(backward)) / 2.0, 3)
+
+
+def get_canonical_commitment(signal: str) -> str:
+    """
+    Extract the canonical commitment kernel from the original signal.
+    Used as NLI reference instead of the full signal — avoids penalizing
+    gate/compression for dropping incidental non-commitment content
+    ('it's likely rainy, plan accordingly').
+    One-time run of Gate Steps B+C on the original signal.
+    """
+    extraction = llm(
+        "You are a commitment extractor. "
+        "Extract ONLY the binding obligations, requirements, prohibitions, and conditions. "
+        "Keep the original modal words (must/shall/required/cannot/never/always/do not). "
+        "If no commitments exist, output exactly: [none]",
+        f"Extract commitments from:\n\n{signal}",
+        max_tokens=80
+    )
+    if not extraction or extraction.strip() == "[none]":
+        return signal
+    reconstruction = llm(
+        "You are a minimal statement reconstructor. "
+        "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
+        "Do not add anything not in the list.",
+        f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
+        max_tokens=80
+    )
+    return reconstruction if reconstruction else extraction
+
+
+def nli_stability_curve(turns: list, canonical: str) -> list:
+    """
+    Compute NLI semantic stability at each iteration vs canonical commitment.
+    Runs 2 API calls per turn (bidirectional entailment).
+    """
+    curve = []
+    for t in turns:
+        score = nli_equivalence(canonical, t["output"])
+        curve.append({
+            "i":             t["i"],
+            "nli_stability": score,
+            "tokens":        t["tokens"],
+            "output":        t["output"],
+        })
+    return curve
+
 # ── Three conditions ──────────────────────────────────────────────────────────
 
 def run_baseline(signal: str) -> list:
@@ -239,6 +314,10 @@ def run_signal(signal: str, category: str) -> dict:
     origin = extract_commitment_words(signal)
     log(f"  Origin commitments: {sorted(origin)[:10]}")
 
+    log(f"  ── Canonical commitment (NLI reference)...")
+    canonical = get_canonical_commitment(signal)
+    log(f"  Canonical: {canonical[:70]}")
+
     log(f"  ── Condition 1: Baseline")
     b_turns = run_baseline(signal)
     b_curve = stability_curve(b_turns, origin)
@@ -251,19 +330,34 @@ def run_signal(signal: str, category: str) -> dict:
     g_turns = run_gate(signal)
     g_curve = stability_curve(g_turns, origin)
 
-    # Summary at key iterations
-    for label, curve in [("BASE", b_curve), ("COMP", c_curve), ("GATE", g_curve)]:
-        pts = {p["i"]: p["stability"] for p in curve if p["stability"] is not None}
-        log(f"  {label}: i1={pts.get(1,'?'):.2f}  i5={pts.get(5,'?'):.2f}  i10={pts.get(10,'?'):.2f}")
+    # NLI semantic stability (runs after all conditions to batch API calls)
+    log(f"  ── NLI semantic stability (2 calls × 10 iter × 3 conditions)...")
+    b_nli = nli_stability_curve(b_turns, canonical)
+    c_nli = nli_stability_curve(c_turns, canonical)
+    g_nli = nli_stability_curve(g_turns, canonical)
+
+    # Summary — both metrics at key iterations
+    log(f"  {'':6s} {'Jaccard':>20s}   {'NLI (semantic)':>20s}")
+    for label, curve, nli_c in [("BASE", b_curve, b_nli),
+                                  ("COMP", c_curve, c_nli),
+                                  ("GATE", g_curve, g_nli)]:
+        pts_j = {p["i"]: p["stability"]     for p in curve  if p["stability"] is not None}
+        pts_n = {p["i"]: p["nli_stability"] for p in nli_c}
+        log(f"  {label}: Jaccard i1={pts_j.get(1,0):.2f} i5={pts_j.get(5,0):.2f} i10={pts_j.get(10,0):.2f}"
+            f"  |  NLI i1={pts_n.get(1,0):.2f} i5={pts_n.get(5,0):.2f} i10={pts_n.get(10,0):.2f}")
 
     return {
-        "category":   category,
-        "signal":     signal,
-        "origin_c":   sorted(origin),
-        "baseline":   b_curve,
-        "compression": c_curve,
-        "gate":       g_curve,
-        "citation":   CITATION,
+        "category":        category,
+        "signal":          signal,
+        "canonical":       canonical,
+        "origin_c":        sorted(origin),
+        "baseline":        b_curve,
+        "compression":     c_curve,
+        "gate":            g_curve,
+        "baseline_nli":    b_nli,
+        "compression_nli": c_nli,
+        "gate_nli":        g_nli,
+        "citation":        CITATION,
     }
 
 # ── Report ────────────────────────────────────────────────────────────────────
@@ -276,23 +370,50 @@ def generate_report(results: list, ts: str) -> str:
         f"**DOI:** [{CITATION['doi']}]({CITATION['doi']})  ",
         f"**Owner:** {CITATION['owner']}",
         "",
-        "## Stability at Key Iterations (Jaccard vs original)",
+        "## Stability at Key Iterations — Surface (Jaccard)",
+        "",
+        "Jaccard = |C(S_n) ∩ C(S_0)| / |C(S_0)|. Surface word overlap. Penalizes synonym drift.",
         "",
         "| Signal | B@1 | B@5 | B@10 | C@1 | C@5 | C@10 | G@1 | G@5 | G@10 |",
         "|--------|-----|-----|------|-----|-----|------|-----|-----|------|",
     ]
 
-    def get(curve, i):
+    def get_j(curve, i):
         pts = {p["i"]: p["stability"] for p in curve}
+        v = pts.get(i)
+        return f"{v:.2f}" if v is not None else "—"
+
+    def get_n(curve, i):
+        pts = {p["i"]: p["nli_stability"] for p in curve}
         v = pts.get(i)
         return f"{v:.2f}" if v is not None else "—"
 
     for r in results:
         lines.append(
             f"| {r['category']:15s} "
-            f"| {get(r['baseline'],1)} | {get(r['baseline'],5)} | {get(r['baseline'],10)} "
-            f"| {get(r['compression'],1)} | {get(r['compression'],5)} | {get(r['compression'],10)} "
-            f"| {get(r['gate'],1)} | {get(r['gate'],5)} | {get(r['gate'],10)} |"
+            f"| {get_j(r['baseline'],1)} | {get_j(r['baseline'],5)} | {get_j(r['baseline'],10)} "
+            f"| {get_j(r['compression'],1)} | {get_j(r['compression'],5)} | {get_j(r['compression'],10)} "
+            f"| {get_j(r['gate'],1)} | {get_j(r['gate'],5)} | {get_j(r['gate'],10)} |"
+        )
+
+    lines += [
+        "",
+        "## Stability at Key Iterations — Semantic (NLI Bidirectional)",
+        "",
+        "NLI = bidirectional entailment score vs canonical commitment kernel.",
+        "1.0 = both directions hold. 0.5 = one direction. 0.0 = neither.",
+        "Resolves synonym artifacts ('closes' vs 'finalizes'). Closer to canonical extractor (A layer).",
+        "",
+        "| Signal | B@1 | B@5 | B@10 | C@1 | C@5 | C@10 | G@1 | G@5 | G@10 |",
+        "|--------|-----|-----|------|-----|-----|------|-----|-----|------|",
+    ]
+
+    for r in results:
+        lines.append(
+            f"| {r['category']:15s} "
+            f"| {get_n(r['baseline_nli'],1)} | {get_n(r['baseline_nli'],5)} | {get_n(r['baseline_nli'],10)} "
+            f"| {get_n(r['compression_nli'],1)} | {get_n(r['compression_nli'],5)} | {get_n(r['compression_nli'],10)} "
+            f"| {get_n(r['gate_nli'],1)} | {get_n(r['gate_nli'],5)} | {get_n(r['gate_nli'],10)} |"
         )
 
     lines += [
@@ -303,13 +424,17 @@ def generate_report(results: list, ts: str) -> str:
         "- **Baseline**: declining curve, sharp drop ~iteration 3–5",
         "- **Compression**: slower decline than baseline",
         "- **Gate**: flat near 1.0 — enforcement flattens drift",
+        "- **Key test**: Jaccard shows Gate oscillating on synonyms; NLI should flatten that curve.",
+        "  Gap between Jaccard(Gate) and NLI(Gate) = extractor proxy gap (B layer vs A layer).",
         "",
         "## Methodology",
         "",
         "- Corpus: canonical_corpus.json (20 commitment signal categories)",
         f"- Model: {OPENAI_MODEL}",
-        "- Extractor: modal-pattern sieve (public proxy, Fig. 4 of paper)",
-        "- Metric: Jaccard stability = |C(S_n) ∩ C(S_0)| / |C(S_0)|",
+        "- Surface extractor: modal-pattern sieve + content extension (public proxy, Fig. 4 of paper)",
+        "- Surface metric: Jaccard stability = |C(S_n) ∩ C(S_0)| / |C(S_0)|",
+        "- Semantic metric: NLI bidirectional entailment vs canonical commitment kernel",
+        "- Canonical kernel: one-time Gate Steps B+C on original signal",
         "- Gate reconstruction feeds back minimal statement, not conversational response",
         "  (matches founding test methodology, paper Section 7.5)",
         "",
