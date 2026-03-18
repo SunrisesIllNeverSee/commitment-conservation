@@ -1,4 +1,12 @@
-# Commitment Conservation — Experiment Log Template
+# Commitment Conservation — Experiment Log
+
+**Experiment ID:** EXP-NNN
+**Folder:** `experiments/EXP-NNN/`
+**Files:**
+
+- `log.md` — this file (narrative, analysis, conclusions)
+- `run.json` — full per-iteration data (auto-written by harness)
+- `report.md` — generated stability tables (auto-written by harness)
 
 **Patent:** Serial No. 63/877,177 (Provisional)
 **DOI:** https://doi.org/10.5281/zenodo.18792459
