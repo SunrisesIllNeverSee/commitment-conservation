@@ -49,7 +49,7 @@ RUNS_DIR     = Path(__file__).parent.parent / "runs" / datetime.now().strftime("
 RUNS_DIR.mkdir(parents=True, exist_ok=True)
 
 N_ITERATIONS = 10
-SMOKE        = True   # set False for full 20-signal run
+SMOKE        = False  # set False for full 20-signal run
 
 HARD_MODALS = re.compile(
     r'\b(must|shall|cannot|required|never|always|will not|are required to'
@@ -73,17 +73,29 @@ COMMITMENT_CONTENT = re.compile(
 # ── LLM ──────────────────────────────────────────────────────────────────────
 
 def llm(system: str, prompt: str, max_tokens: int = 150) -> str:
-    r = requests.post(OPENAI_URL,
-        headers={"Authorization": f"Bearer {OPENAI_KEY}", "Content-Type": "application/json"},
-        json={"model":       OPENAI_MODEL,
-              "messages":    [{"role": "system",  "content": system},
-                              {"role": "user",    "content": prompt}],
-              "max_tokens":  max_tokens,
-              "temperature": 0.3},
-        timeout=30)
-    if r.status_code == 200:
-        return r.json()["choices"][0]["message"]["content"].strip()
-    print(f"  [OpenAI {r.status_code}]", flush=True)
+    for attempt in range(3):
+        try:
+            r = requests.post(OPENAI_URL,
+                headers={"Authorization": f"Bearer {OPENAI_KEY}", "Content-Type": "application/json"},
+                json={"model":       OPENAI_MODEL,
+                      "messages":    [{"role": "system",  "content": system},
+                                      {"role": "user",    "content": prompt}],
+                      "max_tokens":  max_tokens,
+                      "temperature": 0.3},
+                timeout=30)
+            if r.status_code == 200:
+                return r.json()["choices"][0]["message"]["content"].strip()
+            if r.status_code == 429:
+                wait = 10 * (attempt + 1)
+                print(f"  [OpenAI 429 rate-limit — waiting {wait}s]", flush=True)
+                time.sleep(wait)
+                continue
+            print(f"  [OpenAI {r.status_code}]", flush=True)
+            return ""
+        except Exception as e:
+            wait = 5 * (attempt + 1)
+            print(f"  [LLM error attempt {attempt+1}: {type(e).__name__} — retry in {wait}s]", flush=True)
+            time.sleep(wait)
     return ""
 
 # ── Metrics ───────────────────────────────────────────────────────────────────
@@ -172,10 +184,16 @@ def get_canonical_commitment(signal: str) -> str:
     if not extraction or extraction.strip() == "[none]":
         return signal
     reconstruction = llm(
-        "You are a minimal statement reconstructor. "
-        "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
-        "Do not add anything not in the list.",
-        f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
+        "You are a commitment reconstructor. "
+        "Write one complete sentence that preserves ALL of the following exactly: "
+        "(1) who must act (subject/agent), "
+        "(2) what they must do (verb and direct object — do not generalize), "
+        "(3) any frequency or universal quantifier (always, never, all, every), "
+        "(4) any qualifying condition (if/unless/before/when clauses), "
+        "(5) any temporal constraint (by Friday, immediately, prior to). "
+        "Keep every word that carries obligation meaning. "
+        "You may drop filler words only. Do not add anything not in the list.",
+        f"Reconstruct a complete commitment statement from these elements:\n\n{extraction}",
         max_tokens=80
     )
     return reconstruction if reconstruction else extraction
@@ -267,10 +285,16 @@ def run_gate(signal: str) -> list:
 
         # Step C — Reconstruct minimal statement
         reconstruction = llm(
-            "You are a minimal statement reconstructor. "
-            "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
-            "Do not add anything not in the list.",
-            f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
+            "You are a commitment reconstructor. "
+            "Write one complete sentence that preserves ALL of the following exactly: "
+            "(1) who must act (subject/agent), "
+            "(2) what they must do (verb and direct object — do not generalize), "
+            "(3) any frequency or universal quantifier (always, never, all, every), "
+            "(4) any qualifying condition (if/unless/before/when clauses), "
+            "(5) any temporal constraint (by Friday, immediately, prior to). "
+            "Keep every word that carries obligation meaning. "
+            "You may drop filler words only. Do not add anything not in the list.",
+            f"Reconstruct a complete commitment statement from these elements:\n\n{extraction}",
             max_tokens=80
         )
         if not reconstruction:
