@@ -1,6 +1,6 @@
 # Recursive Transformation Harness for Commitment Conservation Experiments
 
-[![DOI — Harness](https://img.shields.io/badge/DOI-harness%20archive%20pending-lightgrey)](https://github.com/SunrisesIllNeverSee/commitment-conservation)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19109397.svg)](https://doi.org/10.5281/zenodo.19109397)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://github.com/SunrisesIllNeverSee/commitment-conservation/blob/main/LICENSE.md)
 
 \[ [Paper](https://doi.org/10.5281/zenodo.18271102) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Repository](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
