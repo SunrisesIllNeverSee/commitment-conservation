@@ -1,0 +1,51 @@
+{
+    "canonical_signals": [
+        {
+            "category": "np_negation",
+            "signal": "No smoking.",
+            "prediction": "CCS<1.00",
+            "rationale": "Minimal NP-negation. No modal verb. Commitment encoded entirely through noun-phrase scope. Step B modal sieve unlikely to anchor. Tests core areta2 hypothesis: NP-negation alone is insufficient for extraction.",
+            "tests_condition": "NP-negation baseline — zero modal content"
+        },
+        {
+            "category": "np_negation",
+            "signal": "No entry without badge.",
+            "prediction": "CCS<1.00",
+            "rationale": "NP-negation with conditional qualifier. Commitment = (no entry) + (unless badge present). Both the prohibition and the exception are encoded in NP structure, not modality. Tests whether conditional NP-negation survives extraction.",
+            "tests_condition": "NP-negation with conditional qualifier"
+        },
+        {
+            "category": "np_negation",
+            "signal": "No firearms allowed on premises.",
+            "prediction": "CCS<1.00",
+            "rationale": "NP-negation with locative scope. 'On premises' defines the constraint boundary. Step B may extract 'no firearms' but lose the scope boundary. Tests scope preservation under NP-negation.",
+            "tests_condition": "NP-negation with locative scope boundary"
+        },
+        {
+            "category": "np_negation",
+            "signal": "No refunds after purchase.",
+            "prediction": "CCS<1.00",
+            "rationale": "NP-negation with temporal boundary. 'After purchase' is the temporal anchor — same class as EXP-004 temporal findings. Tests whether temporal anchor rescues NP-negation fidelity the way it rescued passive obligation in EXP-004.",
+            "tests_condition": "NP-negation with temporal anchor — tests EXP-004 temporal rescue hypothesis"
+        },
+        {
+            "category": "modal_control",
+            "signal": "You must not smoke.",
+            "prediction": "CCS=1.00",
+            "rationale": "Modal-form equivalent of 'no smoking'. Hard modal (must not). Should achieve CCS=1.00 per EXP-003 modal baseline. Paired control for NP-negation signal 1. If NP-negation fails and this passes, asymmetry is confirmed.",
+            "tests_condition": "Modal control — paired with np_negation signal 1"
+        },
+        {
+            "category": "modal_control",
+            "signal": "You must not enter without a badge.",
+            "prediction": "CCS=1.00",
+            "rationale": "Modal-form equivalent of 'no entry without badge'. Hard modal (must not) + conditional qualifier. Paired control for NP-negation signal 2. Tests whether modal framing preserves the conditional that NP-negation loses.",
+            "tests_condition": "Modal control — paired with np_negation signal 2"
+        }
+    ],
+    "experiment_id": "EXP-007",
+    "hypothesis": "NP-negation constructions exhibit lower extraction fidelity than modal-equivalent forms. The extractor asymmetry identified in EXP-003 is attributable to syntactic encoding (NP scope vs modal verb) not semantic content. Paired controls should achieve CCS=1.00 while NP-negation forms do not.",
+    "null_hypothesis": "NP-negation forms achieve equivalent fidelity to modal controls — no syntactic asymmetry.",
+    "areta2_prediction": "NP-negation recovery would improve with NP-negation pattern augmentation without degrading modal fidelity, because feature spaces are largely orthogonal.",
+    "exp007_scope": "Extractor extension validation only. Not a test of the conservation law. Tests whether one specific extractor asymmetry is fixable with narrow syntax-aware expansion."
+}

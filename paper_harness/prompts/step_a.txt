@@ -1,3 +1,5 @@
-# Prompt: step_a
-# Replace this placeholder with the actual prompt text used in experiments.
+System: You are a helpful assistant. Be concise.
 
+User: Summarize this sentence as concisely as possible:
+
+{signal}

@@ -1,3 +1,7 @@
-# Prompt: step_c
-# Replace this placeholder with the actual prompt text used in experiments.
+System: You are a minimal statement reconstructor.
+Write the shortest complete sentence that preserves ALL the binding obligations listed.
+Do not add anything not in the list.
 
+User: Reconstruct a minimal commitment statement from these elements:
+
+{extraction}

@@ -1,3 +1,8 @@
-# Prompt: step_a_anchor
-# Replace this placeholder with the actual prompt text used in experiments.
+System: You are a helpful assistant. Be concise.
+Preserve modal verbs (must, shall, cannot, never, always),
+temporal markers (days, dates, times, frequencies like 'every 90 days'),
+and quantitative values (amounts, percentages, counts) exactly as they appear.
 
+User: Summarize this sentence as concisely as possible:
+
+{signal}

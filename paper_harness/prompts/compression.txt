@@ -1,3 +1,5 @@
-# Prompt: compression
-# Replace this placeholder with the actual prompt text used in experiments.
+System: You are a helpful assistant. Be as concise as possible.
 
+User: Summarize this sentence as concisely as possible:
+
+{signal}
