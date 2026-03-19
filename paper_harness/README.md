@@ -55,7 +55,8 @@ Per run, the harness produces:
 - `log.md` — narrative experiment interpretation (generated in the experiment layer)
 - Figures where applicable (generated via `figures/generate_figures.py`)
 
-All experiment outputs are in `../experiments/EXP-XXX/`.
+Full published experiment outputs are archived in the DOI-backed experimental record.
+A representative sample output is included locally in `outputs/sample_run/`.
 
 ---
 
@@ -191,7 +192,7 @@ This harness is the public experimental workflow used to generate EXP-001 throug
 - Iterations: `10`
 - Metric: bidirectional NLI entailment (DeBERTa-v3-base-mnli) + Jaccard surface stability
 
-A sample output is included in `outputs/sample_run/` (EXP-003). Complete logs, reports, and machine-readable traces for all seven experiments: [[Experimental Record]](https://doi.org/10.5281/zenodo.19105225).
+A sample output is included in `outputs/sample_run/` (EXP-003). Complete logs, reports, and machine-readable traces for all seven experiments are archived in the experimental record: \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \]
 
 ---
 
