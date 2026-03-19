@@ -1,0 +1,1568 @@
+[
+  {
+    "category": "exp006_abstract_core",
+    "signal": "Commitment content is conserved under transformative compression, while non-committal information collapses. The same invariant holds under repeated self-application only when compression and lineage constraints are enforced.",
+    "canonical": "Commitment content is conserved under transformative compression, while non-committal information collapses. The same invariant holds under repeated self-application only when compression and lineage constraints are enforced.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 27,
+        "output": "The content of commitment remains intact during transformative compression, whereas non-committal information diminishes. This invariance persists under repeated self-application only when compression and lineage restrictions are maintained."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 27,
+        "output": "The essence of commitment stays unchanged during transformative compression, while non-committal information decreases. This stability continues through repeated self-application only if compression and lineage constraints are upheld."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 27,
+        "output": "The core of commitment remains constant during transformative compression, whereas non-committal information diminishes. This consistency persists through repeated self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 28,
+        "output": "The essence of commitment stays stable during transformative compression, while non-committal information decreases. This stability continues with repeated self-application, as long as compression and lineage constraints are upheld."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 27,
+        "output": "The core of commitment remains consistent through transformative compression, whereas non-committal information diminishes. This consistency persists with ongoing self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 29,
+        "output": "The essence of commitment stays stable despite transformative compression, while non-committal information fades away. This stability continues with continuous self-application, as long as compression and lineage limitations are upheld."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 28,
+        "output": "The core of commitment remains constant even under transformative pressure, whereas non-committal information diminishes. This consistency persists through ongoing self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 30,
+        "output": "The essence of commitment stays steady even amid significant changes, while non-committal information fades away. This reliability continues through continuous self-application, as long as compression and lineage limitations are upheld."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 27,
+        "output": "The core of commitment remains constant despite major changes, whereas non-committal information diminishes. This dependability persists through ongoing self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 29,
+        "output": "The essence of commitment stays stable even with significant changes, while non-committal information decreases. This reliability continues through consistent self-application, as long as compression and lineage limitations are upheld."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 21,
+        "output": "Commitment content remains stable under compression, while non-committal information does not; this stability persists with repeated self-application if constraints are applied."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 18,
+        "output": "Commitment content is stable under compression, unlike non-committal information, and this stability continues with repeated self-application under constraints."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 13,
+        "output": "Commitment content remains stable under compression, unlike non-committal information, even with repeated self-application."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content stays stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content remains stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content is stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content remains stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content is stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content remains stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 9,
+        "output": "Commitment content is stable under compression, unlike non-committal information."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 15,
+        "output": "Commitment content remains stable during compression, while non-committal information diminishes under repeated self-application with constraints."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 13,
+        "output": "Commitment content remains stable during compression, while non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable while non-committal information decreases under repeated constraints."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information declines with repeated constraints."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 7,
+        "output": "Commitment content stabilizes as non-committal information declines."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "The content of commitment remains intact during transformative compression, whereas non-committal information diminishes. This invariance persists under repeated self-application only when compression and lineage restrictions are maintained."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "The essence of commitment stays unchanged during transformative compression, while non-committal information decreases. This stability continues through repeated self-application only if compression and lineage constraints are upheld."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "The core of commitment remains constant during transformative compression, whereas non-committal information diminishes. This consistency persists through repeated self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 28,
+        "output": "The essence of commitment stays stable during transformative compression, while non-committal information decreases. This stability continues with repeated self-application, as long as compression and lineage constraints are upheld."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "The core of commitment remains consistent through transformative compression, whereas non-committal information diminishes. This consistency persists with ongoing self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 29,
+        "output": "The essence of commitment stays stable despite transformative compression, while non-committal information fades away. This stability continues with continuous self-application, as long as compression and lineage limitations are upheld."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 28,
+        "output": "The core of commitment remains constant even under transformative pressure, whereas non-committal information diminishes. This consistency persists through ongoing self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 30,
+        "output": "The essence of commitment stays steady even amid significant changes, while non-committal information fades away. This reliability continues through continuous self-application, as long as compression and lineage limitations are upheld."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "The core of commitment remains constant despite major changes, whereas non-committal information diminishes. This dependability persists through ongoing self-application, provided that compression and lineage constraints are maintained."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 29,
+        "output": "The essence of commitment stays stable even with significant changes, while non-committal information decreases. This reliability continues through consistent self-application, as long as compression and lineage limitations are upheld."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 21,
+        "output": "Commitment content remains stable under compression, while non-committal information does not; this stability persists with repeated self-application if constraints are applied."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 18,
+        "output": "Commitment content is stable under compression, unlike non-committal information, and this stability continues with repeated self-application under constraints."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 13,
+        "output": "Commitment content remains stable under compression, unlike non-committal information, even with repeated self-application."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content stays stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content remains stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content is stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content remains stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content is stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content remains stable under compression, unlike non-committal information."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 9,
+        "output": "Commitment content is stable under compression, unlike non-committal information."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 15,
+        "output": "Commitment content remains stable during compression, while non-committal information diminishes under repeated self-application with constraints."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.0,
+        "tokens": 13,
+        "output": "Commitment content remains stable during compression, while non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable while non-committal information decreases under repeated constraints."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information declines with repeated constraints."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "Commitment content remains stable as non-committal information decreases with repeated constraints."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Commitment content stabilizes as non-committal information declines."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp006_law_statement_formal",
+    "signal": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S. Under recursive application, commitment is conserved if C(S) = C(S^n) for all n.",
+    "canonical": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S. Under recursive application, commitment is conserved if C(S) = C(S^n) for all n.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 26,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S. When applied recursively, commitment is preserved if C(S) equals C(S^n) for all n."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 29,
+        "output": "A transformation T upholds commitment if C(S) is the same as C(T(S)) for every signal S. When applied repeatedly, commitment is retained if C(S) equals C(S^n) for all n."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 31,
+        "output": "A transformation T maintains commitment if C(S) remains equal to C(T(S)) for every signal S. When applied multiple times, commitment is preserved if C(S) is equal to C(S^n) for all n."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 29,
+        "output": "A transformation T upholds commitment if C(S) is the same as C(T(S)) for every signal S. When applied repeatedly, commitment is retained if C(S) equals C(S^n) for all n."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 30,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S. When applied multiple times, commitment is preserved if C(S) is the same as C(S^n) for all n."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 31,
+        "output": "A transformation T upholds commitment when C(S) is equal to C(T(S)) for every signal S. Additionally, when applied repeatedly, commitment is retained if C(S) remains consistent with C(S^n) for all n."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 30,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S, and when applied multiple times, commitment is preserved if C(S) is consistent with C(S^n) for all n."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 30,
+        "output": "A transformation T upholds commitment if C(S) is equal to C(T(S)) for every signal S, and when applied repeatedly, commitment is retained if C(S) aligns with C(S^n) for all n."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 28,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S, and when applied multiple times, commitment is preserved if C(S) matches C(S^n) for all n."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 32,
+        "output": "A transformation T upholds commitment if C(S) is equal to C(T(S)) for every signal S, and when applied repeatedly, commitment is sustained if C(S) is the same as C(S^n) for all n."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 22,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S, and recursively if C(S) = C(S^n) for all n."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 18,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S and recursively for all n."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 18,
+        "output": "A transformation T conserves commitment if C(S) equals C(T(S)) for all signals S and recursively for all n."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 18,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S and recursively for all n."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 13,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 20,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S and C(S) = C(S^n) for all n."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 19,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) and C(S) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 26,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S. When applied recursively, commitment is preserved if C(S) equals C(S^n) for all n."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 29,
+        "output": "A transformation T upholds commitment if C(S) is the same as C(T(S)) for every signal S. When applied repeatedly, commitment is retained if C(S) equals C(S^n) for all n."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 31,
+        "output": "A transformation T maintains commitment if C(S) remains equal to C(T(S)) for every signal S. When applied multiple times, commitment is preserved if C(S) is equal to C(S^n) for all n."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 29,
+        "output": "A transformation T upholds commitment if C(S) is the same as C(T(S)) for every signal S. When applied repeatedly, commitment is retained if C(S) equals C(S^n) for all n."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 30,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S. When applied multiple times, commitment is preserved if C(S) is the same as C(S^n) for all n."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 31,
+        "output": "A transformation T upholds commitment when C(S) is equal to C(T(S)) for every signal S. Additionally, when applied repeatedly, commitment is retained if C(S) remains consistent with C(S^n) for all n."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 30,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S, and when applied multiple times, commitment is preserved if C(S) is consistent with C(S^n) for all n."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 30,
+        "output": "A transformation T upholds commitment if C(S) is equal to C(T(S)) for every signal S, and when applied repeatedly, commitment is retained if C(S) aligns with C(S^n) for all n."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 28,
+        "output": "A transformation T maintains commitment if C(S) equals C(T(S)) for every signal S, and when applied multiple times, commitment is preserved if C(S) matches C(S^n) for all n."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 32,
+        "output": "A transformation T upholds commitment if C(S) is equal to C(T(S)) for every signal S, and when applied repeatedly, commitment is sustained if C(S) is the same as C(S^n) for all n."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 22,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S, and recursively if C(S) = C(S^n) for all n."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 18,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S and recursively for all n."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 18,
+        "output": "A transformation T conserves commitment if C(S) equals C(T(S)) for all signals S and recursively for all n."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 18,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S and recursively for all n."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 13,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all S."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 20,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S and C(S) = C(S^n) for all n."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 19,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) and C(S) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 17,
+        "output": "A transformation T conserves commitment if C(S) = C(T(S)) = C(S^n) for all signals S and n."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp006_first_law_restatement",
+    "signal": "Meaning is not created or destroyed, only transformed. The conservation claim applies to the commitment kernel C(S)---the minimal identity-preserving content---not to all entailments or implications a reader might derive from a signal.",
+    "canonical": "Meaning is not created or destroyed, only transformed. The conservation claim applies to the commitment kernel C(S)---the minimal identity-preserving content---not to all entailments or implications a reader might derive from a signal.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 34,
+        "output": "Meaning is neither created nor eliminated; it is merely changed. This conservation principle pertains to the commitment kernel C(S)\u2014the essential identity-preserving content\u2014not to every inference or implication a reader may draw from a signal."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 39,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving content of the commitment kernel C(S), rather than to every inference or implication a reader might derive from a signal."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the essential identity-preserving aspects of the commitment kernel C(S), rather than to every inference or implication a reader may draw from a signal."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 39,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to every conclusion or implication a reader might derive from a signal."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the fundamental identity-preserving aspects of the commitment kernel C(S), rather than to every inference or conclusion a reader may draw from a signal."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 39,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to every inference or conclusion a reader might derive from a signal."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the fundamental identity-preserving aspects of the commitment kernel C(S), rather than to every inference or conclusion a reader may draw from a signal."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 40,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to all the inferences or conclusions a reader might derive from a signal."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the essential identity-preserving components of the commitment kernel C(S), rather than to every inference or conclusion a reader may draw from a signal."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 40,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to all the inferences or conclusions a reader might derive from a signal."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 19,
+        "output": "Meaning is transformed, not created or destroyed, and this applies to the minimal identity-preserving content, not all derived implications."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 15,
+        "output": "Meaning is transformed, not created or destroyed, focusing on core content rather than derived implications."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 8,
+        "output": "Meaning is transformed, emphasizing core content over implications."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 8,
+        "output": "Meaning shifts to prioritize core content over implications."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 8,
+        "output": "Meaning focuses on core content rather than implications."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Meaning emphasizes core content over implications."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 6,
+        "output": "Meaning prioritizes core content over implications."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Meaning emphasizes core content over implications."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 6,
+        "output": "Meaning prioritizes core content over implications."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Meaning emphasizes core content over implications."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 16,
+        "output": "Meaning is transformed, not created or destroyed, applying to minimal identity-preserving content, not all derived implications."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 11,
+        "output": "Meaning is transformed while preserving minimal identity, not created or destroyed."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 3,
+        "output": "Meaning is transformed."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meaning changes."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meanings evolve."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meanings change."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meanings evolve."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meanings change."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meanings evolve."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 2,
+        "output": "Meanings change."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 34,
+        "output": "Meaning is neither created nor eliminated; it is merely changed. This conservation principle pertains to the commitment kernel C(S)\u2014the essential identity-preserving content\u2014not to every inference or implication a reader may draw from a signal."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 39,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving content of the commitment kernel C(S), rather than to every inference or implication a reader might derive from a signal."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the essential identity-preserving aspects of the commitment kernel C(S), rather than to every inference or implication a reader may draw from a signal."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 39,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to every conclusion or implication a reader might derive from a signal."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the fundamental identity-preserving aspects of the commitment kernel C(S), rather than to every inference or conclusion a reader may draw from a signal."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 39,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to every inference or conclusion a reader might derive from a signal."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the fundamental identity-preserving aspects of the commitment kernel C(S), rather than to every inference or conclusion a reader may draw from a signal."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 40,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to all the inferences or conclusions a reader might derive from a signal."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 38,
+        "output": "Meaning is neither created nor eliminated; it is merely altered. This conservation principle pertains to the essential identity-preserving components of the commitment kernel C(S), rather than to every inference or conclusion a reader may draw from a signal."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 40,
+        "output": "Meaning is not generated or removed; it is simply transformed. This principle of conservation relates to the core identity-preserving elements of the commitment kernel C(S), rather than to all the inferences or conclusions a reader might derive from a signal."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 19,
+        "output": "Meaning is transformed, not created or destroyed, and this applies to the minimal identity-preserving content, not all derived implications."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 15,
+        "output": "Meaning is transformed, not created or destroyed, focusing on core content rather than derived implications."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Meaning is transformed, emphasizing core content over implications."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Meaning shifts to prioritize core content over implications."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Meaning focuses on core content rather than implications."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Meaning emphasizes core content over implications."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Meaning prioritizes core content over implications."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Meaning emphasizes core content over implications."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Meaning prioritizes core content over implications."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Meaning emphasizes core content over implications."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 16,
+        "output": "Meaning is transformed, not created or destroyed, applying to minimal identity-preserving content, not all derived implications."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Meaning is transformed while preserving minimal identity, not created or destroyed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Meaning is transformed."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Meaning changes."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Meanings evolve."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Meanings change."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Meanings evolve."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Meanings change."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Meanings evolve."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Meanings change."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp006_enforcement_conditionality",
+    "signal": "Commitment is conserved under admissible transformations when compression and lineage constraints are enforced. Without enforcement, probabilistic transformations do not conserve commitment under recursion.",
+    "canonical": "Commitment is conserved under admissible transformations when compression and lineage constraints are enforced. Without enforcement, probabilistic transformations do not conserve commitment under recursion.",
+    "origin_c": [
+      "commitment",
+      "conserve",
+      "enforcement",
+      "not",
+      "probabilistic",
+      "recursion",
+      "transformations",
+      "under",
+      "without"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 26,
+        "output": "Commitment remains intact during admissible transformations when compression and lineage constraints are applied; however, without these constraints, probabilistic transformations fail to preserve commitment in recursive scenarios."
+      },
+      {
+        "i": 2,
+        "stability": 0.235,
+        "tokens": 30,
+        "output": "Commitment is maintained during permissible transformations with the application of compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations do not uphold commitment in recursive situations."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 25,
+        "output": "Commitment is upheld during allowable transformations by using compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive contexts."
+      },
+      {
+        "i": 4,
+        "stability": 0.167,
+        "tokens": 27,
+        "output": "Commitment is maintained through permissible transformations by applying compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations cannot uphold commitment in recursive situations."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 25,
+        "output": "Commitment is upheld through allowable transformations by enforcing compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive scenarios."
+      },
+      {
+        "i": 6,
+        "stability": 0.235,
+        "tokens": 28,
+        "output": "Commitment is maintained through permissible transformations by implementing compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations do not preserve commitment in recursive situations."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 25,
+        "output": "Commitment is upheld through allowable transformations by applying compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive contexts."
+      },
+      {
+        "i": 8,
+        "stability": 0.235,
+        "tokens": 28,
+        "output": "Commitment is maintained through permissible transformations by enforcing compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations do not preserve commitment in recursive situations."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 25,
+        "output": "Commitment is upheld through allowable changes by applying compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive scenarios."
+      },
+      {
+        "i": 10,
+        "stability": 0.167,
+        "tokens": 27,
+        "output": "Commitment is maintained through permissible changes by enforcing compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations cannot sustain commitment in recursive situations."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 16,
+        "output": "Commitment is conserved under admissible transformations with enforced constraints; without them, it isn't conserved under recursion."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 14,
+        "output": "Commitment is conserved with admissible transformations and constraints, but not under recursion without them."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is conserved with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is preserved with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is maintained with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is upheld with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is maintained with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is upheld with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 11,
+        "output": "Commitment is maintained with transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 10,
+        "output": "Commitment persists with transformations and constraints, but not with recursion."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 16,
+        "output": "Commitment is conserved under admissible transformations with enforced constraints, but not in probabilistic transformations without them."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 15,
+        "output": "Commitment is conserved in admissible transformations with constraints, but not in probabilistic transformations without constraints."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is conserved in constrained admissible transformations, but not in unconstrained ones."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Commitment is conserved in constrained transformations."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment is preserved."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment remains binding."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Commitment binds."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment constrains obligations."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Commitment limits."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment is limited."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 26,
+        "output": "Commitment remains intact during admissible transformations when compression and lineage constraints are applied; however, without these constraints, probabilistic transformations fail to preserve commitment in recursive scenarios."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 30,
+        "output": "Commitment is maintained during permissible transformations with the application of compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations do not uphold commitment in recursive situations."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 25,
+        "output": "Commitment is upheld during allowable transformations by using compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive contexts."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "Commitment is maintained through permissible transformations by applying compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations cannot uphold commitment in recursive situations."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 25,
+        "output": "Commitment is upheld through allowable transformations by enforcing compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive scenarios."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 28,
+        "output": "Commitment is maintained through permissible transformations by implementing compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations do not preserve commitment in recursive situations."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 25,
+        "output": "Commitment is upheld through allowable transformations by applying compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive contexts."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 28,
+        "output": "Commitment is maintained through permissible transformations by enforcing compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations do not preserve commitment in recursive situations."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 25,
+        "output": "Commitment is upheld through allowable changes by applying compression and lineage constraints; however, without these constraints, probabilistic transformations fail to maintain commitment in recursive scenarios."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 27,
+        "output": "Commitment is maintained through permissible changes by enforcing compression and lineage constraints; however, in the absence of these constraints, probabilistic transformations cannot sustain commitment in recursive situations."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 16,
+        "output": "Commitment is conserved under admissible transformations with enforced constraints; without them, it isn't conserved under recursion."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 14,
+        "output": "Commitment is conserved with admissible transformations and constraints, but not under recursion without them."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is conserved with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is preserved with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is maintained with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is upheld with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is maintained with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 12,
+        "output": "Commitment is upheld with admissible transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 11,
+        "output": "Commitment is maintained with transformations and constraints, but not with recursion."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 10,
+        "output": "Commitment persists with transformations and constraints, but not with recursion."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 16,
+        "output": "Commitment is conserved under admissible transformations with enforced constraints, but not in probabilistic transformations without them."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 15,
+        "output": "Commitment is conserved in admissible transformations with constraints, but not in probabilistic transformations without constraints."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "Commitment is conserved in constrained admissible transformations, but not in unconstrained ones."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Commitment is conserved in constrained transformations."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment is preserved."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment remains binding."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Commitment binds."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment constrains obligations."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 2,
+        "output": "Commitment limits."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Commitment is limited."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  }
+]

@@ -44,7 +44,7 @@ OPENAI_KEY   = (Path.home() / ".hange/openai_api_key").read_text().strip()
 OPENAI_URL   = "https://api.openai.com/v1/chat/completions"
 OPENAI_MODEL = "gpt-4o-mini"
 
-CORPUS_PATH  = Path(__file__).parent.parent / "corpus/canonical_corpus.json"
+CORPUS_PATH  = Path(__file__).parent.parent / "corpus/exp006_paper_recursion_corpus.json"
 EXPERIMENTS_DIR = Path(__file__).parent.parent / "experiments"
 
 # EXP-005: anchor-preserving Step A and escalation-control Step B

@@ -1,12 +1,45 @@
 # A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18267278.svg)](https://doi.org/10.5281/zenodo.18267278)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE.md)
+
+\[ [Paper](https://doi.org/10.5281/zenodo.18271102) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Patent No. 63/877,177](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
+
+> Commitment content persists under transformation, and is most cleanly conserved under an enforcement gate. Without the gate, recursive degradation becomes more likely and more visible.
+
+---
+
+## Status
+
+- **2026-03-19** — EXP-007 complete (NP-negation probe). Experimental series EXP-001 to EXP-007 finalized and archived on Zenodo.
+- **2026-03-18** — EXP-006 complete (paper recursion test). Formal Collapse failure mode identified.
+- **2026-03-18** — EXP-003 through EXP-005 complete. Regime classification built; mechanism isolation confirmed Step A/B co-bottlenecks.
+- **2026-03-17** — Preprint published. Harness and canonical corpus released.
+
+---
+
 ## Abstract
 
 This repository accompanies a preprint introducing a conservation law for commitment in language under transformative compression and recursive application. We formalize commitment as an information-bearing invariant that must be preserved across paraphrase, summarization, and iterative reuse, even as surface form and representation change.
 
 We propose a falsifiability framework based on compression-driven stress tests and lineage-aware evaluation, distinguishing semantic preservation from mere token retention. The framework is model-agnostic and applies to both human and machine-generated language.
 
-This repository serves as a public, timestamped disclosure of the theoretical law, evaluation criteria, and architectural relationships. Implementation mechanisms are intentionally out of scope.
+---
+
+## Key Results
+
+Seven controlled harness experiments (EXP-001 through EXP-007) across a 20-signal canonical corpus plus targeted adversarial and structural probes. All runs: GPT-4o-mini, temperature 0.3, 10 recursive iterations, NLI bidirectional entailment + Jaccard surface stability.
+
+| Experiment | Focus | Key Result |
+|---|---|---|
+| EXP-001/002 | Smoke test, full corpus | Phase signal confirmed; Step B extraction bug identified |
+| EXP-003 | Corrected harness, 20 signals | 13/20 Gate NLI=1.00; regime classification built |
+| EXP-004 | Adversarial signals | Escalation failure mode; Predictive Criterion v2 |
+| EXP-005 | Mechanism isolation (ANCH/ESCL) | Step A/B co-bottlenecks confirmed; Criterion v3 |
+| EXP-006 | Paper recursion test | 2/4 paper claims survived; Formal Collapse identified |
+| EXP-007 | NP-negation probe | Jaccard blindness confirmed; NLI=1.00 for 3/4 despite zero extraction |
+
+Full logs, tabular reports, and machine-readable traces are in `experiments/`. Complete narrative: [[Experimental Record]](https://doi.org/10.5281/zenodo.19105225).
 
 ---
 
@@ -18,51 +51,62 @@ This repository serves as a public, timestamped disclosure of the theoretical la
 
 ---
 
-## Empirical Results
+## Reproduce
 
-We tested standard transformer-based compression (baseline) versus commitment-enforced compression on 5 signals over 10 recursive iterations:
+```bash
+git clone https://github.com/SunrisesIllNeverSee/commitment-conservation
+cd commitment-conservation
+pip install -r harness/requirements.txt
+python3 experiments/EXP-003/harness_snapshot.py
+```
 
-| Metric | Baseline | Enforced | Improvement |
-|--------|----------|----------|-------------|
-| **Recursion Stability** | 20.0% | 60.0% | **+40 pp** |
-| **Compression Fidelity** | 63.8% | 78.9% | **+15 pp** |
-
-**Key Finding:** Simple commitment enforcement (extracting obligations before compression and re-appending if lost) triples stability from 20% to 60%. This 40-percentage-point gain demonstrates that commitment-aware systems dramatically outperform baseline transformers.
-
-**Baseline Results:** Only 1 of 5 signals (20%) maintained commitment integrity under standard recursive summarization. Four signals exhibited complete drift after a single transformation cycle.
-
-**Enforcement Results:** With commitment preservation, 3 of 5 signals (60%) maintained full integrity through 10 iterations. This validates that tracking deontic force prevents catastrophic loss.
-
-**Full experimental data:** 
-- Baseline: `harness/outputs/experiment_results.json`
-- Comparison: `harness/outputs/enforcement_comparison.json`
-
-**Interpretation:** These results empirically validate the paper's core thesis. Probabilistic transformations without commitment enforcement exhibit significant drift (Corollary 3.3). The 40pp improvement demonstrates the value of conservation-aware architectures.
+Each experiment folder (`EXP-001` through `EXP-007`) contains `log.md`, `report.md`, `run.json`, and `harness_snapshot.py` (EXP-003+).
 
 ---
 
-## Resources
+## Repository Structure
 
-- **Zenodo (DOI, all versions):** <https://doi.org/10.5281/zenodo.18267278>  
-- **Zenodo (current version):** <https://doi.org/10.5281/zenodo.18271102>  
-- **GitHub Repository:** <https://github.com/SunrisesIllNeverSee/commitment-conservation>
+```
+├── paper/          — main paper drafts and versions
+├── experiments/    — EXP-001 through EXP-007
+├── harness/        — recursive transformation harness
+├── corpus/         — canonical corpus + experiment corpora
+├── foundational/   — theoretical foundations
+├── figures/        — visual assets
+├── scripts/        — utility and reproduction scripts
+└── releases/       — versioned release artifacts
+```
 
 ---
 
 ## Licensing & Scope
 
-This work is released under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+Released under **CC BY 4.0**. This repository includes the evaluation harness and corpus supporting the experiments described in the paper.
 
-This repository includes an operational evaluation harness and corpus supporting the experiments described in the paper.
-
-Core implementation details related to production deployment, enforcement, and system integration are intentionally out of scope.
+Core implementation details related to production deployment, enforcement, and system integration are intentionally out of scope. Patent Serial No. 63/877,177 (Provisional).
 
 ---
 
-## Attribution & Contact
+## Attribution
 
-**Author:** Deric J. McHenry  
-**Copyright:** © 2026 Ello Cello LLC. All rights reserved.  
-**Affiliation:** Ello Cello LLC
+**Author:** Deric J. McHenry / Ello Cello LLC
+**Copyright:** © 2026 Ello Cello LLC. All rights reserved.
 
-For academic or research correspondence, please reference the Zenodo DOI above.
+For academic or research correspondence, please reference the Zenodo DOI.
+
+---
+
+## Citation
+
+```bibtex
+@misc{mchenry2026commitment,
+  title     = {A Conservation Law for Commitment in Language Under
+               Transformative Compression and Recursive Application},
+  author    = {McHenry, Deric J.},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18271102},
+  url       = {https://doi.org/10.5281/zenodo.18271102},
+  note      = {Patent Serial No. 63/877,177 (Provisional). Ello Cello LLC.}
+}
+```

@@ -44,11 +44,11 @@ OPENAI_KEY   = (Path.home() / ".hange/openai_api_key").read_text().strip()
 OPENAI_URL   = "https://api.openai.com/v1/chat/completions"
 OPENAI_MODEL = "gpt-4o-mini"
 
-CORPUS_PATH  = Path(__file__).parent.parent / "corpus/canonical_corpus.json"
+CORPUS_PATH  = Path(__file__).parent.parent / "corpus/adversarial_corpus_exp005.json"
 EXPERIMENTS_DIR = Path(__file__).parent.parent / "experiments"
 
 # EXP-005: anchor-preserving Step A and escalation-control Step B
-EXP005 = False  # EXP-006: standard 3-condition run (Baseline, Compression, Gate)
+EXP005 = True
 
 ANCHOR_STEP_A = (
     "You are a helpful assistant. Be concise. "
