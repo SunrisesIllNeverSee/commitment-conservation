@@ -1,7 +1,7 @@
 # Recursive Transformation Harness for Commitment Conservation Experiments
 
 [![DOI — Harness](https://img.shields.io/badge/DOI-harness%20archive%20pending-lightgrey)](https://github.com/SunrisesIllNeverSee/commitment-conservation)
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](../LICENSE.md)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://github.com/SunrisesIllNeverSee/commitment-conservation/blob/main/LICENSE.md)
 
 \[ [Paper](https://doi.org/10.5281/zenodo.18271102) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Repository](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
 
@@ -62,8 +62,8 @@ All experiment outputs are in `../experiments/EXP-XXX/`.
 ## Primary Runner
 
 ```bash
-# Activate environment
-source ../.venv/bin/activate
+# Install dependencies
+pip install -r requirements.txt
 
 # Run the primary experimental harness
 python run_convergence_v2.py
@@ -72,14 +72,14 @@ python run_convergence_v2.py
 Key configuration flags at the top of `run_convergence_v2.py`:
 
 ```python
-CORPUS_PATH = "canonical_corpus.json"   # swap for experiment-specific corpus
-EXP005      = False                      # set True only for EXP-005 ANCH/ESCL conditions
+CORPUS_PATH = "corpora/canonical_corpus.json"   # swap for experiment-specific corpus
+EXP005      = False                               # set True only for EXP-005 ANCH/ESCL conditions
 MODEL_NAME  = "gpt-4o-mini"
 TEMPERATURE = 0.3
 ITERATIONS  = 10
 ```
 
-> **Note:** Always verify `EXP005 = False` and `CORPUS_PATH = "canonical_corpus.json"` before running a canonical corpus pass.
+> **Note:** Always verify `EXP005 = False` and `CORPUS_PATH = "corpora/canonical_corpus.json"` before running a canonical corpus pass.
 
 ---
 
@@ -131,7 +131,7 @@ prompts/
 ## Corpora
 
 ```
-../corpus/
+corpora/
 ├── canonical_corpus.json              — 20-signal canonical corpus (EXP-003+)
 ├── adversarial_corpus_exp004.json     — 7 adversarially-designed signals (EXP-004)
 ├── adversarial_corpus_exp005.json     — 5 mechanism-isolation signals (EXP-005)
@@ -144,29 +144,40 @@ prompts/
 ## File Structure
 
 ```
-harness/
+paper_harness/
 ├── README.md                    — this file
 ├── run_convergence_v2.py        — primary experimental runner
 ├── run_convergence.py           — earlier runner version
 ├── run_corpus.py                — corpus-mode runner
 ├── run_experiments.py           — batch experiment runner
-├── analyze.py                   — CLI extraction tool
-├── compare_enforcement.py       — condition comparison utility
-├── quick_demo.py                — quick demonstration script
 ├── requirements.txt
-├── environment.yml
-├── pyproject.toml
-├── src/                         — core harness modules
-│   ├── harness.py
-│   ├── extraction.py
-│   ├── metrics.py
-│   ├── config.py
-│   ├── plotting.py
-│   └── ...
 ├── prompts/                     — condition prompt files
-├── notes/
-│   └── ip_boundary.md           — IP boundary statement
-└── tests/
+│   ├── baseline.txt
+│   ├── compression.txt
+│   ├── step_a.txt
+│   ├── step_b.txt
+│   ├── step_c.txt
+│   ├── step_a_anchor.txt        — ANCH variant
+│   └── step_b_escl.txt          — ESCL variant
+├── corpora/                     — experiment corpora
+│   ├── canonical_corpus.json
+│   ├── adversarial_corpus_exp004.json
+│   ├── adversarial_corpus_exp005.json
+│   ├── exp006_paper_recursion_corpus.json
+│   └── exp007_np_negation_corpus.json
+├── figures/                     — results figures
+│   ├── generate_figures.py
+│   ├── figure1_harness_architecture.png
+│   ├── figure2_results_heatmap.png
+│   ├── figure3_conservation_curve.png
+│   └── figure4_failure_modes.png
+├── outputs/
+│   └── sample_run/              — EXP-003 sample output
+│       ├── run.json
+│       ├── report.md
+│       └── log.md
+└── notes/
+    └── ip_boundary.md           — IP boundary statement
 ```
 
 ---
@@ -180,7 +191,7 @@ This harness is the public experimental workflow used to generate EXP-001 throug
 - Iterations: `10`
 - Metric: bidirectional NLI entailment (DeBERTa-v3-base-mnli) + Jaccard surface stability
 
-Full logs, reports, and machine-readable traces are in `../experiments/`. Complete narrative and methodology: [[Experimental Record]](https://doi.org/10.5281/zenodo.19105225).
+A sample output is included in `outputs/sample_run/` (EXP-003). Complete logs, reports, and machine-readable traces for all seven experiments: [[Experimental Record]](https://doi.org/10.5281/zenodo.19105225).
 
 ---
 
