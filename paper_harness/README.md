@@ -1,4 +1,4 @@
-# Recursive Transformation Harness for Commitment Conservation Experiments
+# Public Recursive Transformation Harness for A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19109397.svg)](https://doi.org/10.5281/zenodo.19109397)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://github.com/SunrisesIllNeverSee/commitment-conservation/blob/main/LICENSE.md)
@@ -205,17 +205,20 @@ This harness discloses the recursive experimental workflow, public prompt layer,
 ## Citation
 
 ```bibtex
-@misc{mchenry2026commitment,
-  title     = {A Conservation Law for Commitment in Language Under
-               Transformative Compression and Recursive Application},
+@misc{mchenry2026harness,
+  title     = {Public Recursive Transformation Harness for A Conservation Law
+               for Commitment in Language Under Transformative Compression
+               and Recursive Application},
   author    = {McHenry, Deric J.},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.18271102},
-  url       = {https://doi.org/10.5281/zenodo.18271102},
+  doi       = {10.5281/zenodo.19109397},
+  url       = {https://doi.org/10.5281/zenodo.19109397},
   note      = {Patent Serial No. 63/877,177 (Provisional). Ello Cello LLC.}
 }
 ```
 
+---
+
 **Author:** Deric J. McHenry / Ello Cello LLC
-**Copyright:** © 2026 Ello Cello LLC. All rights reserved.
+**Copyright:** © 2026 Ello Cello LLC. All rights reserved. Patent Serial No. 63/877,177 (Provisional). Unauthorized reproduction or use of proprietary implementation details is prohibited.
