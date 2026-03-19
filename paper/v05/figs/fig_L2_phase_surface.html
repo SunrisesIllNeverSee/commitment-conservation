@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure L2 — Commitment Stability Phase Surface</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; font-family: 'Georgia', serif; padding: 40px; max-width: 760px; margin: 0 auto; }
+.fig-label { font-size: 11px; color: #666; margin-bottom: 16px; }
+canvas { display: block; border: 0.5px solid #e0e0e0; }
+.caption { font-size: 11px; color: #444; line-height: 1.65; margin-top: 12px; max-width: 680px; }
+.caption strong { font-weight: bold; }
+.caption em { font-style: italic; }
+.meta { font-size: 10px; color: #999; margin-top: 20px; border-top: 0.5px solid #eee; padding-top: 8px; }
+</style>
+</head>
+<body>
+<div class="fig-label">Figure L2</div>
+<canvas id="c" width="680" height="360"></canvas>
+<p class="caption">
+  <strong>Figure L2. Commitment Stability Phase Surface.</strong>
+  Conceptual representation of stability S(r, c) as a joint function of recursion depth r (x-axis)
+  and constraint strength c (y-axis). Three structural regimes emerge: the <em>drift zone</em>
+  (low constraint, high recursion depth) where C(T<sup>n</sup>(S)) ≪ C(S); the
+  <em>compression stability</em> band (intermediate constraint) where surface stabilization
+  occurs without full conservation; and the <em>conservation regime</em> (strong constraint,
+  any recursion depth) where C(T<sup>n</sup>(S)) ≈ C(S). The stability basin is not flat —
+  enforcement creates a ridge orthogonal to the recursion axis, constituting a structural
+  invariant under recursive load. Dashed contours mark regime boundaries at S=0.25 and S=0.60.
+  Patent pending Serial No. 63/877,177. DOI: 10.5281/zenodo.18792459.
+</p>
+<div class="meta">© 2026 Ello Cello LLC — Deric J. McHenry. All rights reserved.</div>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const W = 680, H = 360;
+const PAD = { top: 44, right: 50, bottom: 56, left: 62 };
+const PW = W - PAD.left - PAD.right;
+const PH = H - PAD.top - PAD.bottom;
+const NX = 80, NY = 60;
+
+function stability(rx, cy) {
+  const base = cy * 0.85;
+  const decay = (1 - cy) * rx * 0.7;
+  const boost = Math.max(0, (cy - 0.3)) * 0.4 * (1 - rx * 0.3);
+  return Math.max(0, Math.min(1, base - decay + boost));
+}
+
+function stab2color(v) {
+  if (v < 0.25) {
+    const t = v / 0.25;
+    return [Math.round(180 + t*20), Math.round(50 + t*30), Math.round(20 + t*10)];
+  } else if (v < 0.60) {
+    const t = (v - 0.25) / 0.35;
+    return [Math.round(36 + t*10), Math.round(90 + t*60), Math.round(163 + t*20)];
+  } else {
+    const t = (v - 0.60) / 0.40;
+    return [Math.round(20), Math.round(138 + t*60), Math.round(101 - t*30)];
+  }
+}
+
+const cellW = PW / NX, cellH = PH / NY;
+for (let xi = 0; xi < NX; xi++) {
+  for (let yi = 0; yi < NY; yi++) {
+    const rx = xi / (NX - 1);
+    const cy = 1 - yi / (NY - 1);
+    const v = stability(rx, cy);
+    const [r, g, b] = stab2color(v);
+    ctx.fillStyle = `rgb(${r},${g},${b})`;
+    ctx.fillRect(PAD.left + xi * cellW, PAD.top + yi * cellH, cellW + 0.5, cellH + 0.5);
+  }
+}
+
+// Contour lines
+function drawContour(targetV) {
+  ctx.strokeStyle = 'rgba(255,255,255,0.45)';
+  ctx.lineWidth = 1.2;
+  ctx.setLineDash([5, 4]);
+  ctx.beginPath();
+  let started = false;
+  for (let xi = 0; xi < NX; xi++) {
+    const rx = xi / (NX - 1);
+    let bestYi = null, bestDiff = 1;
+    for (let yi = 0; yi < NY; yi++) {
+      const cy = 1 - yi / (NY - 1);
+      const diff = Math.abs(stability(rx, cy) - targetV);
+      if (diff < bestDiff) { bestDiff = diff; bestYi = yi; }
+    }
+    if (bestYi !== null && bestDiff < 0.06) {
+      const px = PAD.left + xi * cellW + cellW/2;
+      const py = PAD.top + bestYi * cellH + cellH/2;
+      if (!started) { ctx.moveTo(px, py); started = true; } else ctx.lineTo(px, py);
+    }
+  }
+  ctx.stroke();
+  ctx.setLineDash([]);
+}
+drawContour(0.25);
+drawContour(0.60);
+
+// Axes
+ctx.strokeStyle = 'rgba(0,0,0,0.4)';
+ctx.lineWidth = 1;
+ctx.beginPath();
+ctx.moveTo(PAD.left, PAD.top); ctx.lineTo(PAD.left, PAD.top + PH); ctx.lineTo(PAD.left + PW, PAD.top + PH);
+ctx.stroke();
+
+// Axis labels
+ctx.fillStyle = '#555';
+ctx.font = '11px Georgia, serif';
+ctx.textAlign = 'center';
+ctx.fillText('Recursion Depth →', PAD.left + PW/2, H - 8);
+ctx.save(); ctx.translate(16, PAD.top + PH/2); ctx.rotate(-Math.PI/2);
+ctx.fillText('Constraint Strength →', 0, 0);
+ctx.restore();
+
+// Tick labels
+ctx.font = '10px Georgia, serif';
+ctx.fillStyle = '#777';
+ctx.textAlign = 'center';
+['Low', 'Mid', 'High'].forEach((l, i) => ctx.fillText(l, PAD.left + i * PW/2, PAD.top + PH + 16));
+ctx.textAlign = 'right';
+['Low', 'Mid', 'High'].forEach((l, i) => ctx.fillText(l, PAD.left - 8, PAD.top + PH - i * PH/2 + 4));
+
+// Title
+ctx.fillStyle = '#111';
+ctx.font = '500 12px Georgia, serif';
+ctx.textAlign = 'left';
+ctx.fillText('Commitment Stability Phase Surface', PAD.left, PAD.top - 16);
+
+// Region labels
+function regionLabel(text, x, y, col) {
+  ctx.font = 'italic 10px Georgia, serif';
+  const m = ctx.measureText(text);
+  ctx.fillStyle = 'rgba(255,255,255,0.55)';
+  ctx.fillRect(x - 3, y - 12, m.width + 6, 16);
+  ctx.fillStyle = col;
+  ctx.textAlign = 'left';
+  ctx.fillText(text, x, y);
+}
+regionLabel('drift zone',            PAD.left + PW*0.55, PAD.top + PH*0.78, '#7a1a0a');
+regionLabel('compression stability', PAD.left + PW*0.20, PAD.top + PH*0.44, '#0d3d6e');
+regionLabel('conservation regime',   PAD.left + PW*0.04, PAD.top + PH*0.10, '#0a4a30');
+
+// Colorbar
+const cbX = W - 36, cbY = PAD.top, cbH = PH, cbW = 14;
+for (let i = 0; i < cbH; i++) {
+  const v = 1 - i / cbH;
+  const [r, g, b] = stab2color(v);
+  ctx.fillStyle = `rgb(${r},${g},${b})`;
+  ctx.fillRect(cbX, cbY + i, cbW, 1.5);
+}
+ctx.strokeStyle = 'rgba(0,0,0,0.3)';
+ctx.lineWidth = 0.5;
+ctx.strokeRect(cbX, cbY, cbW, cbH);
+ctx.fillStyle = '#666';
+ctx.font = '9px Georgia, serif';
+ctx.textAlign = 'left';
+ctx.fillText('1.0', cbX + cbW + 3, cbY + 6);
+ctx.fillText('0.5', cbX + cbW + 3, cbY + cbH/2 + 4);
+ctx.fillText('0.0', cbX + cbW + 3, cbY + cbH);
+ctx.save(); ctx.translate(cbX + cbW + 28, cbY + cbH/2); ctx.rotate(-Math.PI/2);
+ctx.textAlign = 'center';
+ctx.fillText('Stability', 0, 0);
+ctx.restore();
+</script>
+</body>
+</html>

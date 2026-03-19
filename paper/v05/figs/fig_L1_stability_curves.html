@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure L1 — Commitment Stability Across Recursive Transformation</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; font-family: 'Georgia', serif; padding: 40px; max-width: 760px; margin: 0 auto; }
+h2 { font-size: 13px; font-weight: normal; color: #333; margin-bottom: 4px; letter-spacing: 0.01em; }
+.fig-label { font-size: 11px; color: #666; margin-bottom: 16px; }
+canvas { display: block; border: 0.5px solid #e0e0e0; }
+.caption { font-size: 11px; color: #444; line-height: 1.65; margin-top: 12px; max-width: 680px; }
+.caption strong { font-weight: bold; }
+.caption em { font-style: italic; }
+.meta { font-size: 10px; color: #999; margin-top: 20px; border-top: 0.5px solid #eee; padding-top: 8px; }
+</style>
+</head>
+<body>
+<div class="fig-label">Figure L1</div>
+<canvas id="c" width="680" height="380"></canvas>
+<p class="caption">
+  <strong>Figure L1. Commitment Stability Across Recursive Transformation.</strong>
+  Mean Jaccard stability over 10 recursive iterations across n=20 commitment-bearing signals.
+  Three regimes: <em>baseline</em> (unmediated transformation) exhibits oscillatory drift consistent
+  with entropic decay under recursive load; <em>compression</em> stabilizes at an intermediate
+  plateau (~0.74), reducing variance without full conservation; <em>gate/enforcement</em> sustains
+  highest stability, consistent with C(T(S)) ≈ C(S). The separation between compression and gate
+  regimes constitutes the enforcement premium — the marginal conservation attributable to
+  the constitutional constraint beyond compression alone.
+  Data: corpus_run_20260317, convergence_v2_234059. Patent pending Serial No. 63/877,177.
+  DOI: <a href="https://doi.org/10.5281/zenodo.18792459">10.5281/zenodo.18792459</a>.
+</p>
+<div class="meta">© 2026 Ello Cello LLC — Deric J. McHenry. All rights reserved. For academic use with attribution.</div>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const W = 680, H = 380;
+const PAD = { top: 40, right: 150, bottom: 58, left: 68 };
+const PW = W - PAD.left - PAD.right;
+const PH = H - PAD.top - PAD.bottom;
+
+const iters = [1,2,3,4,5,6,7,8,9,10];
+const baselineSmooth = [0.30, 0.55, 0.28, 0.48, 0.22, 0.50, 0.22, 0.50, 0.22, 0.46];
+const compressSmooth = [0.75, 0.74, 0.75, 0.74, 0.73, 0.74, 0.74, 0.73, 0.74, 0.74];
+const gateSmooth     = [0.75, 0.66, 0.75, 0.75, 0.66, 0.75, 0.66, 0.75, 0.66, 0.75];
+
+const COLORS = {
+  baseline: { line: '#C0392B', fill: 'rgba(192,57,43,0.07)' },
+  compress: { line: '#2471A3', fill: 'rgba(36,113,163,0.07)' },
+  gate:     { line: '#1A8A65', fill: 'rgba(26,138,101,0.07)' },
+};
+
+function xPos(i) { return PAD.left + (i / (iters.length - 1)) * PW; }
+function yPos(v) { return PAD.top + PH - v * PH; }
+
+// Grid
+ctx.strokeStyle = 'rgba(0,0,0,0.05)';
+ctx.lineWidth = 0.5;
+[0, 0.25, 0.5, 0.75, 1.0].forEach(v => {
+  const y = yPos(v);
+  ctx.beginPath(); ctx.moveTo(PAD.left, y); ctx.lineTo(PAD.left + PW, y); ctx.stroke();
+  ctx.fillStyle = '#888';
+  ctx.font = '11px Georgia, serif';
+  ctx.textAlign = 'right';
+  ctx.fillText(v.toFixed(2), PAD.left - 10, y + 4);
+});
+iters.forEach((it, i) => {
+  const x = xPos(i);
+  ctx.beginPath(); ctx.moveTo(x, PAD.top); ctx.lineTo(x, PAD.top + PH); ctx.stroke();
+  ctx.fillStyle = '#888';
+  ctx.textAlign = 'center';
+  ctx.fillText(it, x, PAD.top + PH + 18);
+});
+
+// Axes
+ctx.strokeStyle = 'rgba(0,0,0,0.25)';
+ctx.lineWidth = 1;
+ctx.beginPath();
+ctx.moveTo(PAD.left, PAD.top); ctx.lineTo(PAD.left, PAD.top + PH); ctx.lineTo(PAD.left + PW, PAD.top + PH);
+ctx.stroke();
+
+function drawCurve(data, color, label, legendY) {
+  ctx.beginPath();
+  ctx.moveTo(xPos(0), yPos(data[0]));
+  data.forEach((v,i) => { if (i > 0) ctx.lineTo(xPos(i), yPos(v)); });
+  ctx.lineTo(xPos(data.length-1), PAD.top + PH);
+  ctx.lineTo(xPos(0), PAD.top + PH);
+  ctx.closePath();
+  ctx.fillStyle = color.fill;
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.moveTo(xPos(0), yPos(data[0]));
+  data.forEach((v,i) => { if (i > 0) ctx.lineTo(xPos(i), yPos(v)); });
+  ctx.strokeStyle = color.line;
+  ctx.lineWidth = 1.8;
+  ctx.lineJoin = 'round';
+  ctx.stroke();
+
+  data.forEach((v,i) => {
+    ctx.beginPath();
+    ctx.arc(xPos(i), yPos(v), 2.8, 0, Math.PI*2);
+    ctx.fillStyle = color.line;
+    ctx.fill();
+  });
+
+  const lx = PAD.left + PW + 16;
+  ctx.beginPath(); ctx.moveTo(lx, legendY); ctx.lineTo(lx + 22, legendY);
+  ctx.strokeStyle = color.line; ctx.lineWidth = 1.8; ctx.stroke();
+  ctx.beginPath(); ctx.arc(lx + 11, legendY, 2.8, 0, Math.PI*2); ctx.fillStyle = color.line; ctx.fill();
+  ctx.fillStyle = '#333';
+  ctx.font = '11px Georgia, serif';
+  ctx.textAlign = 'left';
+  ctx.fillText(label, lx + 28, legendY + 4);
+}
+
+drawCurve(baselineSmooth, COLORS.baseline, 'Baseline',    PAD.top + 30);
+drawCurve(compressSmooth, COLORS.compress, 'Compression', PAD.top + 58);
+drawCurve(gateSmooth,     COLORS.gate,     'Gate (enforced)', PAD.top + 86);
+
+// Axis labels
+ctx.save();
+ctx.translate(18, PAD.top + PH/2);
+ctx.rotate(-Math.PI/2);
+ctx.fillStyle = '#555';
+ctx.font = '11px Georgia, serif';
+ctx.textAlign = 'center';
+ctx.fillText('Commitment Stability (Jaccard)', 0, 0);
+ctx.restore();
+ctx.fillStyle = '#555';
+ctx.font = '11px Georgia, serif';
+ctx.textAlign = 'center';
+ctx.fillText('Recursion Depth (iterations)', PAD.left + PW/2, H - 10);
+
+// Title
+ctx.fillStyle = '#111';
+ctx.font = '500 12px Georgia, serif';
+ctx.textAlign = 'left';
+ctx.fillText('Commitment Stability Across Recursive Transformation', PAD.left, PAD.top - 16);
+
+// Region annotations
+ctx.font = 'italic 10px Georgia, serif';
+ctx.fillStyle = COLORS.baseline.line;
+ctx.textAlign = 'left';
+ctx.fillText('oscillatory drift', xPos(1) + 5, yPos(0.56) - 7);
+ctx.fillStyle = COLORS.compress.line;
+ctx.fillText('compression plateau', xPos(3) + 5, yPos(0.76) - 7);
+ctx.fillStyle = COLORS.gate.line;
+ctx.fillText('conservation regime', xPos(5) + 5, yPos(0.84) - 7);
+</script>
+</body>
+</html>

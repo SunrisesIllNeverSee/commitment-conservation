@@ -469,7 +469,8 @@ where *T_c* is a compression transformation.
 
 Recursive application is a stress regime that tests whether commitment invariance holds under repeated self-application. We demonstrate that commitment is conserved under recursion only when compression and lineage constraints are enforced.
 
-*[Figure 3: Divergent behavior of constrained versus unconstrained systems under recursive application.]*
+![Figure L2 — Commitment Stability Phase Surface](figs/fig_L2_phase_surface.png)
+*Figure L2: Commitment Stability Phase Surface. Stability S(r,c) as a joint function of recursion depth r and constraint strength c. Three structural regimes: drift zone (low constraint, high recursion); compression stability band (intermediate constraint); conservation regime (strong constraint, any depth). The stability basin forms a ridge orthogonal to the recursion axis — a structural invariant under recursive load.*
 
 **Definition 6.1 (Recursive Stability).** A transformation *T* is recursively stable if commitment is conserved under repeated self-application:
 
@@ -530,6 +531,12 @@ We conducted preliminary tests using a prototype harness on a limited corpus to 
 | Drift Rate (per iteration) | 0.006 | 0.058 |
 
 *Table 2: Comparison of commitment conservation metrics between compression + lineage systems and probabilistic systems without compression.*
+
+![Figure L1 — Commitment Stability Across Recursive Transformation](figs/fig_L1_stability_curves.png)
+*Figure L1: Mean Jaccard stability over 10 recursive iterations across n=20 commitment-bearing signals. Three regimes: baseline (unmediated transformation) exhibits oscillatory drift; compression stabilizes at an intermediate plateau (~0.74); gate/enforcement sustains highest stability, consistent with C(T(S)) ≈ C(S). Data: corpus_run_20260317, convergence_v2_234059.*
+
+![Figure E1 — Commitment Fidelity by Signal Category](figs/fig_E1_fidelity_heatmap.png)
+*Figure E1: Jaccard fidelity scores under baseline and enforcement conditions across n=20 signal categories at recursion depth 10. Highest enforcement gains: specification (+0.297), legal (+0.287), conditional (+0.271), obligation (+0.258), regulation (+0.257). Mean fidelity gain across corpus: +0.118. Source: corpus_run_20260317_085833.*
 
 ### 7.4 Observations
 

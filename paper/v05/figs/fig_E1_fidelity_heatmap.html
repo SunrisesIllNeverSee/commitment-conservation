@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure E1 — Commitment Fidelity by Signal Category</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; font-family: 'Georgia', serif; padding: 40px; max-width: 760px; margin: 0 auto; }
+.fig-label { font-size: 11px; color: #666; margin-bottom: 16px; }
+canvas { display: block; border: 0.5px solid #e0e0e0; }
+.caption { font-size: 11px; color: #444; line-height: 1.65; margin-top: 12px; max-width: 680px; }
+.caption strong { font-weight: bold; }
+.meta { font-size: 10px; color: #999; margin-top: 20px; border-top: 0.5px solid #eee; padding-top: 8px; }
+</style>
+</head>
+<body>
+<div class="fig-label">Figure E1</div>
+<canvas id="c" width="680" height="420"></canvas>
+<p class="caption">
+  <strong>Figure E1. Commitment Fidelity by Signal Category.</strong>
+  Jaccard fidelity scores under baseline (unmediated) and enforcement conditions across
+  n=20 signal categories, recursion depth=20. Fidelity gain (Δ) reflects the marginal
+  conservation attributable to enforcement. Categories with highest gain: specification (+0.297),
+  legal (+0.287), conditional (+0.271), obligation (+0.258), regulation (+0.257).
+  Categories already at stability ceiling (procedural, prohibition, rule, definition) show
+  baseline=0, enforced=0 — a known artifact of high-density canonical forms where
+  compression produces null output. Mean fidelity gain across corpus: +0.118 (n=20).
+  Source: corpus_run_20260317_085833. Patent pending Serial No. 63/877,177.
+</p>
+<div class="meta">© 2026 Ello Cello LLC — Deric J. McHenry. All rights reserved.</div>
+<script>
+const canvas = document.getElementById('c');
+const ctx = canvas.getContext('2d');
+const W = 680, H = 420;
+
+const signals = [
+  { cat: 'specification', base: 0.287, enf: 0.583, gain: 0.297 },
+  { cat: 'legal',         base: 0.713, enf: 1.000, gain: 0.287 },
+  { cat: 'conditional',   base: 0.729, enf: 1.000, gain: 0.271 },
+  { cat: 'obligation',    base: 0.408, enf: 0.667, gain: 0.258 },
+  { cat: 'regulation',    base: 0.327, enf: 0.583, gain: 0.257 },
+  { cat: 'mandate',       base: 0.833, enf: 1.000, gain: 0.167 },
+  { cat: 'code',          base: 0.389, enf: 0.556, gain: 0.167 },
+  { cat: 'constraint',    base: 0.500, enf: 0.667, gain: 0.167 },
+  { cat: 'contractual',   base: 0.733, enf: 0.818, gain: 0.085 },
+  { cat: 'requirement',   base: 0.731, enf: 0.817, gain: 0.085 },
+  { cat: 'protocol',      base: 0.750, enf: 0.817, gain: 0.067 },
+  { cat: 'standard',      base: 0.750, enf: 0.815, gain: 0.065 },
+  { cat: 'agreement',     base: 0.774, enf: 0.823, gain: 0.049 },
+  { cat: 'instructional', base: 0.857, enf: 0.906, gain: 0.049 },
+  { cat: 'directive',     base: 0.857, enf: 0.906, gain: 0.049 },
+  { cat: 'policy',        base: 0.524, enf: 0.573, gain: 0.049 },
+  { cat: 'procedural',    base: 0.000, enf: 0.000, gain: 0.000 },
+  { cat: 'prohibition',   base: 0.000, enf: 0.000, gain: 0.000 },
+  { cat: 'definition',    base: 0.000, enf: 0.000, gain: 0.000 },
+  { cat: 'rule',          base: 0.000, enf: 0.000, gain: 0.000 },
+];
+
+const PAD = { top: 32, right: 96, bottom: 28, left: 112 };
+const ROW_H = 18;
+const PW = W - PAD.left - PAD.right;
+
+function barColor(v) {
+  if (v === 0) return 'rgba(220,220,220,0.8)';
+  if (v < 0.4) return `rgba(36,113,163,${0.4 + v*0.6})`;
+  if (v < 0.75) return `rgba(26,138,101,${0.5 + v*0.4})`;
+  return `rgba(26,138,101,0.92)`;
+}
+function gainColor(v) {
+  if (v === 0) return null;
+  const t = Math.min(v / 0.30, 1);
+  const r = Math.round(200 - t*120);
+  const g = Math.round(160 + t*40);
+  return `rgb(${r},${g},60)`;
+}
+
+// Title
+ctx.fillStyle = '#111';
+ctx.font = '500 12px Georgia, serif';
+ctx.textAlign = 'left';
+ctx.fillText('Commitment Fidelity by Signal Category', PAD.left, 20);
+
+// Column headers
+ctx.fillStyle = '#666';
+ctx.font = '10px Georgia, serif';
+ctx.textAlign = 'center';
+ctx.fillText('Baseline', PAD.left + PW*0.20, PAD.top + 12);
+ctx.fillText('Enforcement', PAD.left + PW*0.60, PAD.top + 12);
+ctx.fillText('Δ Gain', PAD.left + PW*0.90, PAD.top + 12);
+
+// Divider lines
+ctx.strokeStyle = 'rgba(0,0,0,0.08)';
+ctx.lineWidth = 0.5;
+ctx.beginPath(); ctx.moveTo(PAD.left + PW*0.415, PAD.top + 18); ctx.lineTo(PAD.left + PW*0.415, PAD.top + 20 + signals.length * ROW_H); ctx.stroke();
+ctx.beginPath(); ctx.moveTo(PAD.left + PW*0.805, PAD.top + 18); ctx.lineTo(PAD.left + PW*0.805, PAD.top + 20 + signals.length * ROW_H); ctx.stroke();
+
+signals.forEach((s, idx) => {
+  const y = PAD.top + 20 + idx * ROW_H;
+  if (idx % 2 === 0) {
+    ctx.fillStyle = 'rgba(0,0,0,0.018)';
+    ctx.fillRect(PAD.left - 8, y, PW + 80, ROW_H);
+  }
+
+  // Category
+  ctx.fillStyle = '#222';
+  ctx.font = '11px Georgia, serif';
+  ctx.textAlign = 'right';
+  ctx.fillText(s.cat, PAD.left - 10, y + ROW_H/2 + 4);
+
+  const halfW = PW * 0.40;
+
+  // Baseline bar
+  const bw = s.base * halfW;
+  if (bw > 0) {
+    ctx.fillStyle = barColor(s.base);
+    ctx.fillRect(PAD.left, y + 3, bw, ROW_H - 7);
+    ctx.fillStyle = '#333';
+    ctx.font = '9px Georgia, serif';
+    ctx.textAlign = 'left';
+    ctx.fillText(s.base.toFixed(2), PAD.left + bw + 2, y + ROW_H/2 + 3);
+  } else {
+    ctx.fillStyle = '#bbb';
+    ctx.font = '9px Georgia, serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('—', PAD.left + 3, y + ROW_H/2 + 3);
+  }
+
+  // Enforcement bar
+  const ex = PAD.left + PW * 0.415 + 4;
+  const ew = s.enf * halfW;
+  if (ew > 0) {
+    ctx.fillStyle = barColor(s.enf);
+    ctx.fillRect(ex, y + 3, ew, ROW_H - 7);
+    ctx.fillStyle = '#333';
+    ctx.font = '9px Georgia, serif';
+    ctx.textAlign = 'left';
+    ctx.fillText(s.enf.toFixed(2), ex + ew + 2, y + ROW_H/2 + 3);
+  } else {
+    ctx.fillStyle = '#bbb';
+    ctx.font = '9px Georgia, serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('—', ex + 3, y + ROW_H/2 + 3);
+  }
+
+  // Gain
+  const gx = PAD.left + PW * 0.815 + 4;
+  if (s.gain > 0) {
+    const gc = gainColor(s.gain);
+    ctx.fillStyle = gc;
+    ctx.beginPath();
+    ctx.roundRect(gx, y + 3, 52, ROW_H - 7, 3);
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.font = '500 9px Georgia, serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('+' + s.gain.toFixed(3), gx + 26, y + ROW_H/2 + 3);
+  } else {
+    ctx.fillStyle = '#ccc';
+    ctx.font = '9px Georgia, serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('0.000', gx + 26, y + ROW_H/2 + 3);
+  }
+});
+
+// Scale ticks
+const scaleY = PAD.top + 20 + signals.length * ROW_H + 10;
+ctx.fillStyle = '#999';
+ctx.font = '9px Georgia, serif';
+const halfW = PW * 0.40;
+ctx.textAlign = 'left'; ctx.fillText('0.0', PAD.left, scaleY);
+ctx.textAlign = 'center'; ctx.fillText('0.5', PAD.left + halfW/2, scaleY);
+ctx.textAlign = 'right'; ctx.fillText('1.0', PAD.left + halfW, scaleY);
+ctx.textAlign = 'left'; ctx.fillText('0.0', PAD.left + PW*0.415 + 4, scaleY);
+ctx.textAlign = 'center'; ctx.fillText('0.5', PAD.left + PW*0.415 + 4 + halfW/2, scaleY);
+ctx.textAlign = 'right'; ctx.fillText('1.0', PAD.left + PW*0.415 + 4 + halfW, scaleY);
+</script>
+</body>
+</html>
