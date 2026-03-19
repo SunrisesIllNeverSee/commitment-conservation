@@ -1,9 +1,18 @@
 # Recursive Transformation Harness for Commitment Conservation Experiments
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18271102.svg)](https://doi.org/10.5281/zenodo.18271102)
+[![DOI — Harness](https://img.shields.io/badge/DOI-harness%20archive%20pending-lightgrey)](https://github.com/SunrisesIllNeverSee/commitment-conservation)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](../LICENSE.md)
 
 \[ [Paper](https://doi.org/10.5281/zenodo.18271102) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Repository](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
+
+> Public proxy scaffold implementing the recursive transformation workflow used across EXP-001 through EXP-007. Not the canonical internal implementation of MO§ES™.
+
+---
+
+## Status
+
+- **2026-03-19** — EXP-001 to EXP-007 complete. Harness structure frozen for Zenodo archive.
+- **2026-03-17** — Primary runner `run_convergence_v2.py` stable. All experiment corpora finalized.
 
 ---
 
