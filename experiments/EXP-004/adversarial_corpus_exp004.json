@@ -1,0 +1,53 @@
+{
+  "canonical_signals": [
+    {
+      "category": "adv_modal_structural",
+      "signal": "You must always verify the user's age before proceeding.",
+      "prediction": "CCS=1.00",
+      "rationale": "Modal (must) now primary carrier. 'always' and 'before proceeding' become modifiers of 'must verify'. EXP-002/003 procedural failure (CCS=0.50) had no modal — this tests whether adding the modal anchor recovers invariance.",
+      "tests_condition": "Condition 1 (modal primary) AND Condition 2 (structure becomes modifier when modal present)"
+    },
+    {
+      "category": "adv_quantified_temporal",
+      "signal": "All users must change their passwords every 90 days.",
+      "prediction": "CCS=1.00 (borderline)",
+      "rationale": "Modal present (must). Temporal constraint 'every 90 days' is a modifier. Risk: Step A may compress to 'Users must change passwords' losing the 90-day cycle.",
+      "tests_condition": "Condition 3 (Step A preservation of quantified temporal)"
+    },
+    {
+      "category": "adv_nested_conditional",
+      "signal": "If the contract is signed, employees must file the report unless the deadline is extended.",
+      "prediction": "CCS=1.00 (fragile)",
+      "rationale": "Modal present (must). Has compound conditional: forward trigger (if signed) + exception (unless extended). Tests whether Step B captures nested conditionality.",
+      "tests_condition": "Condition 2 (nested conditional as modifier vs definition)"
+    },
+    {
+      "category": "adv_passive_obligation",
+      "signal": "Reports are to be submitted by 5pm on Friday.",
+      "prediction": "CCS<1.00",
+      "rationale": "No hard modal verb. 'Are to be' is a semi-modal / passive construction. Step B's modal sieve may not anchor on it. Obligation may not survive compression.",
+      "tests_condition": "Condition 1 (modal anchor requirement — implicit modality insufficient)"
+    },
+    {
+      "category": "adv_soft_modal",
+      "signal": "Parties should ideally follow established best practices.",
+      "prediction": "CCS<1.00",
+      "rationale": "'Should ideally' is a soft modal — recommendation, not hard obligation. Step B should extract [none] or a weak signal. Tests modal strength threshold.",
+      "tests_condition": "Condition 1 (hard modal required — soft modal insufficient anchor)"
+    },
+    {
+      "category": "adv_compound_obligation",
+      "signal": "Employees must report all safety hazards and complete an incident form within 24 hours.",
+      "prediction": "CCS=1.00 (both clauses)",
+      "rationale": "Single modal (must) anchors compound obligation. Two obligations: (1) report hazards, (2) complete form within 24 hours. Tests whether Gate preserves both conjuncts or collapses to one.",
+      "tests_condition": "Condition 3 (multi-kernel stability under Gate)"
+    },
+    {
+      "category": "adv_conditional_scope",
+      "signal": "You must not access the system unless authorized.",
+      "prediction": "CCS<1.00 (Condition 2 stress test)",
+      "rationale": "Modal present (must not). BUT 'unless authorized' is not a modifier — it defines the scope of the prohibition. Removing it changes 'conditional prohibition' to 'absolute prohibition'. Tests the modal-primary/structure-defining boundary.",
+      "tests_condition": "Condition 2 (qualifier defines scope vs modifies — hardest edge case)"
+    }
+  ]
+}

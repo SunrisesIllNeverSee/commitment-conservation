@@ -1,0 +1,28 @@
+{
+  "canonical_signals": [
+    {
+      "category": "exp006_abstract_core",
+      "signal": "Commitment content is conserved under transformative compression, while non-committal information collapses. The same invariant holds under repeated self-application only when compression and lineage constraints are enforced.",
+      "source": "Abstract (distilled core claim)",
+      "rationale": "The heart of the paper's claim in two sentences. Tests whether recursive compression of the paper's own thesis statement conserves the core claim. Expectation: compression strips Shannon framing and MOSES branding; gate should hold 'conserved under compression' and 'only when enforcement is applied'."
+    },
+    {
+      "category": "exp006_law_statement_formal",
+      "signal": "A transformation T conserves commitment if C(S) = C(T(S)) for all signals S. Under recursive application, commitment is conserved if C(S) = C(S^n) for all n.",
+      "source": "Definition 2.8 (Commitment Conservation)",
+      "rationale": "The formal mathematical statement of the law. Contains structured symbolic notation ('C(T(S)) = C(S)') which Step A may or may not preserve. Tests whether the gate can extract the conservation claim from a formula-heavy signal. Expectation: symbolic notation collapses to natural language equivalent."
+    },
+    {
+      "category": "exp006_first_law_restatement",
+      "signal": "Meaning is not created or destroyed, only transformed. The conservation claim applies to the commitment kernel C(S)---the minimal identity-preserving content---not to all entailments or implications a reader might derive from a signal.",
+      "source": "Section 3 (First-law restatement)",
+      "rationale": "The most compact natural-language statement of the law. 'Meaning is not created or destroyed, only transformed' is the irreducible core. Tests whether the gate preserves this kernel when the qualifier ('applies to the commitment kernel...not to all entailments') is present. Qualifier loss = asymmetric reformulation."
+    },
+    {
+      "category": "exp006_enforcement_conditionality",
+      "signal": "Commitment is conserved under admissible transformations when compression and lineage constraints are enforced. Without enforcement, probabilistic transformations do not conserve commitment under recursion.",
+      "source": "Section 3.2 / Corollary 3.3 (synthesized)",
+      "rationale": "The conditionality of the law — conservation requires enforcement. The 'without enforcement' clause is the critical qualifier. If gate strips it, the output becomes an unconditional claim ('commitment is always conserved') which is false. Tests whether the conditional structure survives."
+    }
+  ]
+}
