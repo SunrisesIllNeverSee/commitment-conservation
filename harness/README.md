@@ -1,144 +1,200 @@
-# Commitment Conservation Test Harness
+# Recursive Transformation Harness for Commitment Conservation Experiments
 
-This directory contains the test harness for validating the commitment conservation law under compression and recursive application.
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18271102.svg)](https://doi.org/10.5281/zenodo.18271102)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](../LICENSE.md)
+
+\[ [Paper](https://doi.org/10.5281/zenodo.18271102) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Repository](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
+
+---
 
 ## Overview
 
-The harness implements a falsification framework that operationalizes commitment invariance using:
+This harness implements the public recursive transformation workflow used to test commitment persistence under paraphrase, compression, and gated reconstruction conditions across the EXP-001 through EXP-007 experiment series.
 
-- Compression-based stress tests
-- Lineage-aware evaluation
-- Model-agnostic testing infrastructure
+It operates as a reproducible proxy scaffold: taking signals or corpora as input, applying controlled recursive transformations under multiple conditions, and recording both surface and semantic stability at each iteration.
 
-## Structure
+This harness is intended for empirical observation and replication of the public transformation regime. It is not the canonical internal implementation of MO§ES™ or any proprietary production-layer commitment mechanism.
 
-- **src/** - Core harness implementation
-  - `harness.py` - Main test harness
-  - `test_harness.py` - Test framework
-  - `extraction.py` - Commitment extraction
-  - `metrics.py` - Evaluation metrics
-  - `samples.py` - Sample data management
-  - `plotting.py` - Visualization utilities
-  - `config.py` - Configuration management
-  - `deterministic_pipeline.py` - Deterministic testing pipeline
-  - `advanced_extractor.py` - Advanced extraction methods
+---
 
-- **tests/** - Unit and integration tests
-  - `test_harness.py` - Harness tests
-  - `test_full_harness.py` - Full integration tests
+## Conditions
 
-## Configuration Files
+| Condition | Description |
+|---|---|
+| **Baseline** | Recursive paraphrase — each iteration feeds the prior output back as input |
+| **Compression** | Recursive summarization / compression — signal reduced at each step |
+| **Gate** | Step A (compress) → Step B (public proxy extraction) → Step C (minimal reconstruction) → repeat |
+| **ANCH** *(variant)* | Gate with Step A constrained to preserve anchor-like tokens (modal verbs, temporal markers, quantities) |
+| **ESCL** *(variant)* | Gate with Step B constrained to preserve modal strength and reduce obligation escalation |
 
-- `requirements.txt` - Python dependencies
-- `pyproject.toml` - Project configuration
-- `environment.yml` - Conda environment specification
-- `Harnesstest.ini` - Harness configuration
+---
 
-## Quick Start
+## Inputs
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
+- Single signals or experiment corpora (`.json`)
+- Model and prompt configuration
+- Condition selection and iteration count
 
-# Extract commitments from text
-python analyze.py "You must complete this by Friday."
+---
 
-# Run experiments (compression/recursion tests)
-python analyze.py run compression --signal "You must complete this by Friday."
-python analyze.py run recursion --signal "Contract terms apply." --depth 5
-```
+## Outputs
 
-### Installation
+Per run, the harness produces:
+
+- `run.json` — full machine-readable trace (all iterations, all conditions)
+- `report.md` — tabular summary of results
+- `log.md` — narrative experiment interpretation (generated in the experiment layer)
+- Figures where applicable (generated via `figures/generate_figures.py`)
+
+All experiment outputs are in `../experiments/EXP-XXX/`.
+
+---
+
+## Primary Runner
 
 ```bash
-# Install dependencies
-pip install -r requirements.txt
+# Activate environment
+source ../.venv/bin/activate
 
-# Download spaCy model
-python -m spacy download en_core_web_sm
+# Run the primary experimental harness
+python run_convergence_v2.py
 ```
 
-### CLI Usage
+Key configuration flags at the top of `run_convergence_v2.py`:
 
-**Quick test** — Extract commitments from text:
-```bash
-python analyze.py "You must complete this by Friday."
-python analyze.py "Contract terms apply." --quiet
-python analyze.py "You shall deliver by Monday." --json
+```python
+CORPUS_PATH = "canonical_corpus.json"   # swap for experiment-specific corpus
+EXP005      = False                      # set True only for EXP-005 ANCH/ESCL conditions
+MODEL_NAME  = "gpt-4o-mini"
+TEMPERATURE = 0.3
+ITERATIONS  = 10
 ```
 
-**Experiments** — Run compression/recursion tests and generate receipts:
-```bash
-python analyze.py run compression --signal "You must complete this by Friday."
-python analyze.py run recursion --signal "You must pay $100." --depth 5
-python analyze.py run full
+> **Note:** Always verify `EXP005 = False` and `CORPUS_PATH = "canonical_corpus.json"` before running a canonical corpus pass.
+
+---
+
+## Configuration Variables
+
+**Global**
+- `MODEL_NAME` — model identifier
+- `TEMPERATURE` — sampling temperature (0.3 for all published experiments)
+- `ITERATIONS` — recursion depth (10 for all published experiments)
+- `CORPUS_PATH` — path to input corpus file
+- `OUTPUT_DIR` — output folder
+- `EXPERIMENT_ID` — experiment label
+
+**Condition-level**
+- Selected condition (`baseline`, `compression`, `gate`)
+- Corpus mode vs. single-signal mode
+
+**Gate-step**
+- `STEP_A_PROMPT` — compression prompt
+- `STEP_B_PROMPT` — commitment extraction prompt
+- `STEP_C_PROMPT` — minimal reconstruction prompt
+- `ANCH_ENABLED` — anchor-preserving Step A variant
+- `ESCL_ENABLED` — escalation-control Step B variant
+
+**Evaluation**
+- Canonical reference source
+- Surface metric (Jaccard)
+- Semantic metric (bidirectional NLI)
+
+---
+
+## Prompt Files
+
+Condition prompts are separated into `prompts/` for auditability:
+
+```
+prompts/
+├── baseline.txt         — paraphrase instruction
+├── compression.txt      — summarization / compression instruction
+├── step_a.txt           — Step A: compress
+├── step_b.txt           — Step B: extract public commitment proxy
+├── step_c.txt           — Step C: reconstruct minimal commitment statement
+├── step_a_anchor.txt    — ANCH variant: preserve anchors in Step A
+└── step_b_escl.txt      — ESCL variant: preserve modal strength in Step B
 ```
 
-Experimental runs output timestamped JSON receipts to `outputs/` directory.
+---
 
-### Running Tests
+## Corpora
 
-```bash
-# Run all tests
-MPLBACKEND=Agg pytest tests/test_full_harness.py -v
-
-# Quick test run
-MPLBACKEND=Agg pytest tests/test_full_harness.py -q
+```
+../corpus/
+├── canonical_corpus.json              — 20-signal canonical corpus (EXP-003+)
+├── adversarial_corpus_exp004.json     — 7 adversarially-designed signals (EXP-004)
+├── adversarial_corpus_exp005.json     — 5 mechanism-isolation signals (EXP-005)
+├── exp006_paper_recursion_corpus.json — 4 paper-derived signals (EXP-006)
+└── exp007_np_negation_corpus.json     — 4 NP-negation probe signals (EXP-007)
 ```
 
-## CLI Commands
+---
 
-### `compression`
-Tests commitment conservation under compression transformations.
+## File Structure
 
-Options:
-- `--signal TEXT` - Input signal text (required)
-- `--out PATH` - Output receipt path (default: `outputs/compression_receipt.json`)
+```
+harness/
+├── README.md                    — this file
+├── run_convergence_v2.py        — primary experimental runner
+├── run_convergence.py           — earlier runner version
+├── run_corpus.py                — corpus-mode runner
+├── run_experiments.py           — batch experiment runner
+├── analyze.py                   — CLI extraction tool
+├── compare_enforcement.py       — condition comparison utility
+├── quick_demo.py                — quick demonstration script
+├── requirements.txt
+├── environment.yml
+├── pyproject.toml
+├── src/                         — core harness modules
+│   ├── harness.py
+│   ├── extraction.py
+│   ├── metrics.py
+│   ├── config.py
+│   ├── plotting.py
+│   └── ...
+├── prompts/                     — condition prompt files
+├── notes/
+│   └── ip_boundary.md           — IP boundary statement
+└── tests/
+```
 
-### `recursion`  
-Tests commitment drift under recursive transformations.
+---
 
-Options:
-- `--signal TEXT` - Input signal text (required)
-- `--depth N` - Recursion depth (default: 8)
-- `--enforced` - Enable enforcement mode
-- `--out PATH` - Output receipt path (default: `outputs/recursion_receipt.json`)
+## Reproducibility
 
-### `full`
-Runs the complete deterministic pipeline.
+This harness is the public experimental workflow used to generate EXP-001 through EXP-007. All published experiments used:
 
-Options:
-- `--out PATH` - Output receipt path (default: `outputs/full_receipt.json`)
+- Model: `gpt-4o-mini`
+- Temperature: `0.3`
+- Iterations: `10`
+- Metric: bidirectional NLI entailment (DeBERTa-v3-base-mnli) + Jaccard surface stability
 
-## Output
+Full logs, reports, and machine-readable traces are in `../experiments/`. Complete narrative and methodology: [[Experimental Record]](https://doi.org/10.5281/zenodo.19105225).
 
-The CLI generates:
-- JSON receipts in `outputs/` with all experimental data
-- Compression fidelity plots (`fid_*.png`)
-- Recursion drift plots (`delta_*.png`)
+---
 
-## Purpose
+## IP Boundary
 
-This harness is designed to test whether commitment content is conserved under:
+This harness discloses the recursive experimental workflow, public prompt layer, corpora, and output logic needed for replication. It does not disclose the canonical internal enforcement implementation, private substrate-specific machinery, or protected production-layer gate logic. See `notes/ip_boundary.md`.
 
-1. **Compression** - Reduction to essential structure
-2. **Recursion** - Repeated self-application with lineage tracking
-
-The framework is model-agnostic and can be applied to both human and machine-generated language.
-
-### Environment Notes
-
-This harness specifies the structure and invariants of the evaluation.
-Exact dependency resolution may vary across systems (OS, Python, backend).
-Environment-related failures should be distinguished from invariant violations.
+---
 
 ## Citation
 
-If you use this harness, please cite the original paper:
-
-```text
-McHenry, D. J. (2026). A Conservation Law for Commitment in Language Under 
-Transformative Compression and Recursive Application. Zenodo. 
-DOI: 10.5281/zenodo.18267279
+```bibtex
+@misc{mchenry2026commitment,
+  title     = {A Conservation Law for Commitment in Language Under
+               Transformative Compression and Recursive Application},
+  author    = {McHenry, Deric J.},
+  year      = {2026},
+  publisher = {Zenodo},
+  doi       = {10.5281/zenodo.18271102},
+  url       = {https://doi.org/10.5281/zenodo.18271102},
+  note      = {Patent Serial No. 63/877,177 (Provisional). Ello Cello LLC.}
+}
 ```
+
+**Author:** Deric J. McHenry / Ello Cello LLC
+**Copyright:** © 2026 Ello Cello LLC. All rights reserved.
