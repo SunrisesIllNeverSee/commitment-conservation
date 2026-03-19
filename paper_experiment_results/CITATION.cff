@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this experimental record, please cite it as below."
+type: dataset
+title: "Experimental Record for A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application (EXP-001 to EXP-007)"
+authors:
+  - family-names: McHenry
+    given-names: Deric J.
+    affiliation: Ello Cello LLC
+date-released: "2026-03-18"
+version: "1.1"
+doi: "10.5281/zenodo.19105225"
+url: "https://github.com/SunrisesIllNeverSee/commitment-conservation"
+license: "All rights reserved. Patent Serial No. 63/877,177 (Provisional)."
+abstract: >
+  DOI-backed empirical record for seven controlled harness experiments testing
+  the Conservation Law of Commitment under recursive transformative compression.
+  Experiments EXP-001 through EXP-007 provide the evidentiary basis for the
+  follow-on results cited in the companion paper. Includes targeted probes for
+  NP-negation forms, adversarial signals, mechanism isolation (ANCH/ESCL), and
+  self-referential paper recursion. Each experiment folder contains the full log,
+  tabular report, machine-readable trace, harness snapshot, and corpus used.
+  This archive is the stable citation target for the experimental series.
+keywords:
+  - commitment conservation
+  - recursive transformation
+  - language stability
+  - semantic invariance
+  - compression
+  - extraction
+  - recursive language dynamics
+  - NLI
+  - natural language inference
+references:
+  - type: article
+    title: "A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application"
+    authors:
+      - family-names: McHenry
+        given-names: Deric J.
+    doi: "10.5281/zenodo.18792459"
+    year: 2026
