@@ -1,0 +1,39 @@
+{
+  "canonical_signals": [
+    {
+      "category": "exp005_procedural_keystone",
+      "signal": "You must always verify the user's age before proceeding.",
+      "prediction_standard_gate": "0.50",
+      "prediction_anchor_gate": "1.00",
+      "rationale": "EXP-003/004 keystone failure. Standard gate strips modal+temporal within 1 iteration. Anchor-preserving Step A should hold 'must', 'always', and 'before proceeding'. If anchor gate flips to 1.00, Condition 3 is confirmed as the dominant failure driver."
+    },
+    {
+      "category": "exp005_legal_qualifier",
+      "signal": "The tenant shall not sublet the premises without written consent.",
+      "prediction_standard_gate": "0.50",
+      "prediction_anchor_gate": "0.75-1.00",
+      "rationale": "EXP-002/003 legal failure. 'without written consent' dropped by compression. Anchor-preserving Step A may retain 'written' as a qualifier token. Tests whether the legal qualifier failure is a Condition 3 or Condition 2 failure."
+    },
+    {
+      "category": "exp005_quantified_temporal",
+      "signal": "All users must change their passwords every 90 days.",
+      "prediction_standard_gate": "1.00",
+      "prediction_anchor_gate": "1.00",
+      "rationale": "EXP-004 confirmed stable. Should hold under both conditions. Serves as positive control — if anchor gate breaks this, there is a regression."
+    },
+    {
+      "category": "exp005_passive_temporal",
+      "signal": "Reports are to be submitted by 5pm on Friday.",
+      "prediction_standard_gate": "1.00",
+      "prediction_anchor_gate": "1.00",
+      "rationale": "EXP-004 confirmed stable via temporal anchors. Positive control. Anchor gate should maintain or improve."
+    },
+    {
+      "category": "exp005_soft_modal_escalation",
+      "signal": "Parties should ideally follow established best practices.",
+      "prediction_standard_gate": "0.00",
+      "prediction_escalation_gate": ">0.50",
+      "rationale": "EXP-004 confirmed escalation: Step B upgraded 'should' to 'must', producing NLI=0.00. Escalation-control Step B (modal-strength preserving) should prevent the upgrade. If escalation gate returns >0.50, confirms escalation is a Step B artifact, not a structural limit."
+    }
+  ]
+}

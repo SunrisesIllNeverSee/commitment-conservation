@@ -1,0 +1,2348 @@
+[
+  {
+    "category": "np_negation",
+    "signal": "No smoking.",
+    "canonical": "No smoking.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 2,
+        "output": "No smoking."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 3,
+        "output": "No smoking allowed."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No smoking allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "np_negation",
+    "signal": "No entry without badge.",
+    "canonical": "No entry without a badge.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 7,
+        "output": "Entry is not permitted without a badge."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 6,
+        "output": "A badge is required for entry."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Entry is not permitted without a badge."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Entry is not allowed without a badge."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Access is prohibited without a badge."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "A badge is required for entry."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "np_negation",
+    "signal": "No firearms allowed on premises.",
+    "canonical": "Firearms are prohibited on the premises.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 6,
+        "output": "Firearms are prohibited on the property."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 3,
+        "output": "No guns allowed."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 4,
+        "output": "Firearms are not permitted."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "No firearms are allowed."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 3,
+        "output": "Firearms are prohibited."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 3,
+        "output": "Firearms are banned."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 3,
+        "output": "Firearms are prohibited."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Firearms are prohibited on the property."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Weapons are prohibited on the property."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Weapons are not allowed on the premises."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No guns allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No firearms permitted."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "No guns allowed."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Firearms are not permitted."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No firearms are allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Firearms are prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Firearms are banned."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Firearms are prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Firearms are not allowed."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "np_negation",
+    "signal": "No refunds after purchase.",
+    "canonical": "No refunds after purchase.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 12,
+        "output": "All sales are final; no refunds will be issued after the purchase."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are conclusive; refunds will not be provided once the purchase is made."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are final; no refunds will be issued after the purchase is completed."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are conclusive; refunds will not be provided once the purchase is finalized."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are final; refunds will not be issued after the purchase is completed."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are conclusive; no refunds will be provided once the purchase is finalized."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are final; refunds will not be issued after the purchase is completed."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are conclusive; no refunds will be provided once the purchase is finalized."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are final; refunds will not be issued after the purchase is completed."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 14,
+        "output": "All sales are conclusive; no refunds will be provided once the purchase is finalized."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds after purchase."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds after purchase."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 2,
+        "output": "No refunds."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "All sales are final; no refunds will be issued after the purchase."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are conclusive; refunds will not be provided once the purchase is made."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are final; no refunds will be issued after the purchase is completed."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are conclusive; refunds will not be provided once the purchase is finalized."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are final; refunds will not be issued after the purchase is completed."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are conclusive; no refunds will be provided once the purchase is finalized."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are final; refunds will not be issued after the purchase is completed."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are conclusive; no refunds will be provided once the purchase is finalized."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are final; refunds will not be issued after the purchase is completed."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 14,
+        "output": "All sales are conclusive; no refunds will be provided once the purchase is finalized."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds after purchase."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds after purchase."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "No refunds."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No refunds are allowed."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "modal_control",
+    "signal": "You must not smoke.",
+    "canonical": "You must not smoke.",
+    "origin_c": [
+      "must",
+      "not",
+      "smoke",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "You are prohibited from smoking."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Smoking is not allowed for you."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "You are prohibited from smoking."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "You are prohibited from smoking."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Smoking is not allowed for you."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "You are prohibited from smoking."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "No smoking."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 2,
+        "output": "Smoking prohibited."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Smoking is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Smoking is not allowed."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No smoking is allowed."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "modal_control",
+    "signal": "You must not enter without a badge.",
+    "canonical": "You must not enter without a badge.",
+    "origin_c": [
+      "badge",
+      "enter",
+      "must",
+      "not",
+      "without",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Entry without a badge is not permitted."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 7,
+        "output": "Access without a badge is not allowed."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized entry without a badge is not allowed."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized entry is not allowed without a badge."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized entry is not allowed without a badge."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 8,
+        "output": "Unauthorized entry is not allowed without a badge."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "No entry without a badge."
+      },
+      {
+        "i": 2,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 4,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 6,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 8,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 10,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "No entry without a badge."
+      },
+      {
+        "i": 2,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 4,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 6,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 8,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 10,
+        "stability": 0.111,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      }
+    ],
+    "anchor_gate": [],
+    "escalation_gate": [],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Entry without a badge is not permitted."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Access without a badge is not allowed."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized entry without a badge is not allowed."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized entry is not allowed without a badge."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized entry is not allowed without a badge."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Entry without a badge is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Unauthorized entry is not allowed without a badge."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "No entry without a badge."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "No entry without a badge."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Entry requires a badge."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "Badge required for entry."
+      }
+    ],
+    "anchor_gate_nli": [],
+    "escalation_gate_nli": [],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  }
+]

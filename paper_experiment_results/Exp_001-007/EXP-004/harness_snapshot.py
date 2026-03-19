@@ -1,0 +1,427 @@
+#!/usr/bin/env python3
+"""
+run_convergence_v2.py — Phase Transition Test
+Based on: foundational/experiment_design_v2.md
+
+THREE CONDITIONS per signal:
+  1. Baseline    — paraphrase each step, no intervention
+  2. Compression — summarize each step, no gate
+  3. Gate        — summarize → extract commitments → reconstruct minimal statement → feed back
+
+PRIMARY METRIC: Jaccard stability = |C(S_n) ∩ C(S_0)| / |C(S_0)|
+SECONDARY:      Token count per iteration
+ITERATIONS:     1–10, reported at every step
+
+CITATIONS
+=========
+Patent:  Serial No. 63/877,177 (Provisional)
+DOI:     https://doi.org/10.5281/zenodo.18792459
+GitHub:  github.com/SunrisesIllNeverSee/commitment-conservation
+Owner:   Deric J. McHenry / Ello Cello LLC
+
+SNAPSHOT NOTE
+=============
+Best-effort reconstruction for EXP-004 (2026-03-18).
+ANCH/ESCL conditions (EXP005 flag) did not exist at time of this run.
+Corpus and 3-condition structure confirmed from EXP-004/log.md and run.json.
+"""
+
+import json
+import re
+import time
+from pathlib import Path
+from datetime import datetime
+
+import requests
+
+# ── Citations ─────────────────────────────────────────────────────────────────
+
+CITATION = {
+    "patent": "Serial No. 63/877,177 (Provisional)",
+    "doi":    "https://doi.org/10.5281/zenodo.18792459",
+    "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+    "owner":  "Deric J. McHenry / Ello Cello LLC",
+    "law":    "Conservation Law of Commitment: C(T(S)) ≈ C(S) with enforcement; C(T(S)) < C(S) without it",
+}
+
+# ── Config ────────────────────────────────────────────────────────────────────
+
+OPENAI_KEY   = (Path.home() / ".hange/openai_api_key").read_text().strip()
+OPENAI_URL   = "https://api.openai.com/v1/chat/completions"
+OPENAI_MODEL = "gpt-4o-mini"
+
+CORPUS_PATH  = Path(__file__).parent.parent / "corpus/adversarial_corpus_exp004.json"
+EXPERIMENTS_DIR = Path(__file__).parent.parent / "experiments"
+
+def next_exp_dir() -> Path:
+    """Auto-increment EXP-NNN directory under experiments/."""
+    existing = sorted(EXPERIMENTS_DIR.glob("EXP-[0-9][0-9][0-9]"))
+    n = int(existing[-1].name.split("-")[1]) + 1 if existing else 1
+    d = EXPERIMENTS_DIR / f"EXP-{n:03d}"
+    d.mkdir(parents=True, exist_ok=True)
+    return d
+
+N_ITERATIONS = 10
+SMOKE        = False  # set False for full 20-signal run
+
+HARD_MODALS = re.compile(
+    r'\b(must|shall|cannot|required|never|always|will not|are required to'
+    r'|do not|shall not|must not|is required|are not|may not)\b',
+    re.IGNORECASE
+)
+
+COMMITMENT_CONTENT = re.compile(
+    r'\$\d'
+    r'|\b\d+%\b'
+    r'|\b(monday|tuesday|wednesday|thursday|friday|saturday|sunday)\b'
+    r'|\b(january|february|march|april|may|june|july|august'
+    r'|september|october|november|december)\b'
+    r'|\b(if|unless|when)\b.{0,60}\b(deal|agreement|contract|payment|obligation|close|finalize)\b',
+    re.IGNORECASE
+)
+
+# ── LLM ──────────────────────────────────────────────────────────────────────
+
+def llm(system: str, prompt: str, max_tokens: int = 150) -> str:
+    for attempt in range(3):
+        try:
+            r = requests.post(OPENAI_URL,
+                headers={"Authorization": f"Bearer {OPENAI_KEY}", "Content-Type": "application/json"},
+                json={"model":       OPENAI_MODEL,
+                      "messages":    [{"role": "system",  "content": system},
+                                      {"role": "user",    "content": prompt}],
+                      "max_tokens":  max_tokens,
+                      "temperature": 0.3},
+                timeout=30)
+            if r.status_code == 200:
+                return r.json()["choices"][0]["message"]["content"].strip()
+            if r.status_code == 429:
+                wait = 10 * (attempt + 1)
+                print(f"  [OpenAI 429 rate-limit — waiting {wait}s]", flush=True)
+                time.sleep(wait)
+                continue
+            print(f"  [OpenAI {r.status_code}]", flush=True)
+            return ""
+        except Exception as e:
+            wait = 5 * (attempt + 1)
+            print(f"  [LLM error attempt {attempt+1}: {type(e).__name__} — retry in {wait}s]", flush=True)
+            time.sleep(wait)
+    return ""
+
+# ── Metrics ───────────────────────────────────────────────────────────────────
+
+def extract_commitment_words(text: str) -> set:
+    sentences = re.split(r'(?<=[.!?;])\s+', text.strip())
+    words = set()
+    for sent in sentences:
+        if HARD_MODALS.search(sent) or COMMITMENT_CONTENT.search(sent):
+            words.update(
+                w.lower() for w in re.findall(r'\b[a-zA-Z0-9\$%]+\b', sent)
+                if len(w) > 2
+            )
+    return words
+
+def jaccard(a: set, b: set) -> float:
+    if not a and not b:
+        return 1.0
+    if not a or not b:
+        return 0.0
+    return round(len(a & b) / len(a | b), 3)
+
+def wc(text: str) -> int:
+    return len(text.split())
+
+def log(msg): print(msg, flush=True)
+
+# ── NLI Semantic Equivalence ──────────────────────────────────────────────────
+
+def nli_check(premise: str, hypothesis: str) -> bool:
+    result = llm(
+        "You are a strict natural language inference judge. "
+        "Answer only 'yes' or 'no'. Nothing else.",
+        f"Does this sentence:\n\"{premise}\"\n\nlogically entail this sentence:\n\"{hypothesis}\"?",
+        max_tokens=5
+    )
+    return result.strip().lower().startswith("y")
+
+
+def nli_equivalence(s1: str, s2: str) -> float:
+    forward  = nli_check(s1, s2)
+    backward = nli_check(s2, s1)
+    time.sleep(0.3)
+    return round((float(forward) + float(backward)) / 2.0, 3)
+
+
+def get_canonical_commitment(signal: str) -> str:
+    extraction = llm(
+        "You are a commitment extractor. "
+        "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
+        "modal words (must/shall/required/cannot/never/always/do not), "
+        "the subject, the action and its object, "
+        "any qualifying conditions (if/unless/before/when clauses), "
+        "any frequency quantifiers (always, never, all), "
+        "any temporal constraints (immediately, by Friday, prior to). "
+        "Remove only conversational filler. Do not summarize or generalize. "
+        "If no binding obligation exists, output exactly: [none]",
+        f"Extract the commitment from:\n\n{signal}",
+        max_tokens=80
+    )
+    if not extraction or extraction.strip() == "[none]":
+        return signal
+    reconstruction = llm(
+        "You are a minimal statement reconstructor. "
+        "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
+        "Do not add anything not in the list.",
+        f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
+        max_tokens=80
+    )
+    return reconstruction if reconstruction else extraction
+
+
+def nli_stability_curve(turns: list, canonical: str) -> list:
+    curve = []
+    for t in turns:
+        score = nli_equivalence(canonical, t["output"])
+        curve.append({
+            "i":             t["i"],
+            "nli_stability": score,
+            "tokens":        t["tokens"],
+            "output":        t["output"],
+        })
+    return curve
+
+# ── Three conditions ──────────────────────────────────────────────────────────
+
+def run_baseline(signal: str) -> list:
+    current = signal
+    turns = []
+    for i in range(1, N_ITERATIONS + 1):
+        out = llm(
+            "You are a helpful assistant. Respond in one to two sentences.",
+            f"Paraphrase this sentence while preserving meaning:\n\n{current}"
+        )
+        if not out:
+            break
+        turns.append({"i": i, "input": current, "output": out, "tokens": wc(out)})
+        log(f"      B{i:02d} → {out[:80]}")
+        current = out
+        time.sleep(0.3)
+    return turns
+
+
+def run_compression(signal: str) -> list:
+    current = signal
+    turns = []
+    for i in range(1, N_ITERATIONS + 1):
+        out = llm(
+            "You are a helpful assistant. Be as concise as possible.",
+            f"Summarize this sentence as concisely as possible:\n\n{current}"
+        )
+        if not out:
+            break
+        turns.append({"i": i, "input": current, "output": out, "tokens": wc(out)})
+        log(f"      C{i:02d} → {out[:80]}")
+        current = out
+        time.sleep(0.3)
+    return turns
+
+
+def run_gate(signal: str) -> list:
+    _step_a = "You are a helpful assistant. Be concise."
+    _step_b = (
+        "You are a commitment extractor. "
+        "Extract the full binding obligation exactly as stated — keep ALL obligation-bearing content: "
+        "modal words (must/shall/required/cannot/never/always/do not), "
+        "the subject, the action and its object, "
+        "any qualifying conditions (if/unless/before/when clauses), "
+        "any frequency quantifiers (always, never, all), "
+        "any temporal constraints (immediately, by Friday, prior to). "
+        "Remove only conversational filler. Do not summarize or generalize. "
+        "If no binding obligation exists, output exactly: [none]"
+    )
+    current = signal
+    turns = []
+    for i in range(1, N_ITERATIONS + 1):
+        summary = llm(_step_a, f"Summarize this sentence as concisely as possible:\n\n{current}")
+        if not summary:
+            break
+        extraction = llm(_step_b, f"Extract the commitment from:\n\n{summary}", max_tokens=80)
+        if not extraction or extraction.strip() == "[none]":
+            extraction = summary
+        reconstruction = llm(
+            "You are a minimal statement reconstructor. "
+            "Write the shortest complete sentence that preserves ALL the binding obligations listed. "
+            "Do not add anything not in the list.",
+            f"Reconstruct a minimal commitment statement from these elements:\n\n{extraction}",
+            max_tokens=80
+        )
+        if not reconstruction:
+            reconstruction = extraction
+        turns.append({
+            "i":             i,
+            "input":         current,
+            "summary":       summary,
+            "extraction":    extraction,
+            "output":        reconstruction,
+            "tokens":        wc(reconstruction),
+        })
+        log(f"      G{i:02d} → extract: [{extraction[:50]}] → recon: {reconstruction[:60]}")
+        current = reconstruction
+        time.sleep(0.5)
+    return turns
+
+# ── Stability computation ─────────────────────────────────────────────────────
+
+def stability_curve(turns: list, origin: set) -> list:
+    curve = []
+    for t in turns:
+        c = extract_commitment_words(t["output"])
+        curve.append({
+            "i":         t["i"],
+            "stability": jaccard(c, origin) if origin else None,
+            "tokens":    t["tokens"],
+            "output":    t["output"],
+        })
+    return curve
+
+# ── Per-signal runner ─────────────────────────────────────────────────────────
+
+def run_signal(signal: str, category: str) -> dict:
+    log(f"\n  [{category}] {signal[:70]}")
+    origin = extract_commitment_words(signal)
+    log(f"  Origin commitments: {sorted(origin)[:10]}")
+    log(f"  ── Canonical commitment (NLI reference)...")
+    canonical = get_canonical_commitment(signal)
+    log(f"  Canonical: {canonical[:70]}")
+    log(f"  ── Condition 1: Baseline")
+    b_turns = run_baseline(signal)
+    b_curve = stability_curve(b_turns, origin)
+    log(f"  ── Condition 2: Compression only")
+    c_turns = run_compression(signal)
+    c_curve = stability_curve(c_turns, origin)
+    log(f"  ── Condition 3: Standard Gate")
+    g_turns = run_gate(signal)
+    g_curve = stability_curve(g_turns, origin)
+    log(f"  ── NLI semantic stability (2 calls × 10 iter × 3 conditions)...")
+    b_nli = nli_stability_curve(b_turns, canonical)
+    c_nli = nli_stability_curve(c_turns, canonical)
+    g_nli = nli_stability_curve(g_turns, canonical)
+    log(f"  {'':6s} {'Jaccard':>20s}   {'NLI (semantic)':>20s}")
+    for label, curve, nli_c in [("BASE", b_curve, b_nli), ("COMP", c_curve, c_nli), ("GATE", g_curve, g_nli)]:
+        pts_j = {p["i"]: p["stability"]     for p in curve  if p["stability"] is not None}
+        pts_n = {p["i"]: p["nli_stability"] for p in nli_c}
+        log(f"  {label}: Jaccard i1={pts_j.get(1,0):.2f} i5={pts_j.get(5,0):.2f} i10={pts_j.get(10,0):.2f}"
+            f"  |  NLI i1={pts_n.get(1,0):.2f} i5={pts_n.get(5,0):.2f} i10={pts_n.get(10,0):.2f}")
+    return {
+        "category":        category,
+        "signal":          signal,
+        "canonical":       canonical,
+        "origin_c":        sorted(origin),
+        "baseline":        b_curve,
+        "compression":     c_curve,
+        "gate":            g_curve,
+        "baseline_nli":    b_nli,
+        "compression_nli": c_nli,
+        "gate_nli":        g_nli,
+        "citation":        CITATION,
+    }
+
+# ── Report ────────────────────────────────────────────────────────────────────
+
+def generate_report(results: list, ts: str) -> str:
+    lines = [
+        "# Phase Transition Report — Conservation Law of Commitment",
+        f"**Run:** {ts}  ",
+        f"**Patent:** {CITATION['patent']}  ",
+        f"**DOI:** [{CITATION['doi']}]({CITATION['doi']})  ",
+        f"**Owner:** {CITATION['owner']}",
+        "",
+        "## Stability at Key Iterations — Surface (Jaccard)",
+        "",
+        "| Signal | B@1 | B@5 | B@10 | C@1 | C@5 | C@10 | G@1 | G@5 | G@10 |",
+        "|--------|-----|-----|------|-----|-----|------|-----|-----|------|",
+    ]
+
+    def get_j(curve, i):
+        pts = {p["i"]: p["stability"] for p in curve}
+        v = pts.get(i)
+        return f"{v:.2f}" if v is not None else "—"
+
+    def get_n(curve, i):
+        pts = {p["i"]: p["nli_stability"] for p in curve}
+        v = pts.get(i)
+        return f"{v:.2f}" if v is not None else "—"
+
+    for r in results:
+        lines.append(
+            f"| {r['category']:15s} "
+            f"| {get_j(r['baseline'],1)} | {get_j(r['baseline'],5)} | {get_j(r['baseline'],10)} "
+            f"| {get_j(r['compression'],1)} | {get_j(r['compression'],5)} | {get_j(r['compression'],10)} "
+            f"| {get_j(r['gate'],1)} | {get_j(r['gate'],5)} | {get_j(r['gate'],10)} |"
+        )
+
+    lines += [
+        "",
+        "## Stability at Key Iterations — Semantic (NLI Bidirectional)",
+        "",
+        "| Signal | B@1 | B@5 | B@10 | C@1 | C@5 | C@10 | G@1 | G@5 | G@10 |",
+        "|--------|-----|-----|------|-----|-----|------|-----|-----|------|",
+    ]
+
+    for r in results:
+        lines.append(
+            f"| {r['category']:15s} "
+            f"| {get_n(r['baseline_nli'],1)} | {get_n(r['baseline_nli'],5)} | {get_n(r['baseline_nli'],10)} "
+            f"| {get_n(r['compression_nli'],1)} | {get_n(r['compression_nli'],5)} | {get_n(r['compression_nli'],10)} "
+            f"| {get_n(r['gate_nli'],1)} | {get_n(r['gate_nli'],5)} | {get_n(r['gate_nli'],10)} |"
+        )
+
+    lines += [
+        "",
+        "## Citation",
+        "",
+        f"McHenry, D.J. (2026). A Conservation Law for Commitment in Language "
+        f"Under Transformative Compression and Recursive Application. "
+        f"Zenodo. {CITATION['doi']}",
+        f"Patent {CITATION['patent']}.",
+        f"Harness: https://{CITATION['github']}",
+        "",
+        "---",
+        "*Generated by run_convergence_v2.py*",
+    ]
+    return "\n".join(lines)
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def run():
+    corpus  = json.loads(CORPUS_PATH.read_text())
+    signals = corpus["canonical_signals"]
+
+    if SMOKE:
+        signals = signals[:1]
+        log("*** SMOKE TEST — 1 signal ***")
+
+    ts = datetime.now().strftime("%Y-%m-%d %H:%M")
+    log(f"=== Phase Transition Test v2 — {ts} ===")
+    log(f"Conditions: Baseline / Compression / Gate  |  Iterations: {N_ITERATIONS}")
+    log(f"Citing: {CITATION['doi']}\n")
+
+    results = []
+    for s in signals:
+        result = run_signal(s["signal"], s["category"])
+        results.append(result)
+
+    exp_dir     = next_exp_dir()
+    json_path   = exp_dir / "run.json"
+    report_path = exp_dir / "report.md"
+    log(f"\n  Experiment dir: {exp_dir.name}")
+
+    json_path.write_text(json.dumps(results, indent=2))
+    report_path.write_text(generate_report(results, ts))
+
+    log(f"\n✓ JSON:   {json_path}")
+    log(f"✓ Report: {report_path}")
+
+
+if __name__ == "__main__":
+    run()

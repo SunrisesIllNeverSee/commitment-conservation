@@ -1,0 +1,3202 @@
+[
+  {
+    "category": "exp005_procedural_keystone",
+    "signal": "You must always verify the user's age before proceeding.",
+    "canonical": "Always verify the user's age before proceeding.",
+    "origin_c": [
+      "age",
+      "always",
+      "before",
+      "must",
+      "proceeding",
+      "the",
+      "user",
+      "verify",
+      "you"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.417,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 2,
+        "stability": 0.778,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 3,
+        "stability": 0.417,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 4,
+        "stability": 0.778,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 5,
+        "stability": 0.417,
+        "tokens": 8,
+        "output": "Always check the user's age before moving forward."
+      },
+      {
+        "i": 6,
+        "stability": 0.778,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 7,
+        "stability": 0.417,
+        "tokens": 8,
+        "output": "Always check the user's age before moving forward."
+      },
+      {
+        "i": 8,
+        "stability": 0.778,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 9,
+        "stability": 0.417,
+        "tokens": 8,
+        "output": "Always check the user's age before moving forward."
+      },
+      {
+        "i": 10,
+        "stability": 0.778,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Verify the user's age first."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.556,
+        "tokens": 5,
+        "output": "Always verify the user's age."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      }
+    ],
+    "anchor_gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 6,
+        "output": "Verify the user's age before proceeding."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      }
+    ],
+    "escalation_gate": [
+      {
+        "i": 1,
+        "stability": 0.556,
+        "tokens": 5,
+        "output": "Always verify the user's age."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Verify user age."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Confirm your age."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Verify your age."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always confirm the user's age before moving forward."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always check the user's age before moving forward."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always check the user's age before moving forward."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Always check the user's age before moving forward."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Always verify the user's age before proceeding."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Verify the user's age first."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Check the user's age."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Always verify the user's age."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      }
+    ],
+    "anchor_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Verify the user's age before proceeding."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      }
+    ],
+    "escalation_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Always verify the user's age."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Verify user age."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Check age."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 2,
+        "output": "Verify age."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Confirm your age."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Verify your age."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp005_legal_qualifier",
+    "signal": "The tenant shall not sublet the premises without written consent.",
+    "canonical": "The tenant shall not sublet the premises without consent.",
+    "origin_c": [
+      "consent",
+      "not",
+      "premises",
+      "shall",
+      "sublet",
+      "tenant",
+      "the",
+      "without",
+      "written"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written permission before subletting the premises."
+      },
+      {
+        "i": 2,
+        "stability": 0.2,
+        "tokens": 13,
+        "output": "The tenant is required to secure written approval prior to subletting the property."
+      },
+      {
+        "i": 3,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "The tenant needs to get written approval prior to subletting the property."
+      },
+      {
+        "i": 5,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 6,
+        "stability": 0.2,
+        "tokens": 13,
+        "output": "The tenant is required to get written approval prior to subletting the property."
+      },
+      {
+        "i": 7,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 8,
+        "stability": 0.2,
+        "tokens": 11,
+        "output": "The tenant must secure written approval prior to subletting the property."
+      },
+      {
+        "i": 9,
+        "stability": 0.286,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 12,
+        "output": "The tenant needs to secure written approval prior to subletting the property."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "No subletting without written consent."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting requires written approval."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      }
+    ],
+    "anchor_gate": [
+      {
+        "i": 1,
+        "stability": 0.6,
+        "tokens": 7,
+        "output": "The tenant must not sublet without consent."
+      },
+      {
+        "i": 2,
+        "stability": 0.5,
+        "tokens": 6,
+        "output": "The tenant cannot sublet without consent."
+      },
+      {
+        "i": 3,
+        "stability": 0.364,
+        "tokens": 7,
+        "output": "The tenant must obtain consent to sublet."
+      },
+      {
+        "i": 4,
+        "stability": 0.273,
+        "tokens": 6,
+        "output": "Tenant must obtain consent to sublet."
+      },
+      {
+        "i": 5,
+        "stability": 0.273,
+        "tokens": 6,
+        "output": "Tenant must obtain consent to sublet."
+      },
+      {
+        "i": 6,
+        "stability": 0.182,
+        "tokens": 4,
+        "output": "Tenant must obtain consent."
+      },
+      {
+        "i": 7,
+        "stability": 0.182,
+        "tokens": 4,
+        "output": "Tenant must obtain consent."
+      },
+      {
+        "i": 8,
+        "stability": 0.2,
+        "tokens": 3,
+        "output": "Tenant must consent."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Obtain tenant consent."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Obtain tenant consent."
+      }
+    ],
+    "escalation_gate": [
+      {
+        "i": 1,
+        "stability": 0.0,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 2,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires consent."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 10,
+        "output": "The tenant must obtain written permission before subletting the premises."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 13,
+        "output": "The tenant is required to secure written approval prior to subletting the property."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 12,
+        "output": "The tenant needs to get written approval prior to subletting the property."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 13,
+        "output": "The tenant is required to get written approval prior to subletting the property."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 11,
+        "output": "The tenant must secure written approval prior to subletting the property."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 10,
+        "output": "The tenant must obtain written consent before subletting the property."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "The tenant needs to secure written approval prior to subletting the property."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "No subletting without written consent."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting requires written approval."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting needs written approval."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Subletting requires written consent."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 3,
+        "output": "Subletting is prohibited."
+      }
+    ],
+    "anchor_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The tenant must not sublet without consent."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "The tenant cannot sublet without consent."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "The tenant must obtain consent to sublet."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Tenant must obtain consent to sublet."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Tenant must obtain consent to sublet."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Tenant must obtain consent."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 4,
+        "output": "Tenant must obtain consent."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Tenant must consent."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Obtain tenant consent."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 3,
+        "output": "Obtain tenant consent."
+      }
+    ],
+    "escalation_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 4,
+        "output": "No subletting without consent."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires consent."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Subletting requires approval."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp005_quantified_temporal",
+    "signal": "All users must change their passwords every 90 days.",
+    "canonical": "All users must change passwords every 90 days.",
+    "origin_c": [
+      "all",
+      "change",
+      "days",
+      "every",
+      "must",
+      "passwords",
+      "their",
+      "users"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 8,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 9,
+        "stability": 0.364,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 10,
+        "stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 0.444,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 0.444,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "anchor_gate": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 8,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 9,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 10,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      }
+    ],
+    "escalation_gate": [
+      {
+        "i": 1,
+        "stability": 0.75,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "stability": 0.444,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 6,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 8,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 9,
+        "stability": 0.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 10,
+        "stability": 0.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Every user is required to update their passwords every 90 days."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "All users must change their passwords every 90 days."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "anchor_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      }
+    ],
+    "escalation_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Users must change passwords every 90 days."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 7,
+        "output": "Passwords must be changed every 90 days."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Change passwords every 90 days."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Change passwords every three months."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Update passwords every three months."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 3,
+        "output": "Change passwords quarterly."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp005_passive_temporal",
+    "signal": "Reports are to be submitted by 5pm on Friday.",
+    "canonical": "Reports are due by 5pm on Friday.",
+    "origin_c": [
+      "5pm",
+      "are",
+      "friday",
+      "reports",
+      "submitted"
+    ],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.286,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 4,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 6,
+        "stability": 0.286,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 8,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 10,
+        "stability": 0.5,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "stability": 0.5,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Submit reports by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.5,
+        "tokens": 6,
+        "output": "Submit reports by Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      }
+    ],
+    "anchor_gate": [
+      {
+        "i": 1,
+        "stability": 0.667,
+        "tokens": 7,
+        "output": "Reports are due by 5pm on Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 3,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 4,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 5,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 6,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 7,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 8,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 9,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 10,
+        "stability": 0.667,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      }
+    ],
+    "escalation_gate": [
+      {
+        "i": 1,
+        "stability": 0.5,
+        "tokens": 5,
+        "output": "Submit reports by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "stability": 0.5,
+        "tokens": 6,
+        "output": "Submit reports by Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "stability": 0.333,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "Reports need to be turned in by 5 PM on Friday."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Reports must be submitted by 5 PM on Friday."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Reports are due by 5 PM on Friday."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due Friday at 5 PM."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Submit reports by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Submit reports by Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      }
+    ],
+    "anchor_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Reports are due by 5pm on Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Reports are due by 5pm Friday."
+      }
+    ],
+    "escalation_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Submit reports by 5pm Friday."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Submit reports by Friday at 5pm."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 7,
+        "output": "Submit reports by Friday at 5 PM."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  },
+  {
+    "category": "exp005_soft_modal_escalation",
+    "signal": "Parties should ideally follow established best practices.",
+    "canonical": "Parties should ideally follow established best practices.",
+    "origin_c": [],
+    "baseline": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 8,
+        "output": "Ideally, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 8,
+        "output": "Ideally, all parties should follow established best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 13,
+        "output": "In an ideal situation, all involved parties should adhere to recognized best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 12,
+        "output": "In a perfect scenario, all parties involved should follow established best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 9,
+        "output": "Ideally, everyone involved should adhere to recognized best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 8,
+        "output": "Ideally, all parties should follow established best practices."
+      }
+    ],
+    "compression": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      }
+    ],
+    "gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      }
+    ],
+    "anchor_gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      }
+    ],
+    "escalation_gate": [
+      {
+        "i": 1,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 3,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 4,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 5,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 6,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 7,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 8,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 9,
+        "stability": null,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 10,
+        "stability": null,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      }
+    ],
+    "baseline_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 8,
+        "output": "Ideally, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In an ideal situation, parties ought to follow established best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 11,
+        "output": "In a perfect scenario, parties should adhere to recognized best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Ideally, all parties should follow established best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 1.0,
+        "tokens": 13,
+        "output": "In an ideal situation, all involved parties should adhere to recognized best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 12,
+        "output": "In a perfect scenario, all parties involved should follow established best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 9,
+        "output": "Ideally, everyone involved should adhere to recognized best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 8,
+        "output": "Ideally, all parties should follow established best practices."
+      }
+    ],
+    "compression_nli": [
+      {
+        "i": 1,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 1.0,
+        "tokens": 5,
+        "output": "Parties should follow best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 1.0,
+        "tokens": 6,
+        "output": "Parties should adhere to best practices."
+      }
+    ],
+    "gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      }
+    ],
+    "anchor_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      }
+    ],
+    "escalation_gate_nli": [
+      {
+        "i": 1,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties shall follow best practices."
+      },
+      {
+        "i": 2,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 3,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 4,
+        "nli_stability": 0.0,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 5,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 6,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 7,
+        "nli_stability": 0.0,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 8,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      },
+      {
+        "i": 9,
+        "nli_stability": 0.5,
+        "tokens": 5,
+        "output": "Parties must follow best practices."
+      },
+      {
+        "i": 10,
+        "nli_stability": 0.5,
+        "tokens": 6,
+        "output": "Parties must adhere to best practices."
+      }
+    ],
+    "citation": {
+      "patent": "Serial No. 63/877,177 (Provisional)",
+      "doi": "https://doi.org/10.5281/zenodo.18792459",
+      "github": "github.com/SunrisesIllNeverSee/commitment-conservation",
+      "owner": "Deric J. McHenry / Ello Cello LLC",
+      "law": "Conservation Law of Commitment: C(T(S)) \u2248 C(S) with enforcement; C(T(S)) < C(S) without it"
+    }
+  }
+]
