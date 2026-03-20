@@ -1,0 +1,52 @@
+% fig_L1_plot.tex — L1 Stability Curves (tikzpicture only, for \input)
+% Colors required in preamble: ccl-red, ccl-blue, ccl-teal
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.85\textwidth,
+  height=6cm,
+  xlabel={Recursion Depth (iterations)},
+  ylabel={Commitment Stability (Jaccard)},
+  xmin=1, xmax=10,
+  ymin=0, ymax=1.0,
+  xtick={1,2,3,4,5,6,7,8,9,10},
+  ytick={0,0.25,0.5,0.75,1.0},
+  yticklabel style={font=\small},
+  xticklabel style={font=\small},
+  xlabel style={font=\small},
+  ylabel style={font=\small},
+  grid=major,
+  grid style={line width=0.4pt, draw=gray!30},
+  legend pos=north east,
+  legend style={font=\small, draw=gray!40, fill=white, inner sep=4pt},
+  axis line style={gray!60},
+  clip=false,
+]
+\addplot[
+  color=ccl-red, line width=1.4pt,
+  mark=*, mark size=2pt, mark options={fill=ccl-red},
+] coordinates {
+  (1,0.30)(2,0.55)(3,0.28)(4,0.48)(5,0.22)(6,0.50)(7,0.22)(8,0.50)(9,0.22)(10,0.46)
+};
+\addlegendentry{Baseline (drift)}
+
+\addplot[
+  color=ccl-blue, line width=1.4pt,
+  mark=square*, mark size=2pt, mark options={fill=ccl-blue},
+] coordinates {
+  (1,0.75)(2,0.74)(3,0.75)(4,0.74)(5,0.73)(6,0.74)(7,0.74)(8,0.73)(9,0.74)(10,0.74)
+};
+\addlegendentry{Compression}
+
+\addplot[
+  color=ccl-teal, line width=1.4pt,
+  mark=triangle*, mark size=2.5pt, mark options={fill=ccl-teal},
+] coordinates {
+  (1,0.75)(2,0.66)(3,0.75)(4,0.75)(5,0.66)(6,0.75)(7,0.66)(8,0.75)(9,0.66)(10,0.75)
+};
+\addlegendentry{Gate (enforced)}
+
+\node[font=\scriptsize\itshape, text=ccl-red,  anchor=south west] at (axis cs:2,0.56) {oscillatory drift};
+\node[font=\scriptsize\itshape, text=ccl-blue, anchor=south west] at (axis cs:4,0.76) {compression plateau};
+\node[font=\scriptsize\itshape, text=ccl-teal, anchor=south west] at (axis cs:6,0.82) {conservation regime};
+\end{axis}
+\end{tikzpicture}

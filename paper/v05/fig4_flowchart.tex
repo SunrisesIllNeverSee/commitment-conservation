@@ -1,0 +1,91 @@
+% fig4_flowchart.tex
+% TikZ vector replacement for fig4.jpg
+% Commitment extraction sieve — operational flowchart
+% Required libraries (loaded in main.tex preamble):
+%   tikz, shapes.geometric, arrows.meta, positioning
+
+\begin{tikzpicture}[
+  > = {Stealth[length=5pt,width=4pt]},
+  line join = round,
+  node distance = 0pt,
+  font = \small,
+]
+
+%% ---- node styles ----
+\tikzset{
+  flow@term/.style = {
+    ellipse,
+    draw  = red!65!black,
+    fill  = red!75!black,
+    text  = white,
+    font  = \small\bfseries,
+    line width = 1.2pt,
+    align = center,
+    minimum width  = 2.9cm,
+    minimum height = 1.15cm,
+  },
+  flow@proc/.style = {
+    rectangle,
+    draw  = orange!60!brown,
+    fill  = orange!18,
+    line width = 1pt,
+    align = center,
+    rounded corners = 2pt,
+    minimum width  = 3.5cm,
+    minimum height = 1.1cm,
+    text width = 3.3cm,
+  },
+  flow@dec/.style = {
+    diamond,
+    draw  = blue!55!black,
+    fill  = blue!14,
+    line width = 1pt,
+    align = center,
+    minimum width  = 4.8cm,
+    minimum height = 3.2cm,
+    text width = 2.5cm,
+    aspect = 1.9,
+  },
+  flow@arr/.style = {
+    ->, line width = 0.9pt, color = gray!65,
+  },
+  flow@bold/.style = {
+    ->, line width = 1.5pt, color = black!60,
+  },
+}
+
+%% ---- nodes ----
+\node[flow@term]              (input)   at ( 0,     0   ) {Input Signal\\$S$};
+\node[flow@proc]              (prep)    at ( 0,    -2.8 ) {Preprocess:\\Normalize,\\Sentence Split\\(\texttt{spaCy})};
+\node[flow@dec]               (modal)   at ( 0,    -6.3 ) {Modal Pattern\\Match?\\(\textit{must, will,}\\shall, have to,~\ldots)};
+\node[flow@proc, text width=2.9cm] (hard) at ( 5.2,  -6.3 ) {Extract Hard\\(Definitive\\Obligation)};
+\node[flow@proc, text width=2.9cm] (soft) at (-4.8,  -9.0 ) {Extract Soft\\(Hedges: \textit{maybe,}\\perhaps, might)};
+\node[flow@proc]              (tier)    at ( 0,   -12.0 ) {Tier \& Collect\\$\{C_{\mathrm{hard}},\; C_{\mathrm{soft}}\}$};
+\node[flow@term]              (output)  at ( 0,   -14.2 ) {Output\\Commitment\\Sets};
+
+%% ---- arrows ----
+
+% top spine
+\draw[flow@arr] (input.south) -- (prep.north);
+\draw[flow@arr] (prep.south)  -- (modal.north);
+
+% Yes → Extract Hard (right)
+\draw[flow@arr] (modal.east)
+    -- node[above, font=\footnotesize\itshape, yshift=1pt]{Yes}
+    (hard.west);
+
+% No → Extract Soft (left then down)
+\draw[flow@arr] (modal.west)
+    -| node[above, near start, font=\footnotesize\itshape, xshift=-4pt]{No}
+    (soft.north);
+
+% Extract Hard → Tier (down then left, bold)
+\draw[flow@bold] (hard.south) |- (tier.east);
+
+% Extract Soft → Tier (right then down)
+\draw[flow@arr] (soft.east) -| (tier.west);
+
+% Tier → Output
+\draw[flow@arr] (tier.south) -- (output.north);
+
+\end{tikzpicture}

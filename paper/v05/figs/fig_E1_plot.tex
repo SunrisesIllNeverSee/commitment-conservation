@@ -1,0 +1,50 @@
+% fig_E1_plot.tex — E1 Fidelity Heatmap grouped bar chart (tikzpicture only, for \input)
+% Colors required in preamble: ccl-blue, ccl-teal
+\begin{tikzpicture}
+\begin{axis}[
+  width=0.88\textwidth,
+  height=10cm,
+  xbar,
+  bar width=5pt,
+  xlabel={Jaccard Fidelity Score},
+  xmin=0, xmax=1.1,
+  xtick={0,0.25,0.5,0.75,1.0},
+  xticklabel style={font=\scriptsize},
+  yticklabel style={font=\scriptsize},
+  xlabel style={font=\small},
+  ytick=data,
+  yticklabels={
+    specification, legal, conditional, obligation, regulation,
+    mandate, code, constraint, contractual, requirement,
+    protocol, standard, agreement, instructional, directive,
+    policy, procedural, prohibition, definition, rule
+  },
+  y dir=normal,
+  enlarge y limits={abs=8pt},
+  legend style={
+    at={(0.98,0.02)},
+    anchor=south east,
+    font=\small,
+    draw=gray!40,
+  },
+  grid=major,
+  grid style={line width=0.3pt, draw=gray!20},
+  axis line style={gray!60},
+]
+\addplot[xbar, fill=ccl-blue!60, draw=ccl-blue!80, bar width=4pt] coordinates {
+  (0.287,1)(0.713,2)(0.729,3)(0.408,4)(0.327,5)
+  (0.833,6)(0.389,7)(0.500,8)(0.733,9)(0.731,10)
+  (0.750,11)(0.750,12)(0.774,13)(0.857,14)(0.857,15)
+  (0.524,16)(0.000,17)(0.000,18)(0.000,19)(0.000,20)
+};
+\addlegendentry{Baseline}
+
+\addplot[xbar, fill=ccl-teal!70, draw=ccl-teal!90, bar width=4pt] coordinates {
+  (0.583,1)(1.000,2)(1.000,3)(0.667,4)(0.583,5)
+  (1.000,6)(0.556,7)(0.667,8)(0.818,9)(0.817,10)
+  (0.817,11)(0.815,12)(0.823,13)(0.906,14)(0.906,15)
+  (0.573,16)(0.000,17)(0.000,18)(0.000,19)(0.000,20)
+};
+\addlegendentry{Enforcement}
+\end{axis}
+\end{tikzpicture}

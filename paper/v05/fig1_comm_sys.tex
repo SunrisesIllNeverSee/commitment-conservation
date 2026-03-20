@@ -1,0 +1,117 @@
+% fig1_comm_sys.tex
+% Transformation-Stable Communication System
+% Extended from Shannon [1948, Fig. 1]
+% Requires: tikz, shapes.geometric, arrows.meta, positioning, calc
+
+\begin{tikzpicture}[
+  > = {Stealth[length=5pt, width=4pt]},
+  line join = round,
+  font = \small,
+]
+
+%% ---- color palette ----
+\colorlet{cs@blue}  {cyan!18!white}
+\colorlet{cs@yellow}{yellow!38!white}
+\colorlet{cs@teal}  {teal!28!white}
+\colorlet{cs@gray}  {gray!22!white}
+
+%% ---- node styles ----
+\tikzset{
+  cs@box/.style={
+    rectangle, rounded corners=3pt,
+    draw=cyan!55!black, fill=cs@blue,
+    line width=0.8pt,
+    minimum width=2.05cm, minimum height=0.9cm,
+    align=center, font=\small,
+  },
+  cs@gate/.style={
+    rectangle, rounded corners=3pt,
+    draw=yellow!70!brown, fill=cs@yellow,
+    line width=0.8pt,
+    minimum width=2.1cm, minimum height=0.9cm,
+    align=center, font=\small,
+  },
+  cs@enc/.style={
+    rectangle, rounded corners=3pt,
+    draw=teal!60!black, fill=cs@teal,
+    line width=0.8pt,
+    minimum width=2.1cm, minimum height=0.9cm,
+    align=center, font=\small,
+  },
+  cs@channel/.style={
+    rectangle, rounded corners=3pt,
+    draw=gray!55, fill=cs@gray,
+    line width=0.8pt,
+    minimum width=2.3cm, minimum height=0.95cm,
+    align=center, font=\small,
+  },
+  cs@arr/.style={->, line width=0.85pt, gray!70},
+}
+
+%% ---- node positions ----
+\node[cs@box]     (src)  at ( 0.0,  0.0) {Information\\Source};
+\node[cs@box]     (msg)  at ( 2.8,  0.0) {Message};
+\node[cs@box]     (tx)   at ( 5.6,  0.0) {Transmitter};
+\node[cs@gate]    (gate) at ( 8.6,  0.72) {Compression\\Gate};
+\node[cs@enc]     (enc)  at ( 8.6, -0.72) {Encoding};
+\node[cs@channel] (ch)   at (11.8,  0.0) {Channel\\(Lossy\\Transforms)};
+\node[cs@box]     (rx)   at (14.8,  0.0) {Receiver};
+\node[cs@box]     (dst)  at (17.6,  0.0) {Destination};
+
+%% ---- main chain arrows ----
+\draw[cs@arr] (src.east)  -- (msg.west);
+\draw[cs@arr] (msg.east)  -- (tx.west);
+
+% split from tx to gate and enc
+\coordinate (split) at ($(tx.east) + (0.35,0)$);
+\draw[cs@arr] (tx.east) -- (split);
+\draw[cs@arr] (split)   |- (gate.west);
+\draw[cs@arr] (split)   |- (enc.west);
+
+% join gate and enc into ch
+\coordinate (join) at ($(ch.west) - (0.35,0)$);
+\draw[cs@arr] (gate.east) -| (join);
+\draw[cs@arr] (enc.east)  -| (join);
+\draw[cs@arr] (join)      -- (ch.west);
+
+\draw[cs@arr] (ch.east) -- (rx.west);
+\draw[cs@arr] (rx.east) -- (dst.west);
+
+%% ---- commitment kernel ellipse (dashed red) ----
+\draw[red!65!black, dashed, line width=1pt]
+  (ch.center) ellipse (1.90cm and 1.65cm);
+
+%% ---- annotation: Commitment Kernel / Noise / Loss ----
+\node[red!65!black, font=\scriptsize, align=left]
+  (ckann) at (14.2, 2.6)
+  {Commitment Kernel\\Noise / Loss (Invariant Structure)};
+\draw[red!65!black, ->, line width=0.65pt]
+  (ckann.south west) -- (12.7, 1.15);
+
+%% ---- annotation: Auditable Invariant ----
+\node[purple!65!black, font=\scriptsize, align=center]
+  (aiann) at (14.6, 1.35)
+  {Auditable Invariant\\(Hard Commitment)};
+\draw[purple!65!black, ->, line width=0.75pt]
+  (aiann.south west) -- (13.55, 0.22);
+
+%% ---- recursive application arc (below) ----
+\draw[gray!55, ->|, line width=0.85pt]
+  (dst.south)
+    .. controls (17.6,-2.0) and (5.6,-2.0) ..
+  (tx.south);
+
+\node[teal!70!black, font=\small]
+  at (11.5, -1.45) {Recursive Application};
+\node[teal!70!black, font=\small]
+  at (11.5, -1.95) {(Governance Stress)};
+
+%% ---- title ----
+\node[font=\normalsize\bfseries, black!80]
+  at (8.8, 3.35)
+  {Transformation-Stable Communication System};
+\node[font=\small, blue!60!black]
+  at (4.0, 2.75)
+  {Extended from Shannon [1948, Fig.~1]};
+
+\end{tikzpicture}

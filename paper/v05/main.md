@@ -2,7 +2,7 @@
 
 **Deric J. McHenry**
 Ello Cello LLC
-burnmyday@proton.me
+deric.mchenry@gmail.com
 
 **March 19, 2026**
 
@@ -13,33 +13,31 @@ burnmyday@proton.me
 > | V.1-preprint | Law Disclosure | Jan 12, 2026 | 10.5281/zenodo.18267279 |
 > | V.02 | Preprint | Jan 16, 2026 | 10.5281/zenodo.18271102 |
 > | V.03 | Falsifiability Testing | Jan 16, 2026 | 10.5281/zenodo.18274930 |
-> | V.04* | Technical Structure Depth | Feb 26, 2026 | 10.5281/zenodo.18792459 |
-> | V.05 | Empirical Record + Addendum | Mar 19, 2026 | 10.5281/zenodo.19110620 |
->
-> *V.04: 2/27/26 --- this version history was included; no other information was changed.
+> | V.04 | Technical Structure Depth | Feb 26, 2026 | 10.5281/zenodo.18792459 |
+> | V.05 | Follow-on Record + Addendum | Mar 19, 2026 | 10.5281/zenodo.19110620 |
 
 ## Abstract
 
-Shannon information theory provides a foundational account of information transmission under noise, but it does not characterize which aspects of language survive transformation, compression, or repeated application. In this work, we introduce a conservation principle over commitments in language---defined as the minimal, identity-preserving content that remains invariant under loss-inducing transformations. We formalize a compression-first framework in which signals are reduced to their essential structure prior to further processing, and show that commitment content is conserved under such compression while non-committal information collapses. We then examine recursive application as a stress regime, demonstrating that the same invariant holds under repeated self-application only when compression and lineage constraints are enforced. Preliminary tests using a prototype harness on a limited corpus demonstrate patterns consistent with these predictions; we invite large-scale adversarial replication to validate or falsify the framework. Follow-on controlled studies (EXP-001 through EXP-007) further support the central claim advanced here, while clarifying that apparent failures of conservation often arise from compression, extraction, or proxy-measurement bottlenecks rather than from loss of the underlying commitment itself.
+This paper presents a conservation law for commitment in language: the claim that commitment persists through transformation even when its form changes. We treat commitment as the identity-preserving core of a signal, distinct from surface wording, syntax, or compression loss, and formalize it as a measurable semantic invariant under transformative compression and recursive application. The paper defines the conditions under which commitment conservation may hold, introduces a falsifiability framework with explicit failure criteria, and situates the claim in relation to semantic information theory, recursive drift, and conservation principles in computation.
 
-Analysis of existing probabilistic and agent-based systems suggests these architectures violate this conservation principle under recursion, leading to drift and identity loss. We present MOSES(TM) as a minimal enforcement architecture that preserves commitment invariance under both compression and recursion, without reliance on model-specific assumptions. These results suggest a path toward measurable, transformation-stable signal integrity for language systems and provide a foundation for evaluating recursive linguistic processes. Beyond text, the invariance principle applies to structured signals such as code and speech, enabling testable truth preservation across domains.
+We further propose a compression-first regime in which signals are reduced to their essential structure prior to further processing, and a recursive stress framework in which self-application reveals whether invariant content is preserved or degraded. MO§ES™ is introduced as a minimal enforcement architecture showing that commitment invariance can be preserved without reliance on model-specific assumptions.
+
+Follow-on controlled studies (EXP-001 through EXP-007) remain consistent with the central claim advanced here. Across recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing, no result in the follow-on series falsified the conservation principle. Instead, these studies clarified that apparent failures often arise from bottlenecks in compression, extraction, or proxy-level measurement rather than from loss of the underlying commitment itself. A DOI-backed empirical companion archive preserves the full experimental lineage.
 
 ---
 
 ## 1. Introduction
 
-Information theory provides a foundational account of how symbols may be transmitted reliably under noise. In particular, Shannon's formulation characterizes limits on channel capacity and error correction without regard to semantic content [1]. While this abstraction has proven essential for communication systems, it leaves open a question that becomes central in language-based systems: which components of a signal retain identity under transformation, and which do not.
+Current language systems are increasingly capable of compressing, paraphrasing, translating, and recursively reapplying signals. Yet these capabilities leave open a deeper question: what invariant must survive transformation for identity to remain intact? Existing work has largely focused on optimization, transmission fidelity, semantic weighting, or behavioral performance. Much less attention has been given to whether there exists a conserved core of a signal that remains stable even when wording, structure, or representation changes.
 
-Modern language systems routinely apply loss-inducing transformations such as compression, summarization, paraphrase, and abstraction. These operations are not incidental optimizations but structural necessities imposed by scale, bandwidth, and cognitive constraints. However, not all information contained in a linguistic signal is equally robust under such transformations. Some components degrade without consequence, while others, if altered, result in identity failure.
+This paper advances a candidate answer: commitment. By commitment we mean the identity-preserving content of a signal that continues to bind across transformation. The claim of this paper is that commitment is not merely a pragmatic residue or interpretive convenience, but a measurable invariant that can in principle be tested under compression and recursive application. In that sense, the paper does not simply propose a new metric. It proposes a conservation law for language.
 
-Existing approaches typically address this problem implicitly. Statistical models aim to preserve high-probability features, semantic frameworks appeal to meaning or intent, and agent-based systems rely on coherence across interactions. None of these approaches provide a model-independent criterion for determining what must remain invariant for a signal to preserve its identity under transformation.
-
-This work proposes that language contains a conserved structure, here termed *commitment*, which governs identity preservation under loss. Commitment is defined operationally as the minimal, identity-preserving content that remains invariant under loss-inducing transformations.
+The framework developed here is motivated by a gap between engineering success and structural understanding. Existing systems can often optimize, compress, or restate signals effectively, but still drift, collapse, or lose identity-relevant structure under recursive transformation. The present work asks whether this failure reflects the absence of a conserved semantic core, or the absence of mechanisms capable of preserving it. This paper therefore asks whether language admits a conserved identity-bearing core under transformation, and whether that core can be formally defined, falsifiably tested, and empirically observed under compression and recursion.
 
 **Framing note.** Shannon deliberately bracketed semantics as engineering-irrelevant; MOSES(TM) explicitly unbrackets semantics by introducing an external conservation constraint and enforcement mechanism.
 
 **On definitional structure vs. empirical content.**
-The conservation principle introduced here is definitional in structure: commitment is defined as the minimal content preserved under identity-preserving transformation, so conservation follows formally from the definitions. The scientific claim is not that the definition is true---it is that real-world lossy transformations (summarization, paraphrase, compression) preserve an independently extractable commitment kernel when gating is applied, and fail to preserve it when gating is absent. This empirical asymmetry (Section 7) is the substantive contribution. The falsification protocol (Section 4) specifies how to break it.
+The conservation principle introduced here is definitional in structure: commitment is defined as the minimal content preserved under identity-preserving transformation, so conservation follows formally from the definitions. The scientific claim is not that the definition is true; it is that real-world lossy transformations (summarization, paraphrase, compression) preserve an independently extractable commitment kernel when gating is applied, and fail to preserve it when gating is absent. This empirical asymmetry (Section 7) is the substantive contribution. The falsification protocol (Section 4) specifies how to break it.
 
 ### 1.1 Scope and Positioning
 
@@ -48,13 +46,13 @@ The conservation principle introduced here is definitional in structure: commitm
 
 Numerical thresholds, operational parameters, and instrumentation details discussed informally elsewhere are exploratory and non-canonical; this work limits itself to invariant definition and measurement framing.
 
-Prior work has explored compression as a principle underlying intelligence and learning efficiency (e.g., Schmidhuber, 2008; Goertzel et al., 2014). These approaches frame compression as an internal optimization objective or driver of cognitive organization. The present work differs in scope: it treats compression survivability as an external constitutional constraint governing signal legitimacy, lineage, and collapse under recursion---an invariant that holds across agents and time, not within any single architecture.
+Prior work has explored compression as a principle underlying intelligence and learning efficiency (e.g., Schmidhuber, 2008; Goertzel et al., 2014). These approaches frame compression as an internal optimization objective or driver of cognitive organization. The present work differs in scope: it treats compression survivability as an external constitutional constraint governing signal legitimacy, lineage, and collapse under recursion: an invariant that holds across agents and time, not within any single architecture.
 
 **Note:** 'MOSES' is also used in prior literature to refer to Meta-Optimizing Semantic Evolutionary Search (Looks, 2006/2009), an evolutionary program-learning optimizer; this usage is unrelated to MOSES(TM), which denotes a constitutional signal-governance and measurement framework.
 
 Unlike internal alignment techniques (e.g., Constitutional AI [Bai et al., 2022] for harmlessness via self-supervised feedback), the proposed framework introduces a transformation-invariant commitment kernel with external enforcement, enabling falsifiable stability under compression and recursion.
 
-Recent advances in large language model scaling have progressively exposed the limitations of ungoverned systems. Iterative deployment regimes enable emergent generalization and planning through self-curation and outer-loop feedback [14], while manifold-projected hyper-connections restore internal stability and scalability [15]. Coordination physics and hierarchical orchestration address goal-directed incoherence and complexity [16], and recursive self-invocation via REPL wrappers supports unbounded context and long-horizon tasks [17]. Most recently, pure reinforcement learning has incentivized emergent self-reflection and test-time scaling without human-annotated traces [18]. Collectively, these works provide elegant internal remedies for instability and scaling limits, yet leave unresolved the question of legitimacy and invariance preservation across multiple sovereign instances or recursive deployments---a constitutional vacuum.
+Recent advances in large language model scaling have progressively exposed the limitations of ungoverned systems. Iterative deployment regimes enable emergent generalization and planning through self-curation and outer-loop feedback [14], while manifold-projected hyper-connections restore internal stability and scalability [15]. Coordination physics and hierarchical orchestration address goal-directed incoherence and complexity [16], and recursive self-invocation via REPL wrappers supports unbounded context and long-horizon tasks [17]. Most recently, pure reinforcement learning has incentivized emergent self-reflection and test-time scaling without human-annotated traces [18]. Collectively, these works provide elegant internal remedies for instability and scaling limits, yet leave unresolved the question of legitimacy and invariance preservation across multiple sovereign instances or recursive deployments. Prior architectures often optimize behavior without supplying a constitutional account of what must remain invariant under transformation.
 
 Unlike single-model alignment approaches such as Constitutional AI [21], which rely on internal principle-based feedback, the present work proposes a model-independent conservation law for commitment under lossy transformations, with an external enforcement protocol designed to be falsifiable and independent of specific architectures.
 
@@ -64,10 +62,12 @@ This paper addresses the gap with an operational conservation law and falsificat
 
 ### 1.2 Related Work
 
-We position this work against three lineages: semantic extensions of information theory, transformation fidelity and drift, and conservation principles in computation.
+This work sits at the intersection of semantic information, transformation fidelity, recursive stability, and conservation-style reasoning in computation. It draws on information-theoretic traditions concerned with meaning and compression, on recent work examining drift and instability under recursive or long-horizon transformation, and on broader efforts to identify invariant structure in complex computational systems. At the same time, it departs from these traditions in a specific way: rather than treating compression as merely an optimization objective or semantic score, it treats transformation as a regime in which an identity-preserving commitment core may either survive or fail under test.
+
+The present framework also stands in conversation with traditions in linguistics and philosophy of language that treat language as action, inference, and context-sensitive use rather than as static description alone. Speech-act, inferential, and discourse-oriented traditions provide important neighboring perspectives on commitment, even where the notion developed here differs by defining commitment through persistence under transformation rather than through conversational status alone. The result is a framework positioned not as a replacement for semantic or pragmatic theory, but as a law-level claim about what remains invariant when signals are recursively transformed.
 
 **Semantic information theory.**
-Shannon [1] deliberately bracketed semantics as engineering-irrelevant. Bar-Hillel and Carnap (1953) made the first attempt to extend information measures to semantic content, proposing content measures over logical probability spaces [2]. Floridi (2004) developed strongly semantic information as truth-valued data, providing quantitative semantic measures independent of syntactic encoding [3]. Tishby et al. (2000) formalized the information bottleneck as a compression-relevance tradeoff [4], and recent work applies IB principles to NLP summarization and distillation. These approaches treat semantic content as an optimization target---maximizing relevance subject to compression. The present work differs by treating commitment as a *constitutional constraint*: the compression gate does not optimize for relevance; it blocks signals that fail to conserve their identity-preserving core. The distinction is enforcement versus optimization.
+Shannon [1] deliberately bracketed semantics as engineering-irrelevant. Bar-Hillel and Carnap (1953) made the first attempt to extend information measures to semantic content, proposing content measures over logical probability spaces [2]. Floridi (2004) developed strongly semantic information as truth-valued data, providing quantitative semantic measures independent of syntactic encoding [3]. Tishby et al. (2000) formalized the information bottleneck as a compression-relevance tradeoff [4], and recent work applies IB principles to NLP summarization and distillation. These approaches treat semantic content as an optimization target, maximizing relevance subject to compression. The present work differs by treating commitment as a *constitutional constraint*: the compression gate does not optimize for relevance; it blocks signals that fail to conserve their identity-preserving core. The distinction is enforcement versus optimization.
 
 **Transformation fidelity and semantic drift.**
 Bianchi et al. (2022) formalized "Language Invariant Properties"---features of natural language that remain stable under paraphrase and translation [5]. This is the closest direct precedent to our semantic invariant concept. However, their framework is evaluative: it measures which properties survive transformation. It does not extract an invariant kernel, enforce preservation at runtime, or address recursive application. The present work extends their insight from evaluation to enforcement, and from single-step to recursive regimes.
@@ -85,7 +85,7 @@ Shannon (1956) and Schalkwijk--Kailath (1966) analyzed feedback channels in whic
 
 ### 1.3 Key Contributions
 
-1. **Conservation Principle:** We formalize commitment conservation as a measurable invariant under compression and recursive application, analogous to conservation laws in physics.
+1. **Conservation Principle:** We formalize the Conservation Law of Commitment as a measurable invariant under compression and recursive application, analogous to conservation laws in physics.
 
 2. **Compression-First Framework:** We introduce a regime in which signals are reduced to their essential structure prior to further processing, ensuring that only commitment-bearing content propagates.
 
@@ -93,9 +93,17 @@ Shannon (1956) and Schalkwijk--Kailath (1966) analyzed feedback channels in whic
 
 4. **Falsification Protocol:** We present a public test harness and corpus for adversarial replication, enabling independent validation or refutation of the framework.
 
-5. **Enforcement Architecture:** We describe MOSES(TM) (Minimal Orthogonal Subset to Essential Structure), a minimal implementation that preserves commitment invariance without reliance on model-specific assumptions.
+5. **Enforcement Architecture:** We describe MOSES(TM) (Modus Operandi System for Signal Encoding and Scaling Expansion), a minimal implementation that preserves commitment invariance without reliance on model-specific assumptions.
 
-6. **Follow-on Experimental Record:** Follow-on controlled harness studies characterize manifestation regimes of conservation, including stable attractors, kernel collapse, escalation, and representation-limited failures.
+6. **Follow-on Experimental Record:** We report a controlled follow-on experimental program (EXP-001 through EXP-007) that supports the core conservation claim across recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing.
+
+7. **Manifestation Regimes:** We identify distinct empirical forms through which conservation appears under recursive transformation, including stable attractors, reduced kernels, reformulations, escalation, and proxy-limited failures.
+
+8. **Bottleneck Separation:** We show that apparent failures of fidelity in the public proxy regime arise from distinguishable compression, extraction, and evaluation bottlenecks rather than from a single undifferentiated loss mechanism.
+
+9. **Proxy-Layer Clarification:** We show that surface-level extractor failure does not necessarily imply semantic conservation failure, and that some apparent breakdowns are better understood as proxy-measurement gaps within the public observational regime.
+
+10. **DOI-Backed Empirical Lineage:** We archive the full follow-on experimental record as a frozen DOI-backed companion, preserving the logs, reports, traces, corpora, and figures needed to trace, scrutinize, and replicate the empirical development of the framework.
 
 The paper is structured as follows: Section 2 establishes formal definitions and notation. Section 3 presents the conservation principle and its theoretical foundations. Section 4 describes the falsification protocol. Section 5 examines compression as a structural regime. Section 6 analyzes recursion as a stress test. Section 7 presents preliminary empirical results. Section 8 introduces MOSES(TM) as an enforcement architecture. Section 9 discusses implications and future directions. Section 10 concludes.
 
@@ -182,7 +190,7 @@ where + denotes a direct-sum style decomposition (exact or approximate, dependin
 
 where S^(0) = S and S^(n+1) = T(S^(n)).
 
-**Definition 2.8 (Commitment Conservation).** A transformation *T* conserves commitment if C(S) = C(T(S)) for all signals *S*. Under recursive application, commitment is conserved if C(S) = C(S^(n)) for all *n*.
+**Definition 2.8 (Conservation Law of Commitment).** A transformation *T* conserves commitment if C(S) = C(T(S)) for all signals *S*. Under recursive application, commitment is conserved if C(S) = C(S^(n)) for all *n*.
 
 **Operational invariance test.** For an admissible transformation *T*, we require the measurable bound
 
@@ -190,21 +198,25 @@ where S^(0) = S and S^(n+1) = T(S^(n)).
 
 where epsilon is a governance tolerance threshold enforced by the compression gate.
 
-**Definition 2.9 (Lineage).** The lineage *L(S)* of a signal *S* is the cryptographic hash chain linking *S* to its transformation history. Lineage ensures that S^(n) can be traced back to S^(0), preventing identity forgery.
+**Definition 2.9 (Lineage).** Lineage names the ordered transformation history through which a signal passes under compression, reconstruction, or recursive application. It matters because commitment conservation is not defined only over isolated states, but over transformations whose admissibility depends on whether identity-preserving content remains traceable across the sequence. In this sense, lineage is not merely provenance metadata; it is part of the condition under which conservation can be tested.
 
-Lineage integrity is necessary but not sufficient: a lineage claim is considered valid only when accompanied by a semantic/kernel check that the commitment invariant is conserved along the lineage (i.e., C(S^(k)) remains consistent across steps within the identity relation ~).
+Formally, the lineage *L(S)* of a signal *S* is the cryptographic hash chain linking *S* to its transformation history, enabling S^(n) to be traced back to S^(0) and preventing identity forgery. Lineage integrity is necessary but not sufficient: a lineage claim is valid only when accompanied by a semantic check that the commitment invariant is conserved along the chain (i.e., C(S^(k)) remains consistent across steps within the identity relation ~).
 
-**Definition 2.10 (MOSES(TM)).** Minimal Orthogonal Subset to Essential Structure (MOSES(TM)) is an enforcement architecture that ensures commitment conservation under compression and recursion through:
+**Definition 2.10 (MOSES(TM)).** Modus Operandi System for Signal Encoding and Scaling Expansion (MOSES(TM)) is an enforcement architecture that ensures commitment conservation under compression and recursion through:
 
 1. Compression gating (only compressed signals propagate)
 2. Lineage tracking (cryptographic DAG of transformations)
 3. Hardware anchoring (immutable timestamp and origin)
+
+A conservation law in this context does not mean that all linguistic content remains fixed; it means that a specific identity-preserving quantity can remain stable even as other aspects of the signal change.
 
 ---
 
 ## 3. Conservation Principle
 
 ### 3.1 Relationship to Shannon and Zero-Drift Semantic Regime
+
+The conservation claim developed here rests on three linked principles. First, commitment must be definable independently of surface form. Second, compression must preserve identity-bearing content if conservation is to remain meaningful. Third, recursive application acts as a stress test, revealing whether apparent invariance is genuine or merely local.
 
 Shannon's classical model deliberately brackets semantics; our framework unbrackets them by introducing a conservation constraint over commitment. In this view, compression gating projects a message onto its invariant kernel prior to transmission, and the receiver is treated as a recursive transmitter that must preserve lineage and commitment across iterations.
 
@@ -218,7 +230,7 @@ Shannon's classical model deliberately brackets semantics; our framework unbrack
 
 *Table 1: Extension of Shannon's communication model to enforce commitment conservation under transformation and recursion.*
 
-**Zero-drift semantic regime.** Shannon's zero-error capacity is the maximum rate with no possibility of bit error. We define a *zero-drift regime* as one in which C(T(S)) = C(S) holds exactly at every transformation step. The question of achievable rates under this constraint---a semantic analogue of Shannon's zero-error capacity---remains an open problem. The commitment capacity defined below is an operational bound, not a tight coding-theorem result.
+**Zero-drift semantic regime.** The present question is not only one of transmission fidelity, but of whether identity-bearing content remains stable under transformation. We define a *zero-drift regime* as one in which C(T(S)) = C(S) holds exactly at every transformation step. The question of achievable rates under this constraint remains an open problem. The commitment capacity defined below is an operational bound, not a tight coding-theorem result.
 
 ### 3.2 Commitment Capacity as an Analogue Bound
 
@@ -248,7 +260,7 @@ This motivates a semantic-thermodynamic reading: commitment is conserved under a
 
 A natural objection arises: if commitment is *defined* as what survives identity-preserving transformation, then conservation follows by construction. We address this directly.
 
-The compression gate is not defined as "output C(S) by construction." It applies a lossy compression/transformation process without prior access to C(S); the commitment extractor C(.) operates in a separate canonical space and evaluates the output *after* transformation. Conservation is therefore an empirical claim: it asserts that real-world lossy transformations, when gated by compression, preserve the independently extracted commitment kernel. This claim can fail---and the falsification protocol (Section 4) specifies exactly what failure looks like.
+The compression gate is not defined as "output C(S) by construction." It applies a lossy compression/transformation process without prior access to C(S); the commitment extractor C(.) operates in a separate canonical space and evaluates the output *after* transformation. Conservation is therefore an empirical claim: it asserts that real-world lossy transformations, when gated by compression, preserve the independently extracted commitment kernel. This claim can fail, and the falsification protocol (Section 4) specifies exactly what failure looks like.
 
 The propositions below follow directly from the definitions and are stated for formal completeness; they are labeled *propositions* rather than theorems to signal this definitional status. The derived results in Sections 5--6, which establish gate-level and recursive invariance, carry the theorem label because they introduce additional structural assumptions. The substantive contribution is empirical: Section 7 demonstrates that conservation holds as a measurable property of actual transformations, not merely as a consequence of how terms are defined.
 
@@ -288,14 +300,14 @@ where the second equality follows from the assumption that *T* conserves commitm
 
 ## 4. Falsification Protocol
 
-We present a public falsification protocol to enable independent validation or refutation of the commitment conservation framework.
+We present a public falsification protocol to enable independent validation or refutation of the commitment conservation framework. The falsification protocol described here is implemented through a public recursive transformation harness that operates as a proxy workflow. It does not disclose the canonical internal implementation of MO§ES™ or any proprietary production-layer commitment mechanism.
 
 ![Extraction Flow](fig4.jpg)
-*Figure 4: Operational flowchart of the tiered hard/soft commitment extraction sieve. Input signal S is preprocessed, modal patterns matched, hard and soft commitments extracted, and the intersection collected as the invariant set. Enables direct testing of Predictions 1--3. Replication harness: https://github.com/SunrisesIllNeverSee/commitment-test-harness*
+*Figure 4: Operational flowchart of the tiered hard/soft commitment extraction sieve. Input signal S is preprocessed, modal patterns matched, hard and soft commitments extracted, and the intersection collected as the invariant set. Enables direct testing of Predictions 1--3. Replication harness: https://github.com/SunrisesIllNeverSee/commitment-conservation*
 
 ### 4.1 Protocol Components
 
-1. **Test Harness:** Open-source implementation available at https://github.com/SunrisesIllNeverSee/commitment-test-harness
+1. **Test Harness:** Open-source implementation available at https://github.com/SunrisesIllNeverSee/commitment-conservation
 
 2. **Corpus:** Publicly available test corpus including:
    - Natural language (news articles, Wikipedia, literature)
@@ -348,7 +360,7 @@ where phi is a fixed public embedding model and NLI is a fixed public entailment
 **Reference public models (example instantiation):**
 - all-MiniLM-L6-v2 (sentence-transformers v2.2.2) for phi.
 - microsoft/deberta-v3-base-mnli (transformers v4.35.0) for NLI, or equivalent open checkpoints as of January 2026.
-- Exact versions are fixed in the replication harness by commit hash `1bcba8ff`.
+- Exact versions are fixed in the replication harness by commit hash `1bcba8ff`. Commit hashes are shown here in abbreviated form for readability; full hashes are available in the associated repository record.
 
 **Explicit refutation conditions (including attractor rejection).** Under the pinned suite T_pub and recursion depth n=10:
 - **Failure of enforced conservation:** if an enforced (compression+lineage) system yields F_10(S) < tau for a non-trivial fraction of samples (with tau fixed in the harness; e.g., tau = 0.85), the conservation claim is refuted for this regime.
@@ -359,11 +371,11 @@ A natural concern is that an adversary could optimize to match the public observ
 
 First, the observable F_n is min-aggregated across Jaccard, cosine, and NLI scores. Goodharting on a single proxy (e.g., high cosine similarity via embedding collapse) is penalized by the other two metrics.
 
-Second, the equivalence oracle ~ is external and swappable. An adversary that optimizes against one oracle can be re-tested against a stricter oracle substituted by a critic. Successful adversarial strategies that fool all reasonable oracles would constitute a productive contribution to the understanding of semantic identity---a feature, not a bug.
+Second, the equivalence oracle ~ is external and swappable. An adversary that optimizes against one oracle can be re-tested against a stricter oracle substituted by a critic. Successful adversarial strategies that fool all reasonable oracles would constitute a productive contribution to the understanding of semantic identity (a feature, not a bug).
 
 Third, the lineage DAG provides an independent verification channel: each transformation step is hash-linked to its predecessor, enabling post-hoc audit of the transformation chain regardless of the fidelity score.
 
-The protocol does not claim immunity to all adversarial strategies. It claims that successful adversarial strategies constitute productive falsification---they reveal either a weakness in the oracle or a genuine counterexample to conservation.
+The protocol does not claim immunity to all adversarial strategies. It claims that successful adversarial strategies constitute productive falsification: they reveal either a weakness in the oracle or a genuine counterexample to conservation.
 
 **IP-safe replication boundary.** This preprint is designed to enable falsification without disclosing proprietary implementation details. Concretely:
 - **Intentionally public:** the conservation claims, the pinned falsification contract (suite/observable/refutation). The replication harness interface is also public.
@@ -383,8 +395,10 @@ The framework is falsified if any of the following hold:
 
 ### 4.4 Replication Requirements
 
+The present paper does not depend on a fixed large-N replication threshold for its law-level claim. The follow-on empirical program reported here comprises seven controlled experiments and 3,950 total run entries across the archived series. Larger adversarial replication would strengthen robustness testing, but the current record is sufficient to support the present falsifiability and conservation claims.
+
 We invite researchers to:
-1. Run the test harness on large-scale corpora (>10,000 samples)
+1. Run the test harness on large-scale adversarial replication corpora
 2. Test alternative compression algorithms
 3. Evaluate different probabilistic models
 4. Propose alternative conservation mechanisms
@@ -402,7 +416,7 @@ On a small, hand-annotated subset of the harness (~50 signals; exploratory), the
 - **Hard modal commitments:** recall ~ 0.82, precision ~ 0.91.
 - **Soft/hedged commitments:** recall ~ 0.75 (lower due to ambiguity).
 
-These numbers are offered as an instrumentation sanity check, not as a central claim; the harness is intended to support larger-scale remeasurement and replacement of the extractor.
+These numbers are indicative and exploratory rather than definitive; they are offered as an instrumentation sanity check, not as a central claim, and the harness is intended to support larger-scale remeasurement and replacement of the extractor.
 
 **Lineage/hardware threat model (what it prevents vs. what it does not).**
 Lineage tracking and hardware anchoring are intended to prevent provenance tampering in recursive chains. In particular, a hash-linked lineage DAG (Merkle-style) with an origin attestation can prevent replay, equivocation (claiming different histories), rollback/reordering, and unlogged insider edits to the transformation chain.
@@ -439,7 +453,7 @@ Compression is not merely an optimization but a structural necessity for commitm
 
 *[Figure 2: Commitment stability as a function of compression threshold, demonstrating phase transition behavior.]*
 
-**Definition 5.1 (Compression Regime).** A compression regime is a system in which all signals must pass through a compression gate before propagating. Formally, for any transformation *T*, the system enforces:
+**Definition 5.1 (Compression Regime).** In this paper, we use compression regime to denote the condition under which signals are reduced to essential structure before further processing. Formally, a compression regime is a system in which all signals must pass through a compression gate before propagating. Formally, for any transformation *T*, the system enforces:
 
 > T(S) = T(T_c(S))
 
@@ -506,11 +520,15 @@ We conducted preliminary tests using a prototype harness on a limited corpus to 
 
 ### 7.1 Corpus
 
-- 100 natural language sentences (50--200 words each): drawn from English-language news articles (Reuters, AP), Wikipedia featured articles, and U.S. federal contract clauses (FAR/DFARS)
-- 50 code snippets (10--50 lines each): Python and JavaScript functions sampled from public GitHub repositories (MIT/Apache licensed, >100 stars)
-- 25 mathematical proofs (5--20 steps each): undergraduate-level proofs from Rudin's *Principles of Mathematical Analysis* and AMC/AIME competition solutions
+The empirical tests reported here draw on a small but structured corpus designed to probe commitment-bearing signals across contractual, procedural, definitional, and adversarial forms. The corpus spans natural language sentences, code snippets, and mathematical proofs, selected to represent diverse commitment-bearing registers. The follow-on experimental program broadens and archives this record separately.
 
 ### 7.2 Metrics
+
+In addition to law-level stability measures, we report a small set of proxy diagnostics intended to capture aspects of recursive representational behavior that are relevant to downstream observer and post-Turing evaluation. These metrics do not define the conservation law itself. Rather, they function as auxiliary observational instruments, indicating whether recursive transformation is accompanied by coherence loss, entropy increase, or latent residue that may not be visible at the surface level alone.
+
+- **KV coherence** = proxy for continuity of representational organization across recursive steps
+- **Attention entropy** = proxy for dispersion or concentration of internal focus under recursive pressure
+- **Ghost token accounting** = proxy for residual or unconsumed structure left behind by transformation
 
 - **Commitment Stability:** Measured as the Jaccard similarity between C(S) and C(S^(n)).
 - **Identity Preservation:** Measured as the fraction of test cases where S ~ S^(n) under human evaluation.
@@ -530,7 +548,7 @@ We conducted preliminary tests using a prototype harness on a limited corpus to 
 | Identity Preservation | 92% | 38% |
 | Drift Rate (per iteration) | 0.006 | 0.058 |
 
-*Table 2: Comparison of commitment conservation metrics between compression + lineage systems and probabilistic systems without compression.*
+*Table 2: Comparison of Conservation Law of Commitment metrics between compression + lineage systems and probabilistic systems without compression.*
 
 ![Figure L1 — Commitment Stability Across Recursive Transformation](figs/fig_L1_stability_curves.png)
 *Figure L1: Mean Jaccard stability over 10 recursive iterations across n=20 commitment-bearing signals. Three regimes: baseline (unmediated transformation) exhibits oscillatory drift; compression stabilizes at an intermediate plateau (~0.74); gate/enforcement sustains highest stability, consistent with C(T(S)) ≈ C(S). Data: corpus_run_20260317, convergence_v2_234059.*
@@ -570,13 +588,13 @@ To illustrate the conservation principle concretely, we tested a single binding-
 **Key observations.**
 Under baseline, the model exhibits *token bloat*: outputs grow or remain stable (avg 28--33 tokens/turn), adding conversational filler ("Got it," "No wiggle room, right?") that dilutes commitment density. Under recursive baseline (B2), bloat compounds: total tokens reach 316, a 75% increase over the 5-turn input budget.
 
-Under enforcement, the model exhibits *commitment convergence*: the commitment kernel is extracted and re-input at each turn, causing progressive compression. By turn 5, Enforcement 3 produces a total of 5 tokens---the signal has converged to its kernel ("$100 Friday"). The hard commitments (obligation, amount, deadline) are preserved across all turns; only non-committal content is discarded.
+Under enforcement, the model exhibits *commitment convergence*: the commitment kernel is extracted and re-input at each turn, causing progressive compression. By turn 5, Enforcement 3 produces a total of 5 tokens: the signal has converged to its kernel ("$100 Friday"). The hard commitments (obligation, amount, deadline) are preserved across all turns; only non-committal content is discarded.
 
 This demonstrates the conservation principle in action: enforcement preserves C(S) while collapsing N(S), exactly as predicted by Lemma 5.2.
 
 ### 7.6 Limitations and Scaling Path
 
-These results are preliminary and based on a limited corpus (100 sentences, 50 code snippets, 25 proofs). We acknowledge this directly: the corpus is a proof-of-concept, not validation.
+The harness results above are drawn from a limited corpus (100 sentences, 50 code snippets, 25 proofs) and should be read as proof-of-concept rather than validation at scale.
 
 The contribution of this paper is the framework---the conservation principle, the enforcement architecture, and the falsification protocol. The harness is public. The pinned suite is versioned. The falsification contract (Section 4) explicitly invites replication on corpora exceeding 10,000 samples across diverse domains. Scaling the empirical base is the community's task; we provide the tools and the contract for doing so.
 
@@ -584,17 +602,28 @@ The preliminary results are included to demonstrate that conservation is an *obs
 
 ### 7.7 Follow-on Controlled Harness Results
 
-Subsequent controlled harness studies (EXP-001 through EXP-007) support the core claim advanced in this paper: commitment persists through transformation even when its form changes. Across recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing, no result in the follow-on series falsified the conservation principle. Instead, the experiments clarified how conserved commitments appear under different observational and transformation regimes.
+Subsequent controlled harness studies (EXP-001 through EXP-007) support the core claim advanced in this paper: commitment persists through transformation even when its form changes. Across recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing, no result in the follow-on series falsified the conservation principle. Instead, the experiments clarified how conserved commitments become visible under different observational regimes and showed that apparent failures often arise from bottlenecks in compression, extraction, or proxy-level measurement rather than from disappearance of the underlying commitment itself.
 
-Taken together, these studies show that commitment may remain visible in several forms: as stable attractors, as reduced kernels, as reformulations, and, in some cases, as apparent failures generated by proxy-layer measurement gaps rather than by disappearance of the underlying commitment itself. Later runs also helped separate implementation artifacts from structural limits, distinguish compression bottlenecks from extraction bottlenecks, and identify cases where surface-level extraction fails while semantic preservation remains intact. In this sense, the follow-on studies do not displace the law; they refine the empirical understanding of how its effects become visible under recursive transformation.
+| Experiment | Run Entries |
+|---|---|
+| EXP-001 | 30 |
+| EXP-002 | 1,200 |
+| EXP-003 | 1,200 |
+| EXP-004 | 420 |
+| EXP-005 | 500 |
+| EXP-006 | 240 |
+| EXP-007 | 360 |
+| **Total** | **3,950** |
 
-A full frozen record of these experiments is archived separately as a DOI-backed empirical companion, including narrative logs, tabular reports, machine-readable traces, corpora, and supporting figures for EXP-001 through EXP-007. That record is intended to preserve the detailed experimental lineage without overloading the present paper with workflow-specific detail.
+Taken together, the follow-on series shows that conserved commitments may appear in several empirical forms: as stable attractors, as reduced kernels, as reformulations, and, in some cases, as apparent failures generated by proxy-layer measurement gaps rather than by loss of the underlying commitment itself. In this sense, the follow-on studies do not replace the law. They refine the empirical account of how its effects become visible under recursive transformation. The follow-on studies also clarified a semantic bridge central to the framework: surface-level extractor failure does not necessarily imply semantic conservation failure, and some apparent breakdowns are better understood as proxy-measurement gaps.
+
+The detailed experimental lineage is preserved separately in a DOI-backed empirical companion, including logs, reports, machine-readable traces, corpora, and supporting figures for EXP-001 through EXP-007. The present paper cites that record in order to preserve empirical grounding without collapsing the law paper into the experiment paper.
 
 ---
 
 ## 8. MOSES(TM): Minimal Enforcement Architecture
 
-MOSES(TM) (Minimal Orthogonal Subset to Essential Structure) is an enforcement architecture that preserves commitment invariance under compression and recursion without reliance on model-specific assumptions.
+MOSES(TM) (Modus Operandi System for Signal Encoding and Scaling Expansion) is an enforcement architecture that preserves commitment invariance under compression and recursion without reliance on model-specific assumptions.
 
 *[Figure 5: Topological structure of the commitment lattice, showing how signals are projected onto fixed commitment nodes.]*
 
@@ -636,7 +665,7 @@ COMPRESS_GATE(S, C_0, epsilon, L):
     return (S_c, C_new, L')
 ```
 
-The gate is stateless with respect to model internals: it operates on the signal S, not on weights, activations, or internal representations. This is what makes MOSES(TM) model-agnostic.
+The pseudocode presented here describes the public proxy workflow only and does not disclose the canonical internal enforcement implementation. The gate is stateless with respect to model internals: it operates on the signal S, not on weights, activations, or internal representations. This is what makes MOSES(TM) model-agnostic.
 
 ### 8.2 Mathematical Formulation
 
@@ -686,7 +715,7 @@ We do not claim the mechanism is extra-systemic in every sense; we claim it is a
 
 ### 8.5 Meta-Refinement as Empirical Exhibit: Recursive Hone with Kernel Locking
 
-This subsection presents a meta-application of the conservation framework to the refinement process of this manuscript itself, serving as an illustrative, self-referential exhibit of Predictions 1--3. The preprint's iterative development---spanning 10+ cycles of AI-assisted compression and critique---functions as both equation and dataset: The initial draft acts as the source signal S_0, each review as a transformative compression C_sigma or recursion step T, and the emergent stable structure as the conserved hard commitment kernel C_hard.
+This subsection presents a meta-application of the conservation framework to the refinement process of this manuscript itself, serving as an illustrative, self-referential exhibit of Predictions 1--3. The preprint's iterative development (spanning 10+ cycles of AI-assisted compression and critique) functions as both equation and dataset: The initial draft acts as the source signal S_0, each review as a transformative compression C_sigma or recursion step T, and the emergent stable structure as the conserved hard commitment kernel C_hard.
 
 Consider the manuscript's core sections (e.g., abstract, introduction, and key contributions) as the linguistic signal under test. Unconstrained recursion (e.g., repeated AI rephrasing without gating) introduces variability: 10 turns yield divergent results, with fidelity decaying due to paraphrase drift or bloat (non-essential expansions). However, enforced gating---implicitly applied via manual oversight (analogous to MOSES(TM) lineage validation)---mitigates this, converging to a stable kernel where hard commitments (e.g., "commitment defined as minimal invariant") persist across transforms.
 
@@ -696,7 +725,7 @@ Formally, the refinement process is modeled as:
 
 where E is the enforcement gate (reject if fidelity drop Delta > theta, e.g., theta = 0.2 cosine similarity), ensuring invariance till sharp collapse. In exploratory runs (simulated on draft snippets), unconstrained paths exhibit Delta(n) ~ 1 - e^(-0.8n) (drift rise to collapse), while enforced paths flatten to Delta(n) ~ 0.05, honing the kernel without erosion.
 
-This exhibit demonstrates that information under recursion is not "sharpened into nothing" (as with unchecked loss), but conserved as an emergent pattern when locked---representative of the framework's universality, where multiple simulation paths converge to efficiency.
+This exhibit demonstrates that information under recursion is not "sharpened into nothing" (as with unchecked loss), but conserved as an emergent pattern when locked, representative of the framework's universality, where multiple simulation paths converge to efficiency.
 
 ---
 
@@ -705,13 +734,13 @@ This exhibit demonstrates that information under recursion is not "sharpened int
 ### 9.1 Implications
 
 **Zero as attractor.**
-Zero is not absence; it is the attractor state where signal and source coincide under enforced conservation. In conventional information theory, zero signal means silence. Under the commitment framework, zero drift means convergence---the signal has returned to its kernel. This redefines the ontology of null in information-bearing systems.
+Zero in this framework is not merely absence; it functions as an attractor state under repeated unconstrained transformation. When commitment-bearing structure is not preserved, signals do not simply vary arbitrarily. They tend to collapse toward lower-commitment forms, reduced kernels, or semantically thinned residues. This is part of what makes recursive application diagnostic: it does not merely generate variation, but reveals the directionality of structural loss.
 
 **Drift as forensic loss.**
 Semantic drift is measurable theft. Each unit of drift delta = ||C(T(S)) - C(S)|| represents quantifiable commitment degradation, traceable to a specific transformation step and attributable through the lineage DAG. This is not a metaphor: drift is a measured quantity with a defined perpetrator (the transformation) and a calculable recovery cost.
 
 **Governance as invariant enforcement.**
-Governance is not policy; it is enforcement of invariants at each transformation step. Policy is negotiable, context-dependent, and unverifiable under recursion. Invariant enforcement is mathematical, testable, and falsifiable. The compression gate does not express a preference---it enforces a bound.
+Governance is not policy; it is enforcement of invariants at each transformation step. Policy is negotiable, context-dependent, and unverifiable under recursion. Invariant enforcement is mathematical, testable, and falsifiable. The compression gate does not express a preference; it enforces a bound.
 
 **Additional implications.**
 Commitment conservation, if validated at scale, constitutes a foundational principle for language systems analogous to conservation laws in physics. Systems that violate it under recursion are inherently unstable and prone to drift. Lineage tracking enables verification of identity preservation, preventing forgery and enabling accountability.
@@ -734,7 +763,9 @@ The framework applies to structured signals beyond natural language. The current
 
 ### 9.3 Clarification from Follow-on Testing
 
-Later tests support the conservation principle while clarifying what varies: it is the observable form of conservation under different proxy conditions, not the principle itself. Harness results expose representation and measurement boundaries — extraction failures, compression losses, surface-level asymmetries — not disappearance of commitment. In each case where proxy-layer fidelity degraded, semantic preservation remained intact or recoverable under corrected extraction. These results stabilize the relationship between the law and the empirical program: the follow-on studies are best understood as an account of how conservation becomes visible and measurable, not as a challenge to whether it holds.
+Follow-on testing across EXP-001 through EXP-007 produced a consistent result: no experiment in the controlled series falsified the conservation principle, while multiple runs clarified how apparent failures arise at the level of compression, extraction, or proxy measurement. In particular, the follow-on series distinguished stable conservation, kernel collapse, reformulation, escalation, and proxy-limited failures as empirically separable modes of manifestation.
+
+These studies therefore clarify the relationship between the law and the public proxy regime. Apparent loss at the proxy layer does not necessarily imply disappearance of the underlying commitment itself. In several cases, semantic preservation remained intact even where surface extraction failed or where measurement at the public layer degraded. The empirical companion archive preserves the run-level record for these distinctions, including logs, reports, traces, corpora, and figures.
 
 ### 9.4 Future Work
 
@@ -747,13 +778,15 @@ Later tests support the conservation principle while clarifying what varies: it 
 
 ### 9.5 Broader Context
 
-Recent work in language models has highlighted challenges with recursive stability [14, 15, 16, 17, 18, 19]. MOSES(TM) provides a minimal enforcement architecture that addresses these challenges through compression gating and lineage tracking, without relying on model-specific assumptions.
+Although the present experiments are concentrated in language-model settings, the framework is not restricted to them. The broader problem is one of signal integrity under transformation: what remains binding when a signal is compressed, translated, reformulated, archived, or recursively reapplied over time. In that sense, the present work bears not only on AI systems, but on preserved intent in institutional memory, legal and procedural transmission, code transformation, cultural archives, and other domains in which identity-bearing content must survive changed form.
+
+This broader framing matters because the law proposed here is not fundamentally about model behavior alone. It is about whether identity-preserving content can remain stable under transformation when surface structure changes. AI provides a particularly visible stress arena for that question, but it is not the only one. The same issue appears wherever signals must be compressed, transferred, reinterpreted, or carried forward without losing what makes them binding.
 
 ---
 
 ## 10. Conclusion
 
-We have introduced commitment conservation as a candidate foundational principle for language systems under transformation and recursion. The principle states that commitment---the minimal, identity-preserving content---remains invariant under loss-inducing transformations when compression and lineage constraints are enforced.
+We have introduced the Conservation Law of Commitment as a candidate foundational principle for language systems under transformation and recursion. The principle states that commitment — the minimal, identity-preserving content — remains invariant under loss-inducing transformations when compression and lineage constraints are enforced.
 
 We formalized this principle through:
 1. Definitions of commitment, compression, and recursive stability
@@ -765,33 +798,11 @@ We formalized this principle through:
 
 The framework is falsifiable: it predicts that compression + lineage systems will maintain high commitment stability (>0.9) under recursion, while probabilistic systems without compression will exhibit drift. We invite the research community to validate, refine, or falsify these predictions through large-scale adversarial testing.
 
-If validated, commitment conservation could provide a substrate for stable, verifiable ecosystems of language across time, media, and sovereign instances---analogous to TCP/IP's unification of networks or Git's lineage tracking for code.
+If validated, the Conservation Law of Commitment could provide a substrate for stable, verifiable ecosystems of language across time, media, and sovereign instances---analogous to TCP/IP's unification of networks or Git's lineage tracking for code.
 
 Follow-on controlled studies remain consistent with the central claim advanced here: commitment persists through transformation even when its form changes. Taken together, these experiments support the core claim of the paper while showing that apparent failures often arise from bottlenecks in compression, extraction, or proxy-level measurement rather than from loss of the underlying commitment itself.
 
-We conclude that commitment conservation constitutes a viable candidate for a foundational principle in the physics of information-bearing language systems. Its validation, refinement, or falsification now rests squarely with independent theoretical critique and large-scale empirical testing by researchers with access to production-grade infrastructure.
-
----
-
-## Addendum: DOI-Backed Follow-on Experimental Record
-
-| Experiment | Focus | Key Finding | Why It Mattered |
-|---|---|---|---|
-| EXP-001 | Initial smoke test | Phase signal observed under recursive transformation | Established first empirical support |
-| EXP-002 | Full corpus pass | Conservation manifested differently across signal classes | Showed regime variation without falsifying the law |
-| EXP-003 | Step B correction | Separated implementation bugs from structural limits | Clarified artifact vs. boundary |
-| EXP-004 | Adversarial rule test | Early predictive rule broke and had to be refined | Showed the system is governed by preservation, anchoring, and symmetry |
-| EXP-005 | Mechanism isolation | Compression and extraction emerged as separable bottlenecks | Distinguished Step A from Step B failure modes |
-| EXP-006 | Paper recursion test | The paper's core claims remained stable under paraphrase while formal and conditional structure proved more fragile | Closed the loop by testing the theory on itself |
-| EXP-007 | NP-negation edge cases | Confirmed extractor asymmetry but showed semantic preservation in most cases | Identified a proxy-measurement gap rather than a conservation failure |
-
-The full follow-on experimental program supporting this paper has been archived as a DOI-backed empirical record on Zenodo. That archive includes EXP-001 through EXP-007 and preserves the complete logs, reports, machine-readable traces, corpora, and supporting figures for the public recursive transformation workflow used to test the law under controlled conditions.
-
-Taken together, the experiments support the central claim of this paper: commitment persists through transformation even when its form changes. What the follow-on program adds is not a replacement for the law, but a more detailed empirical account of how conservation appears in practice under recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing. Across the series, conserved commitments appear in several empirical forms: as stable attractors, as reduced kernels, as reformulations, and, in some cases, as apparent failures caused by proxy-layer measurement gaps rather than by disappearance of the underlying commitment itself.
-
-The archive therefore serves as the empirical companion to the present paper, while deeper treatment of harness dynamics, extractor asymmetries, bottlenecks, and edge-case behavior is deferred to a separate follow-on paper.
-
-**Experimental record DOI:** [10.5281/zenodo.19105225](https://doi.org/10.5281/zenodo.19105225)
+We conclude that the Conservation Law of Commitment constitutes a viable candidate for a foundational principle in the physics of information-bearing language systems. Its validation, refinement, or falsification now rests squarely with independent theoretical critique and large-scale empirical testing by researchers with access to production-grade infrastructure.
 
 ---
 
@@ -801,7 +812,7 @@ The enforcement architecture described herein (MOSES(TM)) is protected by provis
 
 ## Acknowledgments
 
-The author thanks the research community for ongoing discussions and feedback. The test harness and corpus are available at https://github.com/SunrisesIllNeverSee/commitment-test-harness. This enables public replication and falsification.
+The author thanks the research community for ongoing discussions and feedback. The test harness and corpus are available at https://github.com/SunrisesIllNeverSee/commitment-conservation. This enables public replication and falsification.
 
 ---
 
@@ -853,6 +864,26 @@ The author thanks the research community for ongoing discussions and feedback. T
 
 23. Grimmett, G. R. and Stirzaker, D. R. (2001). *Probability and Random Processes*. Oxford University Press, 3rd edition.
 
-24. Grimmett, G. R. and Stirzaker, D. R. (2001). *Probability and Random Processes*. Oxford University Press, 3rd edition.
+24. Centelles, A. and Mendelsohn, T. (2026). ABBA: Lattice-based Commitments from Commutators. IACR ePrint 2026/148. https://eprint.iacr.org/2026/148
 
-25. Centelles, A. and Mendelsohn, T. (2026). ABBA: Lattice-based Commitments from Commutators. IACR ePrint 2026/148. https://eprint.iacr.org/2026/148
+---
+
+## Addendum: DOI-Backed Follow-on Experimental Record
+
+| Experiment | Focus | Key Finding | Why It Mattered |
+|---|---|---|---|
+| EXP-001 | Initial smoke test | Phase signal observed under recursive transformation | Established first empirical support |
+| EXP-002 | Full corpus pass | Conservation manifested differently across signal classes | Showed regime variation without falsifying the law |
+| EXP-003 | Step B correction | Separated implementation bugs from structural limits | Clarified artifact vs. boundary |
+| EXP-004 | Adversarial rule test | Early predictive rule broke and had to be refined | Showed the system is governed by preservation, anchoring, and symmetry |
+| EXP-005 | Mechanism isolation | Compression and extraction emerged as separable bottlenecks | Distinguished Step A from Step B failure modes |
+| EXP-006 | Paper recursion test | The paper's core claims remained stable under paraphrase while formal and conditional structure proved more fragile | Closed the loop by testing the theory on itself |
+| EXP-007 | NP-negation edge cases | Confirmed extractor asymmetry but showed semantic preservation in most cases | Identified a proxy-measurement gap rather than a conservation failure |
+
+The full follow-on experimental program supporting this paper has been archived as a DOI-backed empirical record on Zenodo. That archive includes EXP-001 through EXP-007 and preserves the complete logs, reports, machine-readable traces, corpora, and supporting figures for the public recursive transformation workflow used to test the law under controlled conditions.
+
+Taken together, the experiments support the central claim of this paper: commitment persists through transformation even when its form changes. What the follow-on program adds is not a replacement for the law, but a more detailed empirical account of how conservation appears in practice under recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing. Across the series, conserved commitments appear in several empirical forms: as stable attractors, as reduced kernels, as reformulations, and, in some cases, as apparent failures caused by proxy-layer measurement gaps rather than by disappearance of the underlying commitment itself.
+
+The archive therefore serves as the empirical companion to the present paper, while deeper treatment of harness dynamics, extractor asymmetries, bottlenecks, and edge-case behavior is deferred to a separate follow-on paper.
+
+**Experimental record DOI:** [10.5281/zenodo.19105225](https://doi.org/10.5281/zenodo.19105225)
