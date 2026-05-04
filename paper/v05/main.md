@@ -6,6 +6,7 @@ deric.mchenry@gmail.com
 
 **March 19, 2026**
 
+>
 > Originally published January 12, 2026.
 >
 > | Version | Label | Date | DOI |
@@ -32,7 +33,7 @@ Current language systems are increasingly capable of compressing, paraphrasing, 
 
 This paper advances a candidate answer: commitment. By commitment we mean the identity-preserving content of a signal that continues to bind across transformation. The claim of this paper is that commitment is not merely a pragmatic residue or interpretive convenience, but a measurable invariant that can in principle be tested under compression and recursive application. In that sense, the paper does not simply propose a new metric. It proposes a conservation law for language.
 
-The framework developed here is motivated by a gap between engineering success and structural understanding. Existing systems can often optimize, compress, or restate signals effectively, but still drift, collapse, or lose identity-relevant structure under recursive transformation. The present work asks whether this failure reflects the absence of a conserved semantic core, or the absence of mechanisms capable of preserving it. This paper therefore asks whether language admits a conserved identity-bearing core under transformation, and whether that core can be formally defined, falsifiably tested, and empirically observed under compression and recursion.
+The framework developed here is motivated by a gap between engineering success and structural understanding. Existing systems can often optimize, compress, or restate signals effectively, but still drift, collapse, or lose identity-relevant structure under recursive transformation. The present work asks whether this failure reflects the absence of a conserved semantic core, or the absence of mechanisms capable of preserving it. This paper therefore asks whether language admits a conserved identity-bearing core under transformation, and whether that core can be formally defined, falsifiably tested, and empirically observed under compression and recursion. AI introduces a new kind of variation that existing systems have not yet accounted for. It is not failure. It is a new condition requiring new infrastructure.
 
 **Framing note.** Shannon deliberately bracketed semantics as engineering-irrelevant; MOSES(TM) explicitly unbrackets semantics by introducing an external conservation constraint and enforcement mechanism.
 
@@ -385,6 +386,8 @@ Independent parties can still refute the claims by showing failure of the public
 
 ### 4.3 Falsification Conditions
 
+**Oracle specification requirement.** Falsification attempts and replication runs must specify their instantiation of ~ (the equivalence oracle) before running. Post-hoc oracle substitution --- selecting a different oracle after observing results --- does not constitute a valid replication. This requirement does not protect the framework from legitimate critique; it ensures that systematic comparison is possible across independent runs. A critic who believes the standard oracle is too weak is invited to propose a stricter oracle and re-run the full contract: a result that fails under a stricter oracle is informative, not disqualifying.
+
 The framework is falsified if any of the following hold:
 
 1. **Compression + lineage systems fail:** If MOSES(TM) exhibits drift comparable to probabilistic systems (commitment stability < 0.7 after 10 iterations).
@@ -471,11 +474,7 @@ where *T_c* is a compression transformation.
 
 > N(T_c(S)) = 0
 
-*Proof.* In a compression regime, *T_c* is defined to discard the non-committal component while conserving the commitment invariant. Under the decomposition S ~ C(S) + N(S), the compression gate outputs the commitment component (up to representation), hence the residual non-committal component is 0.
-
-**Corollary 5.3 (Compression as a Filter).** Compression acts as a filter that removes non-committal information while preserving commitment:
-
-> T_c: S -> C(S)
+*Proof.* In a compression regime, *T_c* is defined to discard the non-committal component while conserving the commitment invariant. Under the decomposition S ~ C(S) + N(S), the compression gate outputs the commitment component (up to representation), hence the residual non-committal component is 0. It follows directly that compression acts as a filter: T_c: S -> C(S), mapping any signal to its commitment component while collapsing all non-committal content.
 
 ---
 
@@ -498,7 +497,7 @@ Recursive application is a stress regime that tests whether commitment invarianc
 
 > lim(n->inf) ||C(S^(n)) - C(S)|| > 0
 
-*Proof Sketch.* Probabilistic sampling introduces variance at each step. Model each iteration as an i.i.d. perturbation with variance sigma^2 > 0. By the standard random-walk variance accumulation result (see e.g., Grimmett & Stirzaker [24], Sec. 5.3), Var(S^(n)) = n*sigma^2, so drift grows as O(sqrt(n)) in norm. Without compression to enforce invariance, the expected deviation ||C(S^(n)) - C(S)|| is bounded below by Omega(sqrt(n)), eventually exceeding any fixed conservation threshold. The result also follows from the Lindeberg CLT applied to the cumulative perturbation sequence.
+*Proof Sketch.* Probabilistic sampling introduces variance at each step. Model each iteration as an i.i.d. perturbation with variance sigma^2 > 0. By the standard random-walk variance accumulation result (see e.g., Grimmett & Stirzaker [23], Sec. 5.3), Var(S^(n)) = n*sigma^2, so drift grows as O(sqrt(n)) in norm. Without compression to enforce invariance, the expected deviation ||C(S^(n)) - C(S)|| is bounded below by Omega(sqrt(n)), eventually exceeding any fixed conservation threshold. The result also follows from the Lindeberg CLT applied to the cumulative perturbation sequence. This argument relies on the idealized assumption that transformation steps produce i.i.d. perturbations. In practice, LLM outputs exhibit autocorrelation across turns; we treat this as a bounded-dependence extension whose formal treatment is left for future work, and note that the result is intended to hold for sufficiently mixing transformation chains.
 
 **Lemma 6.3 (Lineage Prevents Forgery).** Let *L(S)* be the lineage of *S*. Then under recursive application with lineage tracking:
 
@@ -572,10 +571,6 @@ To illustrate the conservation principle concretely, we tested a single binding-
 
 **Results.**
 
-*[Figure 7: Token trajectory across turns for baseline vs. enforcement conditions.]*
-
-*[Figure 8: Total token comparison across all conditions.]*
-
 | | B1 | B2 | E1 | E2 | E3 |
 |---|---|---|---|---|---|
 | Total tokens (5 turns) | 230 | 316 | 156 | 120 | 154 |
@@ -617,7 +612,7 @@ Subsequent controlled harness studies (EXP-001 through EXP-007) support the core
 
 Taken together, the follow-on series shows that conserved commitments may appear in several empirical forms: as stable attractors, as reduced kernels, as reformulations, and, in some cases, as apparent failures generated by proxy-layer measurement gaps rather than by loss of the underlying commitment itself. In this sense, the follow-on studies do not replace the law. They refine the empirical account of how its effects become visible under recursive transformation. The follow-on studies also clarified a semantic bridge central to the framework: surface-level extractor failure does not necessarily imply semantic conservation failure, and some apparent breakdowns are better understood as proxy-measurement gaps.
 
-The detailed experimental lineage is preserved separately in a DOI-backed empirical companion, including logs, reports, machine-readable traces, corpora, and supporting figures for EXP-001 through EXP-007. The present paper cites that record in order to preserve empirical grounding without collapsing the law paper into the experiment paper.
+The detailed experimental lineage is preserved separately in a DOI-backed empirical companion (DOI: 10.5281/zenodo.19110620), including logs, reports, machine-readable traces, corpora, and supporting figures for EXP-001 through EXP-007. The present paper cites that record in order to preserve empirical grounding without collapsing the law paper into the experiment paper.
 
 ---
 
@@ -723,9 +718,9 @@ Formally, the refinement process is modeled as:
 
 > C_hard(S_{n+1}) = E(T(C_sigma(S_n)))
 
-where E is the enforcement gate (reject if fidelity drop Delta > theta, e.g., theta = 0.2 cosine similarity), ensuring invariance till sharp collapse. In exploratory runs (simulated on draft snippets), unconstrained paths exhibit Delta(n) ~ 1 - e^(-0.8n) (drift rise to collapse), while enforced paths flatten to Delta(n) ~ 0.05, honing the kernel without erosion.
+where E is the enforcement gate (reject if fidelity drop Delta > theta), ensuring invariance until sharp collapse. The qualitative pattern observed across the manuscript's development is consistent with the framework's predictions: enforced editorial gating (manual oversight acting as a lineage-aware rejection step) suppresses drift while unconstrained AI-assisted rephrasing without gating produces token bloat and paraphrase divergence of the kind modeled in Theorem 6.2. This exhibit is offered as an illustrative, qualitative parallel to the formal results rather than as a quantified experimental claim.
 
-This exhibit demonstrates that information under recursion is not "sharpened into nothing" (as with unchecked loss), but conserved as an emergent pattern when locked, representative of the framework's universality, where multiple simulation paths converge to efficiency.
+This exhibit demonstrates that information under recursion is not "sharpened into nothing" (as with unchecked loss), but conserved as an emergent pattern when locked --- representative of the framework's generality beyond the controlled harness setting.
 
 ---
 
@@ -781,6 +776,8 @@ These studies therefore clarify the relationship between the law and the public 
 Although the present experiments are concentrated in language-model settings, the framework is not restricted to them. The broader problem is one of signal integrity under transformation: what remains binding when a signal is compressed, translated, reformulated, archived, or recursively reapplied over time. In that sense, the present work bears not only on AI systems, but on preserved intent in institutional memory, legal and procedural transmission, code transformation, cultural archives, and other domains in which identity-bearing content must survive changed form.
 
 This broader framing matters because the law proposed here is not fundamentally about model behavior alone. It is about whether identity-preserving content can remain stable under transformation when surface structure changes. AI provides a particularly visible stress arena for that question, but it is not the only one. The same issue appears wherever signals must be compressed, transferred, reinterpreted, or carried forward without losing what makes them binding.
+
+The empirical regimes observed across EXP-001 through EXP-007 suggest the conservation principle is one law within a wider research program concerned with signal integrity under transformation. The present paper isolates the law itself; the broader program is the scope through which its consequences become visible.
 
 ---
 
