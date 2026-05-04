@@ -11,7 +11,7 @@
 
 ## Status
 
-- **2026-05-XX** — V.05 paper released. DOI: 10.5281/zenodo.20029607
+- **2026-05-04** — V.05 paper released. DOI: 10.5281/zenodo.20029607
 - **2026-03-19** — EXP-007 complete (NP-negation probe). Experimental series EXP-001 to EXP-007 finalized and archived on Zenodo.
 - **2026-03-18** — EXP-006 complete (paper recursion test). Formal Collapse failure mode identified.
 - **2026-03-18** — EXP-003 through EXP-005 complete. Regime classification built; mechanism isolation confirmed Step A/B co-bottlenecks.
