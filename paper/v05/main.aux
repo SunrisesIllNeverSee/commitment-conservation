@@ -70,13 +70,14 @@
 \@writefile{toc}{\contentsline {paragraph}{Goodhart resistance.}{13}{section*.12}\protected@file@percent }
 \@writefile{toc}{\contentsline {paragraph}{IP-safe replication boundary.}{14}{section*.13}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Falsification Conditions}{14}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Oracle specification requirement.}{14}{section*.14}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Replication Requirements}{14}{subsection.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Reviewer-Facing Clarifications (Public Layer)}{14}{subsection.4.5}\protected@file@percent }
-\newlabel{sec:reviewer-clarifications}{{4.5}{14}{Reviewer-Facing Clarifications (Public Layer)}{subsection.4.5}{}}
-\@writefile{toc}{\contentsline {paragraph}{Extractor role: proxy vs.\ canonical $C(S)$.}{15}{section*.14}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Indicative proxy accuracy (non-canonical).}{15}{section*.15}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Lineage/hardware threat model (what it prevents vs.\ what it does not).}{15}{section*.16}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Ablation plan: compression-only vs.\ lineage-only vs.\ both.}{15}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Reviewer-Facing Clarifications (Public Layer)}{15}{subsection.4.5}\protected@file@percent }
+\newlabel{sec:reviewer-clarifications}{{4.5}{15}{Reviewer-Facing Clarifications (Public Layer)}{subsection.4.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Extractor role: proxy vs.\ canonical $C(S)$.}{15}{section*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Indicative proxy accuracy (non-canonical).}{15}{section*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Lineage/hardware threat model (what it prevents vs.\ what it does not).}{15}{section*.17}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Ablation plan: compression-only vs.\ lineage-only vs.\ both.}{15}{section*.18}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Exploratory ablation outcomes (small slice; provided as an instrumentation hint, not a central claim).}}{15}{table.2}\protected@file@percent }
 \newlabel{tab:ablation-hint}{{2}{15}{Exploratory ablation outcomes (small slice; provided as an instrumentation hint, not a central claim)}{table.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Follow-on Harness Clarification}{16}{subsection.4.6}\protected@file@percent }
@@ -86,16 +87,16 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Commitment fidelity as a function of compression threshold. The system exhibits a phase transition at $\sigma _c$, where commitment conservation abruptly fails. Below this threshold, $C_{hard}$ remains invariant (stable regime); above it, semantic collapse occurs.}}{16}{figure.3}\protected@file@percent }
 \newlabel{fig:commitment-stability}{{3}{16}{Commitment fidelity as a function of compression threshold. The system exhibits a phase transition at $\sigma _c$, where commitment conservation abruptly fails. Below this threshold, $C_{hard}$ remains invariant (stable regime); above it, semantic collapse occurs}{figure.3}{}}
 \newlabel{thm:gate}{{5.2}{16}{Compression Gate Ensures Invariance}{theorem.5.2}{}}
+\citation{grimmett2001}
 \newlabel{lem:collapse}{{5.3}{17}{Non-Committal Collapse}{theorem.5.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {6}Recursion as a Stress Test}{17}{section.6}\protected@file@percent }
 \newlabel{sec:recursion}{{6}{17}{Recursion as a Stress Test}{section.6}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Commitment drift (or inverted fidelity) vs. recursion cycles. Unconstrained shows rise (Prediction 2); enforced flattens (Prediction 3).}}{17}{figure.4}\protected@file@percent }
 \newlabel{fig:drift-recursion}{{4}{17}{Commitment drift (or inverted fidelity) vs. recursion cycles. Unconstrained shows rise (Prediction 2); enforced flattens (Prediction 3)}{figure.4}{}}
 \newlabel{thm:recursive-stability}{{6.2}{17}{Compression Ensures Recursive Stability}{theorem.6.2}{}}
-\citation{grimmett2001}
+\newlabel{thm:prob-fail}{{6.3}{17}{Probabilistic Transformations Fail Under Recursion}{theorem.6.3}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Commitment Stability Phase Surface.} Stability $S(r,c)$ as a joint function of recursion depth $r$ and constraint strength $c$. Three structural regimes: the \textit  {drift zone} (low $c$, high $r$) where $\mathcal  {C}(T^n(S)) \ll \mathcal  {C}(S)$; the \textit  {compression stability} band (intermediate $c$) where surface stabilization occurs without full conservation; and the \textit  {conservation regime} (strong $c$, any $r$) where $\mathcal  {C}(T^n(S)) \approx \mathcal  {C}(S)$. The stability basin forms a ridge orthogonal to the recursion axis, constituting a structural invariant under recursive load. This figure is conceptual; the surface function is a structural analog of the empirical regime signatures in Figure~\ref {fig:L1-stability}.}}{18}{figure.5}\protected@file@percent }
 \newlabel{fig:L2-phase}{{5}{18}{\textbf {Commitment Stability Phase Surface.} Stability $S(r,c)$ as a joint function of recursion depth $r$ and constraint strength $c$. Three structural regimes: the \textit {drift zone} (low $c$, high $r$) where $\mathcal {C}(T^n(S)) \ll \mathcal {C}(S)$; the \textit {compression stability} band (intermediate $c$) where surface stabilization occurs without full conservation; and the \textit {conservation regime} (strong $c$, any $r$) where $\mathcal {C}(T^n(S)) \approx \mathcal {C}(S)$. The stability basin forms a ridge orthogonal to the recursion axis, constituting a structural invariant under recursive load. This figure is conceptual; the surface function is a structural analog of the empirical regime signatures in Figure~\ref {fig:L1-stability}}{figure.5}{}}
-\newlabel{thm:prob-fail}{{6.3}{18}{Probabilistic Transformations Fail Under Recursion}{theorem.6.3}{}}
 \newlabel{lem:lineage}{{6.4}{18}{Lineage Prevents Forgery}{theorem.6.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {7}Preliminary Empirical Results}{18}{section.7}\protected@file@percent }
 \newlabel{sec:empirical}{{7}{18}{Preliminary Empirical Results}{section.7}{}}
@@ -110,58 +111,54 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Results}{22}{subsection.7.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.4}Observations}{22}{subsection.7.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {7.5}Concrete Example: Binding Obligation Under Recursive Transformation}{22}{subsection.7.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Test signal.}{22}{section*.18}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Protocol.}{22}{section*.19}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Token trajectory per turn: baseline vs.\ enforcement. Baseline systems maintain or increase total token count across turns (bloat). Enforcement systems exhibit monotonic compression, converging toward the commitment kernel. Test signal: ``You must pay \$100 by Friday if the deal closes. This is a binding obligation.'' (18 tokens). Platform: Meta AI.}}{22}{figure.8}\protected@file@percent }
-\newlabel{fig:token-trajectory}{{8}{22}{Token trajectory per turn: baseline vs.\ enforcement. Baseline systems maintain or increase total token count across turns (bloat). Enforcement systems exhibit monotonic compression, converging toward the commitment kernel. Test signal: ``You must pay \$100 by Friday if the deal closes. This is a binding obligation.'' (18 tokens). Platform: Meta AI}{figure.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{Test signal.}{22}{section*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Protocol.}{22}{section*.20}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Summary of baseline (B) vs.\ enforcement (E) token metrics across 5 turns. Enforcement systems achieve 32--48\% total token reduction while preserving the commitment kernel (obligation/amount/deadline).}}{22}{table.4}\protected@file@percent }
+\newlabel{tab:concrete-results}{{4}{22}{Summary of baseline (B) vs.\ enforcement (E) token metrics across 5 turns. Enforcement systems achieve 32--48\% total token reduction while preserving the commitment kernel (obligation/amount/deadline)}{table.4}{}}
 \@writefile{toc}{\contentsline {paragraph}{Results.}{22}{table.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Total token expenditure across 5 turns. Baseline systems consume 230--316 tokens (growth). Enforcement systems consume 120--156 tokens (compression), a 32--48\% reduction. Enforcement 2 achieves the lowest total at 120 tokens---a 48\% reduction relative to Baseline 1 and 62\% relative to Baseline 2.}}{23}{figure.9}\protected@file@percent }
-\newlabel{fig:total-comparison}{{9}{23}{Total token expenditure across 5 turns. Baseline systems consume 230--316 tokens (growth). Enforcement systems consume 120--156 tokens (compression), a 32--48\% reduction. Enforcement 2 achieves the lowest total at 120 tokens---a 48\% reduction relative to Baseline 1 and 62\% relative to Baseline 2}{figure.9}{}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Summary of baseline (B) vs.\ enforcement (E) token metrics across 5 turns. Enforcement systems achieve 32--48\% total token reduction while preserving the commitment kernel (obligation/amount/deadline).}}{23}{table.4}\protected@file@percent }
-\newlabel{tab:concrete-results}{{4}{23}{Summary of baseline (B) vs.\ enforcement (E) token metrics across 5 turns. Enforcement systems achieve 32--48\% total token reduction while preserving the commitment kernel (obligation/amount/deadline)}{table.4}{}}
-\@writefile{toc}{\contentsline {paragraph}{Key observations.}{24}{section*.21}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Limitations and Scaling Path}{24}{subsection.7.6}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Follow-on Controlled Harness Results}{24}{subsection.7.7}\protected@file@percent }
-\newlabel{sec:followon-results}{{7.7}{24}{Follow-on Controlled Harness Results}{subsection.7.7}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {8}MO\S  {}ES\texttrademark {}: Minimal Enforcement Architecture}{24}{section.8}\protected@file@percent }
-\newlabel{sec:moses}{{8}{24}{MO\S {}ES\texttrademark {}: Minimal Enforcement Architecture}{section.8}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Three-dimensional commitment lattice structure. Blue nodes represent hard commitment vertices ($C_{hard}$) that serve as fixed points in the signal space. The red path shows how a signal (dashed: original trajectory) is projected onto the lattice structure (solid: enforced path), ensuring topological stability under transformation.}}{25}{figure.10}\protected@file@percent }
-\newlabel{fig:commitment-lattice}{{10}{25}{Three-dimensional commitment lattice structure. Blue nodes represent hard commitment vertices ($C_{hard}$) that serve as fixed points in the signal space. The red path shows how a signal (dashed: original trajectory) is projected onto the lattice structure (solid: enforced path), ensuring topological stability under transformation}{figure.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Architecture Components}{25}{subsection.8.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Gate pseudocode (public-layer specification).}{26}{section*.22}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Mathematical Formulation}{26}{subsection.8.2}\protected@file@percent }
-\newlabel{thm:moses-preserve}{{8.1}{26}{MO\S {}ES\texttrademark {} Preserves Commitment}{theorem.8.1}{}}
-\newlabel{thm:moses-stable}{{8.2}{26}{MO\S {}ES\texttrademark {} is Recursively Stable}{theorem.8.2}{}}
+\@writefile{toc}{\contentsline {paragraph}{Key observations.}{22}{section*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.6}Limitations and Scaling Path}{23}{subsection.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.7}Follow-on Controlled Harness Results}{23}{subsection.7.7}\protected@file@percent }
+\newlabel{sec:followon-results}{{7.7}{23}{Follow-on Controlled Harness Results}{subsection.7.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}MO\S  {}ES\texttrademark {}: Minimal Enforcement Architecture}{23}{section.8}\protected@file@percent }
+\newlabel{sec:moses}{{8}{23}{MO\S {}ES\texttrademark {}: Minimal Enforcement Architecture}{section.8}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Architecture Components}{23}{subsection.8.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Three-dimensional commitment lattice structure. Blue nodes represent hard commitment vertices ($C_{hard}$) that serve as fixed points in the signal space. The red path shows how a signal (dashed: original trajectory) is projected onto the lattice structure (solid: enforced path), ensuring topological stability under transformation.}}{24}{figure.8}\protected@file@percent }
+\newlabel{fig:commitment-lattice}{{8}{24}{Three-dimensional commitment lattice structure. Blue nodes represent hard commitment vertices ($C_{hard}$) that serve as fixed points in the signal space. The red path shows how a signal (dashed: original trajectory) is projected onto the lattice structure (solid: enforced path), ensuring topological stability under transformation}{figure.8}{}}
+\@writefile{toc}{\contentsline {paragraph}{Gate pseudocode (public-layer specification).}{24}{section*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.2}Mathematical Formulation}{25}{subsection.8.2}\protected@file@percent }
+\newlabel{thm:moses-preserve}{{8.1}{25}{MO\S {}ES\texttrademark {} Preserves Commitment}{theorem.8.1}{}}
+\newlabel{thm:moses-stable}{{8.2}{25}{MO\S {}ES\texttrademark {} is Recursively Stable}{theorem.8.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Two-dimensional stress regime map showing compression intensity versus recursion depth. The green zone represents the stable region where MOS2ES enforcement maintains commitment conservation. The red zone indicates drift and semantic collapse in unconstrained systems. The boundary line defines the critical threshold $\sigma _c(n)$ as a function of recursion depth.}}{25}{figure.9}\protected@file@percent }
+\newlabel{fig:stress-regimes}{{9}{25}{Two-dimensional stress regime map showing compression intensity versus recursion depth. The green zone represents the stable region where MOS2ES enforcement maintains commitment conservation. The red zone indicates drift and semantic collapse in unconstrained systems. The boundary line defines the critical threshold $\sigma _c(n)$ as a function of recursion depth}{figure.9}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {8.3}Implementation Notes}{26}{subsection.8.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Two-dimensional stress regime map showing compression intensity versus recursion depth. The green zone represents the stable region where MOS2ES enforcement maintains commitment conservation. The red zone indicates drift and semantic collapse in unconstrained systems. The boundary line defines the critical threshold $\sigma _c(n)$ as a function of recursion depth.}}{27}{figure.11}\protected@file@percent }
-\newlabel{fig:stress-regimes}{{11}{27}{Two-dimensional stress regime map showing compression intensity versus recursion depth. The green zone represents the stable region where MOS2ES enforcement maintains commitment conservation. The red zone indicates drift and semantic collapse in unconstrained systems. The boundary line defines the critical threshold $\sigma _c(n)$ as a function of recursion depth}{figure.11}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Internal vs.\ External Enforcement}{27}{subsection.8.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Meta-Refinement as Empirical Exhibit: Recursive Hone with Kernel Locking}{27}{subsection.8.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {9}Discussion and Future Directions}{28}{section.9}\protected@file@percent }
-\newlabel{sec:discussion}{{9}{28}{Discussion and Future Directions}{section.9}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Implications}{28}{subsection.9.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Zero as attractor.}{28}{section*.23}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Drift as forensic loss.}{28}{section*.24}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Governance as invariant enforcement.}{28}{section*.25}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Additional implications.}{28}{section*.26}\protected@file@percent }
-\@writefile{toc}{\contentsline {paragraph}{Cross-domain applicability.}{28}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.4}Internal vs.\ External Enforcement}{26}{subsection.8.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.5}Meta-Refinement as Empirical Exhibit: Recursive Hone with Kernel Locking}{26}{subsection.8.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {9}Discussion and Future Directions}{27}{section.9}\protected@file@percent }
+\newlabel{sec:discussion}{{9}{27}{Discussion and Future Directions}{section.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.1}Implications}{27}{subsection.9.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Zero as attractor.}{27}{section*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Drift as forensic loss.}{27}{section*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Governance as invariant enforcement.}{27}{section*.26}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Additional implications.}{27}{section*.27}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Cross-domain applicability.}{27}{section*.28}\protected@file@percent }
 \citation{correa2025}
 \citation{xie2025}
 \citation{chang2025}
 \citation{zhang2025}
 \citation{guo2025}
 \citation{chen2026}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Limitations}{29}{subsection.9.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Clarification from Follow-on Testing}{29}{subsection.9.3}\protected@file@percent }
-\newlabel{sec:followon-clarification}{{9.3}{29}{Clarification from Follow-on Testing}{subsection.9.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Future Work}{29}{subsection.9.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Broader Context}{30}{subsection.9.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {10}Conclusion}{30}{section.10}\protected@file@percent }
-\newlabel{sec:conclusion}{{10}{30}{Conclusion}{section.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.2}Limitations}{28}{subsection.9.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.3}Clarification from Follow-on Testing}{28}{subsection.9.3}\protected@file@percent }
+\newlabel{sec:followon-clarification}{{9.3}{28}{Clarification from Follow-on Testing}{subsection.9.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.4}Future Work}{28}{subsection.9.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {9.5}Broader Context}{29}{subsection.9.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {10}Conclusion}{29}{section.10}\protected@file@percent }
+\newlabel{sec:conclusion}{{10}{29}{Conclusion}{section.10}{}}
 \bibstyle{plain}
 \bibcite{shannon1948}{1}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Follow-on Experimental Summary (EXP-001 to EXP-007).}}{31}{table.5}\protected@file@percent }
-\newlabel{tab:exp-summary}{{5}{31}{Follow-on Experimental Summary (EXP-001 to EXP-007)}{table.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Follow-on Experimental Summary (EXP-001 to EXP-007).}}{30}{table.5}\protected@file@percent }
+\newlabel{tab:exp-summary}{{5}{30}{Follow-on Experimental Summary (EXP-001 to EXP-007)}{table.5}{}}
 \bibcite{barhillel1953}{2}
 \bibcite{floridi2004}{3}
 \bibcite{tishby2000}{4}
@@ -185,4 +182,4 @@
 \bibcite{looks2009}{22}
 \bibcite{grimmett2001}{23}
 \bibcite{abba2026}{24}
-\gdef \@abspage@last{33}
+\gdef \@abspage@last{32}
