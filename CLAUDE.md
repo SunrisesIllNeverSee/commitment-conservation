@@ -6,7 +6,7 @@ Research repository for the **Conservation Law of Commitment** — the claim tha
 
 **Owner:** Deric J. McHenry / Ello Cello LLC
 **Patent:** Serial No. 63/877,177 (Provisional)
-**Paper DOI:** https://doi.org/10.5281/zenodo.18271102
+**Paper DOI:** https://doi.org/10.5281/zenodo.19110620
 **Experimental Record DOI:** https://doi.org/10.5281/zenodo.19105225
 
 ---
@@ -96,11 +96,11 @@ python3 run_convergence_v2.py
 
 ## Pending Work
 
-- [ ] Update main paper (addendum with EXP-007 reference)
+- [x] Update main paper (addendum with EXP-007 reference)
 - [ ] Abstract for second paper (harness dynamics, failure mode taxonomy)
 - [ ] GitHub push — EXP-006/007 corpus + snapshots
 - [ ] Cross-model replication (Claude, Llama, GPT-4)
-- [ ] GitHub release tag to match Zenodo versions
+- [ ] GitHub release tag to match Zenodo versions (pending V.05 launch)
 
 ---
 
