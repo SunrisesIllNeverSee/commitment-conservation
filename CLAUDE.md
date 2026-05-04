@@ -6,7 +6,7 @@ Research repository for the **Conservation Law of Commitment** — the claim tha
 
 **Owner:** Deric J. McHenry / Ello Cello LLC
 **Patent:** Serial No. 63/877,177 (Provisional)
-**Paper DOI:** https://doi.org/10.5281/zenodo.19110620
+**Paper DOI:** https://doi.org/10.5281/zenodo.20029607
 **Experimental Record DOI:** https://doi.org/10.5281/zenodo.19105225
 
 ---

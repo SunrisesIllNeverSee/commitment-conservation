@@ -12,11 +12,11 @@ Previous DOIs:
   V.02          — 10.5281/zenodo.18271102
   V.03          — 10.5281/zenodo.18274930
   V.04          — 10.5281/zenodo.18792459
-  V.05          — 10.5281/zenodo.19110620
+  V.05          — 10.5281/zenodo.20029607
 
 Files included:
 ----------------------------------------------------------------------
-[TO BE ADDED]                        — Compiled paper PDF (primary document)
+main.pdf                             — Compiled paper PDF (primary document)
 main.tex                             — LaTeX source (main file)
 main.md                              — Markdown version of the paper
 main_v5_frozen_before_enrichment.md  — Frozen V.05 draft snapshot (pre-enrichment)

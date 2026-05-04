@@ -6,7 +6,7 @@
 Ello Cello LLC, Buffalo, NY  
 Patent Pending: Serial No. 63/877,177
 
-Adapted from the local V.05 draft dated March 19, 2026. V.05 Zenodo DOI: 10.5281/zenodo.19110620 (pending publication).
+Adapted from the local V.05 draft dated March 19, 2026. V.05 Zenodo DOI: 10.5281/zenodo.20029607 (pending publication).
 
 ## Abstract
 
@@ -116,7 +116,7 @@ What the present record already supports is narrower but still substantial: recu
 
 ## Resources
 
-- Live public preprint (V.05): https://doi.org/10.5281/zenodo.19110620
+- Live public preprint (V.05): https://doi.org/10.5281/zenodo.20029607
 - Experimental record: https://doi.org/10.5281/zenodo.19105225
 - Public harness: https://doi.org/10.5281/zenodo.19109397
 - GitHub: https://github.com/SunrisesIllNeverSee/commitment-conservation

@@ -1,9 +1,9 @@
 # A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19110620.svg)](https://doi.org/10.5281/zenodo.19110620)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20029607.svg)](https://doi.org/10.5281/zenodo.20029607)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE.md)
 
-\[ [Paper](https://doi.org/10.5281/zenodo.19110620) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Patent No. 63/877,177](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
+\[ [Paper](https://doi.org/10.5281/zenodo.20029607) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Patent No. 63/877,177](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
 
 > Commitment content persists under transformation, and is most cleanly conserved under an enforcement gate. Without the gate, recursive degradation becomes more likely and more visible.
 
@@ -11,7 +11,7 @@
 
 ## Status
 
-- **2026-05-XX** — V.05 paper released. DOI: 10.5281/zenodo.19110620
+- **2026-05-XX** — V.05 paper released. DOI: 10.5281/zenodo.20029607
 - **2026-03-19** — EXP-007 complete (NP-negation probe). Experimental series EXP-001 to EXP-007 finalized and archived on Zenodo.
 - **2026-03-18** — EXP-006 complete (paper recursion test). Formal Collapse failure mode identified.
 - **2026-03-18** — EXP-003 through EXP-005 complete. Regime classification built; mechanism isolation confirmed Step A/B co-bottlenecks.
@@ -106,8 +106,8 @@ For academic or research correspondence, please reference the Zenodo DOI.
   author    = {McHenry, Deric J.},
   year      = {2026},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.19110620},
-  url       = {https://doi.org/10.5281/zenodo.19110620},
+  doi       = {10.5281/zenodo.20029607},
+  url       = {https://doi.org/10.5281/zenodo.20029607},
   note      = {Patent Serial No. 63/877,177 (Provisional). Ello Cello LLC.}
 }
 ```
