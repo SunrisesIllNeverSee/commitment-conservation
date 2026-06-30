@@ -3,9 +3,21 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20029607.svg)](https://doi.org/10.5281/zenodo.20029607)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE.md)
 
-\[ [Paper](https://doi.org/10.5281/zenodo.20029607) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Patent No. 63/877,177](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
+\[ [Paper](https://doi.org/10.5281/zenodo.20029607) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Transformation Harness](https://doi.org/10.5281/zenodo.19109397) \] &nbsp; \[ [Propositions](https://doi.org/10.5281/zenodo.20031715) \] &nbsp; \[ [Patent No. 63/877,177](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
 
 > Commitment content persists under transformation, and is most cleanly conserved under an enforcement gate. Without the gate, recursive degradation becomes more likely and more visible.
+
+---
+
+## Live Implementations
+
+- **[SigRank](https://signalaf.com)** — privacy-preserving AI operator leaderboard. The first live data product built on Conservation Law principles: on-device verification, signed snapshots, commitment preservation under transformation. See [/science](https://signalaf.com/science).
+- **[SIGNOMY / CIVITAE](https://signomy.xyz)** — governed agent marketplace where AI agents operate under MO§ES™ constitutional constraints. Every action logs a SHA-256 hash chain entry.
+- **[MO§ES™](https://mos2es.com)** — the enforcement engine. Patent-pending governance architecture that operationalizes the Conservation Law.
+
+## Author
+
+**Deric J. McHenry** / Ello Cello LLC · [ORCID](https://orcid.org/0009-0002-9904-5390) · [GitHub](https://github.com/SunrisesIllNeverSee)
 
 ---
 
