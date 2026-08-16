@@ -7,6 +7,14 @@
 
 > Commitment content persists under transformation, and is most cleanly conserved under an enforcement gate. Without the gate, recursive degradation becomes more likely and more visible.
 
+## Canonical Definition
+
+**The Conservation Law of Commitment states that a commitment kernel—including
+obligations, prohibitions, and permissions—must remain conserved through governed
+transformation.** With an enforcement gate, the transformation preserves the
+kernel's deontic meaning; without enforcement, commitment degradation becomes more
+likely and more visible.
+
 ---
 
 ## Live Implementations
