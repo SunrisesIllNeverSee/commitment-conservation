@@ -1,6 +1,6 @@
 # A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application
 
-**Deric J. McHenry**
+**Deric J. McHenry** · [ORCID](https://orcid.org/0009-0002-9904-5390)
 Ello Cello LLC
 deric.mchenry@gmail.com
 
@@ -11,6 +11,7 @@ deric.mchenry@gmail.com
 >
 > | Version | Label | Date | DOI |
 > |---------|-------|------|-----|
+> | Concept | Zenodo Concept DOI | — | 10.5281/zenodo.18267278 |
 > | V.1-preprint | Law Disclosure | Jan 12, 2026 | 10.5281/zenodo.18267279 |
 > | V.02 | Preprint | Jan 16, 2026 | 10.5281/zenodo.18271102 |
 > | V.03 | Falsifiability Testing | Jan 16, 2026 | 10.5281/zenodo.18274930 |
@@ -21,7 +22,7 @@ deric.mchenry@gmail.com
 
 This paper presents a conservation law for commitment in language: the claim that commitment persists through transformation even when its form changes. We treat commitment as the identity-preserving core of a signal, distinct from surface wording, syntax, or compression loss, and formalize it as a measurable semantic invariant under transformative compression and recursive application. The paper defines the conditions under which commitment conservation may hold, introduces a falsifiability framework with explicit failure criteria, and situates the claim in relation to semantic information theory, recursive drift, and conservation principles in computation.
 
-We further propose a compression-first regime in which signals are reduced to their essential structure prior to further processing, and a recursive stress framework in which self-application reveals whether invariant content is preserved or degraded. MO§ES™ is introduced as a minimal enforcement architecture showing that commitment invariance can be preserved without reliance on model-specific assumptions.
+We further propose a compression-first regime in which signals are reduced to their essential structure prior to further processing, and a recursive stress framework in which self-application reveals whether invariant content is preserved or degraded. MO§ES™ is introduced as a minimal enforcement architecture showing that commitment invariance can be preserved without reliance on model-specific assumptions. The Conservation Law of Commitment is the law within Commitment Theory, and is the theoretical foundation for SigRank, a privacy-preserving AI operator benchmark.
 
 Follow-on controlled studies (EXP-001 through EXP-007) remain consistent with the central claim advanced here. Across recursive paraphrase, compression, gating, adversarial variation, mechanism isolation, self-application, and NP-negation edge-case testing, no result in the follow-on series falsified the conservation principle. Instead, these studies clarified that apparent failures often arise from bottlenecks in compression, extraction, or proxy-level measurement rather than from loss of the underlying commitment itself. A DOI-backed empirical companion archive preserves the full experimental lineage.
 
@@ -884,3 +885,7 @@ Taken together, the experiments support the central claim of this paper: commitm
 The archive therefore serves as the empirical companion to the present paper, while deeper treatment of harness dynamics, extractor asymmetries, bottlenecks, and edge-case behavior is deferred to a separate follow-on paper.
 
 **Experimental record DOI:** [10.5281/zenodo.19105225](https://doi.org/10.5281/zenodo.19105225)
+
+**Public Recursive Transformation Harness DOI:** [10.5281/zenodo.19109397](https://doi.org/10.5281/zenodo.19109397)
+
+**Concept DOI:** [10.5281/zenodo.18267278](https://doi.org/10.5281/zenodo.18267278)

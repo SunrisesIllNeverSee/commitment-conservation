@@ -10,6 +10,7 @@ repository-code: "https://github.com/SunrisesIllNeverSee/commitment-conservation
 authors:
   - family-names: "McHenry"
     given-names: "Deric J."
+    orcid: "https://orcid.org/0009-0002-9904-5390"
 keywords:
   - information-theory
   - llm
