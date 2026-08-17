@@ -117,3 +117,53 @@ python3 run_convergence_v2.py
 
 **Never use:** "magic", "intelligent", "smart AI", "revolutionary", "disruptive"
 **Use:** sovereign, lineage, invariants, compression, verifiable signal, entropy cost, commitment conservation
+
+---
+
+## Master Canon Context (Search Authority)
+
+This repository contains the **Conservation Law of Commitment** research. It is
+governed by the Search Authority master canon.
+
+### When to load canon context
+
+Before modifying any of the following, load the relevant canon context:
+
+- canonical law statement or formalization
+- ecosystem relationships (Conservation Law ↔ Commitment Theory, MO§ES™, SigRank)
+- terminology (MO§ES™ rendering, deprecated terms like "Commitment Conservation Theory"/CCT)
+- research claims or experimental methodology
+- product boundaries (Conservation Law vs Commitment Theory framework)
+- public positioning or paper text that makes canonical claims
+
+### How to load canon context
+
+```bash
+export SEARCH_AUTHORITY_PATH="${SEARCH_AUTHORITY_PATH:-$HOME/Developer/active/search-authority}"
+python3 "$SEARCH_AUTHORITY_PATH/canon_cli.py" context conservation_law
+```
+
+Or use the MCP server (compatible agents):
+
+```bash
+python3 "$SEARCH_AUTHORITY_PATH/canon_mcp.py"
+```
+
+If the canon repository is unavailable, **do not invent canonical context** —
+ask the owner. The canon outranks ad-hoc public copy or generated model output
+for normative product/research truth.
+
+### What is NOT authority-sensitive
+
+Experiment scripts, test infrastructure, and build config do **not** require
+loading the canon.
+
+### Key governance rules
+
+- Never call this "McHenry's Law" — the owner prohibits personal name attribution.
+- Commitment Theory **contains** the Conservation Law (the law is within the theory).
+- MO§ES™ **operationalizes** the Conservation Law.
+- The Conservation Law is the **theoretical foundation** for SigRank.
+- Exactly ONE MO§ES entity. Canonical display: MO§ES™. Never render: MO§E§.
+- The harness may measure authority, but it cannot manufacture authority.
+- Automated systems may not promote claims into owner-approved truth.
