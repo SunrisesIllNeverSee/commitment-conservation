@@ -1,0 +1,39 @@
+standard:
+  name: ello-repo-standard
+  version: "1.0.0"
+  mode: migrate
+
+repo:
+  name: commitment-conservation
+  type: research
+  lifecycle: active
+  repo_id: commitment_conservation
+  family: commitment-theory
+  purpose: Conservation Law of Commitment — research repository for the claim that commitment content persists under recursive transformative compression, most cleanly conserved under an enforcement gate. Paper, experiments, harness, corpus.
+
+structure:
+  profile: research
+  allowed_root_dirs_extra: [.firecrawl, corpus, experiments, operational-harness, paper, paper_experiment_results, paper_harness, working, system-devin]
+  allowed_root_files_extra: [CITATION.cff, CLAUDE.md, FIX_IMMEDIATELY.md, QUICKNOTES.md, REPRODUCIBILITY.md, RESEARCH_CHRONICLE.md, RUN_LOG.md, paper.zip]
+  document_roots: [paper, docs, corpus]
+  artifact_roots: [artifacts, paper_experiment_results, paper_harness]
+  archive_roots: [archive, working]
+
+naming:
+  forbid_version_suffixes: true
+  forbidden_suffixes: [_final, _final2, _new, _updated, _revised, _copy]
+
+knowledge:
+  okf_enabled: true
+  okf_roots: [docs, .coord]
+  okf_severity: warn
+
+coordination:
+  micro_enabled: true
+  micro_root: .coord/micro
+  macro_enabled: true
+  macro_root: .coord/macro
+
+github:
+  ruleset_profile: solo-fast
+  required_check: repo-standard
