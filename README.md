@@ -1,3 +1,11 @@
+---
+type: Reference
+title: Conservation Law of Commitment
+description: 'Research repository for the Conservation Law of Commitment — the claim that commitment content persists under recursive transformative compression, most cleanly conserved under an enforcement gate. Paper DOI 10.5281/zenodo.20029607. Active.'
+tags: [commitment-theory, conservation-law, moses, deontic, reference]
+timestamp: 2026-08-21
+---
+
 # A Conservation Law for Commitment in Language Under Transformative Compression and Recursive Application
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20029607.svg)](https://doi.org/10.5281/zenodo.20029607)

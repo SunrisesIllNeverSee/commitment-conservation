@@ -1,3 +1,11 @@
+---
+type: Runbook
+title: Run Log — Conservation Law Experiments
+description: 'Run log for convergence harness experiments (EXP-001 through EXP-007). Active.'
+tags: [commitment-theory, conservation-law, experiments, run-log]
+timestamp: 2026-08-21
+---
+
 # Commitment Conservation — Run Log
 
 **Owner:** Deric J. McHenry / Ello Cello LLC

@@ -1,3 +1,11 @@
+---
+type: Spec
+title: Reproducibility Receipt — Conservation Law
+description: 'Reproducibility receipt for the Conservation Law of Commitment research. Zenodo concept DOI 10.5281/zenodo.18267278. Active.'
+tags: [commitment-theory, conservation-law, reproducibility, zenodo]
+timestamp: 2026-08-21
+---
+
 # Reproducibility Receipt
 
 **Zenodo (concept DOI):** `https://doi.org/10.5281/zenodo.18267278`

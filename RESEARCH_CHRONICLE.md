@@ -1,3 +1,11 @@
+---
+type: Findings
+title: Research Chronicle — Conservation Law of Commitment
+description: 'Chronological research record for the Conservation Law of Commitment. Patent Serial No. 63/877,177. Active.'
+tags: [commitment-theory, conservation-law, research, chronicle]
+timestamp: 2026-08-21
+---
+
 # Commitment Conservation — Research Chronicle
 
 **Patent:** Serial No. 63/877,177 (Provisional)

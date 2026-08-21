@@ -1,3 +1,11 @@
+---
+type: Brief
+title: Quick Notes — V.05 Launch Remaining Items
+description: 'Quick reference for final cleanup after Zenodo deposit 10.5281/zenodo.20029607. Active.'
+tags: [commitment-theory, conservation-law, launch, v05]
+timestamp: 2026-08-21
+---
+
 # V.05 Launch — Remaining Items
 
 Quick reference for final cleanup after Zenodo deposit (10.5281/zenodo.20029607).
