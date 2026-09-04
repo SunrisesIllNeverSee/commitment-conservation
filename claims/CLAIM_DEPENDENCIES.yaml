@@ -1,0 +1,66 @@
+# Claim Dependencies — Conservation Law of Commitment
+#
+# Maps which claims depend on which. If a dependency is falsified,
+# the dependent claims are weakened or falsified.
+#
+# Schema version: 1
+# Created: 2026-09-04
+# Phase: 3
+
+schema_version: 1
+
+# ---------------------------------------------------------------------------
+# Dependency graph
+# ---------------------------------------------------------------------------
+# If A depends_on B, then falsifying B weakens A.
+# If A supports B, then A being true strengthens B.
+
+dependencies:
+
+  - claim: CL-001
+    depends_on: [CL-002, CL-003]
+    supports: []
+    notes: "The conservation claim depends on the definition of commitment (CL-003) and is the inverse of the degradation claim (CL-002)."
+
+  - claim: CL-002
+    depends_on: [CL-003]
+    supports: [CL-001]
+    notes: "Degradation without enforcement depends on commitment being well-defined (CL-003)."
+
+  - claim: CL-003
+    depends_on: []
+    supports: [CL-001, CL-002, CL-006]
+    notes: "The definition of commitment is foundational. If the definition is wrong, all dependent claims weaken."
+
+  - claim: CL-004
+    depends_on: [CL-001, CL-002]
+    supports: []
+    notes: "Falsifiability depends on the claims being empirically testable (CL-001, CL-002)."
+
+  - claim: CL-005
+    depends_on: [CL-001]
+    supports: []
+    notes: "Substrate independence depends on the conservation holding across different substrates."
+
+  - claim: CL-006
+    depends_on: [CL-002, CL-003]
+    supports: []
+    notes: "Irreversibility depends on degradation (CL-002) and commitment being well-defined (CL-003)."
+
+# ---------------------------------------------------------------------------
+# Cascade analysis
+# ---------------------------------------------------------------------------
+# If CL-003 (definition of commitment) is falsified:
+#   → CL-001 weakens (conservation claim loses its foundation)
+#   → CL-002 weakens (degradation claim loses its foundation)
+#   → CL-004 weakens (falsifiability depends on testable claims)
+#   → CL-005 weakens (substrate independence depends on conservation)
+#   → CL-006 weakens (irreversibility depends on degradation)
+#
+# If CL-001 (conservation with enforcement) is falsified:
+#   → CL-004 weakens (falsifiability was demonstrated by testing CL-001)
+#   → CL-005 weakens (substrate independence assumed conservation holds)
+#
+# If CL-002 (degradation without enforcement) is falsified:
+#   → CL-001 weakens (the contrast between enforced and ungoverned is key)
+#   → CL-006 weakens (irreversibility assumed degradation occurs)

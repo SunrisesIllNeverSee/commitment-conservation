@@ -1,0 +1,114 @@
+# Evidence Map — Conservation Law of Commitment
+#
+# Maps evidence (experiments, papers, DOIs) to claims.
+# Direction: supports, contradicts, qualifies, contextualizes.
+#
+# Schema version: 1
+# Created: 2026-09-04
+# Phase: 3
+
+schema_version: 1
+
+evidence_map:
+
+  # === Paper evidence ===
+
+  - evidence_id: EVID-PAPER-V05
+    source: "DOI: 10.5281/zenodo.20029607"
+    type: paper
+    direction: supports
+    claims: [CL-001, CL-002, CL-003, CL-004, CL-005]
+    confidence: high
+    notes: "Main paper, v05. Defines the law, framework, and falsification protocol."
+
+  - evidence_id: EVID-PROSPECTUS-P000
+    source: "DOI: 10.5281/zenodo.20031715"
+    type: research_prospectus
+    direction: supports
+    claims: [CL-003, CL-004, CL-005, CL-006]
+    confidence: high
+    notes: "P-000 prospectus. Defines the theoretical framework."
+
+  - evidence_id: EVID-EXPERIMENTAL-RECORD
+    source: "DOI: 10.5281/zenodo.19105225"
+    type: experimental_record
+    direction: supports
+    claims: [CL-001, CL-002]
+    confidence: medium
+    notes: "Full experimental record. 3,950 run entries across 7 experiments."
+    limitations:
+      - "Proof-of-concept scale (20 signals)."
+      - "No cross-model replication."
+      - "9 failure modes discovered."
+
+  # === Individual experiments ===
+
+  - evidence_id: EVID-EXP-001
+    source: "experiments/EXP-001/"
+    type: experimental
+    direction: supports
+    claims: [CL-001, CL-002]
+    confidence: low
+    notes: "Smoke test. Jaccard only, no NLI."
+
+  - evidence_id: EVID-EXP-002
+    source: "experiments/EXP-002/"
+    type: experimental
+    direction: contextualizes
+    claims: [CL-001]
+    confidence: low
+    notes: "Partially invalid (Step B bug). Kept for lineage."
+
+  - evidence_id: EVID-EXP-003
+    source: "experiments/EXP-003/"
+    type: experimental
+    direction: supports
+    claims: [CL-001, CL-002]
+    confidence: medium
+    notes: "Canonical 20-signal run. Regime classification. 0.94 vs 0.42 separation."
+    limitations:
+      - "Step A Boundary failure mode."
+      - "Structural Blindness failure mode."
+      - "Co-degraded Invariance failure mode."
+
+  - evidence_id: EVID-EXP-004
+    source: "experiments/EXP-004/"
+    type: experimental
+    direction: supports
+    claims: [CL-001, CL-002]
+    confidence: medium
+    notes: "Adversarial signals. Predictive Criterion v2."
+    limitations:
+      - "Obligation Escalation failure mode."
+
+  - evidence_id: EVID-EXP-005
+    source: "experiments/EXP-005/"
+    type: experimental
+    direction: supports
+    claims: [CL-001, CL-002]
+    confidence: medium
+    notes: "ANCH/ESCL mechanism isolation. Criterion v3."
+    limitations:
+      - "Modal Frame Inversion failure mode."
+
+  - evidence_id: EVID-EXP-006
+    source: "experiments/EXP-006/"
+    type: experimental
+    direction: qualifies
+    claims: [CL-001]
+    confidence: medium
+    notes: "Paper recursion test. Formal Collapse and Self-referential Collapse."
+    limitations:
+      - "Formal Collapse failure mode — complex statements may not conserve."
+      - "Self-referential Collapse — statements about the mechanism itself may collapse."
+
+  - evidence_id: EVID-EXP-007
+    source: "experiments/EXP-007/"
+    type: experimental
+    direction: qualifies
+    claims: [CL-001]
+    confidence: medium
+    notes: "NP-negation probe. Jaccard blindness confirmed."
+    limitations:
+      - "NP-negation Blindness — Jaccard=0.00 despite NLI=1.00."
+      - "Lexical Scope Widening — taxonomy broadening at noun level."

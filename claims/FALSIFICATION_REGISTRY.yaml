@@ -1,0 +1,120 @@
+# Falsification Registry — Conservation Law of Commitment
+#
+# Machine-readable falsification criteria for the Conservation Law research
+# program. Each entry specifies what observation would falsify or weaken
+# a claim.
+#
+# These are the research-layer falsification records. Search Authority
+# references these rather than duplicating them.
+#
+# Schema version: 1
+# Created: 2026-09-04
+# Phase: 3
+
+schema_version: 1
+
+# ---------------------------------------------------------------------------
+# Falsification records
+# ---------------------------------------------------------------------------
+
+falsification_records:
+
+  FALS-CL001-01:
+    claim_id: CL-001
+    claim_ref: CT-002
+    type: falsify
+    condition: >-
+      F_10(S) < tau for a non-trivial fraction of samples under the
+      enforced (governed) regime, where tau is the conservation threshold
+      and F_10 is the 10-step commitment fidelity.
+    currently_observed: false
+    test_status: not_tested_at_scale
+    notes: >-
+      Current experiments (EXP-001 through EXP-007) show 0.94 stability
+      under enforcement, but at proof-of-concept scale (20 signals).
+      Requires >10,000 samples and cross-model replication to be confident.
+
+  FALS-CL001-02:
+    claim_id: CL-001
+    claim_ref: CT-002
+    type: weaken
+    condition: >-
+      Commitment is conserved only for simple obligation forms but not
+      for complex multi-condition or self-referential statements.
+    currently_observed: partially
+    test_status: observed_in_EXP-006
+    notes: >-
+      EXP-006 discovered Formal Collapse and Self-referential Collapse
+      failure modes. This WEAKENS the claim for complex formal statements
+      but does not falsify it for the general case.
+
+  FALS-CL002-01:
+    claim_id: CL-002
+    claim_ref: CT-003
+    type: falsify
+    condition: >-
+      Ungoverned transformation preserves commitment at F_10(S) >= tau
+      for a non-trivial fraction of samples.
+    currently_observed: false
+    test_status: not_observed
+    notes: >-
+      All experiments show drift under ungoverned transformation.
+      Drift at n >= 3, consistent at n >= 5.
+
+  FALS-CL002-02:
+    claim_id: CL-002
+    claim_ref: CT-003
+    type: weaken
+    condition: >-
+      The measurement methodology (NLI + Jaccard) is blind to certain
+      failure modes, making the observed degradation unreliable.
+    currently_observed: true
+    test_status: observed_in_EXP-007
+    notes: >-
+      EXP-007 discovered NP-negation Blindness (Jaccard=0.00 despite
+      NLI=1.00) and Lexical Scope Widening. This weakens the measurement
+      methodology, not the law itself. The law may be stronger or weaker
+      than measured, depending on direction of the blind spots.
+
+  WEAK-CL001-01:
+    claim_id: CL-001
+    claim_ref: CT-002
+    type: weaken
+    condition: >-
+      The NLI oracle is not transitive, making bidirectional entailment
+      an unreliable equivalence relation.
+    currently_observed: unknown
+    test_status: not_tested
+    notes: >-
+      The framework explicitly does NOT claim NLI is transitive.
+      If non-transitivity is significant, it weakens the measurement
+      chain.
+
+  WEAK-CL001-02:
+    claim_id: CL-001
+    claim_ref: CT-002
+    type: weaken
+    condition: >-
+      Cross-model replication fails — the conservation effect is
+      model-specific rather than substrate-independent.
+    currently_observed: unknown
+    test_status: not_tested
+    notes: >-
+      CL-005 claims substrate independence, but no cross-model
+      replication (Claude, Llama, GPT-4) has been performed yet.
+      If cross-model replication fails, it weakens both CL-001 and CL-005.
+
+  WEAK-CL001-03:
+    claim_id: CL-001
+    claim_ref: CT-002
+    type: weaken
+    condition: >-
+      The corpus is too small and homogeneous to support the general
+      conservation claim.
+    currently_observed: true
+    test_status: acknowledged
+    notes: >-
+      The framework explicitly acknowledges this: "CT does not claim
+      that the corpus is sufficient for the conservation claim to be
+      considered established (it is proof-of-concept scale)."
+      This is a known limitation, not a falsification.
