@@ -46,5 +46,4 @@ harness/outputs/*.json
 .coord/micro/state/.role-*
 .coord/micro/state/ACTIVITY.log
 .coord/micro/state/snapshots/
-.coord/micro/scratchpad-archive/
 .repo/.cache/

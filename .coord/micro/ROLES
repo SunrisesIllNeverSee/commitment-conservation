@@ -1,0 +1,9 @@
+# Role roster for this repo. One slot per line: slotN=NAME (N is 1-9).
+# No slots defined here means the defaults: slot1=LEAD, slot2=ASSIST.
+# Names use A-Z, 0-9, _ and -, and are case-insensitive. OWNER is reserved (the human) and is ignored here.
+# Aliases rep1, rep2, ... and slot1, slot2, ... always map to slot N.
+# Example:
+#   slot1=DREP1
+#   slot2=DREP2
+slot1=LEAD
+slot2=ASSIST

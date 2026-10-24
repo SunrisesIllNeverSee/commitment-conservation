@@ -1,6 +1,7 @@
 #!/bin/bash
 set -euo pipefail
-repo="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"; out="$repo/.coord/micro/INDEX.md"; today="$(date -u +%Y-%m-%d)"
+. "$(dirname "$0")/_lib.sh"
+out="$base/INDEX.md"; today="$(date -u +%Y-%m-%d)"
 python3 - "$repo" "$out" "$today" <<'PY'
 from pathlib import Path
 import sys

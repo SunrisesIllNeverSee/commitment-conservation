@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-repo="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+. "$(dirname "$0")/_lib.sh"
 python3 - "$repo" <<'PY'
 from pathlib import Path
 import sys

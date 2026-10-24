@@ -1,0 +1,12 @@
+# Coordination-kit runtime files: claims, session maps, locks, logs and the temp files of
+# interrupted saves/archives. Coordination records (STATE.md, SCRATCHPAD.md, handoffs/,
+# scratchpad-archive/) are committed.
+micro/state/.active-*
+micro/state/.sid-*
+micro/state/.lock-*
+micro/state/.session-current
+micro/state/.role-*
+micro/state/ACTIVITY.log
+micro/state/snapshots/
+micro/SCRATCHPAD.md.*.*
+micro/STATE.md.tmp.*
