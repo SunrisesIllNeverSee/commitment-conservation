@@ -11,6 +11,8 @@ timestamp: 2026-08-21
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20029607.svg)](https://doi.org/10.5281/zenodo.20029607)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](LICENSE.md)
 
+> **Empirical correction — 11 Nov 2026:** The originally reported 0.94 ± 0.03 (gated) vs 0.42 ± 0.12 (baseline) stability comparison in Paper 0 V.05 §7 does **not** reproduce from its cited archived twenty-signal run. At iteration ten, model-judged NLI is **0.775 gated vs 0.875 baseline (n=20)**, and lexical Jaccard is **0.333 vs 0.464 (n=18 non-null)**. The original manuscript remains unchanged as a historical version. **[Read the correction notice, method limitations, and deterministic audit](paper/corrections/2026-11-11/README.md)** before citing experimental support.
+
 \[ [Paper](https://doi.org/10.5281/zenodo.20029607) \] &nbsp; \[ [Concept DOI](https://doi.org/10.5281/zenodo.18267278) \] &nbsp; \[ [Experimental Record](https://doi.org/10.5281/zenodo.19105225) \] &nbsp; \[ [Transformation Harness](https://doi.org/10.5281/zenodo.19109397) \] &nbsp; \[ [Propositions](https://doi.org/10.5281/zenodo.20031715) \] &nbsp; \[ [Patent No. 63/877,177](https://github.com/SunrisesIllNeverSee/commitment-conservation) \]
 
 > Commitment content persists under transformation, and is most cleanly conserved under an enforcement gate. Without the gate, recursive degradation becomes more likely and more visible.

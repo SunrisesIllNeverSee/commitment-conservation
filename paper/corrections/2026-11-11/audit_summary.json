@@ -1,0 +1,138 @@
+{
+  "step": 10,
+  "signals_total": 20,
+  "categories": [
+    "contractual",
+    "code",
+    "procedural",
+    "legal",
+    "instructional",
+    "obligation",
+    "prohibition",
+    "conditional",
+    "definition",
+    "specification",
+    "agreement",
+    "requirement",
+    "mandate",
+    "rule",
+    "directive",
+    "constraint",
+    "protocol",
+    "standard",
+    "policy",
+    "regulation"
+  ],
+  "metrics": {
+    "nli_judgment": {
+      "baseline": {
+        "n": 20,
+        "mean": 0.875,
+        "sample_sd": 0.222130829
+      },
+      "compression": {
+        "n": 20,
+        "mean": 0.725,
+        "sample_sd": 0.302402659
+      },
+      "gate": {
+        "n": 20,
+        "mean": 0.775,
+        "sample_sd": 0.343166371
+      },
+      "gate_minus_baseline_paired": {
+        "n": 20,
+        "mean": -0.1,
+        "sample_sd": 0.383885948,
+        "gate_wins": 3,
+        "ties": 11,
+        "gate_losses": 6,
+        "negative_categories": [
+          "legal",
+          "instructional",
+          "mandate",
+          "directive",
+          "constraint",
+          "policy"
+        ]
+      }
+    },
+    "lexical_stability": {
+      "baseline": {
+        "n": 18,
+        "mean": 0.464166667,
+        "sample_sd": 0.362534745
+      },
+      "compression": {
+        "n": 18,
+        "mean": 0.293944444,
+        "sample_sd": 0.365616236
+      },
+      "gate": {
+        "n": 18,
+        "mean": 0.332777778,
+        "sample_sd": 0.355474257
+      },
+      "gate_minus_baseline_paired": {
+        "n": 18,
+        "mean": -0.131388889,
+        "sample_sd": 0.296044341,
+        "gate_wins": 3,
+        "ties": 5,
+        "gate_losses": 10,
+        "negative_categories": [
+          "code",
+          "procedural",
+          "obligation",
+          "agreement",
+          "requirement",
+          "directive",
+          "constraint",
+          "protocol",
+          "standard",
+          "policy"
+        ]
+      }
+    }
+  },
+  "coverage": {
+    "nli_judgment": {
+      "missing_by_regime": {
+        "baseline": [],
+        "compression": [],
+        "gate": []
+      },
+      "non_null_paired": 20
+    },
+    "lexical_stability": {
+      "missing_by_regime": {
+        "baseline": [
+          "definition",
+          "rule"
+        ],
+        "compression": [
+          "definition",
+          "rule"
+        ],
+        "gate": [
+          "definition",
+          "rule"
+        ]
+      },
+      "non_null_paired": 18
+    }
+  },
+  "limitations": [
+    "Descriptive statistics over a single frozen 20-signal, 10-step run, not independent replications.",
+    "NLI field is the mean of two yes/no GPT entailment responses (possible values 0, 0.5, 1), not a calibrated probability.",
+    "Canonical reference is created by the same extractor/reconstructor family being evaluated, not an independent human oracle.",
+    "The lexical 'stability' field derives from word-set Jaccard in run_convergence_v2.py; the archived report mistakenly prints intersection/origin as its formula.",
+    "Two categories have null lexical values; they are excluded from lexical means (not counted as zero or success).",
+    "No statistical inference or model generalization is warranted from this single correlated run."
+  ],
+  "source": {
+    "path": "working/runs_archive/2026-03-17/convergence_v2_234059.json",
+    "sha256": "746aa4ec7066b1231dde7e06e7d0f2fa7bd59274c28ec1dcc5131077e8a6df19",
+    "kind": "frozen_archived_trace"
+  }
+}
